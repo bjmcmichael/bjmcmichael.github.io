@@ -4,19 +4,46 @@ description: "Courses and public teaching projects by Benjamin J. McMichael."
 ---
 
 ::: {.page-intro}
-Courses and selected public teaching projects will be presented here as materials are reviewed for public release.
+Benjamin J. McMichael's teaching record spans foundational private-law courses and the regulation of health care.
 :::
 
 ::: {.content-ledger}
 ::: {.ledger-row}
-## Courses
+## Courses Taught
 
-Current course information will be added from approved source materials.
+::: {.ledger-detail}
+### University of Alabama School of Law
+
+<ul class="course-list">
+<li>Health Care Law</li>
+<li>Insurance Law</li>
+<li>Introduction to the Study of Law</li>
+<li>Products Liability</li>
+<li>Torts</li>
+</ul>
+:::
 :::
 
 ::: {.ledger-row}
-## Public Teaching Projects
+## Teaching Recognition
 
-Public-facing teaching resources and casebook information will appear here when supplied.
+::: {.ledger-detail}
+### Outstanding Faculty Member Award
+
+2021, 2025
+:::
+:::
+
+::: {.ledger-row}
+## Prior Teaching
+
+::: {.ledger-detail}
+### Vanderbilt University
+
+<ul class="course-list">
+<li>Health Care Law and Regulation <span>Spring 2017</span></li>
+<li>Managerial Economics <span>Fall 2017</span></li>
+</ul>
+:::
 :::
 :::

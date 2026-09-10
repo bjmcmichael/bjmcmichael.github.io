@@ -23,7 +23,7 @@ Milestone 1 was built and verified with **Quarto 1.10.18**. No Node.js runtime, 
 
 ## 3. Repository layout
 
-Current Milestone 1 layout:
+Current site layout:
 
 ```text
 .
@@ -43,6 +43,8 @@ Current Milestone 1 layout:
 ├── styles.css
 ├── theme.scss
 ├── assets/
+│   ├── files/
+│   │   └── McMichael_CV.pdf
 │   └── fonts/
 │       ├── GUST-FONT-LICENSE.txt
 │       └── texgyreschola-regular.otf
@@ -100,7 +102,7 @@ The rendered site is written to `_site/`. A successful Milestone 1 render proces
 3. Clone the repository and check out the intended branch.
 4. Run `quarto render` from the repository root.
 
-No additional install command is required for Milestone 1.
+No additional install command is required for the current static site.
 
 ### Fonts and theme
 
@@ -111,6 +113,10 @@ Display headings and selected editorial text use [TeX Gyre Schola](https://ctan.
 The regular OpenType face is self-hosted at `assets/fonts/texgyreschola-regular.otf`, loaded through a local `@font-face` declaration, and distributed under the GUST Font License included at `assets/fonts/GUST-FONT-LICENSE.txt`. No font installation, package install, CDN, or external font request is required at build time or in the browser. If the local asset cannot load, the CSS falls back to Georgia, `Times New Roman`, Times, and the generic serif family.
 
 The actual deployment configuration must be documented after it is implemented.
+
+### Curriculum vitae asset
+
+The authoritative public CV PDF is stored at `assets/files/McMichael_CV.pdf` and linked from `cv.qmd`. Keep this repository-relative path and stable filename when an approved replacement CV is supplied so existing links do not change. After replacing the file, run `quarto render` and verify that `_site/assets/files/McMichael_CV.pdf` exists and the CV-page link resolves.
 
 ## 7. GitHub Pages
 

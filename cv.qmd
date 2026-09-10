@@ -4,13 +4,17 @@ description: "Curriculum vitae for Benjamin J. McMichael."
 ---
 
 ::: {.page-intro}
-The curriculum vitae will provide the authoritative record of appointments, scholarship, teaching, and professional service.
+Benjamin J. McMichael's current curriculum vitae is available as a PDF and remains the authoritative record of his appointments, scholarship, teaching, and professional service.
 :::
 
 ::: {.document-panel}
-<p class="document-label">Curriculum Vitae</p>
+<p class="document-label">Current curriculum vitae</p>
 
-## PDF forthcoming
+## Benjamin J. McMichael
 
-The verified PDF will be linked here when it is supplied. No provisional download is available.
+<p class="document-meta">Updated September 2026</p>
+
+[View / Download CV](assets/files/McMichael_CV.pdf){.site-button .site-button-primary .document-action}
+
+<p class="document-note">The PDF is the authoritative curriculum vitae.</p>
 :::
