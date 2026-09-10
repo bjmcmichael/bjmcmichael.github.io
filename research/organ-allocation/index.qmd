@@ -1,0 +1,29 @@
+---
+pagetitle: "Organ Allocation & Transplant Policy"
+description: "Research on the law, policy, and outcomes of organ allocation and transplantation."
+---
+
+<article class="research-program-page">
+<p class="program-return-wrap"><a class="program-return" href="../../research.html"><span aria-hidden="true">←</span> All research programs</a></p>
+
+<header class="research-program-header">
+<p class="program-eyebrow">Research Program</p>
+<h1>Organ Allocation &amp; Transplant Policy</h1>
+<section class="program-overview" aria-labelledby="organ-allocation-overview">
+<h2 id="organ-allocation-overview">Overview</h2>
+<p>I study how law and policy shape organ allocation, including geographic allocation rules, access to transplantation, patient outcomes, and the legal structure of organ distribution. This work combines empirical analysis of allocation reforms with legal and policy analysis of who receives scarce organs and on what terms.</p>
+</section>
+</header>
+
+<div class="research-program-sections">
+<section class="research-program-section" aria-labelledby="organ-allocation-scholarship">
+<h2 id="organ-allocation-scholarship">Selected Scholarship</h2>
+<p>Selected scholarship in this area will be added after the publication architecture is finalized.</p>
+</section>
+
+<section class="research-program-section" aria-labelledby="organ-allocation-resources">
+<h2 id="organ-allocation-resources">Data, Code &amp; Interactive Research</h2>
+<p>Approved public datasets, replication materials, figures, and interactive research may be collected here where available.</p>
+</section>
+</div>
+</article>

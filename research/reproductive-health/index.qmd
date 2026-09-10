@@ -1,0 +1,29 @@
+---
+pagetitle: "Reproductive Health & Family Formation"
+description: "Research on legal and policy questions involving reproductive health and family formation."
+---
+
+<article class="research-program-page">
+<p class="program-return-wrap"><a class="program-return" href="../../research.html"><span aria-hidden="true">←</span> All research programs</a></p>
+
+<header class="research-program-header">
+<p class="program-eyebrow">Research Program</p>
+<h1>Reproductive Health &amp; Family Formation</h1>
+<section class="program-overview" aria-labelledby="reproductive-health-overview">
+<h2 id="reproductive-health-overview">Overview</h2>
+<p>I study legal and policy questions involving reproductive health and family formation, including frozen embryos, fetal-harm regulation, reproductive objectification, and medication use during pregnancy. This work spans legal scholarship and empirical health research.</p>
+</section>
+</header>
+
+<div class="research-program-sections">
+<section class="research-program-section" aria-labelledby="reproductive-health-scholarship">
+<h2 id="reproductive-health-scholarship">Selected Scholarship</h2>
+<p>Selected scholarship in this area will be added after the publication architecture is finalized.</p>
+</section>
+
+<section class="research-program-section" aria-labelledby="reproductive-health-resources">
+<h2 id="reproductive-health-resources">Data, Code &amp; Interactive Research</h2>
+<p>Approved public datasets, replication materials, figures, and interactive research may be collected here where available.</p>
+</section>
+</div>
+</article>

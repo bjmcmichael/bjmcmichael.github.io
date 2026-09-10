@@ -34,6 +34,17 @@ Current site layout:
 ├── WEBSITE_SPEC.md
 ├── index.qmd
 ├── research.qmd
+├── research/
+│   ├── licensing/
+│   │   └── index.qmd
+│   ├── organ-allocation/
+│   │   └── index.qmd
+│   ├── torts-liability/
+│   │   └── index.qmd
+│   ├── drug-policy/
+│   │   └── index.qmd
+│   └── reproductive-health/
+│       └── index.qmd
 ├── publications.qmd
 ├── data-code.qmd
 ├── teaching.qmd
@@ -93,7 +104,9 @@ Create a production render with:
 quarto render
 ```
 
-The rendered site is written to `_site/`. A successful Milestone 1 render processes all eight `.qmd` pages and creates `_site/index.html`.
+The rendered site is written to `_site/`. The current render processes the eight root-level `.qmd` pages and five nested Research-program pages, for thirteen pages total, and creates `_site/index.html`.
+
+The `project.render` list in `_quarto.yml` includes both `*.qmd` and `research/**/*.qmd`. This renders the five nested program pages while continuing to exclude governing Markdown files under `docs/` from the public site.
 
 ### Fresh-machine setup
 
