@@ -2,9 +2,9 @@
 
 ## Current status
 
-**Stage: Milestone 2A — CV-derived content complete on a feature branch and ready for review**
+**Stage: Milestone 2A — approved, complete, and merged**
 
-Milestone 2A has been implemented on the feature branch:
+Milestone 2A has passed review and is incorporated into `main`. Its feature branch is retained for now:
 
 `content/cv-about-teaching-contact`
 
@@ -118,15 +118,15 @@ Do not decide or implement that mechanism until a future Publications milestone 
 
 ## Next recommended task
 
-### Task: Review and merge Milestone 2A
+### Task: Select and authorize the next content milestone
 
-This task should begin only when separately authorized.
+The next implementation milestone must be separately authorized.
 
-The next review should:
+The next planning step should:
 
-1. Review the CV, About, Teaching, and Contact pages against the supplied CV.
-2. Confirm the new prose, content selection, and restrained editorial presentation.
-3. If approved, merge `content/cv-about-teaching-contact` into `main` without deleting the feature branch unless separately instructed.
-4. Keep Publications, Research, Data & Code, deployment, and domain configuration deferred.
+1. Review the unresolved content gaps and select one bounded next milestone.
+2. Supply or approve the source materials required for that milestone.
+3. Explicitly authorize implementation before any substantive content work begins.
+4. Keep Publications, Research, Data & Code, deployment, and domain configuration deferred unless they are separately authorized.
 
-After Milestone 2A is merged, select and separately authorize the next content milestone. Do not make deployment the automatic next step.
+Do not make deployment the automatic next step.
