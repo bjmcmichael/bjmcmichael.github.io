@@ -1,0 +1,8 @@
+/_site/
+/.quarto/
+/site_libs/
+/*_files/
+/*.html
+**/*.quarto_ipynb
+.DS_Store
+Thumbs.db

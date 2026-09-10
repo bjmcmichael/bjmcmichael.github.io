@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+
+website:
+  title: "Benjamin J. McMichael"
+  description: "Empirical research on health care regulation, professional licensing, medical markets, and health policy."
+  search: false
+  navbar:
+    title: "Benjamin J. McMichael"
+    collapse-below: lg
+    right:
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: data-code.qmd
+        text: Data & Code
+      - href: teaching.qmd
+        text: Teaching
+      - href: cv.qmd
+        text: CV
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    anchor-sections: false
+    link-external-newwindow: true
+
+lang: en

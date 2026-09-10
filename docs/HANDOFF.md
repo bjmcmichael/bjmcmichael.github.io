@@ -2,127 +2,91 @@
 
 ## Current status
 
-**Stage: Foundation specification**
+**Stage: Milestone 1 — initial Quarto site skeleton complete**
 
-The GitHub repository exists:
-
-`bjmcmichael/bjmcmichael.github.io`
-
-The repository is intended to become Benjamin J. McMichael's personal academic website and public research interface.
-
-The selected visual/product direction has been decided and is documented in:
-
-- `WEBSITE_SPEC.md`
-- `docs/DESIGN_SYSTEM.md`
-
-The durable coding-agent rules are documented in:
-
-- `AGENTS.md`
-
-The cross-machine and build philosophy is documented in:
-
-- `docs/DEVELOPMENT.md`
-
-At this stage, **no substantive website code should exist yet** beyond these documentation files.
-
-## Decisions already made
-
-### Product
-- Personal academic website
-- Research-first rather than biography-first
-- Conventional academic information remains easy to find
-- Major research projects may eventually contain public interactive figures/maps/data/code
-
-### Design
-- Hybrid design selected
-- Approximately 70% Research Observatory / 20% Scholar's Journal / 10% Data Studio
-- White/near-white background
-- Black/charcoal text
-- Restrained deep crimson accent
-- Serif-led editorial headings
-- Clean sans-serif UI/body typography
-- Research outputs preferred over decorative stock imagery
-- Minimal motion
-- No dashboard-heavy appearance
-
-### Technical
-- Quarto
-- GitHub
-- GitHub Pages
-- Custom domain later
-- Static/browser-side interactivity first
-- No paid infrastructure unless specifically justified
-- Repository must be portable across machines
-
-### Security
-- Treat repository and deployed site as public
-- No restricted data
-- No credentials
-- No proprietary/licensed materials unless redistribution is authorized
-
-## Information that is not yet finalized
-
-Do not invent these values:
-
-- final custom domain;
-- final homepage bio copy;
-- final headshot/photo;
-- full publication metadata;
-- final research project descriptions;
-- public data/code links;
-- external profile URLs;
-- the first interactive research component;
-- analytics;
-- any contact form.
-
-## Next recommended task
-
-### Task: Build the minimal Quarto site skeleton
-
-This is the **first implementation task**, but it should begin only when explicitly authorized.
-
-The implementation should:
-
-1. Read all governing project documents.
-2. Create the minimum Quarto website structure.
-3. Create placeholder top-level pages:
-   - Home
-   - Research
-   - Publications
-   - Data & Code
-   - Teaching
-   - CV
-   - About
-   - Contact
-4. Implement the initial custom visual system in a central stylesheet.
-5. Make the homepage structurally resemble the approved hybrid concept:
-   - identity/hero;
-   - research descriptor;
-   - CV/Research actions;
-   - featured-research placeholder;
-   - three Selected Research entries.
-6. Use placeholders where factual content has not been supplied.
-7. Do **not** fabricate research statistics or findings.
-8. Do **not** add real interactive figures yet.
-9. Make the site responsive.
-10. Ensure `quarto render` succeeds.
-11. Do not configure the custom domain yet.
-12. Do not add paid services or server-side infrastructure.
-13. Update `docs/DEVELOPMENT.md` with the actual tested build process.
-14. Update this handoff document with what was completed and the next recommended task.
-
-## Suggested first branch name
+The minimal multi-page website has been implemented on the feature branch:
 
 `build/initial-quarto-skeleton`
 
-## Definition of done for the next task
+The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
 
-- Quarto project exists.
-- All top-level placeholder pages render.
-- Navigation works.
-- Custom CSS establishes the intended visual direction.
-- Homepage clearly resembles the approved hybrid architecture.
-- No fake empirical content is presented as real.
-- Site renders successfully locally.
-- Repository contains enough documentation for another computer/Codex session to continue.
-- `docs/HANDOFF.md` identifies the next step.
+## Milestone 1 work completed
+
+- Created a Quarto website with eight top-level pages: Home, Research, Publications, Data & Code, Teaching, CV, About, and Contact.
+- Added consistent navigation across all pages, with Quarto's accessible collapsed navigation at tablet and mobile widths.
+- Built a research-forward homepage containing the authorized professional identity, research descriptor, CV and Research actions, an abstract no-data research-figure field, and three approved Selected Research entries.
+- Added intentionally incomplete editorial structures for later publications, public data and code, teaching materials, CV, biography, and contact information.
+- Added a central custom visual system in `styles.css`.
+- Added `.gitignore` rules for generated Quarto output and common operating-system artifacts.
+- Limited project rendering to root-level `.qmd` pages so governing Markdown documentation is not emitted as part of the public website build.
+
+## Files created
+
+- `.gitignore`
+- `_quarto.yml`
+- `index.qmd`
+- `research.qmd`
+- `publications.qmd`
+- `data-code.qmd`
+- `teaching.qmd`
+- `cv.qmd`
+- `about.qmd`
+- `contact.qmd`
+- `styles.css`
+
+## Design and architecture choices
+
+- Quarto remains the only project runtime; there is no Node build, JavaScript framework, database, CMS, server, analytics, tracking, or external embed.
+- Quarto's bundled `cosmo` theme provides the structural base, with a full custom treatment supplied by `styles.css`.
+- The palette uses a near-white paper background, charcoal text, light gray rules, and a restrained deep-crimson accent.
+- Georgia is the primary system display serif; Segoe UI is the primary system body/interface sans-serif. Portable fallbacks are included and no font files are downloaded.
+- The homepage uses an editorial two-column research-observatory composition on wide screens and a single-column reading order on smaller screens.
+- The featured-research module is explicitly a design placeholder and contains no map, coefficients, numerical results, or fabricated research data.
+- Motion is minimal, visible focus treatment is provided, and reduced-motion preferences are respected.
+
+## Build and verification status
+
+- Tested with Quarto 1.10.18.
+- `quarto render` succeeds for all eight pages and writes output to `_site/`.
+- All top-level pages load with the expected page title, one primary heading, and seven navigation destinations.
+- Internal navigation and homepage action links resolve successfully.
+- Browser layout was checked at approximately 1440, 1024, 768, and 390 pixels wide.
+- The mobile navigation opens and closes successfully.
+- No horizontal overflow was detected at the checked widths.
+- Generated `_site/` and `.quarto/` content is excluded from version control.
+
+## Content intentionally deferred
+
+Do not invent or add these items without approved source materials:
+
+- final homepage and biography copy;
+- CV PDF;
+- full publication metadata;
+- paper, journal, data, code, and replication links;
+- headshot or other imagery;
+- external profile and contact details;
+- real research figures or interactive components;
+- final custom domain.
+
+## Unresolved issues
+
+- All substantive page content remains intentionally incomplete pending source review.
+- The abstract homepage research field must eventually be replaced or removed when an approved figure is available.
+- Deployment architecture and domain settings have not been selected or enabled.
+
+## Next recommended task
+
+### Task: Review and refine the Milestone 1 homepage
+
+This task should begin only when explicitly authorized.
+
+The next review should:
+
+1. Evaluate the homepage hierarchy, typography, crimson accent, spacing, research module, and responsive behavior.
+2. Confirm whether the current professional identity and research descriptor should remain as written.
+3. Approve, revise, or remove the abstract featured-research field before a real figure is supplied.
+4. Confirm the navigation order and the presentation of the three Selected Research entries.
+5. Identify the first approved source materials for the following content milestone.
+6. Record accepted refinements in the governing documents and this handoff.
+
+Do not make deployment the next automatic step. Substantive review and refinement should precede GitHub Pages configuration.

@@ -1,0 +1,22 @@
+---
+title: "Teaching"
+description: "Courses and public teaching projects by Benjamin J. McMichael."
+---
+
+::: {.page-intro}
+Courses and selected public teaching projects will be presented here as materials are reviewed for public release.
+:::
+
+::: {.content-ledger}
+::: {.ledger-row}
+## Courses
+
+Current course information will be added from approved source materials.
+:::
+
+::: {.ledger-row}
+## Public Teaching Projects
+
+Public-facing teaching resources and casebook information will appear here when supplied.
+:::
+:::

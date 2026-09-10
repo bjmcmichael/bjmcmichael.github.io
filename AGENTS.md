@@ -174,4 +174,4 @@ For every substantive implementation task:
 
 ## Current constraint
 
-At the foundation stage, do **not** build the substantive website until the task in `docs/HANDOFF.md` is explicitly authorized.
+The minimal Quarto site skeleton is complete. Do **not** proceed to substantive content integration, deployment, custom-domain configuration, or later implementation work until the next task in `docs/HANDOFF.md` is explicitly authorized.

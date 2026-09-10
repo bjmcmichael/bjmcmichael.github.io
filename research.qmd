@@ -1,0 +1,40 @@
+---
+title: "Research"
+description: "Project-centered research on health care regulation, professional licensing, medical markets, and health policy."
+---
+
+::: {.page-intro}
+Research is organized here by project so that papers, public data, code, figures, and documentation can ultimately be understood together.
+:::
+
+::: {.project-index aria-label="Selected research projects"}
+::: {.project-index-item}
+<p class="item-index" aria-hidden="true">01</p>
+
+## The Law of Doctors
+
+Professional boundaries and the regulation of health care labor
+
+<p class="availability-note">Related materials will be added after review.</p>
+:::
+
+::: {.project-index-item}
+<p class="item-index" aria-hidden="true">02</p>
+
+## Scope of Practice and Severe Maternal Morbidity
+
+Professional regulation and maternal health outcomes
+
+<p class="availability-note">Related materials will be added after review.</p>
+:::
+
+::: {.project-index-item}
+<p class="item-index" aria-hidden="true">03</p>
+
+## Organ Allocation
+
+Geographic allocation reform and patient outcomes
+
+<p class="availability-note">Related materials will be added after review.</p>
+:::
+:::

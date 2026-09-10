@@ -1,0 +1,22 @@
+---
+title: "Contact"
+description: "Professional contact information for Benjamin J. McMichael."
+---
+
+::: {.page-intro}
+Verified professional contact information and public profile links will be added here when supplied.
+:::
+
+::: {.content-ledger}
+::: {.ledger-row}
+## Institutional Contact
+
+Institutional email, office, and mailing details will appear after verification.
+:::
+
+::: {.ledger-row}
+## Research Profiles
+
+Verified scholarly and professional profile links will be listed here.
+:::
+:::

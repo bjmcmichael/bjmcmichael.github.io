@@ -1,0 +1,24 @@
+---
+title: "About"
+description: "About Benjamin J. McMichael and his empirical health-law research."
+---
+
+::: {.page-intro .page-intro-wide}
+Benjamin J. McMichael is the Jere L. Beasley Professor of Law and Director of Interdisciplinary Legal Studies at the University of Alabama School of Law.
+:::
+
+::: {.about-grid}
+::: {.about-main}
+## Research
+
+His work examines health care regulation, professional licensing, medical markets, and health policy through empirical legal research.
+
+A fuller professional biography will be added after the final copy is supplied and approved.
+:::
+
+::: {.about-aside}
+<p class="aside-label">Current appointments</p>
+
+<p><strong>Jere L. Beasley Professor of Law</strong><br><strong>Director of Interdisciplinary Legal Studies</strong><br>University of Alabama School of Law</p>
+:::
+:::

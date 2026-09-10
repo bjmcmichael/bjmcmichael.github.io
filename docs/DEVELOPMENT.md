@@ -19,30 +19,19 @@ Initial expected tools:
 
 Do not require a specific IDE.
 
-When the first Quarto site is created, document the tested Quarto version here.
+Milestone 1 was built and verified with **Quarto 1.10.18**. No Node.js runtime, package manager, JavaScript framework, or other project dependency is required.
 
 ## 3. Repository layout
 
-Foundation layout:
+Current Milestone 1 layout:
 
 ```text
 .
+├── .gitignore
+├── _quarto.yml
 ├── AGENTS.md
 ├── README.md
 ├── WEBSITE_SPEC.md
-└── docs/
-    ├── DESIGN_SYSTEM.md
-    ├── DEVELOPMENT.md
-    └── HANDOFF.md
-```
-
-The first implementation task should extend this with the minimal Quarto project structure.
-
-Likely eventual structure, subject to refinement:
-
-```text
-.
-├── _quarto.yml
 ├── index.qmd
 ├── research.qmd
 ├── publications.qmd
@@ -52,19 +41,13 @@ Likely eventual structure, subject to refinement:
 ├── about.qmd
 ├── contact.qmd
 ├── styles.css
-├── research/
-├── assets/
-│   ├── images/
-│   ├── figures/
-│   └── files/
-├── data/
-├── docs/
-├── AGENTS.md
-├── WEBSITE_SPEC.md
-└── README.md
+└── docs/
+    ├── DESIGN_SYSTEM.md
+    ├── DEVELOPMENT.md
+    └── HANDOFF.md
 ```
 
-Do not create directories merely because they appear in this example. Add them when needed.
+The generated `_site/` directory and Quarto's `.quarto/` working directory are ignored by Git. Add research, asset, or data directories only when approved materials require them.
 
 ## 4. Branching and commits
 
@@ -91,21 +74,32 @@ Use repository-relative paths.
 
 ## 6. Build commands
 
-Once Quarto is initialized, this section must be updated with exact commands.
-
-Expected baseline:
+From the repository root, start the local development server with:
 
 ```bash
 quarto preview
 ```
 
-for local development and:
+Create a production render with:
 
 ```bash
 quarto render
 ```
 
-for a production build.
+The rendered site is written to `_site/`. A successful Milestone 1 render processes all eight `.qmd` pages and creates `_site/index.html`.
+
+### Fresh-machine setup
+
+1. Install Git.
+2. Install Quarto 1.10.18 or a compatible later release.
+3. Clone the repository and check out the intended branch.
+4. Run `quarto render` from the repository root.
+
+No additional install command is required for Milestone 1.
+
+### Fonts and theme
+
+The HTML output uses Quarto's bundled `cosmo` theme as a structural base and applies the project identity through `styles.css`. Display type uses the system stack `Georgia`, `Times New Roman`, and `Times`; body and interface type use `Segoe UI` with platform sans-serif fallbacks. The site downloads no font files and makes no external font requests.
 
 The actual deployment configuration must be documented after it is implemented.
 

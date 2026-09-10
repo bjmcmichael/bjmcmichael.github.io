@@ -1,0 +1,107 @@
+---
+pagetitle: "Benjamin J. McMichael"
+description: "Benjamin J. McMichael is a law professor and empirical researcher working on health care regulation, professional licensing, medical markets, and health policy."
+page-layout: full
+---
+
+::: {.home-shell}
+::: {.hero-grid}
+::: {.hero-copy}
+<p class="eyebrow">Empirical legal scholarship</p>
+
+# Benjamin J.<br>McMichael {#hero-title .hero-title}
+
+<p class="hero-roles">Jere L. Beasley Professor of Law<br>Director of Interdisciplinary Legal Studies<br>University of Alabama School of Law</p>
+
+<p class="hero-dek">Empirical research on health care regulation, professional licensing, medical markets, and health policy.</p>
+
+::: {.hero-actions}
+[View CV](cv.qmd){.site-button .site-button-primary}
+
+[Research](research.qmd){.site-button .site-button-secondary}
+:::
+:::
+
+<!-- Design placeholder only. This abstract field contains no research data or findings. -->
+::: {.research-window}
+::: {.research-window-header}
+<p class="window-kicker">Research observatory</p>
+<p class="window-index">01 / Field</p>
+:::
+
+::: {.abstract-field role="img" aria-label="Abstract placeholder for a future research figure; no data or findings are represented."}
+<span class="field-cell field-cell-01" aria-hidden="true"></span>
+<span class="field-cell field-cell-02" aria-hidden="true"></span>
+<span class="field-cell field-cell-03" aria-hidden="true"></span>
+<span class="field-cell field-cell-04" aria-hidden="true"></span>
+<span class="field-cell field-cell-05" aria-hidden="true"></span>
+<span class="field-cell field-cell-06" aria-hidden="true"></span>
+<span class="field-cell field-cell-07" aria-hidden="true"></span>
+<span class="field-cell field-cell-08" aria-hidden="true"></span>
+<span class="field-cell field-cell-09" aria-hidden="true"></span>
+<span class="field-cell field-cell-10" aria-hidden="true"></span>
+<span class="field-cell field-cell-11" aria-hidden="true"></span>
+<span class="field-cell field-cell-12" aria-hidden="true"></span>
+<span class="signal-line signal-line-a" aria-hidden="true"></span>
+<span class="signal-line signal-line-b" aria-hidden="true"></span>
+<span class="signal-line signal-line-c" aria-hidden="true"></span>
+<span class="signal-point signal-point-a" aria-hidden="true"></span>
+<span class="signal-point signal-point-b" aria-hidden="true"></span>
+<span class="signal-point signal-point-c" aria-hidden="true"></span>
+<span class="signal-point signal-point-d" aria-hidden="true"></span>
+:::
+
+::: {.research-window-footer}
+## Evidence, institutions, place
+
+A future approved map or empirical figure can occupy this field without changing the page architecture.
+:::
+:::
+:::
+
+::: {.selected-research}
+::: {.section-heading}
+## Selected Research
+
+[View all research](research.qmd){.text-link}
+:::
+
+::: {.research-list}
+::: {.research-entry}
+<p class="research-number" aria-hidden="true">01</p>
+
+::: {.research-entry-copy}
+### The Law of Doctors
+
+Professional boundaries and the regulation of health care labor
+:::
+
+<p class="research-type">Research project</p>
+:::
+
+::: {.research-entry}
+<p class="research-number" aria-hidden="true">02</p>
+
+::: {.research-entry-copy}
+### Scope of Practice and Severe Maternal Morbidity
+
+Professional regulation and maternal health outcomes
+:::
+
+<p class="research-type">Research project</p>
+:::
+
+::: {.research-entry}
+<p class="research-number" aria-hidden="true">03</p>
+
+::: {.research-entry-copy}
+### Organ Allocation
+
+Geographic allocation reform and patient outcomes
+:::
+
+<p class="research-type">Research project</p>
+:::
+:::
+:::
+:::

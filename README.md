@@ -4,7 +4,7 @@ This repository is the source for Benjamin J. McMichael's personal academic webs
 
 ## Project status
 
-**Foundation stage.** The repository currently contains project specifications and handoff documentation only. Substantive website implementation should not begin until the first implementation task described in `docs/HANDOFF.md` is explicitly authorized.
+**Milestone 1: initial site skeleton.** The repository now contains a minimal multi-page Quarto website with a custom visual system and intentionally incomplete content. Deployment, the custom domain, and substantive source materials remain deferred; consult `docs/HANDOFF.md` before beginning the next task.
 
 ## Intended stack
 

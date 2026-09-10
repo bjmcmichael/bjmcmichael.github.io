@@ -1,0 +1,34 @@
+---
+title: "Publications"
+description: "Publications and working papers by Benjamin J. McMichael."
+---
+
+::: {.page-intro}
+A complete publication record will be organized here after entries are verified against the authoritative CV.
+:::
+
+::: {.editorial-register}
+::: {.register-section}
+## Published & Forthcoming
+
+Verified citations will appear in this section.
+:::
+
+::: {.register-section}
+## Working Papers
+
+Current working papers will be added after review.
+:::
+
+::: {.register-section}
+## Books / Book Projects
+
+Approved book and book-project information will appear here.
+:::
+
+::: {.register-section}
+## Other Writing
+
+Selected public writing will be listed when supplied.
+:::
+:::

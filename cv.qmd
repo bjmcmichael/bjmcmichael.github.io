@@ -1,0 +1,16 @@
+---
+title: "Curriculum Vitae"
+description: "Curriculum vitae for Benjamin J. McMichael."
+---
+
+::: {.page-intro}
+The curriculum vitae will provide the authoritative record of appointments, scholarship, teaching, and professional service.
+:::
+
+::: {.document-panel}
+<p class="document-label">Curriculum Vitae</p>
+
+## PDF forthcoming
+
+The verified PDF will be linked here when it is supplied. No provisional download is available.
+:::
