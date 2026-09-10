@@ -4,7 +4,7 @@ description: "About Benjamin J. McMichael and his empirical health-law research.
 ---
 
 ::: {.page-intro .page-intro-wide}
-Benjamin J. McMichael is the Jere L. Beasley Professor of Law and Director of Interdisciplinary Legal Studies at the University of Alabama School of Law.
+His scholarship examines how law shapes health care regulation, professional licensing, medical markets, and health policy.
 :::
 
 ::: {.about-grid}
@@ -13,7 +13,7 @@ Benjamin J. McMichael is the Jere L. Beasley Professor of Law and Director of In
 
 Benjamin J. McMichael is the Jere L. Beasley Professor of Law and Director of Interdisciplinary Legal Studies at the University of Alabama School of Law. His research focuses on health care regulation, professional licensing, medical markets, and health policy, using empirical methods to study how law affects health care delivery and outcomes.
 
-He holds a Ph.D. in Law & Economics and a J.D. from Vanderbilt University and a B.S., *summa cum laude*, in Mathematical Economics from Wake Forest University. He clerked for Judge Carolyn D. King of the United States Court of Appeals for the Fifth Circuit. He also holds a voluntary appointment as Associate Professor of Nursing at the University of Alabama at Birmingham School of Nursing.
+He holds a Ph.D. in Law & Economics from Vanderbilt University, a J.D. from Vanderbilt University Law School, and a B.S., *summa cum laude*, in Mathematical Economics from Wake Forest University. He clerked for Judge Carolyn D. King of the United States Court of Appeals for the Fifth Circuit. He also holds a voluntary appointment as Associate Professor of Nursing at the University of Alabama at Birmingham School of Nursing.
 
 ## Education
 
