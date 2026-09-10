@@ -1,6 +1,8 @@
 ---
 title: "Research"
 description: "Project-centered research on health care regulation, professional licensing, medical markets, and health policy."
+page-layout: full
+body-classes: research-index-page
 ---
 
 ::: {.page-intro}
