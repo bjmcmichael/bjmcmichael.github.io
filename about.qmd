@@ -4,21 +4,51 @@ description: "About Benjamin J. McMichael and his empirical health-law research.
 ---
 
 ::: {.page-intro .page-intro-wide}
-Benjamin J. McMichael is the Jere L. Beasley Professor of Law and Director of Interdisciplinary Legal Studies at the University of Alabama School of Law.
+His scholarship examines how law shapes health care regulation, professional licensing, medical markets, and health policy.
 :::
 
 ::: {.about-grid}
 ::: {.about-main}
-## Research
+## Biography
 
-His work examines health care regulation, professional licensing, medical markets, and health policy through empirical legal research.
+Benjamin J. McMichael is the Jere L. Beasley Professor of Law and Director of Interdisciplinary Legal Studies at the University of Alabama School of Law. His research focuses on health care regulation, professional licensing, medical markets, and health policy, using empirical methods to study how law affects health care delivery and outcomes.
 
-A fuller professional biography will be added after the final copy is supplied and approved.
+He holds a Ph.D. in Law & Economics from Vanderbilt University, a J.D. from Vanderbilt University Law School, and a B.S., *summa cum laude*, in Mathematical Economics from Wake Forest University. He clerked for Judge Carolyn D. King of the United States Court of Appeals for the Fifth Circuit. He also holds a voluntary appointment as Associate Professor of Nursing at the University of Alabama at Birmingham School of Nursing.
+
+## Education
+
+::: {.credential-list}
+::: {.credential-entry}
+### Ph.D., Law & Economics
+
+Vanderbilt University · 2015
+:::
+
+::: {.credential-entry}
+### J.D.
+
+Vanderbilt University Law School · 2015
+:::
+
+::: {.credential-entry}
+### B.S., *summa cum laude*, Mathematical Economics
+
+Wake Forest University · 2009
+:::
+:::
 :::
 
 ::: {.about-aside}
-<p class="aside-label">Current appointments</p>
+## Additional Academic Appointment
 
-<p><strong>Jere L. Beasley Professor of Law</strong><br><strong>Director of Interdisciplinary Legal Studies</strong><br>University of Alabama School of Law</p>
+### Associate Professor of Nursing
+
+<p>University of Alabama at Birmingham School of Nursing<br><span class="aside-meta">Voluntary appointment · 2022–Present</span></p>
+
+## Clerkship
+
+### Hon. Carolyn D. King
+
+<p>United States Court of Appeals for the Fifth Circuit<br><span class="aside-meta">2015–2016</span></p>
 :::
 :::

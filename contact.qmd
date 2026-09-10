@@ -4,19 +4,15 @@ description: "Professional contact information for Benjamin J. McMichael."
 ---
 
 ::: {.page-intro}
-Verified professional contact information and public profile links will be added here when supplied.
+For professional correspondence, please use the institutional email address below.
 :::
 
-::: {.content-ledger}
-::: {.ledger-row}
-## Institutional Contact
+::: {.document-panel .contact-panel}
+<p class="document-label">Professional contact</p>
 
-Institutional email, office, and mailing details will appear after verification.
-:::
+## University of Alabama School of Law
 
-::: {.ledger-row}
-## Research Profiles
+<p class="contact-label">Email</p>
 
-Verified scholarly and professional profile links will be listed here.
-:::
+[bmcmichael@law.ua.edu](mailto:bmcmichael@law.ua.edu){.contact-email}
 :::

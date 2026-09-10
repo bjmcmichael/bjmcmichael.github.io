@@ -2,15 +2,15 @@
 
 ## Current status
 
-**Stage: Milestone 1 — approved and complete**
+**Stage: Milestone 2A — approved, complete, and merged**
 
-The minimal multi-page website has been implemented on the feature branch:
+Milestone 2A has passed review and is incorporated into `main`. Its feature branch is retained for now:
 
-`build/initial-quarto-skeleton`
+`content/cv-about-teaching-contact`
 
 The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
 
-Milestone 1 has passed substantive and visual review. The typography, palette, two-column hero, professional-information treatment, Selected Research treatment, and responsive architecture are the approved foundation for later milestones.
+Milestone 1 remains approved. Its typography, palette, two-column hero, professional-information treatment, Selected Research treatment, and responsive architecture remain the foundation for later milestones.
 
 ## Milestone 1 work completed
 
@@ -23,7 +23,28 @@ Milestone 1 has passed substantive and visual review. The typography, palette, t
 - Limited project rendering to root-level `.qmd` pages so governing Markdown documentation is not emitted as part of the public website build.
 - Completed a limited homepage refinement pass without adding substantive content, research data, pages, or deployment configuration.
 
-## Files created
+## Milestone 2A work completed
+
+- Added the supplied September 2026 curriculum vitae unchanged at `assets/files/McMichael_CV.pdf`; the repository copy is byte-for-byte identical to the supplied PDF.
+- Replaced the CV placeholder with a finished landing page, an update date, and a prominent link to the authoritative PDF.
+- Added a concise CV-derived biography, education entries, current voluntary nursing appointment, and federal appellate clerkship to the About page.
+- Added the authorized University of Alabama courses, teaching recognition, and prior Vanderbilt teaching to the Teaching page without course descriptions or the hooding-team history.
+- Added the University of Alabama School of Law and `bmcmichael@law.ua.edu` to the Contact page with a functional `mailto:` link. Street address, telephone, personal email, and unverified profile links remain absent from the HTML page.
+- Added only the layout styles needed for the new editorial content while preserving the approved Milestone 1 visual system and responsive architecture.
+- Left the homepage, Publications, Research, Data & Code, Selected Research entries, and featured-research placeholder substantively unchanged.
+
+## Milestone 2A files added or modified
+
+- `assets/files/McMichael_CV.pdf`
+- `cv.qmd`
+- `about.qmd`
+- `teaching.qmd`
+- `contact.qmd`
+- `styles.css`
+- `docs/DEVELOPMENT.md`
+- `docs/HANDOFF.md`
+
+## Milestone 1 files created
 
 - `.gitignore`
 - `_quarto.yml`
@@ -50,6 +71,7 @@ Milestone 1 has passed substantive and visual review. The typography, palette, t
 - The featured-research module is explicitly a design placeholder and now uses an empty inset figure frame rather than chart-like lines or points. It contains no map, coefficients, numerical results, or fabricated research data.
 - The hero display type and vertical rhythm were reduced so the name retains its deliberate two-line composition without dominating the page and Selected Research enters the desktop viewport sooner.
 - Motion is minimal, visible focus treatment is provided, and reduced-motion preferences are respected.
+- The CV PDF has a stable public path at `assets/files/McMichael_CV.pdf`; the PDF, rather than the landing page, remains the authoritative curriculum vitae.
 
 ## Build and verification status
 
@@ -62,39 +84,49 @@ Milestone 1 has passed substantive and visual review. The typography, palette, t
 - The mobile navigation opens and closes successfully.
 - No horizontal overflow was detected at the checked widths.
 - Generated `_site/` and `.quarto/` content is excluded from version control.
+- The CV PDF is present in `_site/assets/files/`, matches the supplied source file, and resolves from the rendered CV page.
+- The institutional email is rendered as `mailto:bmcmichael@law.ua.edu`; prohibited contact details are absent from the Contact HTML.
+- CV, About, Teaching, and Contact were checked at approximately 1440 × 900 and 390 × 844 pixels. Their layouts remain readable without horizontal overflow, and the mobile navigation expands to expose all seven destinations.
+- The final production render completed successfully for all eight pages.
 
 ## Content intentionally deferred
 
 Do not invent or add these items without approved source materials:
 
-- final homepage and biography copy;
-- CV PDF;
+- any future homepage copy beyond the approved existing professional identity and research descriptor;
 - full publication metadata;
 - paper, journal, data, code, and replication links;
 - headshot or other imagery;
 - external profile and contact details;
+- public teaching materials and casebook information;
 - real research figures or interactive components;
 - final custom domain.
 
 ## Unresolved issues
 
-- All substantive page content remains intentionally incomplete pending source review.
+- Publications remains intentionally unpopulated pending a separately authorized architecture and verified publication metadata.
+- Research and Data & Code remain intentionally unpopulated because the CV does not establish current project structure, public URLs, datasets, replication repositories, code links, interactive components, or working-project status.
+- No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
 - Deployment architecture and domain settings have not been selected or enabled.
 
+## Future Publications requirement
+
+Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list.
+
+Do not decide or implement that mechanism until a future Publications milestone is explicitly authorized.
+
 ## Next recommended task
 
-### Task: Begin substantive content integration from approved source materials
+### Task: Select and authorize the next content milestone
 
-This task should begin only when separately authorized and after source materials have been supplied or approved.
+The next implementation milestone must be separately authorized.
 
-The next milestone should:
+The next planning step should:
 
-1. Inventory and verify the approved biographical, CV, publication, research-project, teaching, data, code, contact, and profile source materials.
-2. Replace placeholder text page by page without inventing claims, citations, affiliations, or links.
-3. Add the verified CV PDF, publication metadata, and external links only when approved public versions are available.
-4. Preserve the approved Milestone 1 design system and responsive architecture unless a later task explicitly authorizes design changes.
-5. Replace the reserved featured-research field only when approved research material is available; do not redesign the temporary placeholder in the interim.
-6. Re-render and verify the site, then record completed integration and remaining content gaps in this handoff.
+1. Review the unresolved content gaps and select one bounded next milestone.
+2. Supply or approve the source materials required for that milestone.
+3. Explicitly authorize implementation before any substantive content work begins.
+4. Keep Publications, Research, Data & Code, deployment, and domain configuration deferred unless they are separately authorized.
 
-Do not make deployment the next automatic step. Substantive content integration should precede GitHub Pages configuration.
+Do not make deployment the automatic next step.

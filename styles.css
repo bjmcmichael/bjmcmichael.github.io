@@ -526,6 +526,21 @@ a.site-button-secondary:hover {
   margin: 1.75rem 0 0.65rem;
 }
 
+.document-meta {
+  color: var(--muted);
+  margin: 0;
+}
+
+.document-panel .document-action {
+  margin-top: 1.65rem;
+}
+
+.document-note {
+  font-size: 0.92rem;
+  margin-top: 1.25rem;
+  max-width: 36rem;
+}
+
 .document-panel > p:last-child {
   color: var(--muted);
 }
@@ -546,15 +561,116 @@ a.site-button-secondary:hover {
   max-width: 43rem;
 }
 
+.credential-list {
+  border-bottom: 1px solid var(--rule-strong);
+  margin-top: 1.5rem;
+}
+
+.credential-entry {
+  border-top: 1px solid var(--rule);
+  padding: 1.25rem 0 1.35rem;
+}
+
+.credential-entry h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.3rem;
+}
+
+.credential-entry p {
+  color: var(--muted);
+  margin: 0;
+}
+
 .about-aside {
   border-left: 1px solid var(--rule);
   color: var(--ink-soft);
   padding-left: 2rem;
 }
 
+.about-aside h2 {
+  color: var(--crimson);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  margin: 0 0 1.4rem;
+  text-transform: uppercase;
+}
+
+.about-aside > section + section {
+  border-top: 1px solid var(--rule);
+  margin-top: 2.4rem;
+  padding-top: 2rem;
+}
+
+.about-aside h3 {
+  font-size: 1.24rem;
+  margin: 0 0 0.5rem;
+}
+
+.about-aside p {
+  margin: 0;
+}
+
+.aside-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .aside-label {
   color: var(--crimson);
   margin-bottom: 1.4rem;
+}
+
+.ledger-detail h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.9rem;
+}
+
+.ledger-detail > p {
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.course-list {
+  border-bottom: 1px solid var(--rule);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.course-list li {
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 0.72rem 0;
+}
+
+.course-list li span {
+  color: var(--muted);
+  flex: 0 0 auto;
+  font-size: 0.92rem;
+}
+
+.contact-panel h2 {
+  max-width: 34rem;
+}
+
+.contact-label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin: 1.75rem 0 0.25rem;
+  text-transform: uppercase;
+}
+
+a.contact-email {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
 }
 
 @media (max-width: 68rem) {
@@ -666,6 +782,12 @@ a.site-button-secondary:hover {
     border-top: 1px solid var(--rule);
     padding-left: 0;
     padding-top: 2rem;
+  }
+
+  .course-list li {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.15rem;
   }
 }
 
