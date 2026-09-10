@@ -3,6 +3,8 @@ project:
   output-dir: _site
   render:
     - "*.qmd"
+  resources:
+    - "assets/fonts/**"
 
 website:
   title: "Benjamin J. McMichael"
@@ -29,7 +31,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - cosmo
+      - theme.scss
     css: styles.css
     toc: false
     anchor-sections: false

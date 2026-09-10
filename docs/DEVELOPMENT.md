@@ -41,6 +41,11 @@ Current Milestone 1 layout:
 ├── about.qmd
 ├── contact.qmd
 ├── styles.css
+├── theme.scss
+├── assets/
+│   └── fonts/
+│       ├── GUST-FONT-LICENSE.txt
+│       └── texgyreschola-regular.otf
 └── docs/
     ├── DESIGN_SYSTEM.md
     ├── DEVELOPMENT.md
@@ -99,7 +104,11 @@ No additional install command is required for Milestone 1.
 
 ### Fonts and theme
 
-The HTML output uses Quarto's bundled `cosmo` theme as a structural base and applies the project identity through `styles.css`. Display type uses the system stack `Georgia`, `Times New Roman`, and `Times`; body and interface type use `Segoe UI` with platform sans-serif fallbacks. The site downloads no font files and makes no external font requests.
+The HTML output uses Quarto's bundled `cosmo` theme as a structural base and applies the project identity through `styles.css`. The small `theme.scss` override disables Cosmo's default Google Fonts import and keeps Bootstrap's base sans-serif family aligned with the local `Segoe UI`/system stack.
+
+Display headings and selected editorial text use [TeX Gyre Schola](https://ctan.org/pkg/tex-gyre-schola), an open Century Schoolbook-style family, while body and interface type continue to use `Segoe UI` with platform sans-serif fallbacks.
+
+The regular OpenType face is self-hosted at `assets/fonts/texgyreschola-regular.otf`, loaded through a local `@font-face` declaration, and distributed under the GUST Font License included at `assets/fonts/GUST-FONT-LICENSE.txt`. No font installation, package install, CDN, or external font request is required at build time or in the browser. If the local asset cannot load, the CSS falls back to Georgia, `Times New Roman`, Times, and the generic serif family.
 
 The actual deployment configuration must be documented after it is implemented.
 

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "TeX Gyre Schola";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/texgyreschola-regular.otf") format("opentype");
+}
+
 :root {
   --paper: #f7f7f4;
   --surface: #ffffff;
@@ -9,7 +17,7 @@
   --crimson: #8b1538;
   --crimson-dark: #641028;
   --crimson-pale: #f2e7eb;
-  --serif: Georgia, "Times New Roman", Times, serif;
+  --serif: "TeX Gyre Schola", Georgia, "Times New Roman", Times, serif;
   --sans: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --content-wide: 82rem;
   --content-reading: 64rem;
@@ -55,7 +63,6 @@ h1,
 h2,
 h3,
 h4,
-.navbar-brand,
 .quarto-title h1 {
   color: var(--ink);
   font-family: var(--serif);
@@ -99,8 +106,10 @@ p:last-child {
 
 .navbar-brand {
   color: var(--ink) !important;
+  font-family: var(--sans);
   font-size: 1.18rem;
-  letter-spacing: -0.015em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   line-height: 1.1;
   padding: 1rem 0;
 }
@@ -154,7 +163,7 @@ main.content {
 }
 
 .quarto-title h1 {
-  font-size: clamp(2.7rem, 6vw, 5rem);
+  font-size: clamp(2.6rem, 5.2vw, 4.65rem);
   line-height: 1;
   margin: 0;
 }
@@ -190,8 +199,8 @@ main.content {
   display: grid;
   gap: clamp(2.5rem, 6vw, 6.5rem);
   grid-template-columns: minmax(0, 1.08fr) minmax(25rem, 0.92fr);
-  min-height: min(58rem, calc(100vh - 4.75rem));
-  padding: clamp(4rem, 9vh, 7.5rem) 0 clamp(4.5rem, 10vh, 7rem);
+  min-height: min(48rem, calc(80vh - 4rem));
+  padding: clamp(3.25rem, 7vh, 5.75rem) 0 clamp(1.75rem, 3.5vh, 3rem);
 }
 
 .hero-copy {
@@ -216,13 +225,14 @@ main.content {
 
 .eyebrow {
   border-left: 2px solid var(--crimson);
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.55rem;
   padding-left: 0.85rem;
 }
 
-.hero-title {
-  font-size: clamp(3.5rem, 6.1vw, 6.1rem);
-  line-height: 0.93;
+h1.hero-title {
+  font-size: clamp(3.35rem, 5.55vw, 5.45rem);
+  letter-spacing: -0.035em;
+  line-height: 0.98;
   margin: 0;
   max-width: 48rem;
 }
@@ -232,17 +242,17 @@ main.content {
   color: var(--ink-soft);
   font-size: clamp(0.94rem, 1.25vw, 1.08rem);
   line-height: 1.62;
-  margin: 2.2rem 0 0;
+  margin: 1.6rem 0 0;
   max-width: 36rem;
-  padding-top: 1.15rem;
+  padding-top: 1rem;
 }
 
 .hero-dek {
   color: var(--ink);
   font-family: var(--serif);
-  font-size: clamp(1.35rem, 2.35vw, 1.9rem);
-  line-height: 1.45;
-  margin: 2.15rem 0 0;
+  font-size: clamp(1.3rem, 1.9vw, 1.68rem);
+  line-height: 1.5;
+  margin: 1.6rem 0 0;
   max-width: 43rem;
 }
 
@@ -251,7 +261,7 @@ main.content {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 2.35rem;
+  margin-top: 1.75rem;
 }
 
 a.site-button {
@@ -316,88 +326,32 @@ a.site-button-secondary:hover {
 }
 
 .abstract-field {
-  background: var(--paper);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  height: clamp(15rem, 26vw, 21rem);
+  background: #f1f2ee;
+  border: 1px solid var(--rule);
+  height: clamp(14rem, 22vw, 18.5rem);
   margin: 1.25rem 0 1.5rem;
   overflow: hidden;
   position: relative;
 }
 
-.field-cell {
-  border-bottom: 1px solid var(--rule);
-  border-right: 1px solid var(--rule);
-}
-
-.field-cell:nth-child(4n) {
-  border-right: 0;
-}
-
-.field-cell:nth-child(n + 9) {
-  border-bottom: 0;
-}
-
-.signal-line,
-.signal-point {
+.placeholder-frame,
+.placeholder-rule {
   display: block;
   position: absolute;
 }
 
-.signal-line {
-  border-top: 2px solid var(--ink-soft);
-  transform-origin: left center;
+.placeholder-frame {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--rule-strong);
+  inset: 10%;
 }
 
-.signal-line-a {
-  left: 12%;
-  top: 65%;
-  transform: rotate(-18deg);
-  width: 29%;
-}
-
-.signal-line-b {
-  left: 38%;
-  top: 56%;
-  transform: rotate(10deg);
-  width: 25%;
-}
-
-.signal-line-c {
-  left: 60%;
-  top: 61%;
-  transform: rotate(-30deg);
-  width: 29%;
-}
-
-.signal-point {
-  background: var(--surface);
-  border: 3px solid var(--crimson);
-  border-radius: 50%;
-  height: 1rem;
-  transform: translate(-50%, -50%);
-  width: 1rem;
-}
-
-.signal-point-a {
-  left: 12%;
-  top: 65%;
-}
-
-.signal-point-b {
-  left: 39%;
-  top: 56%;
-}
-
-.signal-point-c {
-  left: 62%;
-  top: 61%;
-}
-
-.signal-point-d {
-  left: 86%;
-  top: 46%;
+.placeholder-rule {
+  background: var(--crimson);
+  height: 2px;
+  left: 10%;
+  top: 10%;
+  width: 4rem;
 }
 
 .research-window-footer h2 {
@@ -413,7 +367,7 @@ a.site-button-secondary:hover {
 
 .selected-research {
   border-top: 2px solid var(--ink);
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
 }
 
 .section-heading {
@@ -451,7 +405,7 @@ a.site-button-secondary:hover {
 .research-number,
 .item-index {
   color: var(--crimson);
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1rem;
   margin: 0;
 }
@@ -649,7 +603,7 @@ a.site-button-secondary:hover {
   .hero-grid {
     grid-template-columns: 1fr;
     min-height: 0;
-    padding-top: 4.25rem;
+    padding-top: 3.5rem;
   }
 
   .research-window {
@@ -658,7 +612,7 @@ a.site-button-secondary:hover {
   }
 
   .abstract-field {
-    height: min(55vw, 24rem);
+    height: min(48vw, 20rem);
   }
 }
 
@@ -733,12 +687,12 @@ a.site-button-secondary:hover {
   }
 
   .hero-grid {
-    gap: 3rem;
-    padding: 3.25rem 0 4.25rem;
+    gap: 2.5rem;
+    padding: 2.75rem 0 3.5rem;
   }
 
-  .hero-title {
-    font-size: clamp(3rem, 16vw, 4.25rem);
+  h1.hero-title {
+    font-size: clamp(2.85rem, 14.25vw, 3.55rem);
   }
 
   .hero-actions {
@@ -756,7 +710,7 @@ a.site-button-secondary:hover {
   }
 
   .abstract-field {
-    height: 15rem;
+    height: 13.5rem;
   }
 
   .project-index-item {

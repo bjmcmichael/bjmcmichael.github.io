@@ -30,25 +30,8 @@ page-layout: full
 :::
 
 ::: {.abstract-field role="img" aria-label="Abstract placeholder for a future research figure; no data or findings are represented."}
-<span class="field-cell field-cell-01" aria-hidden="true"></span>
-<span class="field-cell field-cell-02" aria-hidden="true"></span>
-<span class="field-cell field-cell-03" aria-hidden="true"></span>
-<span class="field-cell field-cell-04" aria-hidden="true"></span>
-<span class="field-cell field-cell-05" aria-hidden="true"></span>
-<span class="field-cell field-cell-06" aria-hidden="true"></span>
-<span class="field-cell field-cell-07" aria-hidden="true"></span>
-<span class="field-cell field-cell-08" aria-hidden="true"></span>
-<span class="field-cell field-cell-09" aria-hidden="true"></span>
-<span class="field-cell field-cell-10" aria-hidden="true"></span>
-<span class="field-cell field-cell-11" aria-hidden="true"></span>
-<span class="field-cell field-cell-12" aria-hidden="true"></span>
-<span class="signal-line signal-line-a" aria-hidden="true"></span>
-<span class="signal-line signal-line-b" aria-hidden="true"></span>
-<span class="signal-line signal-line-c" aria-hidden="true"></span>
-<span class="signal-point signal-point-a" aria-hidden="true"></span>
-<span class="signal-point signal-point-b" aria-hidden="true"></span>
-<span class="signal-point signal-point-c" aria-hidden="true"></span>
-<span class="signal-point signal-point-d" aria-hidden="true"></span>
+<span class="placeholder-frame" aria-hidden="true"></span>
+<span class="placeholder-rule" aria-hidden="true"></span>
 :::
 
 ::: {.research-window-footer}
