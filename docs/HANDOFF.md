@@ -2,13 +2,15 @@
 
 ## Current status
 
-**Stage: Milestone 1 — initial Quarto site skeleton and homepage refinement complete**
+**Stage: Milestone 1 — approved and complete**
 
 The minimal multi-page website has been implemented on the feature branch:
 
 `build/initial-quarto-skeleton`
 
 The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
+
+Milestone 1 has passed substantive and visual review. The typography, palette, two-column hero, professional-information treatment, Selected Research treatment, and responsive architecture are the approved foundation for later milestones.
 
 ## Milestone 1 work completed
 
@@ -77,22 +79,22 @@ Do not invent or add these items without approved source materials:
 ## Unresolved issues
 
 - All substantive page content remains intentionally incomplete pending source review.
-- The abstract homepage research field must eventually be replaced or removed when an approved figure is available.
+- The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
 - Deployment architecture and domain settings have not been selected or enabled.
 
 ## Next recommended task
 
-### Task: Review the refined homepage and identify approved source materials
+### Task: Begin substantive content integration from approved source materials
 
-This task should begin only when explicitly authorized.
+This task should begin only when separately authorized and after source materials have been supplied or approved.
 
-The next review should:
+The next milestone should:
 
-1. Approve or request narrowly scoped changes to the refined homepage hierarchy, typography, spacing, and reserved research field.
-2. Confirm whether the current professional identity and research descriptor should remain as written.
-3. Approve, revise, or remove the reserved featured-research field before a real figure is supplied.
-4. Confirm the navigation order and the presentation of the three Selected Research entries.
-5. Identify the first approved source materials for the following content milestone.
-6. Record accepted refinements in the governing documents and this handoff.
+1. Inventory and verify the approved biographical, CV, publication, research-project, teaching, data, code, contact, and profile source materials.
+2. Replace placeholder text page by page without inventing claims, citations, affiliations, or links.
+3. Add the verified CV PDF, publication metadata, and external links only when approved public versions are available.
+4. Preserve the approved Milestone 1 design system and responsive architecture unless a later task explicitly authorizes design changes.
+5. Replace the reserved featured-research field only when approved research material is available; do not redesign the temporary placeholder in the interim.
+6. Re-render and verify the site, then record completed integration and remaining content gaps in this handoff.
 
-Do not make deployment the next automatic step. Substantive review and refinement should precede GitHub Pages configuration.
+Do not make deployment the next automatic step. Substantive content integration should precede GitHub Pages configuration.
