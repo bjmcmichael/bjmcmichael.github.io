@@ -232,6 +232,34 @@ A research project may contain fields such as:
 
 The implementation may use Quarto listings, YAML, BibTeX, CSL JSON, or another maintainable structured source. Do not choose a complex data model prematurely.
 
+### 6.1 Approved research-program taxonomy
+
+The public Research architecture uses these five programs, in this order:
+
+1. **Professional Licensing & Scope of Practice**
+2. **Organ Allocation & Transplant Policy**
+3. **Tort Law & Medical Liability**
+4. **Opioids, Drug Policy & Harm Reduction**
+5. **Reproductive Health & Family Formation**
+
+Physician Payment, AMA RUC, Medicare payment, and related payment research are intentionally excluded from the public program taxonomy until that research line is sufficiently developed and separately approved.
+
+### 6.2 Future Publications and research-topic architecture
+
+Publications will preserve visible disciplinary groupings. Research topics will exist as a separate metadata dimension, and a publication may belong to multiple research topics. Future topic filters will allow visitors to find related scholarship across disciplines without replacing the disciplinary organization of the Publications page.
+
+Public-facing filter labels may be shorter than the full Research-program names. The tentative mapping is:
+
+| Research program | Future public filter label |
+|---|---|
+| Professional Licensing & Scope of Practice | Licensing & Scope of Practice |
+| Organ Allocation & Transplant Policy | Organ Allocation |
+| Tort Law & Medical Liability | Torts & Liability |
+| Opioids, Drug Policy & Harm Reduction | Drug Policy |
+| Reproductive Health & Family Formation | Reproductive Health |
+
+This is approved future architecture, not an implemented feature. Publication metadata, publication-to-topic assignments, filters, color coding, JavaScript filtering, and discipline/topic tags remain deferred.
+
 ## 7. Interactive research philosophy
 
 Interactivity should be added when it improves understanding of the scholarship.

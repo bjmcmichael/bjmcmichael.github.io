@@ -2,13 +2,15 @@
 
 ## Current status
 
-**Stage: Milestone 2A — approved, complete, and merged**
+**Stage: Milestone 2B — Research-program architecture implemented on a feature branch and ready for review**
 
-Milestone 2A has passed review and is incorporated into `main`. Its feature branch is retained for now:
+Milestone 2B has been implemented on the feature branch:
 
-`content/cv-about-teaching-contact`
+`content/research-programs`
 
 The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
+
+Milestone 2A has passed review and is incorporated into `main`. Its feature branch remains retained.
 
 Milestone 1 remains approved. Its typography, palette, two-column hero, professional-information treatment, Selected Research treatment, and responsive architecture remain the foundation for later milestones.
 
@@ -44,6 +46,40 @@ Milestone 1 remains approved. Its typography, palette, two-column hero, professi
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
+## Milestone 2B work completed
+
+- Replaced the Research-page placeholder projects with a restrained vertical editorial index of five approved research programs.
+- Added a numbered entry, approved description, and working Explore link for each program while preserving the existing typography, palette, whitespace, and focus treatment.
+- Completed a page-specific wide-layout refinement so the Research introduction and program rows use the broad desktop canvas more effectively while retaining the established stacked mobile layout.
+- Removed the “Empirical legal scholarship” eyebrow from the homepage hero and allowed the vacated space to collapse naturally without rebalancing the approved composition.
+- Created five nested Research-program landing pages with program identification, an Overview, an intentionally unpopulated Selected Scholarship section, a structural Data, Code & Interactive Research section, and return navigation to the main Research page.
+- Expanded Quarto's explicit render list to include nested `research/**/*.qmd` pages while continuing to exclude governing Markdown documents from the public build.
+- Recorded the approved future relationship between disciplinary publication groupings and many-to-many research topics without creating publication metadata, topic assignments, filters, or tags.
+- Kept the homepage and Publications page substantively unchanged.
+- Intentionally excluded Physician Payment, AMA RUC, Medicare payment, and related payment research from the public Research-program architecture.
+
+The five approved programs, in order, are:
+
+1. Professional Licensing & Scope of Practice
+2. Organ Allocation & Transplant Policy
+3. Tort Law & Medical Liability
+4. Opioids, Drug Policy & Harm Reduction
+5. Reproductive Health & Family Formation
+
+## Milestone 2B files added or modified
+
+- `_quarto.yml`
+- `research.qmd`
+- `research/licensing/index.qmd`
+- `research/organ-allocation/index.qmd`
+- `research/torts-liability/index.qmd`
+- `research/drug-policy/index.qmd`
+- `research/reproductive-health/index.qmd`
+- `styles.css`
+- `WEBSITE_SPEC.md`
+- `docs/DEVELOPMENT.md`
+- `docs/HANDOFF.md`
+
 ## Milestone 1 files created
 
 - `.gitignore`
@@ -72,11 +108,12 @@ Milestone 1 remains approved. Its typography, palette, two-column hero, professi
 - The hero display type and vertical rhythm were reduced so the name retains its deliberate two-line composition without dominating the page and Selected Research enters the desktop viewport sooner.
 - Motion is minimal, visible focus treatment is provided, and reduced-motion preferences are respected.
 - The CV PDF has a stable public path at `assets/files/McMichael_CV.pdf`; the PDF, rather than the landing page, remains the authoritative curriculum vitae.
+- The Research page uses a journal-like vertical program index rather than cards, and each program has a durable directory-based landing page under `research/`.
 
 ## Build and verification status
 
 - Tested with Quarto 1.10.18.
-- `quarto render` succeeds for all eight pages and writes output to `_site/`.
+- `quarto render` succeeds for all thirteen pages—eight top-level pages and five nested Research-program pages—and writes output to `_site/`.
 - All top-level pages load with the expected page title, one primary heading, and seven navigation destinations.
 - Internal navigation and homepage action links resolve successfully.
 - Browser layout was checked at approximately 1440, 1024, 768, and 390 pixels wide.
@@ -87,7 +124,9 @@ Milestone 1 remains approved. Its typography, palette, two-column hero, professi
 - The CV PDF is present in `_site/assets/files/`, matches the supplied source file, and resolves from the rendered CV page.
 - The institutional email is rendered as `mailto:bmcmichael@law.ua.edu`; prohibited contact details are absent from the Contact HTML.
 - CV, About, Teaching, and Contact were checked at approximately 1440 × 900 and 390 × 844 pixels. Their layouts remain readable without horizontal overflow, and the mobile navigation expands to expose all seven destinations.
-- The final production render completed successfully for all eight pages.
+- The final production render completed successfully for all thirteen pages.
+- All five Research-page Explore links and all five return-to-Research links resolve to rendered pages.
+- The Research page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels after its wide-layout refinement; a representative program page was checked at desktop and mobile widths. The editorial index and program-page structures remain readable without horizontal overflow.
 
 ## Content intentionally deferred
 
@@ -99,34 +138,37 @@ Do not invent or add these items without approved source materials:
 - headshot or other imagery;
 - external profile and contact details;
 - public teaching materials and casebook information;
+- individual publication-to-topic assignments, publication filters, and topic metadata;
 - real research figures or interactive components;
 - final custom domain.
 
 ## Unresolved issues
 
 - Publications remains intentionally unpopulated pending a separately authorized architecture and verified publication metadata.
-- Research and Data & Code remain intentionally unpopulated because the CV does not establish current project structure, public URLs, datasets, replication repositories, code links, interactive components, or working-project status.
+- The five Research-program pages intentionally contain no individual publications, findings, datasets, replication repositories, code links, figures, or interactive tools pending approved materials and later architecture work.
+- Data & Code remains intentionally unpopulated because no approved public datasets, replication repositories, code links, or interactive components have been supplied.
 - No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
+- Physician Payment, AMA RUC, Medicare payment, and related payment research remain intentionally excluded from the public Research architecture for now.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
 - Deployment architecture and domain settings have not been selected or enabled.
 
 ## Future Publications requirement
 
-Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list.
+Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list. A publication may ultimately belong to multiple topics, with concise public filter labels mapped to the five approved Research programs as documented in `WEBSITE_SPEC.md`.
 
-Do not decide or implement that mechanism until a future Publications milestone is explicitly authorized.
+Do not create publication metadata, assign papers to topics, or implement that mechanism until a future Publications milestone is explicitly authorized.
 
 ## Next recommended task
 
-### Task: Select and authorize the next content milestone
+### Task: Review the Research page and program-page architecture
 
-The next implementation milestone must be separately authorized.
+This review should begin only when separately authorized.
 
-The next planning step should:
+The next review should:
 
-1. Review the unresolved content gaps and select one bounded next milestone.
-2. Supply or approve the source materials required for that milestone.
-3. Explicitly authorize implementation before any substantive content work begins.
-4. Keep Publications, Research, Data & Code, deployment, and domain configuration deferred unless they are separately authorized.
+1. Review the main Research page's five-program order, descriptions, editorial index, and responsive behavior.
+2. Review the shared architecture and temporary language on the five nested program pages.
+3. Confirm that the program taxonomy is approved for merge without assigning individual publications or adding research materials.
+4. Keep Publications work, publication-to-topic assignments, payment research, deployment, and domain configuration deferred.
 
-Do not make deployment the automatic next step.
+Do not merge, begin Publications work, or deploy automatically after review; each action requires separate authorization.

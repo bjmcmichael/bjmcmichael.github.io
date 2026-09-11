@@ -1,0 +1,29 @@
+---
+pagetitle: "Tort Law & Medical Liability"
+description: "Research on medical malpractice, tort law, liability rules, and health care."
+---
+
+<article class="research-program-page">
+<p class="program-return-wrap"><a class="program-return" href="../../research.html"><span aria-hidden="true">←</span> All research programs</a></p>
+
+<header class="research-program-header">
+<p class="program-eyebrow">Research Program</p>
+<h1>Tort Law &amp; Medical Liability</h1>
+<section class="program-overview" aria-labelledby="torts-liability-overview">
+<h2 id="torts-liability-overview">Overview</h2>
+<p>I study medical malpractice and tort law, including apology laws, punitive damages, liability rules, medical devices, and malpractice safe harbors. This work examines how liability rules affect behavior, risk, compensation, patient safety, and health care.</p>
+</section>
+</header>
+
+<div class="research-program-sections">
+<section class="research-program-section" aria-labelledby="torts-liability-scholarship">
+<h2 id="torts-liability-scholarship">Selected Scholarship</h2>
+<p>Selected scholarship in this area will be added after the publication architecture is finalized.</p>
+</section>
+
+<section class="research-program-section" aria-labelledby="torts-liability-resources">
+<h2 id="torts-liability-resources">Data, Code &amp; Interactive Research</h2>
+<p>Approved public datasets, replication materials, figures, and interactive research may be collected here where available.</p>
+</section>
+</div>
+</article>

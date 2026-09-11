@@ -1,0 +1,29 @@
+---
+pagetitle: "Professional Licensing & Scope of Practice"
+description: "Research on how occupational licensing and scope-of-practice laws shape health care work, access, and outcomes."
+---
+
+<article class="research-program-page">
+<p class="program-return-wrap"><a class="program-return" href="../../research.html"><span aria-hidden="true">←</span> All research programs</a></p>
+
+<header class="research-program-header">
+<p class="program-eyebrow">Research Program</p>
+<h1>Professional Licensing &amp; Scope of Practice</h1>
+<section class="program-overview" aria-labelledby="licensing-overview">
+<h2 id="licensing-overview">Overview</h2>
+<p>I study how occupational licensing and scope-of-practice laws shape the health care workforce, clinical practice, access to care, and patient outcomes. This work includes research on nurse practitioners and physician assistants and examines the legal, economic, and health consequences of professional boundaries.</p>
+</section>
+</header>
+
+<div class="research-program-sections">
+<section class="research-program-section" aria-labelledby="licensing-scholarship">
+<h2 id="licensing-scholarship">Selected Scholarship</h2>
+<p>Selected scholarship in this area will be added after the publication architecture is finalized.</p>
+</section>
+
+<section class="research-program-section" aria-labelledby="licensing-resources">
+<h2 id="licensing-resources">Data, Code &amp; Interactive Research</h2>
+<p>Approved public datasets, replication materials, figures, and interactive research may be collected here where available.</p>
+</section>
+</div>
+</article>
