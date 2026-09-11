@@ -1,0 +1,1333 @@
+schema_version: 1
+inventory_id: mcmichael-publications-cv-2026-09
+inventory_status: cv_checked_not_externally_verified
+source:
+  path: assets/files/McMichael_CV.pdf
+  cv_date: "September 2026"
+  heading: "Selected Publications"
+  relevant_pdf_pages: [1, 2, 3, 4]
+  note: >-
+    Entries are transcribed from the repository CV. Line wrapping, small-caps
+    typography, and discretionary line-break hyphenation are normalized; titles,
+    citation content, and parenthetical coauthor statements are retained.
+
+scope:
+  included_cv_sections:
+    - Law Reviews
+    - Peer-Reviewed Economic and Law Journals
+    - Peer-Reviewed Medical and Health Policy Journals
+    - Book Chapters
+    - Short Academic Works
+  absent_cv_sections:
+    - Working Papers
+    - Books / Book Projects
+  excluded_cv_sections:
+    - Primary Academic Appointment
+    - Education
+    - Clerkship
+    - Other Academic Appointments
+    - Teaching
+    - Reviewer Service
+  caution: >-
+    The CV heading is Selected Publications, so this inventory must not be treated
+    as an exhaustive bibliography or as authorization to publish or distribute any
+    manuscript.
+
+interpretation_rules:
+  authorship: >-
+    Benjamin J. McMichael is the CV owner. Each cv_coauthor_note reproduces only
+    the parenthetical supplied by the CV. It is not converted into a full ordered
+    author list, and "et al." is not expanded.
+  status: >-
+    Forthcoming is recorded only when the CV says forthcoming. Published is an
+    assessment based on a completed dated citation within Selected Publications;
+    it remains unverified outside the CV.
+  topics: >-
+    No Research-program or topic assignments are made in this planning inventory.
+  identifiers_and_urls: >-
+    The CV supplies no DOI, repository identifier, or publication URL for these
+    entries. Empty lists are retained on every record.
+
+count_reconciliation:
+  total_records: 49
+  by_cv_section:
+    - cv_section: Law Reviews
+      pdf_pages: [1, 2]
+      count: 17
+    - cv_section: Peer-Reviewed Economic and Law Journals
+      pdf_pages: [2]
+      count: 11
+    - cv_section: Peer-Reviewed Medical and Health Policy Journals
+      pdf_pages: [2, 3]
+      count: 12
+    - cv_section: Book Chapters
+      pdf_pages: [3]
+      count: 2
+    - cv_section: Short Academic Works
+      pdf_pages: [3, 4]
+      count: 7
+  by_pdf_page:
+    - pdf_page: 1
+      count: 11
+    - pdf_page: 2
+      count: 19
+    - pdf_page: 3
+      count: 16
+    - pdf_page: 4
+      count: 3
+  by_status:
+    - status: forthcoming
+      count: 4
+      support: explicit_cv_wording
+    - status: published
+      count: 45
+      support: assessed_from_completed_dated_cv_citation
+  duplicate_handling:
+    collapsed_records: 0
+    note: >-
+      No records are collapsed. One possible related or revised-version pair is
+      flagged below for later verification.
+
+possible_version_pairs:
+  - record_ids:
+      - lr-constitutional-accounting-false-claims-act
+      - lr-constitutional-false-claims-act
+    assessment: possible_related_or_revised_version
+    reason: >-
+      The titles overlap, the coauthor parentheticals match, and the entries appear
+      in different law reviews. The CV does not say that one supersedes the other.
+    action: retain_both_pending_external_verification
+
+payment_research_boundary_review:
+  public_inclusion_decision: not_made
+  flagged_record_ids:
+    - mh-state-legislation-industry-compensation-orthopaedic-residents
+    - mh-open-payments-orthopedic-residents
+    - sw-macra-incident-to-billing
+  note: >-
+    These entries mention CMS Open Payments, industry compensation, MACRA, or
+    billing. They are retained in the CV inventory but flagged for judgment under
+    the standing exclusion of Physician Payment, AMA RUC, Medicare-payment, and
+    related payment research from the public Research architecture.
+
+records:
+  - id: lr-constitutional-accounting-false-claims-act
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      A Constitutional Accounting of the False Claims Act, 79 Vanderbilt Law Review
+      (forthcoming 2026) (with Mackenzi N. Barrett & W. Kip Viscusi).
+    title: "A Constitutional Accounting of the False Claims Act"
+    cv_coauthor_note: "with Mackenzi N. Barrett & W. Kip Viscusi"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: forthcoming
+    status_support: explicit_cv_wording
+    venue: "Vanderbilt Law Review"
+    year: 2026
+    volume: "79"
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Final publication details are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+      - Possible relationship to lr-constitutional-false-claims-act requires verification.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-future-frozen-embryos
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      The Future of Frozen Embryos, 78 SMU Law Review 789–826 (2025) (with Clare Ryan).
+    title: "The Future of Frozen Embryos"
+    cv_coauthor_note: "with Clare Ryan"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "SMU Law Review"
+    year: 2025
+    volume: "78"
+    issue: null
+    pages_or_article_number: "789–826"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-constitutional-false-claims-act
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      A Constitutional False Claims Act, 102 Washington University Law Review
+      677–750 (2025) (with Mackenzi N. Barrett & W. Kip Viscusi).
+    title: "A Constitutional False Claims Act"
+    cv_coauthor_note: "with Mackenzi N. Barrett & W. Kip Viscusi"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Washington University Law Review"
+    year: 2025
+    volume: "102"
+    issue: null
+    pages_or_article_number: "677–750"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+      - Possible relationship to lr-constitutional-accounting-false-claims-act requires verification.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-inequitable-organ-allocation
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: "Inequitable Organ Allocation, 58 UC Davis Law Review 1–110 (2024)."
+    title: "Inequitable Organ Allocation"
+    cv_coauthor_note: null
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "UC Davis Law Review"
+    year: 2024
+    volume: "58"
+    issue: null
+    pages_or_article_number: "1–110"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-reproductive-objectification
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      Reproductive Objectification, 108 Minnesota Law Review (2024) 2493–2560
+      (with Meghan Boone).
+    title: "Reproductive Objectification"
+    cv_coauthor_note: "with Meghan Boone"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Minnesota Law Review"
+    year: 2024
+    volume: "108"
+    issue: null
+    pages_or_article_number: "2493–2560"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-predictability-chaos-punitive-damages
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      Bringing Predictability to the Chaos of Punitive Damages, 54 Arizona State Law
+      Journal 471–525 (2022) (with W. Kip Viscusi).
+    title: "Bringing Predictability to the Chaos of Punitive Damages"
+    cv_coauthor_note: "with W. Kip Viscusi"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Arizona State Law Journal"
+    year: 2022
+    volume: "54"
+    issue: null
+    pages_or_article_number: "471–525"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-stealing-organs
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: "Stealing Organs?, 97 Indiana Law Journal 135–201 (2022)."
+    title: "Stealing Organs?"
+    cv_coauthor_note: null
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Indiana Law Journal"
+    year: 2022
+    volume: "97"
+    issue: null
+    pages_or_article_number: "135–201"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-socially-distant-healthcare
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      Socially Distant Healthcare, 96 Tulane Law Review 423–468 (2022) (with Allyson
+      Gold and Alicia Gilbert).
+    title: "Socially Distant Healthcare"
+    cv_coauthor_note: "with Allyson Gold and Alicia Gilbert"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Tulane Law Review"
+    year: 2022
+    volume: "96"
+    issue: null
+    pages_or_article_number: "423–468"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-access-to-care-epidemic
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: "The Access-to-Care Epidemic, 56 Wake Forest Law Review 547–607 (2021)."
+    title: "The Access-to-Care Epidemic"
+    cv_coauthor_note: null
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Wake Forest Law Review"
+    year: 2021
+    volume: "56"
+    issue: null
+    pages_or_article_number: "547–607"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-state-created-fetal-harm
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      State-Created Fetal Harm, 109 Georgetown Law Journal 475–522 (2021) (with
+      Meghan Boone).
+    title: "State-Created Fetal Harm"
+    cv_coauthor_note: "with Meghan Boone"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Georgetown Law Journal"
+    year: 2021
+    volume: "109"
+    issue: null
+    pages_or_article_number: "475–522"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-insuring-apologies
+    cv_section: Law Reviews
+    pdf_page: 1
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: "Insuring Apologies, 48 Florida State University Law Review 651–718 (2021)."
+    title: "Insuring Apologies"
+    cv_coauthor_note: null
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Florida State University Law Review"
+    year: 2021
+    volume: "48"
+    issue: null
+    pages_or_article_number: "651–718"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-contaminated-relationships-opioid-crisis
+    cv_section: Law Reviews
+    pdf_page: 2
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      Contaminated Relationships in the Opioid Crisis, 72 Hastings Law Journal
+      827–870 (2021) (with Elissa Philip Gentry).
+    title: "Contaminated Relationships in the Opioid Crisis"
+    cv_coauthor_note: "with Elissa Philip Gentry"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Hastings Law Journal"
+    year: 2021
+    volume: "72"
+    issue: null
+    pages_or_article_number: "827–870"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-occupational-licensing-opioid-crisis
+    cv_section: Law Reviews
+    pdf_page: 2
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: "Occupational Licensing and the Opioid Crisis, 54 UC Davis Law Review 887–966 (2020)."
+    title: "Occupational Licensing and the Opioid Crisis"
+    cv_coauthor_note: null
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "UC Davis Law Review"
+    year: 2020
+    volume: "54"
+    issue: null
+    pages_or_article_number: "887–966"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-healthcare-licensing-liability
+    cv_section: Law Reviews
+    pdf_page: 2
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: "Healthcare Licensing and Liability, 95 Indiana Law Journal 821–881 (2020)."
+    title: "Healthcare Licensing and Liability"
+    cv_coauthor_note: null
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Indiana Law Journal"
+    year: 2020
+    volume: "95"
+    issue: null
+    pages_or_article_number: "821–881"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-sorry-never-enough
+    cv_section: Law Reviews
+    pdf_page: 2
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      Sorry is Never Enough: How State Apology Laws Fail to Reduce Medical
+      Malpractice Liability Risk, 71 Stanford Law Review 341–409 (2019) (with
+      R. Lawrence Van Horn and W. Kip Viscusi).
+    title: "Sorry is Never Enough: How State Apology Laws Fail to Reduce Medical Malpractice Liability Risk"
+    cv_coauthor_note: "with R. Lawrence Van Horn and W. Kip Viscusi"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Stanford Law Review"
+    year: 2019
+    volume: "71"
+    issue: null
+    pages_or_article_number: "341–409"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-taming-blockbuster-punitive-damages
+    cv_section: Law Reviews
+    pdf_page: 2
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      Taming Blockbuster Punitive Damages Awards, 2019 University of Illinois Law
+      Review 171–221 (with W. Kip Viscusi).
+    title: "Taming Blockbuster Punitive Damages Awards"
+    cv_coauthor_note: "with W. Kip Viscusi"
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "University of Illinois Law Review"
+    year: 2019
+    volume: "2019"
+    issue: null
+    pages_or_article_number: "171–221"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: lr-failure-of-sorry
+    cv_section: Law Reviews
+    pdf_page: 2
+    source_location: "Selected Publications > Law Reviews"
+    cv_entry: >-
+      The Failure of “Sorry”: An Empirical Evaluation of Apology Laws, Health Care,
+      and Medical Malpractice, 22 Lewis & Clark Law Review 1199–1281 (2019).
+    title: "The Failure of “Sorry”: An Empirical Evaluation of Apology Laws, Health Care, and Medical Malpractice"
+    cv_coauthor_note: null
+    publication_type: law_review_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Lewis & Clark Law Review"
+    year: 2019
+    volume: "22"
+    issue: null
+    pages_or_article_number: "1199–1281"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-sharing-is-caring-organ-allocation
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      Sharing is Caring: Eliminating Geographic Boundaries in Organ Allocation,
+      13 American Journal of Health Economics (forthcoming 2026).
+    title: "Sharing is Caring: Eliminating Geographic Boundaries in Organ Allocation"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: forthcoming
+    status_support: explicit_cv_wording
+    venue: "American Journal of Health Economics"
+    year: 2026
+    volume: "13"
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Final publication details are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-np-scope-preventable-hospitalizations
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable
+      Hospitalizations, 103 Journal of Health Economics 1–21 (2025).
+    title: "The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable Hospitalizations"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Health Economics"
+    year: 2025
+    volume: "103"
+    issue: null
+    pages_or_article_number: "1–21"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, article number, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-scope-practice-patterns-nps-pas
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      Scope-of-Practice Laws and the Practice Patterns of Nurse Practitioners and
+      Physician Assistants, 43 Contemporary Economic Policy 9–30 (2025).
+    title: "Scope-of-Practice Laws and the Practice Patterns of Nurse Practitioners and Physician Assistants"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Contemporary Economic Policy"
+    year: 2025
+    volume: "43"
+    issue: null
+    pages_or_article_number: "9–30"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-supply-side-health-policy-mortality
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      Supply-Side Health Policy: The Impact of Scope-of-Practice Laws on Mortality,
+      222 Journal of Public Economics 1–20 (2023).
+    title: "Supply-Side Health Policy: The Impact of Scope-of-Practice Laws on Mortality"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Public Economics"
+    year: 2023
+    volume: "222"
+    issue: null
+    pages_or_article_number: "1–20"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, article number, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-liability-immunization-medical-devices
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      Responses to Liability Immunization: Evidence from Medical Devices, 17 Journal
+      of Empirical Legal Studies 789-819 (2020) (with Elissa Philip Gentry).
+    title: "Responses to Liability Immunization: Evidence from Medical Devices"
+    cv_coauthor_note: "with Elissa Philip Gentry"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Empirical Legal Studies"
+    year: 2020
+    volume: "17"
+    issue: null
+    pages_or_article_number: "789-819"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-cannabis-access-opioid-prescribing
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      The Impact of Cannabis Access Laws on Opioid Prescribing, 69 Journal of Health
+      Economics 1–18 (2020) (with R. Lawrence Van Horn and W. Kip Viscusi).
+    title: "The Impact of Cannabis Access Laws on Opioid Prescribing"
+    cv_coauthor_note: "with R. Lawrence Van Horn and W. Kip Viscusi"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Health Economics"
+    year: 2020
+    volume: "69"
+    issue: null
+    pages_or_article_number: "1–18"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, article number, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-shifting-liability-licensing
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      Shifting Liability with Licensing: An Empirical Analysis of Medical Malpractice
+      and Scope-of-Practice Laws, 12 Journal of Tort Law 213–253 (2019).
+    title: "Shifting Liability with Licensing: An Empirical Analysis of Medical Malpractice and Scope-of-Practice Laws"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Tort Law"
+    year: 2019
+    volume: "12"
+    issue: null
+    pages_or_article_number: "213–253"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-beyond-physicians
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      Beyond Physicians: The Effect of Licensing and Liability Laws on Nurse
+      Practitioners and Physician Assistants, 15 Journal of Empirical Legal Studies
+      732–771 (2018).
+    title: "Beyond Physicians: The Effect of Licensing and Liability Laws on Nurse Practitioners and Physician Assistants"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Empirical Legal Studies"
+    year: 2018
+    volume: "15"
+    issue: null
+    pages_or_article_number: "732–771"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-demand-healthcare-regulation
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      The Demand for Healthcare Regulation: The Effect of Political Spending on
+      Occupational Licensing Laws, 84 Southern Economic Journal 297–316 (2017).
+    title: "The Demand for Healthcare Regulation: The Effect of Political Spending on Occupational Licensing Laws"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Southern Economic Journal"
+    year: 2017
+    volume: "84"
+    issue: null
+    pages_or_article_number: "297–316"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-punitive-damages-calculus
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      The Punitive Damages Calculus: The Differential Incidence of State Punitive
+      Damages Reforms, 84 Southern Economic Journal 82–97 (2017) (with W. Kip Viscusi).
+    title: "The Punitive Damages Calculus: The Differential Incidence of State Punitive Damages Reforms"
+    cv_coauthor_note: "with W. Kip Viscusi"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Southern Economic Journal"
+    year: 2017
+    volume: "84"
+    issue: null
+    pages_or_article_number: "82–97"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: el-fat-tailed-blockbuster-punitive-damages
+    cv_section: Peer-Reviewed Economic and Law Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Economic and Law Journals"
+    cv_entry: >-
+      Shifting the Fat-Tailed Distribution of Blockbuster Punitive Damages Awards,
+      11 Journal of Empirical Legal Studies 350–377 (2014) (with W. Kip Viscusi).
+    title: "Shifting the Fat-Tailed Distribution of Blockbuster Punitive Damages Awards"
+    cv_coauthor_note: "with W. Kip Viscusi"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Empirical Legal Studies"
+    year: 2014
+    volume: "11"
+    issue: null
+    pages_or_article_number: "350–377"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-ambulatory-sensitive-conditions-scope-laws
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      The relationship between ambulatory sensitive conditions and nurse practitioner
+      scope-of-practice laws, 17 Journal of Nursing Regulation (forthcoming 2026).
+    title: "The relationship between ambulatory sensitive conditions and nurse practitioner scope-of-practice laws"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: forthcoming
+    status_support: explicit_cv_wording
+    venue: "Journal of Nursing Regulation"
+    year: 2026
+    volume: "17"
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Final publication details are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-np-scope-preventable-pediatric-hospitalizations
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 2
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Nurse Practitioner Scope-of-Practice Laws and Preventable Pediatric
+      Hospitalizations, 83 Medical Care Research and Review (forthcoming 2026).
+    title: "Nurse Practitioner Scope-of-Practice Laws and Preventable Pediatric Hospitalizations"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: forthcoming
+    status_support: explicit_cv_wording
+    venue: "Medical Care Research and Review"
+    year: 2026
+    volume: "83"
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Final publication details are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-fentanyl-test-strips-mortality
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Impact of Fentanyl Test Strips as Harm Reduction for Drug-Related Mortality,
+      82 Medical Care Research and Review 240–251 (2025) (with David Mitchell and
+      Moiz Bhai).
+    title: "Impact of Fentanyl Test Strips as Harm Reduction for Drug-Related Mortality"
+    cv_coauthor_note: "with David Mitchell and Moiz Bhai"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Medical Care Research and Review"
+    year: 2025
+    volume: "82"
+    issue: null
+    pages_or_article_number: "240–251"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-maximizing-nursing-workforce
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Maximizing the Potential Value of the Nursing Workforce, 71 Nursing Outlook
+      1–6 (2024) (with Sharon Pappas et al.).
+    title: "Maximizing the Potential Value of the Nursing Workforce"
+    cv_coauthor_note: "with Sharon Pappas et al."
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Nursing Outlook"
+    year: 2024
+    volume: "71"
+    issue: null
+    pages_or_article_number: "1–6"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, article number, and canonical URL are not supplied.
+      - The CV abbreviates the coauthor list with “et al.”; full names and author order are unavailable.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-uniform-classification-np-scope-laws
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Toward a Uniform Classification of Nurse Practitioner Scope of Practice Laws,
+      80 Medical Care Research and Review 444–454 (2023) (with Sara Markowitz)
+      [Chosen by editorial board as 2023 Article of the Year].
+    title: "Toward a Uniform Classification of Nurse Practitioner Scope of Practice Laws"
+    cv_coauthor_note: "with Sara Markowitz"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Medical Care Research and Review"
+    year: 2023
+    volume: "80"
+    issue: null
+    pages_or_article_number: "444–454"
+    identifiers: []
+    urls: []
+    additional_cv_note: "Chosen by editorial board as 2023 Article of the Year."
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-antidepressants-discontinued-pregnancy
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Antidepressants Are the Most Commonly Discontinued Psychotherapeutic
+      Medications in Pregnancy, 32 Women’s Health Issues 241–250 (2022) (with
+      Hayley D. Germack et al.).
+    title: "Antidepressants Are the Most Commonly Discontinued Psychotherapeutic Medications in Pregnancy"
+    cv_coauthor_note: "with Hayley D. Germack et al."
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Women’s Health Issues"
+    year: 2022
+    volume: "32"
+    issue: null
+    pages_or_article_number: "241–250"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - The CV abbreviates the coauthor list with “et al.”; full names and author order are unavailable.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-np-scope-opioid-prescribing
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Nurse Practitioner Scope-of-Practice Laws and Opioid Prescribing, 99 Milbank
+      Quarterly 721–745 (2021).
+    title: "Nurse Practitioner Scope-of-Practice Laws and Opioid Prescribing"
+    cv_coauthor_note: null
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Milbank Quarterly"
+    year: 2021
+    volume: "99"
+    issue: null
+    pages_or_article_number: "721–745"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-state-legislation-industry-compensation-orthopaedic-residents
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Association of State Legislation and Industry Compensation to Orthopaedic
+      Residents: A Three-Year Review of the CMS Open Payments Database, 28 Journal
+      of the American Academy of Orthopaedic Surgeons 1020–1028 (2020) (with
+      Bradley W. Wills et al.).
+    title: "Association of State Legislation and Industry Compensation to Orthopaedic Residents: A Three-Year Review of the CMS Open Payments Database"
+    cv_coauthor_note: "with Bradley W. Wills et al."
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of the American Academy of Orthopaedic Surgeons"
+    year: 2020
+    volume: "28"
+    issue: null
+    pages_or_article_number: "1020–1028"
+    identifiers: []
+    urls: []
+    payment_research_boundary: requires_review
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - The CV abbreviates the coauthor list with “et al.”; full names and author order are unavailable.
+      - Public inclusion under the payment-research exclusion requires judgment.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-open-payments-orthopedic-residents
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Open Payments Reporting of Industry Compensation for Orthopedic Residents,
+      77 Journal of Surgical Education 1632–1637 (2020) (with Adam M. Almaguer et al.).
+    title: "Open Payments Reporting of Industry Compensation for Orthopedic Residents"
+    cv_coauthor_note: "with Adam M. Almaguer et al."
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of Surgical Education"
+    year: 2020
+    volume: "77"
+    issue: null
+    pages_or_article_number: "1632–1637"
+    identifiers: []
+    urls: []
+    payment_research_boundary: requires_review
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - The CV abbreviates the coauthor list with “et al.”; full names and author order are unavailable.
+      - Public inclusion under the payment-research exclusion requires judgment.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-np-scope-emergency-department-medicaid-expansion
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      The Association of Nurse Practitioner Scope-of-Practice Laws with Emergency
+      Department Use: Evidence from Medicaid Expansion, 57 Medical Care 362–368
+      (2019) (with Joanne Spetz and Peter I. Buerhaus).
+    title: "The Association of Nurse Practitioner Scope-of-Practice Laws with Emergency Department Use: Evidence from Medicaid Expansion"
+    cv_coauthor_note: "with Joanne Spetz and Peter I. Buerhaus"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Medical Care"
+    year: 2019
+    volume: "57"
+    issue: null
+    pages_or_article_number: "362–368"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-public-attitudes-liver-allocation
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      Public Attitudes toward Contemporary Issues in Liver Allocation, 19 American
+      Journal of Transplantation 1212–1217 (2019) (with Heather O’Dell et al.).
+    title: "Public Attitudes toward Contemporary Issues in Liver Allocation"
+    cv_coauthor_note: "with Heather O’Dell et al."
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "American Journal of Transplantation"
+    year: 2019
+    volume: "19"
+    issue: null
+    pages_or_article_number: "1212–1217"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - The CV abbreviates the coauthor list with “et al.”; full names and author order are unavailable.
+    verification: cv_checked_not_externally_verified
+
+  - id: mh-extra-regulatory-np-scope-physician-malpractice
+    cv_section: Peer-Reviewed Medical and Health Policy Journals
+    pdf_page: 3
+    source_location: "Selected Publications > Peer-Reviewed Medical and Health Policy Journals"
+    cv_entry: >-
+      The Extra-Regulatory Effect of Nurse Practitioner Scope-of-Practice Laws on
+      Physician Malpractice Rates, 75 Medical Care Research and Review 312–326
+      (2018) (with Barbara J. Safriet and Peter I. Buerhaus).
+    title: "The Extra-Regulatory Effect of Nurse Practitioner Scope-of-Practice Laws on Physician Malpractice Rates"
+    cv_coauthor_note: "with Barbara J. Safriet and Peter I. Buerhaus"
+    publication_type: peer_reviewed_journal_article
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Medical Care Research and Review"
+    year: 2018
+    volume: "75"
+    issue: null
+    pages_or_article_number: "312–326"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: bc-negligence-intentional-torts-professional-liability-malpractice
+    cv_section: Book Chapters
+    pdf_page: 3
+    source_location: "Selected Publications > Book Chapters"
+    cv_entry: >-
+      Negligence, Intentional Torts, Professional Liability, and Medical
+      Malpractice, in Laws of Medicine (Amirala Pasha ed., 2022).
+    title: "Negligence, Intentional Torts, Professional Liability, and Medical Malpractice"
+    cv_coauthor_note: null
+    publication_type: book_chapter
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Laws of Medicine"
+    year: 2022
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    editors: "Amirala Pasha ed."
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Publisher, chapter pages, ISBN, DOI, and canonical URL are not supplied.
+    verification: cv_checked_not_externally_verified
+
+  - id: bc-economic-context-nursing-practice-united-states
+    cv_section: Book Chapters
+    pdf_page: 3
+    source_location: "Selected Publications > Book Chapters"
+    cv_entry: >-
+      The Economic Context of Nursing Practice in the United States, in Financial
+      and Business Management for the Doctor of Nursing Practice (KT Waxman ed.,
+      2022) (with Joanne Spetz).
+    title: "The Economic Context of Nursing Practice in the United States"
+    cv_coauthor_note: "with Joanne Spetz"
+    publication_type: book_chapter
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Financial and Business Management for the Doctor of Nursing Practice"
+    year: 2022
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    editors: "KT Waxman ed."
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Publisher, chapter pages, ISBN, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: sw-np-entrepreneurs-primary-care-lifeline
+    cv_section: Short Academic Works
+    pdf_page: 3
+    source_location: "Selected Publications > Short Academic Works"
+    cv_entry: >-
+      Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline, 7 JAMA
+      Health Forum (Jan. 16, 2026) (with Monica O’Reilly-Jacob, Betty Rambur, and
+      Jennifer Perloff).
+    title: "Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline"
+    cv_coauthor_note: "with Monica O’Reilly-Jacob, Betty Rambur, and Jennifer Perloff"
+    publication_type: short_academic_work
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "JAMA Health Forum"
+    year: 2026
+    date_as_cited: "Jan. 16, 2026"
+    volume: "7"
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, article number or pages, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: sw-safe-harbors-malpractice-wasteful-spending
+    cv_section: Short Academic Works
+    pdf_page: 3
+    source_location: "Selected Publications > Short Academic Works"
+    cv_entry: >-
+      Developing Safe Harbors to Address Malpractice Liability and Wasteful Health
+      Care Spending, 4 JAMA Health Forum (Nov. 22, 2023) (with James F. Blumstein
+      and Alan B. Storrow).
+    title: "Developing Safe Harbors to Address Malpractice Liability and Wasteful Health Care Spending"
+    cv_coauthor_note: "with James F. Blumstein and Alan B. Storrow"
+    publication_type: short_academic_work
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "JAMA Health Forum"
+    year: 2023
+    date_as_cited: "Nov. 22, 2023"
+    volume: "4"
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, article number or pages, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: sw-constraints-medical-liability-safe-harbors
+    cv_section: Short Academic Works
+    pdf_page: 3
+    source_location: "Selected Publications > Short Academic Works"
+    cv_entry: >-
+      Constraints on Medical Liability Through Malpractice Safe Harbors, 1 JAMA
+      Health Forum (Aug. 14, 2020) (with James F. Blumstein and Alan B. Storrow).
+    title: "Constraints on Medical Liability Through Malpractice Safe Harbors"
+    cv_coauthor_note: "with James F. Blumstein and Alan B. Storrow"
+    publication_type: short_academic_work
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "JAMA Health Forum"
+    year: 2020
+    date_as_cited: "Aug. 14, 2020"
+    volume: "1"
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, article number or pages, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: sw-covid-state-medical-liability-immunity
+    cv_section: Short Academic Works
+    pdf_page: 3
+    source_location: "Selected Publications > Short Academic Works"
+    cv_entry: >-
+      COVID-19 and State Medical Liability Immunity, Health Affairs Forefront
+      (May 14, 2020) (with John R. Lowry et al.).
+    title: "COVID-19 and State Medical Liability Immunity"
+    cv_coauthor_note: "with John R. Lowry et al."
+    publication_type: short_academic_work
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Health Affairs Forefront"
+    year: 2020
+    date_as_cited: "May 14, 2020"
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - DOI and canonical URL are not supplied.
+      - The CV abbreviates the coauthor list with “et al.”; full names and author order are unavailable.
+    verification: cv_checked_not_externally_verified
+
+  - id: sw-pas-nps-interchangeable
+    cv_section: Short Academic Works
+    pdf_page: 4
+    source_location: "Selected Publications > Short Academic Works"
+    cv_entry: >-
+      Are PAs and NPs Interchangeable, 32 Journal of the American Academy of
+      Physician Assistants 16–17 (2019) (with Roderick S. Hooker).
+    title: "Are PAs and NPs Interchangeable"
+    cv_coauthor_note: "with Roderick S. Hooker"
+    publication_type: short_academic_work
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of the American Academy of Physician Assistants"
+    year: 2019
+    volume: "32"
+    issue: null
+    pages_or_article_number: "16–17"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
+
+  - id: sw-macra-incident-to-billing
+    cv_section: Short Academic Works
+    pdf_page: 4
+    source_location: "Selected Publications > Short Academic Works"
+    cv_entry: >-
+      The Integrity of MACRA May Be Undermined By “Incident To Billing” Coding,
+      Health Affairs Forefront (January 8, 2018) (with Peter Buerhaus et al.).
+    title: "The Integrity of MACRA May Be Undermined By “Incident To Billing” Coding"
+    cv_coauthor_note: "with Peter Buerhaus et al."
+    publication_type: short_academic_work
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Health Affairs Forefront"
+    year: 2018
+    date_as_cited: "January 8, 2018"
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - DOI and canonical URL are not supplied.
+      - The CV abbreviates the coauthor list with “et al.”; full names and author order are unavailable.
+      - Public inclusion under the payment-research exclusion requires judgment.
+    verification: cv_checked_not_externally_verified
+
+  - id: sw-worried-about-malpractice
+    cv_section: Short Academic Works
+    pdf_page: 4
+    source_location: "Selected Publications > Short Academic Works"
+    cv_entry: >-
+      Worried About Malpractice?, 29 Journal of the American Society of
+      Echocardiography 1161–1162 (2016) (with Ben Byrd and Jim Cooper).
+    title: "Worried About Malpractice?"
+    cv_coauthor_note: "with Ben Byrd and Jim Cooper"
+    publication_type: short_academic_work
+    publication_type_support: cv_section
+    status: published
+    status_support: assessed_from_completed_dated_cv_citation
+    venue: "Journal of the American Society of Echocardiography"
+    year: 2016
+    volume: "29"
+    issue: null
+    pages_or_article_number: "1161–1162"
+    identifiers: []
+    urls: []
+    missing_or_ambiguous:
+      - Issue, DOI, and canonical URL are not supplied.
+      - Full author order is not supplied by the parenthetical coauthor note.
+    verification: cv_checked_not_externally_verified
