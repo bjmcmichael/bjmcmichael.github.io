@@ -124,7 +124,8 @@ Initial candidate projects:
 3. **Organ Allocation**  
    Geographic allocation reform and patient outcomes
 
-A later fourth project may include work on physician payment / the AMA RUC.
+The approved payments Research program does not itself authorize a fourth
+homepage project. Any later homepage selection requires separate approval.
 
 Links on research cards may include, as applicable:
 - Paper
@@ -234,15 +235,27 @@ The implementation may use Quarto listings, YAML, BibTeX, CSL JSON, or another m
 
 ### 6.1 Approved research-program taxonomy
 
-The public Research architecture uses these five programs, in this order:
+Milestone 2B implemented the first five programs below. The approved forward
+architecture now uses six programs, in this order:
 
 1. **Professional Licensing & Scope of Practice**
 2. **Organ Allocation & Transplant Policy**
 3. **Tort Law & Medical Liability**
 4. **Opioids, Drug Policy & Harm Reduction**
 5. **Reproductive Health & Family Formation**
+6. **Health Care Payments & Financial Accountability**
 
-Physician Payment, AMA RUC, Medicare payment, and related payment research are intentionally excluded from the public program taxonomy until that research line is sufficiently developed and separately approved.
+The sixth program has the stable ID `payments`, the short filter label
+“Payments & Accountability,” and the future path `research/payments/index.qmd`.
+Its scope encompasses health care payment and billing rules, industry financial
+relationships, and legal accountability for public spending, including False
+Claims Act scholarship. False Claims Act work is not necessarily limited to
+health care; future descriptions must follow verified sources and must not imply
+otherwise.
+
+This approval supersedes the earlier blanket exclusion of payment research from
+the public Research architecture. It does not authorize unfinished AMA RUC / RVU
+project details, preliminary findings, private materials, datasets, or manuscripts.
 
 ### 6.2 Future Publications and research-topic architecture
 
@@ -257,8 +270,31 @@ Public-facing filter labels may be shorter than the full Research-program names.
 | Tort Law & Medical Liability | Torts & Liability |
 | Opioids, Drug Policy & Harm Reduction | Drug Policy |
 | Reproductive Health & Family Formation | Reproductive Health |
+| Health Care Payments & Financial Accountability | Payments & Accountability |
 
-This is approved future architecture, not an implemented feature. Publication metadata, publication-to-topic assignments, filters, color coding, JavaScript filtering, and discipline/topic tags remain deferred.
+The following five existing publication records are approved both for membership
+in the `payments` topic and for the payments program page's initial Selected
+Scholarship list:
+
+- `mh-state-legislation-industry-compensation-orthopaedic-residents`
+- `mh-open-payments-orthopedic-residents`
+- `sw-macra-incident-to-billing`
+- `lr-constitutional-false-claims-act`
+- `lr-constitutional-accounting-false-claims-act`
+
+These approvals do not grant homepage placement. Topic membership and curated
+placement remain separate metadata fields, and all other topic assignments and
+curated placements require review.
+
+This is approved future architecture, not an implemented public feature. The
+next separately authorized Research/Publications implementation must add a sixth
+numbered Research-index entry and Explore link, create
+`research/payments/index.qmd` in the existing shared design, provide a
+source-grounded overview, render the five approved records in Selected
+Scholarship with verified links where available, and draw all publication uses
+from a shared source rather than copying citations among pages. The broader
+Publications page must retain these records in their disciplinary sections, and
+the future topic filter must find them across those sections.
 
 ## 7. Interactive research philosophy
 
