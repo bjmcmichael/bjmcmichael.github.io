@@ -51,6 +51,7 @@ Milestone 1 remains approved. Its typography, palette, two-column hero, professi
 - Replaced the Research-page placeholder projects with a restrained vertical editorial index of five approved research programs.
 - Added a numbered entry, approved description, and working Explore link for each program while preserving the existing typography, palette, whitespace, and focus treatment.
 - Completed a page-specific wide-layout refinement so the Research introduction and program rows use the broad desktop canvas more effectively while retaining the established stacked mobile layout.
+- Removed the “Empirical legal scholarship” eyebrow from the homepage hero and allowed the vacated space to collapse naturally without rebalancing the approved composition.
 - Created five nested Research-program landing pages with program identification, an Overview, an intentionally unpopulated Selected Scholarship section, a structural Data, Code & Interactive Research section, and return navigation to the main Research page.
 - Expanded Quarto's explicit render list to include nested `research/**/*.qmd` pages while continuing to exclude governing Markdown documents from the public build.
 - Recorded the approved future relationship between disciplinary publication groupings and many-to-many research topics without creating publication metadata, topic assignments, filters, or tags.
