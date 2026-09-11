@@ -2,11 +2,9 @@
 
 ## Current status
 
-**Stage: Milestone 2B — Research-program architecture implemented on a feature branch and ready for review**
+**Stage: Milestone 2B — approved and incorporated into `main`**
 
-Milestone 2B has been implemented on the feature branch:
-
-`content/research-programs`
+Milestone 2B has passed review and is incorporated into `main`. Its feature branch, `content/research-programs`, remains retained.
 
 The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
 
@@ -55,7 +53,7 @@ Milestone 1 remains approved. Its typography, palette, two-column hero, professi
 - Created five nested Research-program landing pages with program identification, an Overview, an intentionally unpopulated Selected Scholarship section, a structural Data, Code & Interactive Research section, and return navigation to the main Research page.
 - Expanded Quarto's explicit render list to include nested `research/**/*.qmd` pages while continuing to exclude governing Markdown documents from the public build.
 - Recorded the approved future relationship between disciplinary publication groupings and many-to-many research topics without creating publication metadata, topic assignments, filters, or tags.
-- Kept the homepage and Publications page substantively unchanged.
+- Kept the homepage and Publications page substantively unchanged; the only homepage change was the approved removal of the “Empirical legal scholarship” eyebrow.
 - Intentionally excluded Physician Payment, AMA RUC, Medicare payment, and related payment research from the public Research-program architecture.
 
 The five approved programs, in order, are:
@@ -69,6 +67,7 @@ The five approved programs, in order, are:
 ## Milestone 2B files added or modified
 
 - `_quarto.yml`
+- `index.qmd`
 - `research.qmd`
 - `research/licensing/index.qmd`
 - `research/organ-allocation/index.qmd`
@@ -160,15 +159,4 @@ Do not create publication metadata, assign papers to topics, or implement that m
 
 ## Next recommended task
 
-### Task: Review the Research page and program-page architecture
-
-This review should begin only when separately authorized.
-
-The next review should:
-
-1. Review the main Research page's five-program order, descriptions, editorial index, and responsive behavior.
-2. Review the shared architecture and temporary language on the five nested program pages.
-3. Confirm that the program taxonomy is approved for merge without assigning individual publications or adding research materials.
-4. Keep Publications work, publication-to-topic assignments, payment research, deployment, and domain configuration deferred.
-
-Do not merge, begin Publications work, or deploy automatically after review; each action requires separate authorization.
+Next proposed milestone: Publications architecture and verified publication-metadata planning. Await separate authorization before beginning.
