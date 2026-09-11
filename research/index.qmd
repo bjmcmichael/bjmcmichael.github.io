@@ -1,13 +1,18 @@
 ---
-title: "Research"
+pagetitle: "Research"
 description: "Project-centered research on health care regulation, professional licensing, medical markets, and health policy."
 page-layout: full
-body-classes: research-index-page
 ---
 
-::: {.page-intro}
-My research examines how law shapes health care regulation, professional licensing, medical markets, and health policy. The work spans legal scholarship, economics, and medical and health-policy research, often using empirical methods to study how legal rules affect health care delivery and outcomes.
-:::
+<div class="research-index-shell">
+<header class="research-index-header">
+<p class="research-index-description">Project-centered research on health care regulation, professional licensing, medical markets, and health policy.</p>
+<h1>Research</h1>
+</header>
+
+<div class="page-intro">
+<p>My research examines how law shapes health care regulation, professional licensing, medical markets, and health policy. The work spans legal scholarship, economics, and medical and health-policy research, often using empirical methods to study how legal rules affect health care delivery and outcomes.</p>
+</div>
 
 <div class="research-program-index" aria-label="Research programs">
 <section class="research-program-item" aria-labelledby="program-licensing">
@@ -16,7 +21,7 @@ My research examines how law shapes health care regulation, professional licensi
 <h2 id="program-licensing">Professional Licensing &amp; Scope of Practice</h2>
 <p>I study how occupational licensing and scope-of-practice laws shape the health care workforce, clinical practice, access to care, and patient outcomes. This work includes research on nurse practitioners and physician assistants and examines the legal, economic, and health consequences of professional boundaries.</p>
 </div>
-<p class="research-program-action"><a class="research-program-link" href="research/licensing/" aria-label="Explore Professional Licensing and Scope of Practice research">Explore research <span aria-hidden="true">→</span></a></p>
+<p class="research-program-action"><a class="research-program-link" href="licensing/" aria-label="Explore Professional Licensing and Scope of Practice research">Explore research <span aria-hidden="true">→</span></a></p>
 </section>
 
 <section class="research-program-item" aria-labelledby="program-organ-allocation">
@@ -25,7 +30,7 @@ My research examines how law shapes health care regulation, professional licensi
 <h2 id="program-organ-allocation">Organ Allocation &amp; Transplant Policy</h2>
 <p>I study how law and policy shape organ allocation, including geographic allocation rules, access to transplantation, patient outcomes, and the legal structure of organ distribution. This work combines empirical analysis of allocation reforms with legal and policy analysis of who receives scarce organs and on what terms.</p>
 </div>
-<p class="research-program-action"><a class="research-program-link" href="research/organ-allocation/" aria-label="Explore Organ Allocation and Transplant Policy research">Explore research <span aria-hidden="true">→</span></a></p>
+<p class="research-program-action"><a class="research-program-link" href="organ-allocation/" aria-label="Explore Organ Allocation and Transplant Policy research">Explore research <span aria-hidden="true">→</span></a></p>
 </section>
 
 <section class="research-program-item" aria-labelledby="program-torts-liability">
@@ -34,7 +39,7 @@ My research examines how law shapes health care regulation, professional licensi
 <h2 id="program-torts-liability">Tort Law &amp; Medical Liability</h2>
 <p>I study medical malpractice and tort law, including apology laws, punitive damages, liability rules, medical devices, and malpractice safe harbors. This work examines how liability rules affect behavior, risk, compensation, patient safety, and health care.</p>
 </div>
-<p class="research-program-action"><a class="research-program-link" href="research/torts-liability/" aria-label="Explore Tort Law and Medical Liability research">Explore research <span aria-hidden="true">→</span></a></p>
+<p class="research-program-action"><a class="research-program-link" href="torts-liability/" aria-label="Explore Tort Law and Medical Liability research">Explore research <span aria-hidden="true">→</span></a></p>
 </section>
 
 <section class="research-program-item" aria-labelledby="program-drug-policy">
@@ -43,7 +48,7 @@ My research examines how law shapes health care regulation, professional licensi
 <h2 id="program-drug-policy">Opioids, Drug Policy &amp; Harm Reduction</h2>
 <p>I study the intersection of health care regulation, substance-use policy, and drug-related harms. This work includes research on opioid prescribing, occupational licensing, cannabis access laws, industry relationships in the opioid crisis, and fentanyl test strips.</p>
 </div>
-<p class="research-program-action"><a class="research-program-link" href="research/drug-policy/" aria-label="Explore Opioids, Drug Policy and Harm Reduction research">Explore research <span aria-hidden="true">→</span></a></p>
+<p class="research-program-action"><a class="research-program-link" href="drug-policy/" aria-label="Explore Opioids, Drug Policy and Harm Reduction research">Explore research <span aria-hidden="true">→</span></a></p>
 </section>
 
 <section class="research-program-item" aria-labelledby="program-reproductive-health">
@@ -52,6 +57,7 @@ My research examines how law shapes health care regulation, professional licensi
 <h2 id="program-reproductive-health">Reproductive Health &amp; Family Formation</h2>
 <p>I study legal and policy questions involving reproductive health and family formation, including frozen embryos, fetal-harm regulation, reproductive objectification, and medication use during pregnancy. This work spans legal scholarship and empirical health research.</p>
 </div>
-<p class="research-program-action"><a class="research-program-link" href="research/reproductive-health/" aria-label="Explore Reproductive Health and Family Formation research">Explore research <span aria-hidden="true">→</span></a></p>
+<p class="research-program-action"><a class="research-program-link" href="reproductive-health/" aria-label="Explore Reproductive Health and Family Formation research">Explore research <span aria-hidden="true">→</span></a></p>
 </section>
+</div>
 </div>

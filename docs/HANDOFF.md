@@ -2,9 +2,9 @@
 
 ## Current status
 
-**Stage: Milestone 2B — Research-program architecture implemented on a feature branch and ready for review**
+**Stage: Milestone 2B — approved on `main`; routing and layout repair completed on the retained feature branch and awaiting review**
 
-Milestone 2B has been implemented on the feature branch:
+Milestone 2B has passed review and is incorporated into `main`. The retained feature branch now also contains a focused routing and layout-isolation repair:
 
 `content/research-programs`
 
@@ -57,6 +57,10 @@ Milestone 1 remains approved. Its typography, palette, two-column hero, professi
 - Recorded the approved future relationship between disciplinary publication groupings and many-to-many research topics without creating publication metadata, topic assignments, filters, or tags.
 - Kept the homepage and Publications page substantively unchanged.
 - Intentionally excluded Physician Payment, AMA RUC, Medicare payment, and related payment research from the public Research-program architecture.
+- Moved the main Research landing page from `research.qmd` to `research/index.qmd`, eliminating the collision between root `research.html` output and the `research/` program directory.
+- Updated the navbar, homepage Research links, five Explore links, and five program-page return links to use the durable directory route.
+- Replaced page-level `body-classes` styling with an explicit `.research-index-shell` and scoped all Research-index layout rules beneath that wrapper.
+- Restored the approved homepage composition after Quarto began inferring the hero name as a document title when the eyebrow was removed; the name remains a semantic page heading inside the hero and the eyebrow remains absent.
 
 The five approved programs, in order, are:
 
@@ -69,7 +73,8 @@ The five approved programs, in order, are:
 ## Milestone 2B files added or modified
 
 - `_quarto.yml`
-- `research.qmd`
+- `index.qmd`
+- `research/index.qmd`
 - `research/licensing/index.qmd`
 - `research/organ-allocation/index.qmd`
 - `research/torts-liability/index.qmd`
@@ -85,7 +90,7 @@ The five approved programs, in order, are:
 - `.gitignore`
 - `_quarto.yml`
 - `index.qmd`
-- `research.qmd`
+- `research/index.qmd`
 - `publications.qmd`
 - `data-code.qmd`
 - `teaching.qmd`
@@ -113,7 +118,7 @@ The five approved programs, in order, are:
 ## Build and verification status
 
 - Tested with Quarto 1.10.18.
-- `quarto render` succeeds for all thirteen pages—eight top-level pages and five nested Research-program pages—and writes output to `_site/`.
+- `quarto render` succeeds for all thirteen pages—seven root-level pages, the directory-based Research landing page, and five nested Research-program pages—and writes output to `_site/`.
 - All top-level pages load with the expected page title, one primary heading, and seven navigation destinations.
 - Internal navigation and homepage action links resolve successfully.
 - Browser layout was checked at approximately 1440, 1024, 768, and 390 pixels wide.
@@ -127,6 +132,8 @@ The five approved programs, in order, are:
 - The final production render completed successfully for all thirteen pages.
 - All five Research-page Explore links and all five return-to-Research links resolve to rendered pages.
 - The Research page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels after its wide-layout refinement; a representative program page was checked at desktop and mobile widths. The editorial index and program-page structures remain readable without horizontal overflow.
+- The routing repair was verified from a static production render: `/research/`, all three homepage/navbar Research links, all five Explore links, all five return links, and the CV PDF return HTTP 200 responses.
+- The repaired homepage was checked at 1440 and 390 pixels, the Research landing page at 1600, 1440, 1024, 768, and 390 pixels, and a representative program page at 1440 and 390 pixels. Each page has one primary heading, and no horizontal overflow was detected.
 
 ## Content intentionally deferred
 
@@ -160,15 +167,15 @@ Do not create publication metadata, assign papers to topics, or implement that m
 
 ## Next recommended task
 
-### Task: Review the Research page and program-page architecture
+### Task: Review the Milestone 2B routing and layout-isolation repair
 
 This review should begin only when separately authorized.
 
 The next review should:
 
-1. Review the main Research page's five-program order, descriptions, editorial index, and responsive behavior.
-2. Review the shared architecture and temporary language on the five nested program pages.
-3. Confirm that the program taxonomy is approved for merge without assigning individual publications or adding research materials.
-4. Keep Publications work, publication-to-topic assignments, payment research, deployment, and domain configuration deferred.
+1. Confirm that the homepage retains its approved composition with the eyebrow absent and the hero name inside the intended content shell.
+2. Confirm that the navbar, homepage links, five Explore links, and five return links consistently resolve through `/research/`.
+3. Review the isolated Research-index layout at desktop and mobile widths without changing the approved five-program content or program-page architecture.
+4. Decide separately whether to merge the repair into `main`.
 
-Do not merge, begin Publications work, or deploy automatically after review; each action requires separate authorization.
+After the repair is reviewed, the next proposed substantive milestone remains Publications architecture and verified publication-metadata planning. Do not merge, begin Publications work, or deploy automatically; each action requires separate authorization.

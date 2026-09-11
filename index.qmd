@@ -7,16 +7,16 @@ page-layout: full
 ::: {.home-shell}
 ::: {.hero-grid}
 ::: {.hero-copy}
-# Benjamin J.<br>McMichael {#hero-title .hero-title}
-
 <p class="hero-roles">Jere L. Beasley Professor of Law<br>Director of Interdisciplinary Legal Studies<br>University of Alabama School of Law</p>
+
+<h1 id="hero-title" class="hero-title">Benjamin J.<br>McMichael</h1>
 
 <p class="hero-dek">Empirical research on health care regulation, professional licensing, medical markets, and health policy.</p>
 
 ::: {.hero-actions}
 [View CV](cv.qmd){.site-button .site-button-primary}
 
-[Research](research.qmd){.site-button .site-button-secondary}
+[Research](research/index.qmd){.site-button .site-button-secondary}
 :::
 :::
 
@@ -44,7 +44,7 @@ A future approved map or empirical figure can occupy this field without changing
 ::: {.section-heading}
 ## Selected Research
 
-[View all research](research.qmd){.text-link}
+[View all research](research/index.qmd){.text-link}
 :::
 
 ::: {.research-list}

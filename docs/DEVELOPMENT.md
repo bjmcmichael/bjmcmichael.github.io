@@ -33,8 +33,8 @@ Current site layout:
 ├── README.md
 ├── WEBSITE_SPEC.md
 ├── index.qmd
-├── research.qmd
 ├── research/
+│   ├── index.qmd
 │   ├── licensing/
 │   │   └── index.qmd
 │   ├── organ-allocation/
@@ -104,9 +104,11 @@ Create a production render with:
 quarto render
 ```
 
-The rendered site is written to `_site/`. The current render processes the eight root-level `.qmd` pages and five nested Research-program pages, for thirteen pages total, and creates `_site/index.html`.
+The rendered site is written to `_site/`. The current render processes seven root-level `.qmd` pages, the Research landing page at `research/index.qmd`, and five nested Research-program pages, for thirteen pages total. It creates `_site/index.html` and the durable directory route `_site/research/index.html`.
 
-The `project.render` list in `_quarto.yml` includes both `*.qmd` and `research/**/*.qmd`. This renders the five nested program pages while continuing to exclude governing Markdown files under `docs/` from the public site.
+The `project.render` list in `_quarto.yml` includes both `*.qmd` and `research/**/*.qmd`. The first pattern renders only root-level site pages; the second renders the Research landing page and five nested program pages. Governing Markdown files under `docs/` remain excluded from the public site.
+
+The Research landing page intentionally lives at `research/index.qmd`, not beside the `research/` directory as a root-level `research.qmd`. This avoids a static-host routing collision between `research.html` and `/research/`. Navigation, homepage actions, Explore links, and program-page return links should continue to target the directory-based `/research/` route.
 
 ### Fresh-machine setup
 

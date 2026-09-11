@@ -15,7 +15,7 @@ website:
     title: "Benjamin J. McMichael"
     collapse-below: lg
     right:
-      - href: research.qmd
+      - href: research/index.qmd
         text: Research
       - href: publications.qmd
         text: Publications

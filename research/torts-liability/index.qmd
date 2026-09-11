@@ -4,7 +4,7 @@ description: "Research on medical malpractice, tort law, liability rules, and he
 ---
 
 <article class="research-program-page">
-<p class="program-return-wrap"><a class="program-return" href="../../research.html"><span aria-hidden="true">←</span> All research programs</a></p>
+<p class="program-return-wrap"><a class="program-return" href="../"><span aria-hidden="true">←</span> All research programs</a></p>
 
 <header class="research-program-header">
 <p class="program-eyebrow">Research Program</p>
