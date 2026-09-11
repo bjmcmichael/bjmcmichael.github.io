@@ -2,9 +2,9 @@
 
 ## Status and scope
 
-This is the Milestone 2C planning deliverable. It proposes a concrete Publications architecture from the September 2026 CV without changing the public website or authorizing any record for public display. The companion draft inventory is `docs/publications/inventory.yml`.
+This is the Milestone 2C planning and metadata-verification deliverable. It proposes a concrete Publications architecture from the September 2026 CV without changing the public website. The immutable CV-transcription snapshot is `docs/publications/inventory.yml`; externally checked metadata and explicit editorial decisions are recorded separately in `docs/publications/reviewed_inventory.yml`, with results summarized in `docs/publications/VERIFICATION_REPORT.md`.
 
-The inventory is **CV-checked, not externally verified**. The CV's heading is “Selected Publications,” so its 49 entries must not be treated as a complete bibliography. No broad web verification was conducted, no manuscript was downloaded, and no publication was assigned to a Research topic. These unrendered planning files remain part of a public repository and therefore contain only public-safe CV citation information.
+The source inventory remains **CV-checked, not externally verified** by design. All 49 records have now been checked against publisher, journal, DOI, PubMed, SSRN, or institutional-repository sources in the separate reviewed inventory. The CV's heading is “Selected Publications,” so its 49 entries must not be treated as a complete bibliography. These unrendered planning files remain part of a public repository and contain only public-safe citation information.
 
 ## Inventory reconciliation
 
@@ -19,7 +19,7 @@ The inventory is **CV-checked, not externally verified**. The CV's heading is �
 
 Four entries explicitly say “forthcoming”; 45 have completed dated citations and are provisionally classified as published. That published classification is an assessment from the CV citation, not external verification.
 
-The CV has no Working Papers or Books / Book Projects section. Presentations, appointments, teaching, reviewer service, and other non-publication material are excluded. No entries were collapsed. The inventory flags one possible related or revised-version pair involving the two False Claims Act articles and retains both pending verification.
+The CV has no Working Papers or Books / Book Projects section. Presentations, appointments, teaching, reviewer service, and other non-publication material are excluded. No entries were collapsed. External verification establishes that the two False Claims Act articles are distinct publications: one is published in the Washington University Law Review and the other is separately forthcoming in the Vanderbilt Law Review. Both remain in the inventory.
 
 ## Recommended public structure
 
@@ -41,7 +41,7 @@ Discipline, publication type/status, and research topic must remain separate con
 
 ## Future topic discovery
 
-The default Publications view should show every authorized publication, grouped by discipline. A later topic control may filter across those groupings using the approved programs and tentative public labels:
+The default Publications view should show every authorized publication, grouped by discipline. A later topic control may filter across those groupings using the six approved programs and public labels:
 
 | Research program | Public filter label |
 |---|---|
@@ -50,10 +50,29 @@ The default Publications view should show every authorized publication, grouped 
 | Tort Law & Medical Liability | Torts & Liability |
 | Opioids, Drug Policy & Harm Reduction | Drug Policy |
 | Reproductive Health & Family Formation | Reproductive Health |
+| Health Care Payments & Financial Accountability | Payments & Accountability |
 
 A publication may have several topics or none. Filtering should preserve the disciplinary order and headings for sections containing matches rather than flattening results into a topic list; empty sections may be omitted while a filter is active. An “All publications” default restores the complete disciplinary bibliography. Topic controls must use text, expose their selected state accessibly, work by keyboard, and remain understandable without color.
 
-This milestone makes no final publication-to-topic assignments. Those assignments require separate content review.
+The sixth program's stable ID is `payments`, and its future landing-page path is
+`research/payments/index.qmd`. Its scope includes health care payment and billing
+rules, industry financial relationships, and legal accountability for public
+spending, including False Claims Act scholarship. False Claims Act articles must
+not be described as addressing only health care.
+
+Five existing records are approved for both `payments` topic membership and the
+new program page's initial Selected Scholarship list:
+
+- `mh-state-legislation-industry-compensation-orthopaedic-residents`
+- `mh-open-payments-orthopedic-residents`
+- `sw-macra-incident-to-billing`
+- `lr-constitutional-false-claims-act`
+- `lr-constitutional-accounting-false-claims-act`
+
+The reviewed inventory stores these two decisions separately in
+`research_topics` and `curated_placements`. The approvals do not imply homepage
+selection and do not authorize any other topic assignment or curated placement.
+All other assignments still require separate content review.
 
 ## Recommended single source and rendering approach
 
@@ -64,7 +83,7 @@ Use a small Quarto/Pandoc Lua filter or shortcode, proposed as `filters/publicat
 The same approved record can then support three deliberately different uses:
 
 - **Publications page:** the exhaustive authorized bibliography, grouped by discipline.
-- **Research-program pages:** an exhaustive list of authorized records whose topic metadata includes that program.
+- **Research-program pages:** curated Selected Scholarship driven by explicit placement metadata, with any separately approved comprehensive related-scholarship list driven by topic metadata.
 - **Homepage Selected Research:** only records with a separately reviewed homepage-selection flag and approved presentation copy.
 
 “Selected Scholarship” is curated. It must not be populated automatically with every paper related to a Research program, and topic membership must never imply homepage selection.
@@ -78,21 +97,23 @@ A separately authorized implementation would be expected to:
 - add `data/publications.yml` from reviewed inventory records;
 - add `filters/publications.lua` (and a small local filtering script only if approved);
 - replace the placeholder content in `publications.qmd`;
-- add publication references to selected `research/*/index.qmd` pages after topic assignments are approved;
+- add a sixth numbered entry and Explore link to `research.qmd`;
+- create `research/payments/index.qmd` in the existing shared design with a source-grounded overview and the five approved Selected Scholarship records;
+- add publication references to other `research/*/index.qmd` pages only after their topic assignments and curated placements are approved;
 - modify `index.qmd` only if specific homepage selections are separately approved;
 - modify `styles.css` only for the bibliography and accessible filter treatment;
 - update `docs/DEVELOPMENT.md` and `docs/HANDOFF.md` with implementation and verification details;
 - avoid changing `_quarto.yml` unless a narrowly scoped Quarto registration is genuinely required.
 
-## Required review before implementation
+## Required checks before implementation
 
 Before any public implementation is merged:
 
-1. Verify the bibliography against authoritative journal, publisher, repository, or DOI records, including full ordered authorship, exact titles, status, dates, volumes, issues, pages/article numbers, and canonical links.
+1. Review the externally checked bibliography and decide whether each recorded unresolved field must be resolved before public display or may remain omitted.
 2. Confirm whether the CV's “Selected Publications” list is complete enough for the intended public page and obtain any omitted records from an approved source.
-3. Resolve the possible relationship between the two False Claims Act records without silently discarding either.
-4. Decide whether the three payment-adjacent records flagged in the inventory fall within the standing public Research exclusion.
-5. Approve final topic assignments separately from disciplinary classification and approve any curated program-page or homepage selections.
+3. Preserve both independently verified False Claims Act records as distinct publications.
+4. Preserve the approved `payments` topic memberships and Selected Scholarship placements for the five specified records; do not reopen those editorial decisions because an optional citation field is unavailable.
+5. Approve all other topic assignments separately from disciplinary classification and separately approve any additional program-page or homepage selections.
 6. Validate production YAML syntax, required fields, stable and unique IDs, permitted enumerations, topic references, ordering, and count reconciliation.
 7. Render all pages; check internal and external links; verify citation semantics, keyboard behavior, focus visibility, color contrast, reduced-motion behavior, mobile layout, and no horizontal overflow.
 8. Confirm that no restricted manuscripts, private information, credentials, machine-specific paths, or unapproved content enter the repository or rendered site.
@@ -100,9 +121,6 @@ Before any public implementation is merged:
 ## Decisions still required
 
 - Whether the 49 selected CV entries form the desired public bibliography or need supplementation.
-- Full author lists and author order where the CV provides only a parenthetical coauthor note or “et al.”
-- External verification and canonical links/identifiers for every record.
-- Whether the two False Claims Act entries are distinct publications, related versions, or require a public cross-reference.
-- Public treatment of the two CMS Open Payments articles and the MACRA / “Incident To Billing” short work under the payment-research exclusion.
+- Resolution of the limited citation cautions recorded in `docs/publications/reviewed_inventory.yml`, including final forthcoming details, one published-version author-order conflict, one page-range discrepancy, and two optional pagination fields.
 - Whether verified Working Papers or Books / Book Projects exist and, if so, whether their details are approved for public display.
-- Final topic memberships and separately curated Selected Scholarship or homepage placements.
+- All topic memberships and curated Selected Scholarship or homepage placements other than the five approved `payments` assignments and payments-page selections.
