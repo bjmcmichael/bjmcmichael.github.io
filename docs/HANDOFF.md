@@ -2,7 +2,9 @@
 
 ## Current status
 
-**Stage: Milestone 2B — approved and incorporated into `main`**
+**Stage: Milestone 2C — Publications inventory and architecture planning awaiting review**
+
+Milestone 2C planning is complete on `content/publications-planning` and awaits review. The planning artifacts do not change the public website and have not been merged into `main`.
 
 Milestone 2B has passed review and is incorporated into `main`. Its feature branch, `content/research-programs`, remains retained.
 
@@ -79,6 +81,23 @@ The five approved programs, in order, are:
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
+## Milestone 2C planning completed
+
+- Transcribed and reconciled all 49 entries under the September 2026 CV's “Selected Publications” heading into a machine-readable draft inventory.
+- Preserved the five original CV publication sections, original entries, PDF source locations, supported citation fields, coauthor parentheticals, missing data, ambiguities, and verification status.
+- Classified four records as forthcoming only where the CV says so; the remaining 45 published classifications are assessments from completed dated CV citations and remain unverified externally.
+- Confirmed that the CV contains no Working Papers or Books / Book Projects section and excluded non-publication material.
+- Retained and flagged a possible related or revised-version pair rather than collapsing it.
+- Flagged three payment-adjacent entries for review under the standing public Research exclusion without making a public-inclusion decision.
+- Proposed one editorial Publications structure, a future many-to-many topic-discovery model, and a single-source Quarto/YAML rendering approach without implementing any of them.
+- Left all public `.qmd` pages, styles, theme files, the CV PDF, and build/deployment configuration unchanged.
+
+## Milestone 2C files added or modified
+
+- `docs/publications/inventory.yml`
+- `docs/PUBLICATIONS_PLAN.md`
+- `docs/HANDOFF.md`
+
 ## Milestone 1 files created
 
 - `.gitignore`
@@ -126,6 +145,8 @@ The five approved programs, in order, are:
 - The final production render completed successfully for all thirteen pages.
 - All five Research-page Explore links and all five return-to-Research links resolve to rendered pages.
 - The Research page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels after its wide-layout refinement; a representative program page was checked at desktop and mobile widths. The editorial index and program-page structures remain readable without horizontal overflow.
+- Milestone 2C inventory validation confirms 49 unique IDs, exact section/page/status count reconciliation, and valid YAML syntax.
+- The final standard Milestone 2C render in the repository completes all thirteen pages, and neither planning document is emitted into `_site/`. Earlier attempts encountered transient Windows file locks on ignored generated directories; a later unchanged retry succeeded without any source or build-configuration workaround.
 
 ## Content intentionally deferred
 
@@ -143,11 +164,15 @@ Do not invent or add these items without approved source materials:
 
 ## Unresolved issues
 
-- Publications remains intentionally unpopulated pending a separately authorized architecture and verified publication metadata.
+- Publications remains intentionally unpopulated. The Milestone 2C draft inventory and architecture plan await review, external bibliographic verification, content decisions, and separate implementation authorization.
 - The five Research-program pages intentionally contain no individual publications, findings, datasets, replication repositories, code links, figures, or interactive tools pending approved materials and later architecture work.
 - Data & Code remains intentionally unpopulated because no approved public datasets, replication repositories, code links, or interactive components have been supplied.
 - No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
 - Physician Payment, AMA RUC, Medicare payment, and related payment research remain intentionally excluded from the public Research architecture for now.
+- The draft inventory flags two CMS Open Payments articles and one MACRA / “Incident To Billing” short work for judgment under that exclusion; no public-inclusion decision has been made.
+- Full author order cannot be established from CV parenthetical coauthor notes, and several entries use “et al.”; authoritative authorship verification remains required.
+- Two False Claims Act entries may be related or revised versions, but both remain separate pending verification.
+- The CV labels its bibliography “Selected Publications” and contains no Working Papers or Books / Book Projects section, so completeness and any additional authorized categories remain unresolved.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
 - Deployment architecture and domain settings have not been selected or enabled.
 
@@ -155,8 +180,8 @@ Do not invent or add these items without approved source materials:
 
 Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list. A publication may ultimately belong to multiple topics, with concise public filter labels mapped to the five approved Research programs as documented in `WEBSITE_SPEC.md`.
 
-Do not create publication metadata, assign papers to topics, or implement that mechanism until a future Publications milestone is explicitly authorized.
+Milestone 2C created an unrendered, CV-derived draft inventory for review. Do not promote it into production metadata, assign papers to topics, or implement the Publications page or filter mechanism until separately authorized.
 
 ## Next recommended task
 
-Next proposed milestone: Publications architecture and verified publication-metadata planning. Await separate authorization before beginning.
+Review the Milestone 2C inventory, proposed Publications architecture, and flagged judgment calls. Await separate authorization before external metadata verification or public implementation.
