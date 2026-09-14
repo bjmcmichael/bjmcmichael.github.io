@@ -1,0 +1,689 @@
+# Editorial review artifact only. This file does not drive the public site.
+schema_version: 1
+review_status: "awaiting_editorial_approval"
+authoritative_production_source: "data/publications.yml"
+record_count: 49
+allowed_topic_ids:
+  - "licensing"
+  - "organ-allocation"
+  - "torts-liability"
+  - "drug-policy"
+  - "reproductive-health"
+  - "payments"
+review_notes:
+  - "The five existing payments memberships are copied unchanged and marked previously_approved; they were not reopened in this review."
+  - "All other memberships are proposals. Nothing in this file changes data/publications.yml or any public Research page."
+  - "Topic membership and Selected Scholarship placement are separate editorial decisions."
+
+records:
+  - id: "lr-constitutional-accounting-false-claims-act"
+    title: "A Constitutional Accounting of the False Claims Act"
+    year: 2026
+    disciplinary_section: "Law Reviews"
+    current_approved_topics:
+      - topic_id: "payments"
+        status: "previously_approved"
+        confidence: "high"
+        rationale: "Preserves the approved Payments membership for False Claims Act financial-accountability scholarship without reassessment."
+        evidence_source: "docs/publications/reviewed_inventory.yml; https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6271820"
+    proposed_additional_topics: []
+    needs_editorial_review: false
+    notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged."]
+
+  - id: "lr-future-frozen-embryos"
+    title: "The Future of Frozen Embryos"
+    year: 2025
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "reproductive-health"
+        confidence: "high"
+        rationale: "The article directly addresses frozen embryos and the legal structure of family formation."
+        evidence_source: "Verified title and record; https://scholar.smu.edu/smulr/vol78/iss3/11/"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-constitutional-false-claims-act"
+    title: "A Constitutional False Claims Act"
+    year: 2025
+    disciplinary_section: "Law Reviews"
+    current_approved_topics:
+      - topic_id: "payments"
+        status: "previously_approved"
+        confidence: "high"
+        rationale: "Preserves the approved Payments membership for False Claims Act financial-accountability scholarship without reassessment."
+        evidence_source: "docs/publications/reviewed_inventory.yml; https://wustllawreview.org/2025/02/25/a-constitutional-false-claims-act/"
+    proposed_additional_topics: []
+    needs_editorial_review: false
+    notes: ["Not proposed for torts-liability merely because it addresses legal accountability."]
+
+  - id: "lr-inequitable-organ-allocation"
+    title: "Inequitable Organ Allocation"
+    year: 2024
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "organ-allocation"
+        confidence: "high"
+        rationale: "The article directly analyzes equity in organ-allocation policy."
+        evidence_source: "Verified title and record; https://scholarship.law.ua.edu/fac_articles/832/"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-reproductive-objectification"
+    title: "Reproductive Objectification"
+    year: 2024
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "reproductive-health"
+        confidence: "high"
+        rationale: "The article directly examines law and policy concerning reproductive autonomy and family formation."
+        evidence_source: "Verified title and record; https://scholarship.law.umn.edu/minnlrev/vol108/iss5/4/"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-predictability-chaos-punitive-damages"
+    title: "Bringing Predictability to the Chaos of Punitive Damages"
+    year: 2022
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "Punitive-damages doctrine and reform fall squarely within tort law and liability rules."
+        evidence_source: "Verified title and record; https://arizonastatelawjournal.org/wp-content/uploads/2022/12/McMichael_Publication.pdf"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-stealing-organs"
+    title: "Stealing Organs?"
+    year: 2022
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "organ-allocation"
+        confidence: "high"
+        rationale: "The article directly examines the legal structure governing organ distribution."
+        evidence_source: "Verified title and record; https://www.repository.law.indiana.edu/ilj/vol97/iss1/3/"
+    needs_editorial_review: false
+    notes: ["No torts-liability membership is proposed because the legal analysis is centered on organ distribution, not tort or malpractice doctrine."]
+
+  - id: "lr-socially-distant-healthcare"
+    title: "Socially Distant Healthcare"
+    year: 2022
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics: []
+    needs_editorial_review: true
+    notes:
+      - "The official abstract centers on telehealth and access-to-care barriers. Those subjects do not cleanly match any of the six approved program definitions, so no topic is proposed."
+      - "Evidence reviewed: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836695"
+
+  - id: "lr-access-to-care-epidemic"
+    title: "The Access-to-Care Epidemic"
+    year: 2021
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The abstract directly evaluates relaxation of nurse-practitioner scope-of-practice laws as an access-to-care policy."
+        evidence_source: "Official repository abstract; https://scholarship.law.ua.edu/fac_articles/795/"
+      - topic_id: "drug-policy"
+        confidence: "high"
+        rationale: "The empirical and policy analysis uses opioid-related mortality to evaluate safety and access consequences."
+        evidence_source: "Official repository abstract; https://scholarship.law.ua.edu/fac_articles/795/"
+    needs_editorial_review: false
+    notes: ["Substantiated licensing/drug-policy overlap."]
+
+  - id: "lr-state-created-fetal-harm"
+    title: "State-Created Fetal Harm"
+    year: 2021
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "reproductive-health"
+        confidence: "high"
+        rationale: "The article directly concerns fetal-harm regulation and reproductive health policy."
+        evidence_source: "Verified title and record; https://www.law.georgetown.edu/georgetown-law-journal/in-print/volume-109/volume-109-issue-3-february-2021/state-created-fetal-harm/"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-insuring-apologies"
+    title: "Insuring Apologies"
+    year: 2021
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The article addresses apology policy through malpractice insurance and liability incentives."
+        evidence_source: "Verified title and record; https://ir.law.fsu.edu/lr/vol48/iss3/6/"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-contaminated-relationships-opioid-crisis"
+    title: "Contaminated Relationships in the Opioid Crisis"
+    year: 2021
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "drug-policy"
+        confidence: "high"
+        rationale: "The article directly analyzes industry relationships and legal policy in the opioid crisis."
+        evidence_source: "Verified title and record; https://repository.uclawsf.edu/hastings_law_journal/vol72/iss3/3/"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-occupational-licensing-opioid-crisis"
+    title: "Occupational Licensing and the Opioid Crisis"
+    year: 2020
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "Occupational licensing is the article's express regulatory subject."
+        evidence_source: "Verified title and record; https://lawreview.law.ucdavis.edu/sites/g/files/dgvnsk15026/files/media/documents/54-2_McMichael_color.pdf"
+      - topic_id: "drug-policy"
+        confidence: "high"
+        rationale: "The article directly applies licensing analysis to the opioid crisis."
+        evidence_source: "Verified title and record; https://lawreview.law.ucdavis.edu/sites/g/files/dgvnsk15026/files/media/documents/54-2_McMichael_color.pdf"
+    needs_editorial_review: false
+    notes: ["Substantiated licensing/drug-policy overlap."]
+
+  - id: "lr-healthcare-licensing-liability"
+    title: "Healthcare Licensing and Liability"
+    year: 2020
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "Health-professional licensing is one of the article's two express legal subjects."
+        evidence_source: "Verified title and record; https://www.repository.law.indiana.edu/ilj/vol95/iss3/5/"
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "Liability rules are the article's other express legal subject."
+        evidence_source: "Verified title and record; https://www.repository.law.indiana.edu/ilj/vol95/iss3/5/"
+    needs_editorial_review: false
+    notes: ["Substantiated licensing/torts-liability overlap."]
+
+  - id: "lr-sorry-never-enough"
+    title: "\"Sorry\" Is Never Enough: How State Apology Laws Fail to Reduce Medical Malpractice Liability Risk"
+    year: 2019
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The article empirically examines apology laws and medical-malpractice liability risk."
+        evidence_source: "Verified title and record; https://review.law.stanford.edu/wp-content/uploads/sites/3/2019/02/McMichael-71-Stan.-L.-Rev.-341-2019.pdf"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-taming-blockbuster-punitive-damages"
+    title: "Taming Blockbuster Punitive Damages Awards"
+    year: 2019
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The article directly examines punitive-damages awards and tort reform."
+        evidence_source: "Verified title and record; https://www.illinoislawreview.org/wp-content/uploads/2019/03/McMichael.pdf"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "lr-failure-of-sorry"
+    title: "The Failure of “Sorry”: An Empirical Evaluation of Apology Laws, Health Care, and Medical Malpractice"
+    year: 2018
+    disciplinary_section: "Law Reviews"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The article empirically evaluates apology laws and medical-malpractice outcomes."
+        evidence_source: "Verified title and record; https://lawcommons.lclark.edu/lclr/vol22/iss4/4/"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-sharing-is-caring-organ-allocation"
+    title: "Sharing Is Caring: Eliminating Geographic Boundaries in Organ Allocation"
+    year: 2026
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "organ-allocation"
+        confidence: "high"
+        rationale: "The study directly evaluates geographic boundaries in organ allocation."
+        evidence_source: "Verified title and record; https://www.journals.uchicago.edu/doi/10.1086/743342"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-np-scope-preventable-hospitalizations"
+    title: "The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable Hospitalizations"
+    year: 2025
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly estimates an outcome of nurse-practitioner scope-of-practice laws."
+        evidence_source: "Verified title and record; https://doi.org/10.1016/j.jhealeco.2025.103044"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-scope-practice-patterns-nps-pas"
+    title: "Scope-of-Practice Laws and the Practice Patterns of Nurse Practitioners and Physician Assistants"
+    year: 2025
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly examines how scope-of-practice laws shape NP and PA practice patterns."
+        evidence_source: "Verified title and record; https://onlinelibrary.wiley.com/doi/10.1111/coep.12665"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-supply-side-health-policy-mortality"
+    title: "Supply-Side Health Policy: The Impact of Scope-of-Practice Laws on Mortality"
+    year: 2023
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly estimates mortality effects of scope-of-practice laws."
+        evidence_source: "Verified title and record; https://doi.org/10.1016/j.jpubeco.2023.104901"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-liability-immunization-medical-devices"
+    title: "Responses to Liability Immunization: Evidence from Medical Devices"
+    year: 2020
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The study directly examines behavioral responses to liability immunity involving medical devices."
+        evidence_source: "Verified title and record; https://onlinelibrary.wiley.com/doi/10.1111/jels.12268"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-cannabis-access-opioid-prescribing"
+    title: "The Impact of Cannabis Access Laws on Opioid Prescribing"
+    year: 2020
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "drug-policy"
+        confidence: "high"
+        rationale: "The study directly evaluates cannabis access laws and opioid prescribing."
+        evidence_source: "Verified title and record; https://doi.org/10.1016/j.jhealeco.2019.102273"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-shifting-liability-licensing"
+    title: "Shifting Liability with Licensing: An Empirical Analysis of Medical Malpractice and Scope-of-Practice Laws"
+    year: 2019
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly analyzes scope-of-practice licensing laws."
+        evidence_source: "Verified title and record; https://doi.org/10.1515/jtl-2019-0028"
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The study directly analyzes how licensing shifts medical-malpractice liability."
+        evidence_source: "Verified title and record; https://doi.org/10.1515/jtl-2019-0028"
+    needs_editorial_review: false
+    notes: ["Substantiated licensing/torts-liability overlap."]
+
+  - id: "el-beyond-physicians"
+    title: "Beyond Physicians: The Effect of Licensing and Liability Laws on Nurse Practitioners and Physician Assistants"
+    year: 2018
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly examines licensing restrictions affecting NPs and PAs."
+        evidence_source: "Official research summary and verified record; https://www.mercatus.org/research/working-papers/beyond-physicians"
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The study directly examines liability rules and tort reforms affecting NP and PA supply."
+        evidence_source: "Official research summary and verified record; https://www.mercatus.org/research/working-papers/beyond-physicians"
+    needs_editorial_review: false
+    notes: ["Substantiated licensing/torts-liability overlap."]
+
+  - id: "el-demand-healthcare-regulation"
+    title: "The Demand for Healthcare Regulation: The Effect of Political Spending on Occupational Licensing Laws"
+    year: 2017
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly analyzes political determinants of health-professional licensing laws."
+        evidence_source: "Publisher abstract; https://onlinelibrary.wiley.com/doi/10.1002/soej.12211"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-punitive-damages-calculus"
+    title: "The Punitive Damages Calculus: The Differential Incidence of State Punitive Damages Reforms"
+    year: 2017
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The study directly evaluates state punitive-damages reforms."
+        evidence_source: "Verified title and record; https://doi.org/10.1002/soej.12217"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "el-fat-tailed-blockbuster-punitive-damages"
+    title: "Shifting the Fat-Tailed Distribution of Blockbuster Punitive Damages Awards"
+    year: 2014
+    disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The study directly evaluates reforms affecting punitive-damages awards."
+        evidence_source: "Verified title and record; https://doi.org/10.1111/jels.12043"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-ambulatory-sensitive-conditions-scope-laws"
+    title: "The Relationship Between Ambulatory Sensitive Conditions and Nurse Practitioner Scope-of-Practice Laws"
+    year: 2026
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly evaluates health outcomes associated with NP scope-of-practice laws."
+        evidence_source: "Verified title and record; https://www.sciencedirect.com/science/article/abs/pii/S2155825626000475"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-np-scope-preventable-pediatric-hospitalizations"
+    title: "Nurse Practitioner Scope-of-Practice Laws and Preventable Pediatric Hospitalizations"
+    year: 2026
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly estimates pediatric hospitalization outcomes under NP scope-of-practice laws."
+        evidence_source: "Verified title and record; https://doi.org/10.1177/10775587261420485"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-fentanyl-test-strips-mortality"
+    title: "Impact of Fentanyl Test Strips as Harm Reduction for Drug-Related Mortality"
+    year: 2025
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "drug-policy"
+        confidence: "high"
+        rationale: "The study directly evaluates fentanyl test strips as harm-reduction policy."
+        evidence_source: "Verified title and record; https://doi.org/10.1177/10775587251316919"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-maximizing-nursing-workforce"
+    title: "Maximizing the Potential Value of the Nursing Workforce"
+    year: 2024
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "payments"
+        confidence: "high"
+        rationale: "The abstract expressly recommends a nursing-inclusive federal billing system and nurse-informed compensation models."
+        evidence_source: "Publisher abstract; https://www.sciencedirect.com/science/article/pii/S0029655423001215"
+    needs_editorial_review: false
+    notes: ["No licensing membership is proposed because the verified description does not center occupational licensing or scope-of-practice law."]
+
+  - id: "mh-uniform-classification-np-scope-laws"
+    title: "Toward a Uniform Classification of Nurse Practitioner Scope of Practice Laws"
+    year: 2023
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The article directly develops a classification of NP scope-of-practice laws."
+        evidence_source: "Verified title and record; https://doi.org/10.1177/10775587221126777"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-antidepressants-discontinued-pregnancy"
+    title: "Antidepressants Are the Most Commonly Discontinued Psychotherapeutic Medications in Pregnancy"
+    year: 2022
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "reproductive-health"
+        confidence: "high"
+        rationale: "The study directly examines medication use during pregnancy, an identified Reproductive Health program subject."
+        evidence_source: "Verified title and record; https://doi.org/10.1016/j.whi.2021.10.004"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-np-scope-opioid-prescribing"
+    title: "Nurse Practitioner Scope-of-Practice Laws and Opioid Prescribing"
+    year: 2021
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly evaluates NP scope-of-practice laws."
+        evidence_source: "Full-text public record; https://pmc.ncbi.nlm.nih.gov/articles/PMC8452368/"
+      - topic_id: "drug-policy"
+        confidence: "high"
+        rationale: "The outcome of interest is opioid prescribing, directly within the Drug Policy program."
+        evidence_source: "Full-text public record; https://pmc.ncbi.nlm.nih.gov/articles/PMC8452368/"
+    needs_editorial_review: false
+    notes: ["Substantiated licensing/drug-policy overlap."]
+
+  - id: "mh-state-legislation-industry-compensation-orthopaedic-residents"
+    title: "Association of State Legislation and Industry Compensation to Orthopaedic Residents: A 3-Year Review of the Centers for Medicare and Medicaid Services Open Payments Database"
+    year: 2020
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics:
+      - topic_id: "payments"
+        status: "previously_approved"
+        confidence: "high"
+        rationale: "Preserves the approved Payments membership for Open Payments and industry-compensation research without reassessment."
+        evidence_source: "docs/publications/reviewed_inventory.yml; https://doi.org/10.5435/JAAOS-D-19-00637"
+    proposed_additional_topics: []
+    needs_editorial_review: false
+    notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged."]
+
+  - id: "mh-open-payments-orthopedic-residents"
+    title: "Open Payments Reporting of Industry Compensation for Orthopedic Residents"
+    year: 2020
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics:
+      - topic_id: "payments"
+        status: "previously_approved"
+        confidence: "high"
+        rationale: "Preserves the approved Payments membership for Open Payments and industry-compensation research without reassessment."
+        evidence_source: "docs/publications/reviewed_inventory.yml; https://doi.org/10.1016/j.jsurg.2020.05.010"
+    proposed_additional_topics: []
+    needs_editorial_review: false
+    notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged."]
+
+  - id: "mh-np-scope-emergency-department-medicaid-expansion"
+    title: "The Association of Nurse Practitioner Scope-of-Practice Laws with Emergency Department Use: Evidence from Medicaid Expansion"
+    year: 2019
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly evaluates emergency-department use under NP scope-of-practice laws."
+        evidence_source: "Verified title and record; https://doi.org/10.1097/MLR.0000000000001100"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-public-attitudes-liver-allocation"
+    title: "Public Attitudes toward Contemporary Issues in Liver Allocation"
+    year: 2019
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "organ-allocation"
+        confidence: "high"
+        rationale: "The study directly examines public attitudes toward liver-allocation policy."
+        evidence_source: "Verified title and record; https://doi.org/10.1111/ajt.15227"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "mh-extra-regulatory-np-scope-physician-malpractice"
+    title: "The Extraregulatory Effect of Nurse Practitioner Scope-of-Practice Laws on Physician Malpractice Rates"
+    year: 2018
+    disciplinary_section: "Peer-Reviewed Medical & Health Policy"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The study directly evaluates NP scope-of-practice laws."
+        evidence_source: "Verified title and record; https://doi.org/10.1177/1077558716686889"
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The outcome is physician malpractice rates, directly within medical liability."
+        evidence_source: "Verified title and record; https://doi.org/10.1177/1077558716686889"
+    needs_editorial_review: false
+    notes: ["Substantiated licensing/torts-liability overlap."]
+
+  - id: "bc-negligence-intentional-torts-professional-liability-malpractice"
+    title: "Negligence, Intentional Torts, Professional Liability, and Medical Malpractice"
+    year: 2022
+    disciplinary_section: "Book Chapters"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The chapter expressly covers negligence, intentional torts, professional liability, and medical malpractice."
+        evidence_source: "Verified title and record; https://doi.org/10.1007/978-3-031-08162-0_8"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "bc-economic-context-nursing-practice-united-states"
+    title: "The Economic Context of Nursing Practice in the United States"
+    year: 2022
+    disciplinary_section: "Book Chapters"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "payments"
+        confidence: "medium"
+        rationale: "The official chapter overview focuses on organization and financing of U.S. health care, but its breadth makes program placement an editorial judgment."
+        evidence_source: "Official publisher chapter overview; https://springer-ip6-d10.mpstechnologies.com/content/book/978-0-8261-6016-4/part/part01/chapter/ch01"
+    needs_editorial_review: true
+    notes: ["The reviewed inventory retains an unresolved chapter page range; that bibliographic issue does not affect this topic proposal."]
+
+  - id: "sw-np-entrepreneurs-primary-care-lifeline"
+    title: "Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline"
+    year: 2026
+    disciplinary_section: "Short Academic Works"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "low"
+        rationale: "Independent NP practice plausibly implicates professional boundaries, but the official public description only identifies barriers and private-sector solutions without clearly centering scope-of-practice law."
+        evidence_source: "Official article description; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2843822"
+    needs_editorial_review: true
+    notes: ["No payments membership is proposed because the verified public description does not establish payment policy as a central subject."]
+
+  - id: "sw-safe-harbors-malpractice-wasteful-spending"
+    title: "Developing Safe Harbors to Address Malpractice Liability and Wasteful Health Care Spending"
+    year: 2023
+    disciplinary_section: "Short Academic Works"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The article directly proposes malpractice-liability safe harbors."
+        evidence_source: "Official article description; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2812104"
+      - topic_id: "payments"
+        confidence: "medium"
+        rationale: "The proposal targets wasteful health care spending, but it is less directly about payment or billing rules than the previously approved Payments corpus."
+        evidence_source: "Official article description; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2812104"
+    needs_editorial_review: true
+    notes: ["Torts-liability membership is high confidence; only the additional Payments membership requires editorial judgment."]
+
+  - id: "sw-constraints-medical-liability-safe-harbors"
+    title: "Constraints on Medical Liability Through Malpractice Safe Harbors"
+    year: 2020
+    disciplinary_section: "Short Academic Works"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The article directly addresses constraints on medical liability through malpractice safe harbors."
+        evidence_source: "Verified title and record; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2769664"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "sw-covid-state-medical-liability-immunity"
+    title: "COVID-19 and State Medical Liability Immunity"
+    year: 2020
+    disciplinary_section: "Short Academic Works"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The article directly examines state medical-liability immunity."
+        evidence_source: "Verified title and record; https://www.healthaffairs.org/doi/10.1377/forefront.20200508.885890"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "sw-pas-nps-interchangeable"
+    title: "Are PAs and NPs Interchangeable?"
+    year: 2019
+    disciplinary_section: "Short Academic Works"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "licensing"
+        confidence: "high"
+        rationale: "The commentary examines legally defined practice authority and professional boundaries for PAs and NPs."
+        evidence_source: "Verified record and public text; https://doi.org/10.1097/01.JAA.0000578780.84921.7c"
+    needs_editorial_review: false
+    notes: []
+
+  - id: "sw-macra-incident-to-billing"
+    title: "The Integrity of MACRA May Be Undermined By “Incident To Billing” Coding"
+    year: 2018
+    disciplinary_section: "Short Academic Works"
+    current_approved_topics:
+      - topic_id: "payments"
+        status: "previously_approved"
+        confidence: "high"
+        rationale: "Preserves the approved Payments membership for Medicare payment and incident-to billing policy without reassessment."
+        evidence_source: "docs/publications/reviewed_inventory.yml; https://doi.org/10.1377/hblog20180103.135358"
+    proposed_additional_topics: []
+    needs_editorial_review: false
+    notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged; no additional licensing membership is proposed."]
+
+  - id: "sw-worried-about-malpractice"
+    title: "Worried About Malpractice?"
+    year: 2016
+    disciplinary_section: "Short Academic Works"
+    current_approved_topics: []
+    proposed_additional_topics:
+      - topic_id: "torts-liability"
+        confidence: "high"
+        rationale: "The work directly addresses medical-malpractice risk."
+        evidence_source: "Verified record; https://doi.org/10.1016/j.echo.2016.10.005"
+    needs_editorial_review: false
+    notes: []

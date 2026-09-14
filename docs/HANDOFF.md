@@ -2,7 +2,17 @@
 
 ## Current status
 
-**Stage: Milestone 2D — shared-source Publications and Payments implementation approved and incorporated into `main`**
+**Stage: Milestone 2E — publication-topic and Selected Scholarship editorial review complete on feature branch; awaiting editorial approval**
+
+Milestone 2E has completed a planning-only review of all 49 production
+publication records on `content/publication-topic-review`. The resulting topic
+memberships and Selected Scholarship sets are recommendations for editorial
+review, not approved production metadata. No public page, production
+publication record, filter, navigation item, or style was changed. The five
+existing `payments` memberships and Payments Selected Scholarship placements
+remain the only approved topic and curation decisions and were preserved
+without reassessment. Public topic filters remain deferred pending separate
+approval of the review.
 
 Milestone 2D has passed source, content, and visual review and is incorporated
 into `main`. The Publications page now renders all 49
@@ -157,6 +167,22 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
+## Milestone 2E editorial review completed
+
+- Reviewed all 49 records in `data/publications.yml` against the six approved Research-program definitions, using verified metadata and canonical public descriptions where titles alone were insufficient.
+- Recorded proposed many-to-many topic memberships with confidence, rationale, evidence source, and explicit editorial-review flags without changing production metadata.
+- Preserved the five approved `payments` memberships as `previously_approved` and left their existing Payments Selected Scholarship order unchanged.
+- Proposed compact Selected Scholarship sets and display orders for the other five Research programs, with alternates where useful, while keeping topic membership separate from page curation.
+- Flagged medium- and low-confidence judgments and one no-topic record instead of forcing ambiguous work into a program.
+- Left public filtering, production topic updates, and population of the other five Research-program pages deferred pending editorial approval.
+
+## Milestone 2E files added or modified
+
+- `docs/publications/TOPIC_CODING_REVIEW.yml`
+- `docs/publications/TOPIC_CODING_REPORT.md`
+- `docs/publications/SELECTED_SCHOLARSHIP_REVIEW.md`
+- `docs/HANDOFF.md`
+
 ## Milestone 1 files created
 
 - `.gitignore`
@@ -243,8 +269,8 @@ Do not invent or add these items without approved source materials:
 
 Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list. A publication may ultimately belong to multiple topics, with concise public filter labels mapped to the six approved Research programs as documented in `WEBSITE_SPEC.md`.
 
-Milestone 2C created an immutable CV-derived inventory plus a separate externally checked reviewed inventory. Milestone 2D promoted the approved public fields into `data/publications.yml` and implemented the shared renderer, sixth Research entry, and Payments landing page. The five approved `payments` topic memberships and Selected Scholarship placements are the only current topic and curation assignments; all others remain subject to review.
+Milestone 2C created an immutable CV-derived inventory plus a separate externally checked reviewed inventory. Milestone 2D promoted the approved public fields into `data/publications.yml` and implemented the shared renderer, sixth Research entry, and Payments landing page. Milestone 2E added planning-only topic and Selected Scholarship recommendations for editorial review. The five approved `payments` topic memberships and Selected Scholarship placements are still the only current production topic and curation assignments; all Milestone 2E proposals remain unapproved.
 
 ## Next recommended task
 
-Next task: await separate authorization for the next milestone. Do not begin broader topic coding, public filtering, deployment, or domain configuration without separate authorization.
+Next task: editorial review and approval, revision, or rejection of the Milestone 2E topic-coding and Selected Scholarship recommendations. Do not update production topic metadata, populate the other five Research-program scholarship sections, add public filtering, deploy, or configure the domain without separate authorization.
