@@ -2,16 +2,19 @@
 
 ## Current status
 
-**Stage: Milestone 2E — publication-topic coding and complete Research-program scholarship policy finalized on feature branch; awaiting merge**
+**Stage: Milestone 2E — publication-topic coding and complete Research-program scholarship policy approved and incorporated into `main`**
 
-Milestone 2E has finalized editorial topic decisions for all 49 production
-publication records on `content/publication-topic-review`. The approved inputs
-are documented for the next production milestone but have not yet been promoted
-into `data/publications.yml`. No public page, production publication record,
-filter, navigation item, or style was changed. The five existing `payments`
-memberships and Payments Selected Scholarship placements remain historically
-approved and unchanged; 51 additional topic assignments and one no-current-topic
-decision were approved in Milestone 2E. Public topic filters remain deferred.
+Milestone 2E has passed editorial and source review and is incorporated into
+`main`. All 49 publications completed editorial topic review, yielding 56
+approved assignments across the six Research programs; eight publications
+belong to two programs, and `lr-socially-distant-healthcare` is the sole
+approved no-current-topic publication. Substantive relevance controls program
+membership, and the compact 4–6-item Selected Scholarship architecture has been
+superseded. Each Research-program page should ultimately render the complete
+set assigned to its topic under the heading “Scholarship.” Homepage selection
+remains a separate editorial decision. The approved topic assignments have not
+yet been promoted into `data/publications.yml`, and public filtering remains
+unimplemented. Deployment and domain configuration remain deferred.
 
 Milestone 2D has passed source, content, and visual review and is incorporated
 into `main`. The Publications page now renders all 49
@@ -168,6 +171,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 
 ## Milestone 2E topic policy finalized
 
+- Milestone 2E passed editorial and source review and was incorporated into `main` without changing the public site or production publication metadata.
 - Reviewed all 49 records in `data/publications.yml` against the six approved Research-program definitions, using verified metadata and canonical public descriptions where titles alone were insufficient.
 - Finalized 56 high-confidence topic assignments across the six programs, including eight legitimate multi-topic records, without changing production metadata.
 - Preserved the five approved `payments` memberships as `previously_approved` and left their existing Payments Selected Scholarship order unchanged.
@@ -275,4 +279,4 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Next task: review and merge the finalized Milestone 2E planning branch. After merge and separate implementation authorization, promote the approved topic memberships into `data/publications.yml`, generate all six Research-program sections from topic membership, and rename “Selected Scholarship” to “Scholarship.” Do not begin that implementation, add public filtering, deploy, or configure the domain without separate authorization.
+Next proposed milestone: **Milestone 2F: promote approved topic metadata into production and populate all six Research-program Scholarship sections from topic membership**. Await separate authorization before beginning. Public filtering, deployment, GitHub Pages, and domain configuration remain deferred.
