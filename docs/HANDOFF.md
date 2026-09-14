@@ -209,6 +209,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - Preserved the historical five Payments curated placements for provenance; no public Research page depends on them.
 - Kept the homepage and Publications presentation unchanged and added no topic-filter UI or JavaScript.
 - Verified a 14-page production render, exact topic and rendered-entry counts, canonical publication links, and internal links. The six program pages and homepage were checked at 1440 and 390 pixels without horizontal overflow; no additional spacing or style adjustment was needed.
+- Completed a final page-scoped typography refinement that modestly reduces Research-program titles and overview prose while preserving publication-entry typography, the two-column section architecture, and the approved two-line Payments title.
 
 ## Milestone 2F files modified
 
@@ -220,6 +221,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `research/drug-policy/index.qmd`
 - `research/reproductive-health/index.qmd`
 - `research/payments/index.qmd`
+- `styles.css`
 - `docs/publications/SELECTED_SCHOLARSHIP_REVIEW.md`
 - `WEBSITE_SPEC.md`
 - `docs/DEVELOPMENT.md`

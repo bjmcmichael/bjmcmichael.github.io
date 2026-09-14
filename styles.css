@@ -579,8 +579,8 @@ a.program-return {
 }
 
 .research-program-page h1 {
-  font-size: clamp(2.65rem, 5.5vw, 4.8rem);
-  line-height: 1.02;
+  font-size: clamp(2.4rem, 4.6vw, 4.05rem);
+  line-height: 1.04;
   margin: 0;
   max-width: 54rem;
 }
@@ -607,8 +607,8 @@ a.program-return {
 .program-overview p {
   color: var(--ink-soft);
   font-family: var(--serif);
-  font-size: clamp(1.2rem, 2vw, 1.52rem);
-  line-height: 1.52;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  line-height: 1.5;
   margin: 0;
   max-width: 46rem;
 }
@@ -622,7 +622,7 @@ a.program-return {
 }
 
 .payments-program-page h1 {
-  font-size: clamp(2.65rem, 4.6vw, 3.9rem);
+  font-size: clamp(2.4rem, 4.2vw, 3.9rem);
   line-height: 1.04;
   max-width: 64rem;
 }
@@ -634,7 +634,7 @@ a.program-return {
 }
 
 .payments-program-page .program-overview p {
-  font-size: clamp(1.15rem, 1.55vw, 1.28rem);
+  font-size: clamp(1.1rem, 1.55vw, 1.28rem);
   line-height: 1.5;
   max-width: 48rem;
 }
