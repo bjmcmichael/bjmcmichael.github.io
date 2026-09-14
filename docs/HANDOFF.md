@@ -2,9 +2,11 @@
 
 ## Current status
 
-**Stage: Milestone 2B — approved and incorporated into `main`**
+**Stage: Milestone 2B — approved and incorporated into `main`; post-merge routing and layout repair applied on a corrective branch**
 
 Milestone 2B has passed review and is incorporated into `main`. Its feature branch, `content/research-programs`, remains retained.
+
+A subsequent routing and homepage-layout regression has been repaired on `fix/research-routing-layout`. The corrective branch remains separate from `main` pending explicit merge authorization.
 
 The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
 
@@ -64,11 +66,20 @@ The five approved programs, in order, are:
 4. Opioids, Drug Policy & Harm Reduction
 5. Reproductive Health & Family Formation
 
+## Post-merge routing and layout repair
+
+After Milestone 2B was merged, visual review identified a routing collision between root `research.html` output and the `research/` program directory, along with a homepage regression caused by Quarto inferring the hero heading as a document title after the eyebrow was removed.
+
+- Moved the main Research landing page from `research.qmd` to `research/index.qmd`, establishing `/research/` as the durable directory route.
+- Updated the navbar, homepage Research links, five Explore links, and five program-page return links to use the durable directory route.
+- Replaced page-level `body-classes` styling with an explicit `.research-index-shell` and scoped all Research-index layout rules beneath that wrapper.
+- Restored the approved homepage composition while keeping the eyebrow absent and the hero name as the semantic page heading.
+
 ## Milestone 2B files added or modified
 
 - `_quarto.yml`
 - `index.qmd`
-- `research.qmd`
+- `research/index.qmd`
 - `research/licensing/index.qmd`
 - `research/organ-allocation/index.qmd`
 - `research/torts-liability/index.qmd`
@@ -112,7 +123,7 @@ The five approved programs, in order, are:
 ## Build and verification status
 
 - Tested with Quarto 1.10.18.
-- `quarto render` succeeds for all thirteen pages—eight top-level pages and five nested Research-program pages—and writes output to `_site/`.
+- `quarto render` succeeds for all thirteen pages—seven root-level pages, the directory-based Research landing page, and five nested Research-program pages—and writes output to `_site/`.
 - All top-level pages load with the expected page title, one primary heading, and seven navigation destinations.
 - Internal navigation and homepage action links resolve successfully.
 - Browser layout was checked at approximately 1440, 1024, 768, and 390 pixels wide.
@@ -126,6 +137,8 @@ The five approved programs, in order, are:
 - The final production render completed successfully for all thirteen pages.
 - All five Research-page Explore links and all five return-to-Research links resolve to rendered pages.
 - The Research page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels after its wide-layout refinement; a representative program page was checked at desktop and mobile widths. The editorial index and program-page structures remain readable without horizontal overflow.
+- The routing repair was verified from a static production render: `/research/`, all three homepage/navbar Research links, all five Explore links, all five return links, and the CV PDF return HTTP 200 responses.
+- The repaired homepage was checked at 1440 and 390 pixels, the Research landing page at 1600, 1440, 1024, 768, and 390 pixels, and a representative program page at 1440 and 390 pixels. Each page has one primary heading, and no horizontal overflow was detected.
 
 ## Content intentionally deferred
 

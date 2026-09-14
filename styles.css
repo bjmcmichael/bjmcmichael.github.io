@@ -205,6 +205,8 @@ main.content {
 
 .hero-copy {
   align-self: center;
+  display: flex;
+  flex-direction: column;
   min-width: 0;
 }
 
@@ -235,6 +237,7 @@ h1.hero-title {
   line-height: 0.98;
   margin: 0;
   max-width: 48rem;
+  order: 1;
 }
 
 .hero-roles {
@@ -244,6 +247,7 @@ h1.hero-title {
   line-height: 1.62;
   margin: 1.6rem 0 0;
   max-width: 36rem;
+  order: 2;
   padding-top: 1rem;
 }
 
@@ -254,6 +258,7 @@ h1.hero-title {
   line-height: 1.5;
   margin: 1.6rem 0 0;
   max-width: 43rem;
+  order: 3;
 }
 
 .hero-actions {
@@ -262,6 +267,7 @@ h1.hero-title {
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 1.75rem;
+  order: 4;
 }
 
 a.site-button {
@@ -459,33 +465,50 @@ a.site-button-secondary:hover {
   margin-top: 0.65rem !important;
 }
 
-.research-program-index {
-  border-bottom: 1px solid var(--rule-strong);
-}
-
-.research-index-page main.content.column-page {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.research-index-page .quarto-title-block,
-.research-index-page .page-intro,
-.research-index-page .research-program-index {
+.research-index-shell {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   max-width: var(--content-wide);
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
 }
 
-.research-index-page .page-intro {
-  margin-bottom: 3.5rem;
+.research-index-header {
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  margin: 4.75rem 0 2.2rem;
+  padding-bottom: 2rem;
 }
 
-.research-index-page .page-intro > p {
+.research-index-header h1 {
+  font-size: clamp(2.6rem, 5.2vw, 4.65rem);
+  line-height: 1;
+  margin: 0;
+  order: 1;
+}
+
+.research-index-description {
+  margin: 0.45rem 0 0;
+  order: 2;
+}
+
+.research-index-shell .research-program-index {
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.research-index-shell .page-intro {
+  margin-bottom: 3.5rem;
   max-width: none;
 }
 
-.research-program-item {
+.research-index-shell .page-intro > p {
+  max-width: none;
+}
+
+.research-index-shell .research-program-item {
   align-items: start;
   border-top: 1px solid var(--rule);
   display: grid;
@@ -494,36 +517,36 @@ a.site-button-secondary:hover {
   padding: 2.35rem 0 2.55rem;
 }
 
-.research-program-number {
+.research-index-shell .research-program-number {
   color: var(--crimson);
   font-family: var(--sans);
   font-size: 1rem;
   margin: 0.15rem 0 0;
 }
 
-.research-program-copy {
+.research-index-shell .research-program-copy {
   min-width: 0;
 }
 
-.research-program-copy h2 {
+.research-index-shell .research-program-copy h2 {
   font-size: clamp(1.55rem, 2.4vw, 2.15rem);
   margin: 0 0 0.65rem;
 }
 
-.research-program-copy p {
+.research-index-shell .research-program-copy p {
   color: var(--ink-soft);
   margin: 0;
   max-width: 48rem;
 }
 
-.research-program-action {
+.research-index-shell .research-program-action {
   align-self: end;
   margin: 0;
   padding-bottom: 0.1rem;
   text-align: right;
 }
 
-a.research-program-link,
+.research-index-shell a.research-program-link,
 a.program-return {
   font-size: 0.78rem;
   font-weight: 700;
@@ -617,21 +640,21 @@ a.program-return {
 }
 
 @media (min-width: 48.01rem) {
-  .research-index-page .page-intro > p {
+  .research-index-shell .page-intro > p {
     font-size: 1.5rem;
   }
 
-  .research-index-page .research-program-item {
+  .research-index-shell .research-program-item {
     gap: 1.5rem;
     grid-template-columns: 2.75rem minmax(0, 1fr) 9.75rem;
     padding: 1.9rem 0 2.05rem;
   }
 
-  .research-index-page .research-program-copy h2 {
+  .research-index-shell .research-program-copy h2 {
     margin-bottom: 0.5rem;
   }
 
-  .research-index-page .research-program-copy p {
+  .research-index-shell .research-program-copy p {
     max-width: 60rem;
   }
 }
@@ -967,27 +990,31 @@ a.contact-email {
     gap: 0.15rem;
   }
 
-  .research-program-item {
+  .research-index-shell {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .research-index-header {
+    margin-top: 3.25rem;
+  }
+
+  .research-index-shell .research-program-item {
     gap: 0.8rem 1rem;
     grid-template-columns: 2.25rem minmax(0, 1fr);
     padding: 1.9rem 0 2.1rem;
   }
 
-  .research-index-page main.content.column-page {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .research-index-page .page-intro {
+  .research-index-shell .page-intro {
     margin-bottom: 3.25rem;
   }
 
-  .research-program-copy,
-  .research-program-action {
+  .research-index-shell .research-program-copy,
+  .research-index-shell .research-program-action {
     grid-column: 2;
   }
 
-  .research-program-action {
+  .research-index-shell .research-program-action {
     margin-top: 0.35rem;
     text-align: left;
   }
@@ -1060,14 +1087,14 @@ a.contact-email {
     grid-template-columns: 2.2rem minmax(0, 1fr);
   }
 
-  .research-program-item {
-    gap: 0.65rem 0.85rem;
-    grid-template-columns: 2.2rem minmax(0, 1fr);
-  }
-
-  .research-index-page main.content.column-page {
+  .research-index-shell {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .research-index-shell .research-program-item {
+    gap: 0.65rem 0.85rem;
+    grid-template-columns: 2.2rem minmax(0, 1fr);
   }
 }
 
