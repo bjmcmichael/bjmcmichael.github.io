@@ -73,7 +73,10 @@ Current site layout:
     └── publications/
         ├── inventory.yml
         ├── reviewed_inventory.yml
-        └── VERIFICATION_REPORT.md
+        ├── VERIFICATION_REPORT.md
+        ├── TOPIC_CODING_REVIEW.yml
+        ├── TOPIC_CODING_REPORT.md
+        └── SELECTED_SCHOLARSHIP_REVIEW.md
 ```
 
 The generated `_site/` directory and Quarto's `.quarto/` working directory are ignored by Git. Add research, asset, or data directories only when approved materials require them.
@@ -133,7 +136,7 @@ No additional install command is required for the current static site.
 ### Publication data and rendering
 
 `data/publications.yml` is the single production source used by the public
-Publications page and curated Research-program scholarship lists. It contains 49
+Publications page and all six Research-program scholarship lists. It contains 49
 stable records derived from the immutable CV transcription in
 `docs/publications/inventory.yml` and the reviewed metadata overlay in
 `docs/publications/reviewed_inventory.yml`. Source section, publication type,
@@ -142,11 +145,16 @@ supersede the snapshot where externally checked metadata is available.
 
 `filters/publications.lua` renders the production records during Quarto's normal
 Pandoc pass. The filter supports a complete five-section bibliography and a
-curated Research-program mode. It is registered only in the front matter of
-`publications.qmd` and `research/payments/index.qmd` through page-local
-`metadata-files` and `filters` settings. Quarto remains the only site runtime;
-there is no Node, Python, database, CMS, client-side filter, or external
-rendering dependency.
+topic-driven Research-program mode. It is registered in `publications.qmd` and
+all six Research-program pages through page-local `metadata-files` and `filters`
+settings. Each program page supplies its stable ID through
+`publication-render-program`; the renderer includes every record whose
+`research_topics` contains that ID. Program lists place forthcoming or accepted
+work first, then published work in reverse chronological order, with
+`source_order` and stable ID providing deterministic ties. Historical Payments
+`curated_placements` remain in the source for provenance but do not control any
+Research-program list. Quarto remains the only site runtime; there is no Node,
+Python, database, CMS, client-side filter, or external rendering dependency.
 
 To add or correct a publication:
 
@@ -154,7 +162,7 @@ To add or correct a publication:
 2. Update the reviewed or planning source as appropriate while preserving the immutable role of `docs/publications/inventory.yml`.
 3. Update `data/publications.yml`, keeping it reconciled with the approved source records.
 4. Preserve the stable record ID.
-5. Assign topics or curated placements only after explicit editorial approval.
+5. Assign topics or curated placements only after explicit editorial approval; Research-program lists are generated from `research_topics`.
 6. Run `quarto render` and validate record counts, ordering, links, and every rendered surface that uses the shared source.
 
 Do not copy citation text into individual `.qmd` files. Optional unresolved

@@ -1,6 +1,12 @@
 ---
 pagetitle: "Organ Allocation & Transplant Policy"
 description: "Research on the law, policy, and outcomes of organ allocation and transplantation."
+metadata-files:
+  - ../../data/publications.yml
+filters:
+  - ../../filters/publications.lua
+publication-render-mode: topic-program
+publication-render-program: organ-allocation
 ---
 
 <article class="research-program-page">
@@ -16,9 +22,9 @@ description: "Research on the law, policy, and outcomes of organ allocation and 
 </header>
 
 <div class="research-program-sections">
-<section class="research-program-section" aria-labelledby="organ-allocation-scholarship">
+<section class="research-program-section publication-program-section" aria-labelledby="organ-allocation-scholarship">
 <h2 id="organ-allocation-scholarship">Selected Scholarship</h2>
-<p>Selected scholarship in this area will be added after the publication architecture is finalized.</p>
+<div class="publication-render"></div>
 </section>
 
 <section class="research-program-section" aria-labelledby="organ-allocation-resources">

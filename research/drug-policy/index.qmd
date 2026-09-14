@@ -1,6 +1,12 @@
 ---
 pagetitle: "Opioids, Drug Policy & Harm Reduction"
 description: "Research on health care regulation, substance-use policy, and drug-related harms."
+metadata-files:
+  - ../../data/publications.yml
+filters:
+  - ../../filters/publications.lua
+publication-render-mode: topic-program
+publication-render-program: drug-policy
 ---
 
 <article class="research-program-page">
@@ -16,9 +22,9 @@ description: "Research on health care regulation, substance-use policy, and drug
 </header>
 
 <div class="research-program-sections">
-<section class="research-program-section" aria-labelledby="drug-policy-scholarship">
+<section class="research-program-section publication-program-section" aria-labelledby="drug-policy-scholarship">
 <h2 id="drug-policy-scholarship">Selected Scholarship</h2>
-<p>Selected scholarship in this area will be added after the publication architecture is finalized.</p>
+<div class="publication-render"></div>
 </section>
 
 <section class="research-program-section" aria-labelledby="drug-policy-resources">

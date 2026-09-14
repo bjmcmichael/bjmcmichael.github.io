@@ -5,7 +5,7 @@ metadata-files:
   - ../../data/publications.yml
 filters:
   - ../../filters/publications.lua
-publication-render-mode: curated-program
+publication-render-mode: topic-program
 publication-render-program: payments
 ---
 

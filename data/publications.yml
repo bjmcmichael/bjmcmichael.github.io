@@ -80,7 +80,8 @@ publications:
     identifiers:
       doi: "10.25172/smulr.78.3.11"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "reproductive-health"
     curated_placements: []
     homepage_selected: false
   - id: "lr-constitutional-false-claims-act"
@@ -135,7 +136,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "organ-allocation"
     curated_placements: []
     homepage_selected: false
   - id: "lr-reproductive-objectification"
@@ -160,7 +162,8 @@ publications:
     identifiers:
       doi: "10.24926/265535.4286"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "reproductive-health"
     curated_placements: []
     homepage_selected: false
   - id: "lr-predictability-chaos-punitive-damages"
@@ -185,7 +188,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "lr-stealing-organs"
@@ -209,7 +213,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "organ-allocation"
     curated_placements: []
     homepage_selected: false
   - id: "lr-socially-distant-healthcare"
@@ -256,7 +261,9 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "drug-policy"
     curated_placements: []
     homepage_selected: false
   - id: "lr-state-created-fetal-harm"
@@ -281,7 +288,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "reproductive-health"
     curated_placements: []
     homepage_selected: false
   - id: "lr-insuring-apologies"
@@ -305,7 +313,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "lr-contaminated-relationships-opioid-crisis"
@@ -330,7 +339,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "drug-policy"
     curated_placements: []
     homepage_selected: false
   - id: "lr-occupational-licensing-opioid-crisis"
@@ -354,7 +364,9 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "drug-policy"
     curated_placements: []
     homepage_selected: false
   - id: "lr-healthcare-licensing-liability"
@@ -378,7 +390,9 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "lr-sorry-never-enough"
@@ -404,7 +418,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "lr-taming-blockbuster-punitive-damages"
@@ -429,7 +444,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "lr-failure-of-sorry"
@@ -453,7 +469,8 @@ publications:
     identifiers:
       doi: null
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "el-sharing-is-caring-organ-allocation"
@@ -477,7 +494,8 @@ publications:
     identifiers:
       doi: "10.1086/743342"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "organ-allocation"
     curated_placements: []
     homepage_selected: false
   - id: "el-np-scope-preventable-hospitalizations"
@@ -501,7 +519,8 @@ publications:
     identifiers:
       doi: "10.1016/j.jhealeco.2025.103044"
       pmid: "40753838"
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "el-scope-practice-patterns-nps-pas"
@@ -525,7 +544,8 @@ publications:
     identifiers:
       doi: "10.1111/coep.12665"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "el-supply-side-health-policy-mortality"
@@ -549,7 +569,8 @@ publications:
     identifiers:
       doi: "10.1016/j.jpubeco.2023.104901"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "el-liability-immunization-medical-devices"
@@ -574,7 +595,8 @@ publications:
     identifiers:
       doi: "10.1111/jels.12268"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "el-cannabis-access-opioid-prescribing"
@@ -600,7 +622,8 @@ publications:
     identifiers:
       doi: "10.1016/j.jhealeco.2019.102273"
       pmid: "31865260"
-    research_topics: []
+    research_topics:
+      - "drug-policy"
     curated_placements: []
     homepage_selected: false
   - id: "el-shifting-liability-licensing"
@@ -624,7 +647,9 @@ publications:
     identifiers:
       doi: "10.1515/jtl-2019-0028"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "el-beyond-physicians"
@@ -648,7 +673,9 @@ publications:
     identifiers:
       doi: "10.1111/jels.12198"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "el-demand-healthcare-regulation"
@@ -672,7 +699,8 @@ publications:
     identifiers:
       doi: "10.1002/soej.12211"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "el-punitive-damages-calculus"
@@ -697,7 +725,8 @@ publications:
     identifiers:
       doi: "10.1002/soej.12217"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "el-fat-tailed-blockbuster-punitive-damages"
@@ -722,7 +751,8 @@ publications:
     identifiers:
       doi: "10.1111/jels.12043"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "mh-ambulatory-sensitive-conditions-scope-laws"
@@ -746,7 +776,8 @@ publications:
     identifiers:
       doi: "10.1016/j.jnr.2026.04.005"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "mh-np-scope-preventable-pediatric-hospitalizations"
@@ -770,7 +801,8 @@ publications:
     identifiers:
       doi: "10.1177/10775587261420485"
       pmid: "41782564"
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "mh-fentanyl-test-strips-mortality"
@@ -796,7 +828,8 @@ publications:
     identifiers:
       doi: "10.1177/10775587251316919"
       pmid: "39936554"
-    research_topics: []
+    research_topics:
+      - "drug-policy"
     curated_placements: []
     homepage_selected: false
   - id: "mh-maximizing-nursing-workforce"
@@ -826,7 +859,8 @@ publications:
     identifiers:
       doi: "10.1016/j.outlook.2023.102016"
       pmid: "37574395"
-    research_topics: []
+    research_topics:
+      - "payments"
     curated_placements: []
     homepage_selected: false
   - id: "mh-uniform-classification-np-scope-laws"
@@ -851,7 +885,8 @@ publications:
     identifiers:
       doi: "10.1177/10775587221126777"
       pmid: "36172783"
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "mh-antidepressants-discontinued-pregnancy"
@@ -879,7 +914,8 @@ publications:
     identifiers:
       doi: "10.1016/j.whi.2021.10.004"
       pmid: "34840082"
-    research_topics: []
+    research_topics:
+      - "reproductive-health"
     curated_placements: []
     homepage_selected: false
   - id: "mh-np-scope-opioid-prescribing"
@@ -903,7 +939,9 @@ publications:
     identifiers:
       doi: "10.1111/1468-0009.12524"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "drug-policy"
     curated_placements: []
     homepage_selected: false
   - id: "mh-state-legislation-industry-compensation-orthopaedic-residents"
@@ -1001,7 +1039,8 @@ publications:
     identifiers:
       doi: "10.1097/MLR.0000000000001100"
       pmid: "30870392"
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "mh-public-attitudes-liver-allocation"
@@ -1030,7 +1069,8 @@ publications:
     identifiers:
       doi: "10.1111/ajt.15227"
       pmid: "30582275"
-    research_topics: []
+    research_topics:
+      - "organ-allocation"
     curated_placements: []
     homepage_selected: false
   - id: "mh-extra-regulatory-np-scope-physician-malpractice"
@@ -1056,7 +1096,9 @@ publications:
     identifiers:
       doi: "10.1177/1077558716686889"
       pmid: "29148320"
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "bc-negligence-intentional-torts-professional-liability-malpractice"
@@ -1080,7 +1122,8 @@ publications:
     identifiers:
       doi: "10.1007/978-3-031-08162-0_8"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "bc-economic-context-nursing-practice-united-states"
@@ -1105,7 +1148,8 @@ publications:
     identifiers:
       doi: "10.1891/9780826160164.0001"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "payments"
     curated_placements: []
     homepage_selected: false
   - id: "sw-np-entrepreneurs-primary-care-lifeline"
@@ -1132,7 +1176,9 @@ publications:
     identifiers:
       doi: "10.1001/jamahealthforum.2025.6200"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "licensing"
+      - "payments"
     curated_placements: []
     homepage_selected: false
   - id: "sw-safe-harbors-malpractice-wasteful-spending"
@@ -1158,7 +1204,8 @@ publications:
     identifiers:
       doi: "10.1001/jamahealthforum.2023.3899"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "sw-constraints-medical-liability-safe-harbors"
@@ -1184,7 +1231,8 @@ publications:
     identifiers:
       doi: "10.1001/jamahealthforum.2020.0961"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "sw-covid-state-medical-liability-immunity"
@@ -1211,7 +1259,8 @@ publications:
     identifiers:
       doi: "10.1377/forefront.20200508.885890"
       pmid: null
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false
   - id: "sw-pas-nps-interchangeable"
@@ -1236,7 +1285,8 @@ publications:
     identifiers:
       doi: "10.1097/01.JAA.0000578780.84921.7c"
       pmid: "31397695"
-    research_topics: []
+    research_topics:
+      - "licensing"
     curated_placements: []
     homepage_selected: false
   - id: "sw-macra-incident-to-billing"
@@ -1297,6 +1347,7 @@ publications:
     identifiers:
       doi: "10.1016/j.echo.2016.10.005"
       pmid: "27919323"
-    research_topics: []
+    research_topics:
+      - "torts-liability"
     curated_placements: []
     homepage_selected: false

@@ -2,7 +2,18 @@
 
 ## Current status
 
-**Stage: Milestone 2E — publication-topic coding and complete Research-program scholarship policy approved and incorporated into `main`**
+**Stage: Milestone 2F — topic-driven Research-program scholarship implementation complete on `build/research-topic-scholarship`, awaiting review**
+
+Milestone 2F promotes all 56 approved topic assignments into
+`data/publications.yml` and populates all six Research-program pages from that
+shared production metadata. The public heading remains “Selected Scholarship”
+on every program page, but the lists are complete topic corpora rather than
+capped selections: Licensing 17, Organ Allocation 4, Torts & Liability 17,
+Drug Policy 6, Reproductive Health 4, and Payments & Accountability 8. Eight
+publications appear in two programs, and `lr-socially-distant-healthcare`
+remains the sole no-current-topic record. The homepage selection is unchanged,
+and public filtering remains deferred. This work has not been merged into
+`main`.
 
 Milestone 2E has passed editorial and source review and is incorporated into
 `main`. All 49 publications completed editorial topic review, yielding 56
@@ -10,11 +21,12 @@ approved assignments across the six Research programs; eight publications
 belong to two programs, and `lr-socially-distant-healthcare` is the sole
 approved no-current-topic publication. Substantive relevance controls program
 membership, and the compact 4–6-item Selected Scholarship architecture has been
-superseded. Each Research-program page should ultimately render the complete
-set assigned to its topic under the heading “Scholarship.” Homepage selection
+superseded. Milestone 2F later retained “Selected Scholarship” as the public
+heading while implementing the complete set assigned to each topic. Homepage selection
 remains a separate editorial decision. The approved topic assignments have not
-yet been promoted into `data/publications.yml`, and public filtering remains
-unimplemented. Deployment and domain configuration remain deferred.
+yet been promoted into `main`; they are implemented on the Milestone 2F feature
+branch. Public filtering remains unimplemented. Deployment and domain
+configuration remain deferred.
 
 Milestone 2D has passed source, content, and visual review and is incorporated
 into `main`. The Publications page now renders all 49
@@ -179,7 +191,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - Approved `lr-socially-distant-healthcare` as the sole no-current-topic record because telehealth and access barriers do not cleanly fit the six-program taxonomy.
 - Superseded the compact 4–6-item Selected Scholarship proposal with a complete-corpus rule: every relevant publication remains associated with its Research program regardless of age, overlap, or resulting page length.
 - Kept Research-program membership distinct from homepage selection and preserved legitimate many-to-many assignments.
-- Recorded the next production recommendation: generate all six Research-page publication sections from topic membership and rename “Selected Scholarship” to “Scholarship.”
+- Recorded a production recommendation to generate all six Research-page publication sections from topic membership. Milestone 2F supersedes the associated rename recommendation and retains “Selected Scholarship” as the approved public heading.
 - Left public filtering, production topic updates, and public Research-page population deferred pending separate implementation authorization.
 
 ## Milestone 2E files added or modified
@@ -187,6 +199,30 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/publications/TOPIC_CODING_REVIEW.yml`
 - `docs/publications/TOPIC_CODING_REPORT.md`
 - `docs/publications/SELECTED_SCHOLARSHIP_REVIEW.md`
+- `docs/HANDOFF.md`
+
+## Milestone 2F implementation completed on feature branch
+
+- Promoted the 56 approved topic assignments into `data/publications.yml` without changing bibliographic metadata, canonical links, authorship, disciplinary sections, status, year, or source order.
+- Added topic-driven Research-program rendering to `filters/publications.lua` while preserving the Publications page's full-bibliography behavior.
+- Populated all six Research-program “Selected Scholarship” sections from `research_topics`, with deterministic status/year/source-order/ID ordering and no hand-maintained citations.
+- Preserved the historical five Payments curated placements for provenance; no public Research page depends on them.
+- Kept the homepage and Publications presentation unchanged and added no topic-filter UI or JavaScript.
+- Verified a 14-page production render, exact topic and rendered-entry counts, canonical publication links, and internal links. The six program pages and homepage were checked at 1440 and 390 pixels without horizontal overflow; no additional spacing or style adjustment was needed.
+
+## Milestone 2F files modified
+
+- `data/publications.yml`
+- `filters/publications.lua`
+- `research/licensing/index.qmd`
+- `research/organ-allocation/index.qmd`
+- `research/torts-liability/index.qmd`
+- `research/drug-policy/index.qmd`
+- `research/reproductive-health/index.qmd`
+- `research/payments/index.qmd`
+- `docs/publications/SELECTED_SCHOLARSHIP_REVIEW.md`
+- `WEBSITE_SPEC.md`
+- `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
 ## Milestone 1 files created
@@ -255,17 +291,17 @@ Do not invent or add these items without approved source materials:
 - headshot or other imagery;
 - external profile and contact details;
 - public teaching materials and casebook information;
-- promotion of the Milestone 2E topic approvals into production metadata, publication filters, public topic controls, and any new homepage selection;
+- public topic controls, publication filtering, and any new homepage selection;
 - real research figures or interactive components;
 - final custom domain.
 
 ## Unresolved issues
 
-- The five Research-program pages intentionally contain no individual publications, findings, datasets, replication repositories, code links, figures, or interactive tools pending approved materials and later architecture work.
+- Research-program publication lists are populated, but findings, datasets, replication repositories, code links, figures, and interactive tools remain pending approved materials and later architecture work.
 - Data & Code remains intentionally unpopulated because no approved public datasets, replication repositories, code links, or interactive components have been supplied.
 - No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
 - Six externally checked records retain narrow citation cautions documented in `docs/publications/reviewed_inventory.yml`: final forthcoming details, one published-version author-order conflict, one page-range discrepancy, and two optional pagination fields.
-- Milestone 2E topic assignments are editorially approved but have not been promoted into `data/publications.yml`; the existing five Payments curated placements remain the only public Research-page publication implementation. No new homepage publication selection is approved.
+- Milestone 2E topic assignments are implemented in `data/publications.yml` on the Milestone 2F feature branch. The five historical Payments curated placements remain for provenance, and no new homepage publication selection is approved.
 - Unfinished AMA RUC / RVU project details, preliminary findings, private materials, datasets, and manuscripts remain outside the approved public scope.
 - The CV labels its bibliography “Selected Publications” and contains no Working Papers or Books / Book Projects section, so completeness and any additional authorized categories remain unresolved.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
@@ -275,8 +311,8 @@ Do not invent or add these items without approved source materials:
 
 Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list. A publication may ultimately belong to multiple topics, with concise public filter labels mapped to the six approved Research programs as documented in `WEBSITE_SPEC.md`.
 
-Milestone 2C created an immutable CV-derived inventory plus a separate externally checked reviewed inventory. Milestone 2D promoted the approved public fields into `data/publications.yml` and implemented the shared renderer, sixth Research entry, and Payments landing page. Milestone 2E finalized the complete many-to-many topic corpus as approved input for the next production milestone and superseded compact Selected Scholarship curation. The five pre-Milestone 2E `payments` memberships and placements remain the only topic assignments currently present in production until a separately authorized implementation promotes the new approvals.
+Milestone 2C created an immutable CV-derived inventory plus a separate externally checked reviewed inventory. Milestone 2D promoted the approved public fields into `data/publications.yml` and implemented the shared renderer, sixth Research entry, and Payments landing page. Milestone 2E finalized the complete many-to-many topic corpus and superseded compact Selected Scholarship curation. Milestone 2F promotes those decisions into production metadata and generates each complete program corpus while retaining “Selected Scholarship” as the approved public heading.
 
 ## Next recommended task
 
-Next proposed milestone: **Milestone 2F: promote approved topic metadata into production and populate all six Research-program Scholarship sections from topic membership**. Await separate authorization before beginning. Public filtering, deployment, GitHub Pages, and domain configuration remain deferred.
+Next task: review and, if approved, merge Milestone 2F. Await separate authorization before merging or beginning public filtering or any subsequent implementation milestone. Deployment, GitHub Pages, and domain configuration remain deferred.

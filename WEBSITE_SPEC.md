@@ -272,9 +272,9 @@ Public-facing filter labels may be shorter than the full Research-program names.
 | Reproductive Health & Family Formation | Reproductive Health |
 | Health Care Payments & Financial Accountability | Payments & Accountability |
 
-The following five existing publication records are approved both for membership
-in the `payments` topic and for the payments program page's initial Selected
-Scholarship list:
+The following five publication records were the first records approved both for
+membership in the `payments` topic and for the Payments program page's initial
+Selected Scholarship list:
 
 - `mh-state-legislation-industry-compensation-orthopaedic-residents`
 - `mh-open-payments-orthopedic-residents`
@@ -282,16 +282,22 @@ Scholarship list:
 - `lr-constitutional-false-claims-act`
 - `lr-constitutional-accounting-false-claims-act`
 
-These approvals do not grant homepage placement. Topic membership and curated
-placement remain separate metadata fields, and all other topic assignments and
-curated placements require review.
+These approvals do not grant homepage placement. Historical curated-placement
+metadata remains separate from topic membership, but Research-program rendering
+no longer depends on curated placements.
 
-Milestone 2D implements the shared publication source, the five-section public
-bibliography, the sixth numbered Research-index entry, and the Payments landing
-page with the five approved Selected Scholarship records. Those records remain
-in their disciplinary sections on the Publications page. Broader topic coding
-and any public topic-filter interface remain deferred and require separate
-authorization.
+Milestone 2E approved 56 topic assignments across all 49 publication records:
+17 Licensing, 4 Organ Allocation, 17 Torts & Liability, 6 Drug Policy,
+4 Reproductive Health, and 8 Payments & Accountability. Eight publications
+belong to two programs, and `lr-socially-distant-healthcare` is the sole approved
+no-current-topic record. Milestone 2F promotes those approvals into
+`data/publications.yml` and renders every topic member on its Research-program
+page under the public heading **Selected Scholarship**. That heading is an
+editorial label, not a capped subset. Research-program membership remains
+separate from homepage selection, and the homepage selection is unchanged.
+
+The Publications page continues to preserve its five disciplinary sections.
+Public topic filtering remains deferred and requires separate authorization.
 
 ## 7. Interactive research philosophy
 

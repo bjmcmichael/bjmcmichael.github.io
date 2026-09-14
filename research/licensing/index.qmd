@@ -1,6 +1,12 @@
 ---
 pagetitle: "Professional Licensing & Scope of Practice"
 description: "Research on how occupational licensing and scope-of-practice laws shape health care work, access, and outcomes."
+metadata-files:
+  - ../../data/publications.yml
+filters:
+  - ../../filters/publications.lua
+publication-render-mode: topic-program
+publication-render-program: licensing
 ---
 
 <article class="research-program-page">
@@ -16,9 +22,9 @@ description: "Research on how occupational licensing and scope-of-practice laws 
 </header>
 
 <div class="research-program-sections">
-<section class="research-program-section" aria-labelledby="licensing-scholarship">
+<section class="research-program-section publication-program-section" aria-labelledby="licensing-scholarship">
 <h2 id="licensing-scholarship">Selected Scholarship</h2>
-<p>Selected scholarship in this area will be added after the publication architecture is finalized.</p>
+<div class="publication-render"></div>
 </section>
 
 <section class="research-program-section" aria-labelledby="licensing-resources">

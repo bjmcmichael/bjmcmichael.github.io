@@ -69,15 +69,42 @@ local function bibliography_sort(left, right)
   return (string_value(left.id) or "") < (string_value(right.id) or "")
 end
 
-local function placement_for(record, program_id)
-  for _, placement in ipairs(record.curated_placements or {}) do
-    if string_value(placement.surface) == "research_program"
-      and string_value(placement.program_id) == program_id
-      and string_value(placement.section) == "selected_scholarship" then
-      return placement
+local function program_sort(left, right)
+  local status_order = {
+    forthcoming = 0,
+    accepted = 1,
+    published = 2
+  }
+  local left_status_name = string_value(left.status) or ""
+  local right_status_name = string_value(right.status) or ""
+  local left_status = status_order[left_status_name] or 3
+  local right_status = status_order[right_status_name] or 3
+  if left_status ~= right_status then
+    return left_status < right_status
+  end
+
+  local left_year = number_value(left.year) or 0
+  local right_year = number_value(right.year) or 0
+  if left_year ~= right_year then
+    return left_year > right_year
+  end
+
+  local left_order = number_value(left.source_order) or math.huge
+  local right_order = number_value(right.source_order) or math.huge
+  if left_order ~= right_order then
+    return left_order < right_order
+  end
+
+  return (string_value(left.id) or "") < (string_value(right.id) or "")
+end
+
+local function has_topic(record, program_id)
+  for _, topic in ipairs(record.research_topics or {}) do
+    if string_value(topic) == program_id then
+      return true
     end
   end
-  return nil
+  return false
 end
 
 local function citation_inlines(record)
@@ -187,26 +214,18 @@ local function render_full_bibliography(meta)
   return pandoc.Div(blocks, pandoc.Attr("", {"publication-bibliography"}))
 end
 
-local function render_curated_program(meta, program_id)
-  local selected = {}
+local function render_topic_program(meta, program_id)
+  local records = {}
   for _, record in ipairs(meta.publications or {}) do
-    local placement = placement_for(record, program_id)
-    if placement ~= nil then
-      table.insert(selected, {record = record, placement = placement})
+    if has_topic(record, program_id) then
+      table.insert(records, record)
     end
   end
-  table.sort(selected, function(left, right)
-    local left_order = number_value(left.placement.order) or math.huge
-    local right_order = number_value(right.placement.order) or math.huge
-    if left_order ~= right_order then
-      return left_order < right_order
-    end
-    return bibliography_sort(left.record, right.record)
-  end)
+  table.sort(records, program_sort)
 
   local blocks = pandoc.Blocks({})
-  for _, item in ipairs(selected) do
-    blocks:insert(publication_entry(item.record))
+  for _, record in ipairs(records) do
+    blocks:insert(publication_entry(record))
   end
   return pandoc.Div(blocks, pandoc.Attr("", {"publication-program-entries"}))
 end
@@ -227,8 +246,8 @@ function Pandoc(document)
       if mode == "bibliography" then
         return render_full_bibliography(document.meta)
       end
-      if mode == "curated-program" and program_id ~= nil then
-        return render_curated_program(document.meta, program_id)
+      if mode == "topic-program" and program_id ~= nil then
+        return render_topic_program(document.meta, program_id)
       end
       error("Unknown publication rendering mode: " .. (mode or "missing"))
     end

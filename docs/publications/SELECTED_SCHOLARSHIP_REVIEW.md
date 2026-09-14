@@ -1,12 +1,12 @@
 # Research-program Scholarship Policy
 
-Status: **editorially approved input for the next production milestone**
+Status: **implemented on the Milestone 2F feature branch; awaiting review**
 
-The filename is retained for Milestone 2E history, but the earlier compact “Selected Scholarship” recommendation has been superseded. The governing policy is now complete topic-based association, not curation to a short list.
+The filename is retained for Milestone 2E history, but the earlier compact “Selected Scholarship” recommendation has been superseded. The governing policy is now complete topic-based association, not curation to a short list. The public heading remains **“Selected Scholarship”** as an editorial label; it does not indicate a capped subset.
 
 ## Governing rule
 
-If a publication substantively belongs to a Research program, it remains associated with that program. Research-program pages should ultimately render the complete set of publications with that approved topic membership from `data/publications.yml`.
+If a publication substantively belongs to a Research program, it remains associated with that program. Research-program pages render the complete set of publications with that approved topic membership from `data/publications.yml` under the heading “Selected Scholarship.”
 
 A paper must not be excluded from a Research program merely because:
 
@@ -41,7 +41,7 @@ No reduced 4–6-paper subset is recommended for Licensing, Organ Allocation, To
 
 ## Payments transition
 
-Five Payments papers were approved before Milestone 2E and currently populate the public Payments page's “Selected Scholarship” module:
+Five Payments papers were approved before Milestone 2E and initially populated the public Payments page's “Selected Scholarship” module:
 
 1. `mh-state-legislation-industry-compensation-orthopaedic-residents`
 2. `mh-open-payments-orthopedic-residents`
@@ -49,25 +49,25 @@ Five Payments papers were approved before Milestone 2E and currently populate th
 4. `lr-constitutional-false-claims-act`
 5. `lr-constitutional-accounting-false-claims-act`
 
-That five-item module is an accurate historical implementation, but it is not the forward limit for the Payments program. Milestone 2E approves three additional Payments memberships:
+That five-item module is an accurate historical implementation, but it is not the forward limit for the Payments program. Milestone 2E approved three additional Payments memberships:
 
 1. `mh-maximizing-nursing-workforce`
 2. `bc-economic-context-nursing-practice-united-states`
 3. `sw-np-entrepreneurs-primary-care-lifeline`
 
-When Milestone 2E is promoted into production, the Payments Research page should therefore render all eight Payments publications. The public Payments page is intentionally unchanged during this planning milestone.
+With Milestone 2E promoted into production, the Payments Research page therefore renders all eight Payments publications. Its five-item state remains an accurate historical implementation, not a forward limit.
 
-## Recommended rendering architecture
+## Implemented rendering architecture
 
-The next implementation milestone should:
+Milestone 2F:
 
-1. promote the approved topic memberships into `data/publications.yml`;
-2. generate each Research-program scholarship section from topic membership rather than hand-maintained citation lists;
-3. replace “Selected Scholarship” with **“Scholarship”** across all six Research-program pages; and
-4. render every publication assigned to the page's program.
+1. promotes the approved topic memberships into `data/publications.yml`;
+2. generates each Research-program scholarship section from topic membership rather than hand-maintained citation lists;
+3. retains **“Selected Scholarship”** across all six Research-program pages as the approved public heading; and
+4. renders every publication assigned to the page's program.
 
-“Scholarship” is preferred over “Related Scholarship” because the publications are direct members of the program rather than merely adjacent material.
+This heading decision supersedes Milestone 2E's recommendation to rename the section “Scholarship.” Every approved topic member still appears, so “Selected” is not a numerical cap or a separate curation field.
 
-If a complete list becomes visually long, presentation may be improved through year grouping, a distinct Featured area followed by All Scholarship, or an accessible disclosure/collapsible interface. Those devices must preserve the complete topic corpus and must not change membership metadata.
+If a complete list becomes visually long, presentation may be improved through restrained spacing or year grouping. The default page must continue to expose the complete topic corpus and must not change membership metadata.
 
 Public topic-filter UI remains a separate, deferred implementation decision.
