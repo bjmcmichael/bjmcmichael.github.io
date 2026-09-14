@@ -2,9 +2,9 @@
 
 ## Current status
 
-**Stage: Milestone 2C — Publications metadata verification awaiting review**
+**Stage: Milestone 2C — Publications planning and metadata verification approved and incorporated into `main`**
 
-Milestone 2C planning and metadata verification have been transplanted from `content/publications-planning` onto `content/publications-planning-current` and await review. The unrendered artifacts do not change the public website and have not been merged into `main`.
+Milestone 2C Publications planning and metadata verification have passed review and are incorporated into `main`. The 49-record source inventory and 49-record reviewed inventory remain planning and metadata sources; they are not rendered as public pages. Both `content/publications-planning-current` and the older `content/publications-planning` branch remain retained.
 
 Milestone 2B has passed review and is incorporated into `main`. Its feature branch, `content/research-programs`, remains retained.
 
@@ -192,7 +192,7 @@ Do not invent or add these items without approved source materials:
 
 ## Unresolved issues
 
-- Publications remains intentionally unpopulated. The Milestone 2C source inventory, reviewed inventory, verification report, and architecture plan await review and separate public implementation authorization.
+- Publications remains intentionally unpopulated. The Milestone 2C source inventory, reviewed inventory, verification report, and architecture plan are approved planning sources; public implementation remains separately authorized.
 - The five Research-program pages intentionally contain no individual publications, findings, datasets, replication repositories, code links, figures, or interactive tools pending approved materials and later architecture work.
 - Data & Code remains intentionally unpopulated because no approved public datasets, replication repositories, code links, or interactive components have been supplied.
 - No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
@@ -212,4 +212,4 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Review the Milestone 2C verified inventory and architecture. Next proposed implementation: build the shared-source Publications page and add the sixth Payments Research entry and landing page. Broader topic coding and public filtering remain deferred because only the five approved `payments` assignments are currently authorized. Await separate authorization before public implementation.
+Next proposed milestone: **Milestone 2D — shared-source Publications implementation plus the sixth Payments Research entry and landing page.** Broader topic coding and public filtering remain deferred because only the five approved `payments` assignments are currently authorized. Await separate authorization before beginning Milestone 2D.
