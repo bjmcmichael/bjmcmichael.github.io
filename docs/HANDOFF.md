@@ -2,11 +2,11 @@
 
 ## Current status
 
-**Stage: Milestone 2B — approved and incorporated into `main`; post-merge routing and layout repair applied on a corrective branch**
+**Stage: Milestone 2B — approved and incorporated into `main`; post-merge routing and layout repair incorporated into `main`**
 
 Milestone 2B has passed review and is incorporated into `main`. Its feature branch, `content/research-programs`, remains retained.
 
-A subsequent routing and homepage-layout regression has been repaired on `fix/research-routing-layout`. The corrective branch remains separate from `main` pending explicit merge authorization.
+A subsequent routing and homepage-layout regression was repaired on `fix/research-routing-layout` and incorporated into `main`. The corrective branch remains retained.
 
 The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
 
