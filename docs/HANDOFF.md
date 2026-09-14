@@ -2,10 +2,10 @@
 
 ## Current status
 
-**Stage: Milestone 2D — shared-source Publications and Payments implementation complete on `build/publications-payments` and awaiting review**
+**Stage: Milestone 2D — shared-source Publications and Payments implementation approved and incorporated into `main`**
 
-Milestone 2D is implemented on `build/publications-payments` and awaits visual
-and content review before merge. The Publications page now renders all 49
+Milestone 2D has passed source, content, and visual review and is incorporated
+into `main`. The Publications page now renders all 49
 selected publications from `data/publications.yml` through a page-local Lua
 filter. The sixth Research program, Health Care Payments & Financial
 Accountability, is implemented with exactly five approved Selected Scholarship
@@ -247,4 +247,4 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Next task: review Milestone 2D on `build/publications-payments`. Do not merge or begin broader topic coding, public filtering, deployment, or domain configuration without separate authorization.
+Next task: await separate authorization for the next milestone. Do not begin broader topic coding, public filtering, deployment, or domain configuration without separate authorization.
