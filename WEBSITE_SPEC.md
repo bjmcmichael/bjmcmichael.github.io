@@ -246,7 +246,7 @@ architecture now uses six programs, in this order:
 6. **Health Care Payments & Financial Accountability**
 
 The sixth program has the stable ID `payments`, the short filter label
-“Payments & Accountability,” and the future path `research/payments/index.qmd`.
+“Payments & Accountability,” and the implemented path `research/payments/index.qmd`.
 Its scope encompasses health care payment and billing rules, industry financial
 relationships, and legal accountability for public spending, including False
 Claims Act scholarship. False Claims Act work is not necessarily limited to
@@ -257,9 +257,9 @@ This approval supersedes the earlier blanket exclusion of payment research from
 the public Research architecture. It does not authorize unfinished AMA RUC / RVU
 project details, preliminary findings, private materials, datasets, or manuscripts.
 
-### 6.2 Future Publications and research-topic architecture
+### 6.2 Publications and research-topic architecture
 
-Publications will preserve visible disciplinary groupings. Research topics will exist as a separate metadata dimension, and a publication may belong to multiple research topics. Future topic filters will allow visitors to find related scholarship across disciplines without replacing the disciplinary organization of the Publications page.
+Publications preserve visible disciplinary groupings. Research topics exist as a separate metadata dimension, and a publication may belong to multiple research topics. Future topic filters may allow visitors to find related scholarship across disciplines without replacing the disciplinary organization of the Publications page.
 
 Public-facing filter labels may be shorter than the full Research-program names. The tentative mapping is:
 
@@ -286,15 +286,12 @@ These approvals do not grant homepage placement. Topic membership and curated
 placement remain separate metadata fields, and all other topic assignments and
 curated placements require review.
 
-This is approved future architecture, not an implemented public feature. The
-next separately authorized Research/Publications implementation must add a sixth
-numbered Research-index entry and Explore link, create
-`research/payments/index.qmd` in the existing shared design, provide a
-source-grounded overview, render the five approved records in Selected
-Scholarship with verified links where available, and draw all publication uses
-from a shared source rather than copying citations among pages. The broader
-Publications page must retain these records in their disciplinary sections, and
-the future topic filter must find them across those sections.
+Milestone 2D implements the shared publication source, the five-section public
+bibliography, the sixth numbered Research-index entry, and the Payments landing
+page with the five approved Selected Scholarship records. Those records remain
+in their disciplinary sections on the Publications page. Broader topic coding
+and any public topic-filter interface remain deferred and require separate
+authorization.
 
 ## 7. Interactive research philosophy
 

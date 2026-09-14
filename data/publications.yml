@@ -1,0 +1,1302 @@
+# Generated from the immutable source inventory and reviewed metadata overlay.
+# Regenerate according to docs/DEVELOPMENT.md; do not edit records ad hoc.
+schema_version: 1
+generated_from:
+  - "docs/publications/inventory.yml"
+  - "docs/publications/reviewed_inventory.yml"
+record_count: 49
+publication_sections:
+  - id: "law-reviews"
+    source_section: "Law Reviews"
+    label: "Law Reviews"
+    order: 1
+  - id: "economics-empirical-legal-studies"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    label: "Peer-Reviewed Economics & Empirical Legal Studies"
+    order: 2
+  - id: "medical-health-policy"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    label: "Peer-Reviewed Medical & Health Policy"
+    order: 3
+  - id: "book-chapters"
+    source_section: "Book Chapters"
+    label: "Book Chapters"
+    order: 4
+  - id: "short-academic-works"
+    source_section: "Short Academic Works"
+    label: "Short Academic Works"
+    order: 5
+publications:
+  - id: "lr-constitutional-accounting-false-claims-act"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 1
+    source_section_order: 1
+    title: "A Constitutional Accounting of the False Claims Act"
+    ordered_authors:
+      - "Mackenzi Barrett"
+      - "Benjamin J. McMichael"
+      - "W. Kip Viscusi"
+    authors_display: "Mackenzi Barrett, Benjamin J. McMichael, and W. Kip Viscusi"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "forthcoming"
+    venue: "Vanderbilt Law Review"
+    year: 2026
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    canonical_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6271820"
+    identifiers:
+      doi: "10.2139/ssrn.6271820"
+      pmid: null
+    research_topics:
+      - "payments"
+    curated_placements:
+      - program_id: "payments"
+        section: "selected_scholarship"
+        surface: "research_program"
+        order: 5
+    homepage_selected: false
+  - id: "lr-future-frozen-embryos"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 2
+    source_section_order: 2
+    title: "The Future of Frozen Embryos"
+    ordered_authors:
+      - "Clare Ryan"
+      - "Benjamin J. McMichael"
+    authors_display: "Clare Ryan and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "SMU Law Review"
+    year: 2025
+    volume: "78"
+    issue: "3"
+    pages_or_article_number: "789–826"
+    canonical_url: "https://scholar.smu.edu/smulr/vol78/iss3/11/"
+    identifiers:
+      doi: "10.25172/smulr.78.3.11"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-constitutional-false-claims-act"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 3
+    source_section_order: 3
+    title: "A Constitutional False Claims Act"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "Mackenzi Barrett"
+      - "W. Kip Viscusi"
+    authors_display: "Benjamin J. McMichael, Mackenzi Barrett, and W. Kip Viscusi"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Washington University Law Review"
+    year: 2025
+    volume: "102"
+    issue: "3"
+    pages_or_article_number: "677–750"
+    canonical_url: "https://wustllawreview.org/2025/02/25/a-constitutional-false-claims-act/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics:
+      - "payments"
+    curated_placements:
+      - program_id: "payments"
+        section: "selected_scholarship"
+        surface: "research_program"
+        order: 4
+    homepage_selected: false
+  - id: "lr-inequitable-organ-allocation"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 4
+    source_section_order: 4
+    title: "Inequitable Organ Allocation"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "UC Davis Law Review"
+    year: 2024
+    volume: "58"
+    issue: "1"
+    pages_or_article_number: "1–110"
+    canonical_url: "https://scholarship.law.ua.edu/fac_articles/832/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-reproductive-objectification"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 5
+    source_section_order: 5
+    title: "Reproductive Objectification"
+    ordered_authors:
+      - "Meghan M. Boone"
+      - "Benjamin J. McMichael"
+    authors_display: "Meghan M. Boone and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Minnesota Law Review"
+    year: 2024
+    volume: "108"
+    issue: "5"
+    pages_or_article_number: "2493–2560"
+    canonical_url: "https://scholarship.law.umn.edu/minnlrev/vol108/iss5/4/"
+    identifiers:
+      doi: "10.24926/265535.4286"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-predictability-chaos-punitive-damages"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 6
+    source_section_order: 6
+    title: "Bringing Predictability to the Chaos of Punitive Damages"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "W. Kip Viscusi"
+    authors_display: "Benjamin J. McMichael and W. Kip Viscusi"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Arizona State Law Journal"
+    year: 2022
+    volume: "54"
+    issue: "2"
+    pages_or_article_number: "471–525"
+    canonical_url: "https://arizonastatelawjournal.org/wp-content/uploads/2022/12/McMichael_Publication.pdf"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-stealing-organs"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 7
+    source_section_order: 7
+    title: "Stealing Organs?"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Indiana Law Journal"
+    year: 2022
+    volume: "97"
+    issue: "1"
+    pages_or_article_number: "135–201"
+    canonical_url: "https://www.repository.law.indiana.edu/ilj/vol97/iss1/3/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-socially-distant-healthcare"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 8
+    source_section_order: 8
+    title: "Socially Distant Healthcare"
+    ordered_authors: null
+    authors_display: "Benjamin J. McMichael, with Allyson Gold and Alicia Gilbert"
+    authorship_display_basis: "cv_coauthor_note_conservative"
+    status: "published"
+    venue: "Tulane Law Review"
+    year: 2022
+    volume: "96"
+    issue: null
+    pages_or_article_number: "423–468"
+    canonical_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836695"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-access-to-care-epidemic"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 9
+    source_section_order: 9
+    title: "The Access-to-Care Epidemic"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Wake Forest Law Review"
+    year: 2021
+    volume: "56"
+    issue: "3"
+    pages_or_article_number: null
+    canonical_url: "https://scholarship.law.ua.edu/fac_articles/795/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-state-created-fetal-harm"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 10
+    source_section_order: 10
+    title: "State-Created Fetal Harm"
+    ordered_authors:
+      - "Meghan Boone"
+      - "Benjamin J. McMichael"
+    authors_display: "Meghan Boone and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Georgetown Law Journal"
+    year: 2021
+    volume: "109"
+    issue: "3"
+    pages_or_article_number: "475–522"
+    canonical_url: "https://www.law.georgetown.edu/georgetown-law-journal/in-print/volume-109/volume-109-issue-3-february-2021/state-created-fetal-harm/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-insuring-apologies"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 11
+    source_section_order: 11
+    title: "Insuring Apologies"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Florida State University Law Review"
+    year: 2021
+    volume: "48"
+    issue: "3"
+    pages_or_article_number: "651–718"
+    canonical_url: "https://ir.law.fsu.edu/lr/vol48/iss3/6/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-contaminated-relationships-opioid-crisis"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 12
+    source_section_order: 12
+    title: "Contaminated Relationships in the Opioid Crisis"
+    ordered_authors:
+      - "Elissa Philip Gentry"
+      - "Benjamin J. McMichael"
+    authors_display: "Elissa Philip Gentry and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Hastings Law Journal"
+    year: 2021
+    volume: "72"
+    issue: "3"
+    pages_or_article_number: "827–870"
+    canonical_url: "https://repository.uclawsf.edu/hastings_law_journal/vol72/iss3/3/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-occupational-licensing-opioid-crisis"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 13
+    source_section_order: 13
+    title: "Occupational Licensing and the Opioid Crisis"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "UC Davis Law Review"
+    year: 2020
+    volume: "54"
+    issue: "2"
+    pages_or_article_number: "887–966"
+    canonical_url: "https://lawreview.law.ucdavis.edu/sites/g/files/dgvnsk15026/files/media/documents/54-2_McMichael_color.pdf"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-healthcare-licensing-liability"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 14
+    source_section_order: 14
+    title: "Healthcare Licensing and Liability"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Indiana Law Journal"
+    year: 2020
+    volume: "95"
+    issue: "3"
+    pages_or_article_number: "821–881"
+    canonical_url: "https://www.repository.law.indiana.edu/ilj/vol95/iss3/5/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-sorry-never-enough"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 15
+    source_section_order: 15
+    title: "\"Sorry\" Is Never Enough: How State Apology Laws Fail to Reduce Medical Malpractice Liability Risk"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "R. Lawrence Van Horn"
+      - "W. Kip Viscusi"
+    authors_display: "Benjamin J. McMichael, R. Lawrence Van Horn, and W. Kip Viscusi"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Stanford Law Review"
+    year: 2019
+    volume: "71"
+    issue: "2"
+    pages_or_article_number: "341–409"
+    canonical_url: "https://review.law.stanford.edu/wp-content/uploads/sites/3/2019/02/McMichael-71-Stan.-L.-Rev.-341-2019.pdf"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-taming-blockbuster-punitive-damages"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 16
+    source_section_order: 16
+    title: "Taming Blockbuster Punitive Damages Awards"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "W. Kip Viscusi"
+    authors_display: "Benjamin J. McMichael and W. Kip Viscusi"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "University of Illinois Law Review"
+    year: 2019
+    volume: "2019"
+    issue: "1"
+    pages_or_article_number: "171–221"
+    canonical_url: "https://www.illinoislawreview.org/wp-content/uploads/2019/03/McMichael.pdf"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "lr-failure-of-sorry"
+    source_section: "Law Reviews"
+    public_section: "law-reviews"
+    type: "law_review_article"
+    source_order: 17
+    source_section_order: 17
+    title: "The Failure of “Sorry”: An Empirical Evaluation of Apology Laws, Health Care, and Medical Malpractice"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Lewis & Clark Law Review"
+    year: 2018
+    volume: "22"
+    issue: "4"
+    pages_or_article_number: "1199–1281"
+    canonical_url: "https://lawcommons.lclark.edu/lclr/vol22/iss4/4/"
+    identifiers:
+      doi: null
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-sharing-is-caring-organ-allocation"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 18
+    source_section_order: 1
+    title: "Sharing Is Caring: Eliminating Geographic Boundaries in Organ Allocation"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "accepted"
+    venue: "American Journal of Health Economics"
+    year: 2026
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    canonical_url: "https://www.journals.uchicago.edu/doi/10.1086/743342"
+    identifiers:
+      doi: "10.1086/743342"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-np-scope-preventable-hospitalizations"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 19
+    source_section_order: 2
+    title: "The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable Hospitalizations"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Health Economics"
+    year: 2025
+    volume: "103"
+    issue: null
+    pages_or_article_number: "103044"
+    canonical_url: "https://doi.org/10.1016/j.jhealeco.2025.103044"
+    identifiers:
+      doi: "10.1016/j.jhealeco.2025.103044"
+      pmid: "40753838"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-scope-practice-patterns-nps-pas"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 20
+    source_section_order: 3
+    title: "Scope-of-Practice Laws and the Practice Patterns of Nurse Practitioners and Physician Assistants"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Contemporary Economic Policy"
+    year: 2025
+    volume: "43"
+    issue: "1"
+    pages_or_article_number: "9–30"
+    canonical_url: "https://onlinelibrary.wiley.com/doi/10.1111/coep.12665"
+    identifiers:
+      doi: "10.1111/coep.12665"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-supply-side-health-policy-mortality"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 21
+    source_section_order: 4
+    title: "Supply-Side Health Policy: The Impact of Scope-of-Practice Laws on Mortality"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Public Economics"
+    year: 2023
+    volume: "222"
+    issue: null
+    pages_or_article_number: "104901"
+    canonical_url: "https://doi.org/10.1016/j.jpubeco.2023.104901"
+    identifiers:
+      doi: "10.1016/j.jpubeco.2023.104901"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-liability-immunization-medical-devices"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 22
+    source_section_order: 5
+    title: "Responses to Liability Immunization: Evidence from Medical Devices"
+    ordered_authors:
+      - "Elissa P. Gentry"
+      - "Benjamin J. McMichael"
+    authors_display: "Elissa P. Gentry and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Empirical Legal Studies"
+    year: 2020
+    volume: "17"
+    issue: "4"
+    pages_or_article_number: "789–819"
+    canonical_url: "https://onlinelibrary.wiley.com/doi/10.1111/jels.12268"
+    identifiers:
+      doi: "10.1111/jels.12268"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-cannabis-access-opioid-prescribing"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 23
+    source_section_order: 6
+    title: "The Impact of Cannabis Access Laws on Opioid Prescribing"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "R. Lawrence Van Horn"
+      - "W. Kip Viscusi"
+    authors_display: "Benjamin J. McMichael, R. Lawrence Van Horn, and W. Kip Viscusi"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Health Economics"
+    year: 2020
+    volume: "69"
+    issue: null
+    pages_or_article_number: "102273"
+    canonical_url: "https://doi.org/10.1016/j.jhealeco.2019.102273"
+    identifiers:
+      doi: "10.1016/j.jhealeco.2019.102273"
+      pmid: "31865260"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-shifting-liability-licensing"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 24
+    source_section_order: 7
+    title: "Shifting Liability with Licensing: An Empirical Analysis of Medical Malpractice and Scope-of-Practice Laws"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Tort Law"
+    year: 2019
+    volume: "12"
+    issue: "2"
+    pages_or_article_number: "213–253"
+    canonical_url: "https://doi.org/10.1515/jtl-2019-0028"
+    identifiers:
+      doi: "10.1515/jtl-2019-0028"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-beyond-physicians"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 25
+    source_section_order: 8
+    title: "Beyond Physicians: The Effect of Licensing and Liability Laws on Nurse Practitioners and Physician Assistants"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Empirical Legal Studies"
+    year: 2018
+    volume: "15"
+    issue: "4"
+    pages_or_article_number: "732–771"
+    canonical_url: "https://doi.org/10.1111/jels.12198"
+    identifiers:
+      doi: "10.1111/jels.12198"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-demand-healthcare-regulation"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 26
+    source_section_order: 9
+    title: "The Demand for Healthcare Regulation: The Effect of Political Spending on Occupational Licensing Laws"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Southern Economic Journal"
+    year: 2017
+    volume: "84"
+    issue: "1"
+    pages_or_article_number: "297–316"
+    canonical_url: "https://doi.org/10.1002/soej.12211"
+    identifiers:
+      doi: "10.1002/soej.12211"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-punitive-damages-calculus"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 27
+    source_section_order: 10
+    title: "The Punitive Damages Calculus: The Differential Incidence of State Punitive Damages Reforms"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "W. Kip Viscusi"
+    authors_display: "Benjamin J. McMichael and W. Kip Viscusi"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Southern Economic Journal"
+    year: 2017
+    volume: "84"
+    issue: "1"
+    pages_or_article_number: "82–97"
+    canonical_url: "https://doi.org/10.1002/soej.12217"
+    identifiers:
+      doi: "10.1002/soej.12217"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "el-fat-tailed-blockbuster-punitive-damages"
+    source_section: "Peer-Reviewed Economic and Law Journals"
+    public_section: "economics-empirical-legal-studies"
+    type: "peer_reviewed_journal_article"
+    source_order: 28
+    source_section_order: 11
+    title: "Shifting the Fat-Tailed Distribution of Blockbuster Punitive Damages Awards"
+    ordered_authors:
+      - "W. Kip Viscusi"
+      - "Benjamin J. McMichael"
+    authors_display: "W. Kip Viscusi and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Empirical Legal Studies"
+    year: 2014
+    volume: "11"
+    issue: "2"
+    pages_or_article_number: "350–377"
+    canonical_url: "https://doi.org/10.1111/jels.12043"
+    identifiers:
+      doi: "10.1111/jels.12043"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-ambulatory-sensitive-conditions-scope-laws"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 29
+    source_section_order: 1
+    title: "The Relationship Between Ambulatory Sensitive Conditions and Nurse Practitioner Scope-of-Practice Laws"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Nursing Regulation"
+    year: 2026
+    volume: "17"
+    issue: "2"
+    pages_or_article_number: null
+    canonical_url: "https://www.sciencedirect.com/science/article/abs/pii/S2155825626000475"
+    identifiers:
+      doi: "10.1016/j.jnr.2026.04.005"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-np-scope-preventable-pediatric-hospitalizations"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 30
+    source_section_order: 2
+    title: "Nurse Practitioner Scope-of-Practice Laws and Preventable Pediatric Hospitalizations"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Medical Care Research and Review"
+    year: 2026
+    volume: "83"
+    issue: "4"
+    pages_or_article_number: "239–250"
+    canonical_url: "https://doi.org/10.1177/10775587261420485"
+    identifiers:
+      doi: "10.1177/10775587261420485"
+      pmid: "41782564"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-fentanyl-test-strips-mortality"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 31
+    source_section_order: 3
+    title: "Impact of Fentanyl Test Strips as Harm Reduction for Drug-Related Mortality"
+    ordered_authors:
+      - "Moiz Bhai"
+      - "Benjamin J. McMichael"
+      - "David T. Mitchell"
+    authors_display: "Moiz Bhai, Benjamin J. McMichael, and David T. Mitchell"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Medical Care Research and Review"
+    year: 2025
+    volume: "82"
+    issue: "3"
+    pages_or_article_number: "240–251"
+    canonical_url: "https://doi.org/10.1177/10775587251316919"
+    identifiers:
+      doi: "10.1177/10775587251316919"
+      pmid: "39936554"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-maximizing-nursing-workforce"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 32
+    source_section_order: 4
+    title: "Maximizing the Potential Value of the Nursing Workforce"
+    ordered_authors:
+      - "Sharon Pappas"
+      - "William Brosius"
+      - "Rose Hayes"
+      - "Matthew Lawrence"
+      - "Benjamin J. McMichael"
+      - "Deborah Zimmermann"
+      - "Linda McCauley"
+    authors_display: "Sharon Pappas, William Brosius, Rose Hayes, Matthew Lawrence, Benjamin J. McMichael, Deborah Zimmermann, and Linda McCauley"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Nursing Outlook"
+    year: 2024
+    volume: "72"
+    issue: "1"
+    pages_or_article_number: "102016"
+    canonical_url: "https://www.sciencedirect.com/science/article/pii/S0029655423001215"
+    identifiers:
+      doi: "10.1016/j.outlook.2023.102016"
+      pmid: "37574395"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-uniform-classification-np-scope-laws"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 33
+    source_section_order: 5
+    title: "Toward a Uniform Classification of Nurse Practitioner Scope of Practice Laws"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "Sara Markowitz"
+    authors_display: "Benjamin J. McMichael and Sara Markowitz"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Medical Care Research and Review"
+    year: 2023
+    volume: "80"
+    issue: "4"
+    pages_or_article_number: "444–454"
+    canonical_url: "https://doi.org/10.1177/10775587221126777"
+    identifiers:
+      doi: "10.1177/10775587221126777"
+      pmid: "36172783"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-antidepressants-discontinued-pregnancy"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 34
+    source_section_order: 6
+    title: "Antidepressants Are the Most Commonly Discontinued Psychotherapeutic Medications in Pregnancy"
+    ordered_authors:
+      - "Hayley D. Germack"
+      - "Joan Combellick"
+      - "Mandy Cooper"
+      - "Krista Koller"
+      - "Benjamin J. McMichael"
+    authors_display: "Hayley D. Germack, Joan Combellick, Mandy Cooper, Krista Koller, and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Women’s Health Issues"
+    year: 2022
+    volume: "32"
+    issue: "3"
+    pages_or_article_number: "241–250"
+    canonical_url: "https://doi.org/10.1016/j.whi.2021.10.004"
+    identifiers:
+      doi: "10.1016/j.whi.2021.10.004"
+      pmid: "34840082"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-np-scope-opioid-prescribing"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 35
+    source_section_order: 7
+    title: "Nurse Practitioner Scope-of-Practice Laws and Opioid Prescribing"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Milbank Quarterly"
+    year: 2021
+    volume: "99"
+    issue: "3"
+    pages_or_article_number: "721–745"
+    canonical_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8452368/"
+    identifiers:
+      doi: "10.1111/1468-0009.12524"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-state-legislation-industry-compensation-orthopaedic-residents"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 36
+    source_section_order: 8
+    title: "Association of State Legislation and Industry Compensation to Orthopaedic Residents: A 3-Year Review of the Centers for Medicare and Medicaid Services Open Payments Database"
+    ordered_authors:
+      - "Bradley W. Wills"
+      - "Adam M. Almaguer"
+      - "Joseph X. Robin"
+      - "Adam Archie"
+      - "Benjamin J. McMichael"
+      - "Gerald McGwin Jr."
+      - "S. Elizabeth Ames"
+      - "Brent A. Ponce"
+    authors_display: "Bradley W. Wills, Adam M. Almaguer, Joseph X. Robin, Adam Archie, Benjamin J. McMichael, Gerald McGwin Jr., S. Elizabeth Ames, and Brent A. Ponce"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of the American Academy of Orthopaedic Surgeons"
+    year: 2020
+    volume: "28"
+    issue: "22"
+    pages_or_article_number: "e1020–e1028"
+    canonical_url: "https://doi.org/10.5435/JAAOS-D-19-00637"
+    identifiers:
+      doi: "10.5435/JAAOS-D-19-00637"
+      pmid: "32441903"
+    research_topics:
+      - "payments"
+    curated_placements:
+      - program_id: "payments"
+        section: "selected_scholarship"
+        surface: "research_program"
+        order: 1
+    homepage_selected: false
+  - id: "mh-open-payments-orthopedic-residents"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 37
+    source_section_order: 9
+    title: "Open Payments Reporting of Industry Compensation for Orthopedic Residents"
+    ordered_authors:
+      - "Adam M. Almaguer"
+      - "Bradley W. Wills"
+      - "Joseph X. Robin"
+      - "Yvonne Chodaba"
+      - "Alexandra M. Arguello"
+      - "Benjamin J. McMichael"
+      - "Gerald McGwin Jr."
+      - "Brent A. Ponce"
+    authors_display: "Adam M. Almaguer, Bradley W. Wills, Joseph X. Robin, Yvonne Chodaba, Alexandra M. Arguello, Benjamin J. McMichael, Gerald McGwin Jr., and Brent A. Ponce"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of Surgical Education"
+    year: 2020
+    volume: "77"
+    issue: "6"
+    pages_or_article_number: "1632–1637"
+    canonical_url: "https://doi.org/10.1016/j.jsurg.2020.05.010"
+    identifiers:
+      doi: "10.1016/j.jsurg.2020.05.010"
+      pmid: "32546385"
+    research_topics:
+      - "payments"
+    curated_placements:
+      - program_id: "payments"
+        section: "selected_scholarship"
+        surface: "research_program"
+        order: 2
+    homepage_selected: false
+  - id: "mh-np-scope-emergency-department-medicaid-expansion"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 38
+    source_section_order: 10
+    title: "The Association of Nurse Practitioner Scope-of-Practice Laws with Emergency Department Use: Evidence from Medicaid Expansion"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "Joanne Spetz"
+      - "Peter I. Buerhaus"
+    authors_display: "Benjamin J. McMichael, Joanne Spetz, and Peter I. Buerhaus"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Medical Care"
+    year: 2019
+    volume: "57"
+    issue: "5"
+    pages_or_article_number: "362–368"
+    canonical_url: "https://doi.org/10.1097/MLR.0000000000001100"
+    identifiers:
+      doi: "10.1097/MLR.0000000000001100"
+      pmid: "30870392"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-public-attitudes-liver-allocation"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 39
+    source_section_order: 11
+    title: "Public Attitudes toward Contemporary Issues in Liver Allocation"
+    ordered_authors:
+      - "Heather W. O’Dell"
+      - "Benjamin J. McMichael"
+      - "Suzie Lee"
+      - "Jay L. Karp"
+      - "R. Lawrence Van Horn"
+      - "Seth J. Karp"
+    authors_display: "Heather W. O’Dell, Benjamin J. McMichael, Suzie Lee, Jay L. Karp, R. Lawrence Van Horn, and Seth J. Karp"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "American Journal of Transplantation"
+    year: 2019
+    volume: "19"
+    issue: "4"
+    pages_or_article_number: "1212–1217"
+    canonical_url: "https://doi.org/10.1111/ajt.15227"
+    identifiers:
+      doi: "10.1111/ajt.15227"
+      pmid: "30582275"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "mh-extra-regulatory-np-scope-physician-malpractice"
+    source_section: "Peer-Reviewed Medical and Health Policy Journals"
+    public_section: "medical-health-policy"
+    type: "peer_reviewed_journal_article"
+    source_order: 40
+    source_section_order: 12
+    title: "The Extraregulatory Effect of Nurse Practitioner Scope-of-Practice Laws on Physician Malpractice Rates"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "Barbara J. Safriet"
+      - "Peter I. Buerhaus"
+    authors_display: "Benjamin J. McMichael, Barbara J. Safriet, and Peter I. Buerhaus"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Medical Care Research and Review"
+    year: 2018
+    volume: "75"
+    issue: "3"
+    pages_or_article_number: "312–326"
+    canonical_url: "https://doi.org/10.1177/1077558716686889"
+    identifiers:
+      doi: "10.1177/1077558716686889"
+      pmid: "29148320"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "bc-negligence-intentional-torts-professional-liability-malpractice"
+    source_section: "Book Chapters"
+    public_section: "book-chapters"
+    type: "book_chapter"
+    source_order: 41
+    source_section_order: 1
+    title: "Negligence, Intentional Torts, Professional Liability, and Medical Malpractice"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Laws of Medicine"
+    year: 2022
+    volume: null
+    issue: null
+    pages_or_article_number: "129–149"
+    canonical_url: "https://doi.org/10.1007/978-3-031-08162-0_8"
+    identifiers:
+      doi: "10.1007/978-3-031-08162-0_8"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "bc-economic-context-nursing-practice-united-states"
+    source_section: "Book Chapters"
+    public_section: "book-chapters"
+    type: "book_chapter"
+    source_order: 42
+    source_section_order: 2
+    title: "The Economic Context of Nursing Practice in the United States"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "Joanne Spetz"
+    authors_display: "Benjamin J. McMichael and Joanne Spetz"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Financial and Business Management for the Doctor of Nursing Practice"
+    year: 2022
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    canonical_url: "https://doi.org/10.1891/9780826160164.0001"
+    identifiers:
+      doi: "10.1891/9780826160164.0001"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "sw-np-entrepreneurs-primary-care-lifeline"
+    source_section: "Short Academic Works"
+    public_section: "short-academic-works"
+    type: "short_academic_work"
+    source_order: 43
+    source_section_order: 1
+    title: "Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline"
+    ordered_authors:
+      - "Monica O’Reilly-Jacob"
+      - "Betty Rambur"
+      - "Benjamin J. McMichael"
+      - "Jennifer Perloff"
+    authors_display: "Monica O’Reilly-Jacob, Betty Rambur, Benjamin J. McMichael, and Jennifer Perloff"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "JAMA Health Forum"
+    year: 2026
+    volume: "7"
+    issue: "1"
+    pages_or_article_number: "e256200"
+    canonical_url: "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2843822"
+    identifiers:
+      doi: "10.1001/jamahealthforum.2025.6200"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "sw-safe-harbors-malpractice-wasteful-spending"
+    source_section: "Short Academic Works"
+    public_section: "short-academic-works"
+    type: "short_academic_work"
+    source_order: 44
+    source_section_order: 2
+    title: "Developing Safe Harbors to Address Malpractice Liability and Wasteful Health Care Spending"
+    ordered_authors:
+      - "James F. Blumstein"
+      - "Benjamin J. McMichael"
+      - "Alan B. Storrow"
+    authors_display: "James F. Blumstein, Benjamin J. McMichael, and Alan B. Storrow"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "JAMA Health Forum"
+    year: 2023
+    volume: "4"
+    issue: "11"
+    pages_or_article_number: "e233899"
+    canonical_url: "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2812104"
+    identifiers:
+      doi: "10.1001/jamahealthforum.2023.3899"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "sw-constraints-medical-liability-safe-harbors"
+    source_section: "Short Academic Works"
+    public_section: "short-academic-works"
+    type: "short_academic_work"
+    source_order: 45
+    source_section_order: 3
+    title: "Constraints on Medical Liability Through Malpractice Safe Harbors"
+    ordered_authors:
+      - "James F. Blumstein"
+      - "Benjamin J. McMichael"
+      - "Alan B. Storrow"
+    authors_display: "James F. Blumstein, Benjamin J. McMichael, and Alan B. Storrow"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "JAMA Health Forum"
+    year: 2020
+    volume: "1"
+    issue: "8"
+    pages_or_article_number: "e200961"
+    canonical_url: "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2769664"
+    identifiers:
+      doi: "10.1001/jamahealthforum.2020.0961"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "sw-covid-state-medical-liability-immunity"
+    source_section: "Short Academic Works"
+    public_section: "short-academic-works"
+    type: "short_academic_work"
+    source_order: 46
+    source_section_order: 4
+    title: "COVID-19 and State Medical Liability Immunity"
+    ordered_authors:
+      - "Benjamin J. McMichael"
+      - "John R. Lowry"
+      - "William H. Frist"
+      - "R. Lawrence Van Horn"
+    authors_display: "Benjamin J. McMichael, John R. Lowry, William H. Frist, and R. Lawrence Van Horn"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Health Affairs Forefront"
+    year: 2020
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    canonical_url: "https://www.healthaffairs.org/doi/10.1377/forefront.20200508.885890"
+    identifiers:
+      doi: "10.1377/forefront.20200508.885890"
+      pmid: null
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "sw-pas-nps-interchangeable"
+    source_section: "Short Academic Works"
+    public_section: "short-academic-works"
+    type: "short_academic_work"
+    source_order: 47
+    source_section_order: 5
+    title: "Are PAs and NPs Interchangeable?"
+    ordered_authors:
+      - "Roderick S. Hooker"
+      - "Benjamin J. McMichael"
+    authors_display: "Roderick S. Hooker and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of the American Academy of Physician Assistants"
+    year: 2019
+    volume: "32"
+    issue: "9"
+    pages_or_article_number: "16–17"
+    canonical_url: "https://doi.org/10.1097/01.JAA.0000578780.84921.7c"
+    identifiers:
+      doi: "10.1097/01.JAA.0000578780.84921.7c"
+      pmid: "31397695"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false
+  - id: "sw-macra-incident-to-billing"
+    source_section: "Short Academic Works"
+    public_section: "short-academic-works"
+    type: "short_academic_work"
+    source_order: 48
+    source_section_order: 6
+    title: "The Integrity of MACRA May Be Undermined By “Incident To Billing” Coding"
+    ordered_authors:
+      - "Peter Buerhaus"
+      - "Jonathan Skinner"
+      - "Benjamin J. McMichael"
+      - "David Auerbach"
+      - "Jennifer Perloff"
+      - "Douglas Staiger"
+      - "Lucy Skinner"
+    authors_display: "Peter Buerhaus, Jonathan Skinner, Benjamin J. McMichael, David Auerbach, Jennifer Perloff, Douglas Staiger, and Lucy Skinner"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Health Affairs Forefront"
+    year: 2018
+    volume: null
+    issue: null
+    pages_or_article_number: null
+    canonical_url: "https://doi.org/10.1377/hblog20180103.135358"
+    identifiers:
+      doi: "10.1377/hblog20180103.135358"
+      pmid: null
+    research_topics:
+      - "payments"
+    curated_placements:
+      - program_id: "payments"
+        section: "selected_scholarship"
+        surface: "research_program"
+        order: 3
+    homepage_selected: false
+  - id: "sw-worried-about-malpractice"
+    source_section: "Short Academic Works"
+    public_section: "short-academic-works"
+    type: "short_academic_work"
+    source_order: 49
+    source_section_order: 7
+    title: "Worried About Malpractice?"
+    ordered_authors:
+      - "Benjamin F. Byrd III"
+      - "Jim Cooper"
+      - "Benjamin J. McMichael"
+    authors_display: "Benjamin F. Byrd III, Jim Cooper, and Benjamin J. McMichael"
+    authorship_display_basis: "externally_checked_ordered_authors"
+    status: "published"
+    venue: "Journal of the American Society of Echocardiography"
+    year: 2016
+    volume: "29"
+    issue: "12"
+    pages_or_article_number: "1161–1162"
+    canonical_url: "https://doi.org/10.1016/j.echo.2016.10.005"
+    identifiers:
+      doi: "10.1016/j.echo.2016.10.005"
+      pmid: "27919323"
+    research_topics: []
+    curated_placements: []
+    homepage_selected: false

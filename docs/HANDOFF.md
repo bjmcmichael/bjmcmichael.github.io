@@ -2,7 +2,18 @@
 
 ## Current status
 
-**Stage: Milestone 2C — Publications planning and metadata verification approved and incorporated into `main`**
+**Stage: Milestone 2D — shared-source Publications and Payments implementation complete on `build/publications-payments` and awaiting review**
+
+Milestone 2D is implemented on `build/publications-payments` and awaits visual
+and content review before merge. The Publications page now renders all 49
+selected publications from `data/publications.yml` through a page-local Lua
+filter. The sixth Research program, Health Care Payments & Financial
+Accountability, is implemented with exactly five approved Selected Scholarship
+records rendered from that same source. Broader topic coding and public
+filtering remain deferred, and the other five Research-program Selected
+Scholarship sections remain unpopulated.
+
+Milestone 2C remains approved and incorporated into `main`.
 
 Milestone 2C Publications planning and metadata verification have passed review and are incorporated into `main`. The 49-record source inventory and 49-record reviewed inventory remain planning and metadata sources; they are not rendered as public pages. Both `content/publications-planning-current` and the older `content/publications-planning` branch remain retained.
 
@@ -123,6 +134,28 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - Replaced the current blanket payment-research exclusion while preserving the Milestone 2B five-program implementation as historical state. Unfinished AMA RUC / RVU work, preliminary findings, private materials, datasets, and manuscripts remain excluded.
 - Defined the next implementation requirements without changing public pages: a sixth Research-index entry and Explore link, the new shared-design landing page, a source-grounded overview, the five approved selections with genuine links, and one shared publication source.
 
+## Milestone 2D implementation completed
+
+- Added `data/publications.yml` as the single production source for 49 selected publications, preserving stable IDs, source sections, publication types, deterministic CV order, reviewed citation fields, canonical links, identifiers, topic metadata, curated placements, and explicit homepage-selection state.
+- Added a page-local Quarto/Pandoc Lua filter that renders either the complete five-section bibliography or an approved Research-program selection without duplicating citations in `.qmd` pages.
+- Replaced the Publications placeholder with a restrained, responsive bibliography containing all 49 records under the five approved disciplinary headings.
+- Added program 06, Health Care Payments & Financial Accountability, to the Research index and created its durable landing page at `research/payments/index.qmd`.
+- Rendered exactly the five approved Payments Selected Scholarship records from the shared production source in their approved order while retaining them in the Publications bibliography.
+- Kept the other five Research-program Selected Scholarship sections unpopulated and added no public topic controls or filtering JavaScript.
+- Preserved narrow unresolved bibliographic fields as omissions rather than guesses, including the disputed page range and unsettled full author order identified during Milestone 2C.
+
+## Milestone 2D files added or modified
+
+- `data/publications.yml`
+- `filters/publications.lua`
+- `publications.qmd`
+- `research/index.qmd`
+- `research/payments/index.qmd`
+- `styles.css`
+- `WEBSITE_SPEC.md`
+- `docs/DEVELOPMENT.md`
+- `docs/HANDOFF.md`
+
 ## Milestone 1 files created
 
 - `.gitignore`
@@ -156,7 +189,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 ## Build and verification status
 
 - Tested with Quarto 1.10.18.
-- `quarto render` succeeds for all thirteen pages—seven root-level pages, the directory-based Research landing page, and five nested Research-program pages—and writes output to `_site/`.
+- `quarto render` succeeds for all fourteen pages—seven root-level pages, the directory-based Research landing page, and six nested Research-program pages—and writes output to `_site/`.
 - All top-level pages load with the expected page title, one primary heading, and seven navigation destinations.
 - Internal navigation and homepage action links resolve successfully.
 - Browser layout was checked at approximately 1440, 1024, 768, and 390 pixels wide.
@@ -167,7 +200,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - The CV PDF is present in `_site/assets/files/`, matches the supplied source file, and resolves from the rendered CV page.
 - The institutional email is rendered as `mailto:bmcmichael@law.ua.edu`; prohibited contact details are absent from the Contact HTML.
 - CV, About, Teaching, and Contact were checked at approximately 1440 × 900 and 390 × 844 pixels. Their layouts remain readable without horizontal overflow, and the mobile navigation expands to expose all seven destinations.
-- The final production render completed successfully for all thirteen pages.
+- The Milestone 2B final production render completed successfully for all thirteen pages then in scope.
 - All five Research-page Explore links and all five return-to-Research links resolve to rendered pages.
 - The Research page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels after its wide-layout refinement; a representative program page was checked at desktop and mobile widths. The editorial index and program-page structures remain readable without horizontal overflow.
 - The routing repair was verified from a static production render: `/research/`, all three homepage/navbar Research links, all five Explore links, all five return links, and the CV PDF return HTTP 200 responses.
@@ -175,13 +208,16 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - Milestone 2C inventory validation confirms 49 unique IDs, exact section/page/status count reconciliation, and valid YAML syntax.
 - The final standard Milestone 2C render in the repository completes all thirteen pages, and the unrendered planning and verification documents are not emitted into `_site/`. Earlier attempts encountered transient Windows file locks on ignored generated directories; a later unchanged retry succeeded without any source or build-configuration workaround.
 - Milestone 2C reviewed-inventory validation confirms that all 49 source IDs appear exactly once, all five approved `payments` records have both topic and curated-placement metadata, no other record has either assignment, and the original CV inventory is unchanged.
+- Milestone 2D production validation confirms 49 unique records, exact reconciliation with both approved inventories, section counts of 17 / 11 / 12 / 2 / 7, exactly five `payments` topic and curated-placement assignments, zero homepage selections, and two distinct False Claims Act records.
+- All 49 publication-title links match the reviewed canonical sources, all rendered internal links resolve, the CV PDF remains available, and no empty title link is emitted.
+- The Publications page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels; the Research index at 1440, 768, and 390 pixels; the Payments page at 1440 and 390 pixels; and the homepage at 1440 and 390 pixels. No horizontal overflow was detected, and the homepage composition remains unchanged.
+- The final Milestone 2D render completed all fourteen pages without a Dropbox, OneDrive, Quarto locking, or database warning. Planning documents, production YAML, filter source, and generated Quarto state are not emitted as public pages or tracked as generated output.
 
 ## Content intentionally deferred
 
 Do not invent or add these items without approved source materials:
 
 - any future homepage copy beyond the approved existing professional identity and research descriptor;
-- public use of verified publication metadata and citation links;
 - data, code, and replication links;
 - headshot or other imagery;
 - external profile and contact details;
@@ -192,11 +228,9 @@ Do not invent or add these items without approved source materials:
 
 ## Unresolved issues
 
-- Publications remains intentionally unpopulated. The Milestone 2C source inventory, reviewed inventory, verification report, and architecture plan are approved planning sources; public implementation remains separately authorized.
 - The five Research-program pages intentionally contain no individual publications, findings, datasets, replication repositories, code links, figures, or interactive tools pending approved materials and later architecture work.
 - Data & Code remains intentionally unpopulated because no approved public datasets, replication repositories, code links, or interactive components have been supplied.
 - No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
-- The public site still implements the five Milestone 2B program pages. The approved sixth payments program and its Research-index entry have not yet been implemented.
 - Six externally checked records retain narrow citation cautions documented in `docs/publications/reviewed_inventory.yml`: final forthcoming details, one published-version author-order conflict, one page-range discrepancy, and two optional pagination fields.
 - Topic assignments and curated placements other than the five approved `payments` records remain subject to review. No homepage publication selection is approved.
 - Unfinished AMA RUC / RVU project details, preliminary findings, private materials, datasets, and manuscripts remain outside the approved public scope.
@@ -208,8 +242,8 @@ Do not invent or add these items without approved source materials:
 
 Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list. A publication may ultimately belong to multiple topics, with concise public filter labels mapped to the six approved Research programs as documented in `WEBSITE_SPEC.md`.
 
-Milestone 2C created an immutable CV-derived inventory plus a separate externally checked reviewed inventory. Do not promote either into production metadata or implement the Publications page, filter mechanism, sixth Research entry, or payments landing page until separately authorized. The five approved `payments` topic memberships and Selected Scholarship placements are resolved inputs for that later implementation; all other assignments remain subject to review.
+Milestone 2C created an immutable CV-derived inventory plus a separate externally checked reviewed inventory. Milestone 2D promoted the approved public fields into `data/publications.yml` and implemented the shared renderer, sixth Research entry, and Payments landing page. The five approved `payments` topic memberships and Selected Scholarship placements are the only current topic and curation assignments; all others remain subject to review.
 
 ## Next recommended task
 
-Next proposed milestone: **Milestone 2D — shared-source Publications implementation plus the sixth Payments Research entry and landing page.** Broader topic coding and public filtering remain deferred because only the five approved `payments` assignments are currently authorized. Await separate authorization before beginning Milestone 2D.
+Next task: review Milestone 2D on `build/publications-payments`. Do not merge or begin broader topic coding, public filtering, deployment, or domain configuration without separate authorization.

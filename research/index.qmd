@@ -59,5 +59,14 @@ page-layout: full
 </div>
 <p class="research-program-action"><a class="research-program-link" href="reproductive-health/" aria-label="Explore Reproductive Health and Family Formation research">Explore research <span aria-hidden="true">→</span></a></p>
 </section>
+
+<section class="research-program-item" aria-labelledby="program-payments">
+<p class="research-program-number" aria-hidden="true">06</p>
+<div class="research-program-copy">
+<h2 id="program-payments">Health Care Payments &amp; Financial Accountability</h2>
+<p>I study health care payment and billing rules, industry financial relationships, and legal accountability for public spending. This work includes research on Open Payments and Medicare payment and billing policy, as well as broader False Claims Act scholarship.</p>
+</div>
+<p class="research-program-action"><a class="research-program-link" href="payments/" aria-label="Explore Health Care Payments and Financial Accountability research">Explore research <span aria-hidden="true">→</span></a></p>
+</section>
 </div>
 </div>

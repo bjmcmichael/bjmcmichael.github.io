@@ -1,0 +1,35 @@
+---
+pagetitle: "Health Care Payments & Financial Accountability"
+description: "Research on health care payment and billing rules, industry financial relationships, and legal accountability for public spending."
+metadata-files:
+  - ../../data/publications.yml
+filters:
+  - ../../filters/publications.lua
+publication-render-mode: curated-program
+publication-render-program: payments
+---
+
+<article class="research-program-page">
+<p class="program-return-wrap"><a class="program-return" href="../"><span aria-hidden="true">←</span> All research programs</a></p>
+
+<header class="research-program-header">
+<p class="program-eyebrow">Research Program</p>
+<h1>Health Care Payments &amp; Financial Accountability</h1>
+<section class="program-overview" aria-labelledby="payments-overview">
+<h2 id="payments-overview">Overview</h2>
+<p>I study health care payment and billing rules, industry financial relationships, and legal accountability for public spending. This work includes research on Open Payments and Medicare payment and billing policy, as well as broader False Claims Act scholarship.</p>
+</section>
+</header>
+
+<div class="research-program-sections">
+<section class="research-program-section publication-program-section" aria-labelledby="payments-scholarship">
+<h2 id="payments-scholarship">Selected Scholarship</h2>
+<div class="publication-render"></div>
+</section>
+
+<section class="research-program-section" aria-labelledby="payments-resources">
+<h2 id="payments-resources">Data, Code &amp; Interactive Research</h2>
+<p>Approved public datasets, replication materials, figures, and interactive research may be collected here where available.</p>
+</section>
+</div>
+</article>

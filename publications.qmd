@@ -1,34 +1,16 @@
 ---
 title: "Publications"
-description: "Publications and working papers by Benjamin J. McMichael."
+description: "Selected publications by Benjamin J. McMichael."
+metadata-files:
+  - data/publications.yml
+filters:
+  - filters/publications.lua
+publication-render-mode: bibliography
 ---
 
 ::: {.page-intro}
-A complete publication record will be organized here after entries are verified against the authoritative CV.
+My publications span legal scholarship, economics and empirical legal studies, and medical and health-policy research. The selected publications below are organized by disciplinary venue; titles link to verified journal, publisher, repository, or SSRN records where available.
 :::
 
-::: {.editorial-register}
-::: {.register-section}
-## Published & Forthcoming
-
-Verified citations will appear in this section.
-:::
-
-::: {.register-section}
-## Working Papers
-
-Current working papers will be added after review.
-:::
-
-::: {.register-section}
-## Books / Book Projects
-
-Approved book and book-project information will appear here.
-:::
-
-::: {.register-section}
-## Other Writing
-
-Selected public writing will be listed when supplied.
-:::
+::: {.publication-render}
 :::

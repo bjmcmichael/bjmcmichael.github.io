@@ -43,9 +43,15 @@ Current site layout:
 │   │   └── index.qmd
 │   ├── drug-policy/
 │   │   └── index.qmd
-│   └── reproductive-health/
+│   ├── reproductive-health/
+│   │   └── index.qmd
+│   └── payments/
 │       └── index.qmd
 ├── publications.qmd
+├── data/
+│   └── publications.yml
+├── filters/
+│   └── publications.lua
 ├── data-code.qmd
 ├── teaching.qmd
 ├── cv.qmd
@@ -62,7 +68,12 @@ Current site layout:
 └── docs/
     ├── DESIGN_SYSTEM.md
     ├── DEVELOPMENT.md
-    └── HANDOFF.md
+    ├── HANDOFF.md
+    ├── PUBLICATIONS_PLAN.md
+    └── publications/
+        ├── inventory.yml
+        ├── reviewed_inventory.yml
+        └── VERIFICATION_REPORT.md
 ```
 
 The generated `_site/` directory and Quarto's `.quarto/` working directory are ignored by Git. Add research, asset, or data directories only when approved materials require them.
@@ -104,9 +115,9 @@ Create a production render with:
 quarto render
 ```
 
-The rendered site is written to `_site/`. The current render processes seven root-level `.qmd` pages, the Research landing page at `research/index.qmd`, and five nested Research-program pages, for thirteen pages total. It creates `_site/index.html` and the durable directory route `_site/research/index.html`.
+The rendered site is written to `_site/`. The current render processes seven root-level `.qmd` pages, the Research landing page at `research/index.qmd`, and six nested Research-program pages, for fourteen pages total. It creates `_site/index.html` and the durable directory route `_site/research/index.html`.
 
-The `project.render` list in `_quarto.yml` includes both `*.qmd` and `research/**/*.qmd`. The first pattern renders only root-level site pages; the second renders the Research landing page and five nested program pages. Governing Markdown files under `docs/` remain excluded from the public site.
+The `project.render` list in `_quarto.yml` includes both `*.qmd` and `research/**/*.qmd`. The first pattern renders only root-level site pages; the second renders the Research landing page and six nested program pages. Governing Markdown files under `docs/` remain excluded from the public site.
 
 The Research landing page intentionally lives at `research/index.qmd`, not beside the `research/` directory as a root-level `research.qmd`. This avoids a static-host routing collision between `research.html` and `/research/`. Navigation, homepage actions, Explore links, and program-page return links should continue to target the directory-based `/research/` route.
 
@@ -118,6 +129,36 @@ The Research landing page intentionally lives at `research/index.qmd`, not besid
 4. Run `quarto render` from the repository root.
 
 No additional install command is required for the current static site.
+
+### Publication data and rendering
+
+`data/publications.yml` is the single production source used by the public
+Publications page and curated Research-program scholarship lists. It contains 49
+stable records derived from the immutable CV transcription in
+`docs/publications/inventory.yml` and the reviewed metadata overlay in
+`docs/publications/reviewed_inventory.yml`. Source section, publication type,
+and source order come from the CV inventory; reviewed bibliographic fields
+supersede the snapshot where externally checked metadata is available.
+
+`filters/publications.lua` renders the production records during Quarto's normal
+Pandoc pass. The filter supports a complete five-section bibliography and a
+curated Research-program mode. It is registered only in the front matter of
+`publications.qmd` and `research/payments/index.qmd` through page-local
+`metadata-files` and `filters` settings. Quarto remains the only site runtime;
+there is no Node, Python, database, CMS, client-side filter, or external
+rendering dependency.
+
+To add or correct a publication:
+
+1. Verify the metadata against an authoritative public source.
+2. Update the reviewed or planning source as appropriate while preserving the immutable role of `docs/publications/inventory.yml`.
+3. Update `data/publications.yml`, keeping it reconciled with the approved source records.
+4. Preserve the stable record ID.
+5. Assign topics or curated placements only after explicit editorial approval.
+6. Run `quarto render` and validate record counts, ordering, links, and every rendered surface that uses the shared source.
+
+Do not copy citation text into individual `.qmd` files. Optional unresolved
+fields should remain omitted until verified rather than being guessed.
 
 ### Fonts and theme
 
