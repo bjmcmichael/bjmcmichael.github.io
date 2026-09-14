@@ -1,6 +1,6 @@
-# Editorial review artifact only. This file does not drive the public site.
+# Editorial decision artifact only. This file does not drive the public site.
 schema_version: 1
-review_status: "awaiting_editorial_approval"
+review_status: "editorially_approved_for_next_production_milestone"
 authoritative_production_source: "data/publications.yml"
 record_count: 49
 allowed_topic_ids:
@@ -12,8 +12,9 @@ allowed_topic_ids:
   - "payments"
 review_notes:
   - "The five existing payments memberships are copied unchanged and marked previously_approved; they were not reopened in this review."
-  - "All other memberships are proposals. Nothing in this file changes data/publications.yml or any public Research page."
-  - "Topic membership and Selected Scholarship placement are separate editorial decisions."
+  - "Every entry under approved_milestone_2e_topics is a final editorial input for the next production milestone. Nothing in this file changes data/publications.yml or any public Research page."
+  - "The single empty approved topic list is an affirmative no-current-topic decision for lr-socially-distant-healthcare."
+  - "Topic membership remains distinct from homepage selection; Research-program pages should ultimately render every publication assigned to their topic."
 
 records:
   - id: "lr-constitutional-accounting-false-claims-act"
@@ -26,7 +27,7 @@ records:
         confidence: "high"
         rationale: "Preserves the approved Payments membership for False Claims Act financial-accountability scholarship without reassessment."
         evidence_source: "docs/publications/reviewed_inventory.yml; https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6271820"
-    proposed_additional_topics: []
+    approved_milestone_2e_topics: []
     needs_editorial_review: false
     notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged."]
 
@@ -35,7 +36,7 @@ records:
     year: 2025
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "reproductive-health"
         confidence: "high"
         rationale: "The article directly addresses frozen embryos and the legal structure of family formation."
@@ -53,16 +54,16 @@ records:
         confidence: "high"
         rationale: "Preserves the approved Payments membership for False Claims Act financial-accountability scholarship without reassessment."
         evidence_source: "docs/publications/reviewed_inventory.yml; https://wustllawreview.org/2025/02/25/a-constitutional-false-claims-act/"
-    proposed_additional_topics: []
+    approved_milestone_2e_topics: []
     needs_editorial_review: false
-    notes: ["Not proposed for torts-liability merely because it addresses legal accountability."]
+    notes: ["No torts-liability membership is approved merely because the article addresses legal accountability."]
 
   - id: "lr-inequitable-organ-allocation"
     title: "Inequitable Organ Allocation"
     year: 2024
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "organ-allocation"
         confidence: "high"
         rationale: "The article directly analyzes equity in organ-allocation policy."
@@ -75,7 +76,7 @@ records:
     year: 2024
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "reproductive-health"
         confidence: "high"
         rationale: "The article directly examines law and policy concerning reproductive autonomy and family formation."
@@ -88,7 +89,7 @@ records:
     year: 2022
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "Punitive-damages doctrine and reform fall squarely within tort law and liability rules."
@@ -101,23 +102,24 @@ records:
     year: 2022
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "organ-allocation"
         confidence: "high"
         rationale: "The article directly examines the legal structure governing organ distribution."
         evidence_source: "Verified title and record; https://www.repository.law.indiana.edu/ilj/vol97/iss1/3/"
     needs_editorial_review: false
-    notes: ["No torts-liability membership is proposed because the legal analysis is centered on organ distribution, not tort or malpractice doctrine."]
+    notes: ["No torts-liability membership is approved because the legal analysis is centered on organ distribution, not tort or malpractice doctrine."]
 
   - id: "lr-socially-distant-healthcare"
     title: "Socially Distant Healthcare"
     year: 2022
     disciplinary_section: "Law Reviews"
+    topic_decision_status: "approved_no_current_topic"
     current_approved_topics: []
-    proposed_additional_topics: []
-    needs_editorial_review: true
+    approved_milestone_2e_topics: []
+    needs_editorial_review: false
     notes:
-      - "The official abstract centers on telehealth and access-to-care barriers. Those subjects do not cleanly match any of the six approved program definitions, so no topic is proposed."
+      - "Final editorial decision: no current Research-program topic. The official abstract centers on telehealth and access-to-care barriers, which do not cleanly match the approved six-program taxonomy."
       - "Evidence reviewed: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836695"
 
   - id: "lr-access-to-care-epidemic"
@@ -125,7 +127,7 @@ records:
     year: 2021
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The abstract directly evaluates relaxation of nurse-practitioner scope-of-practice laws as an access-to-care policy."
@@ -142,7 +144,7 @@ records:
     year: 2021
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "reproductive-health"
         confidence: "high"
         rationale: "The article directly concerns fetal-harm regulation and reproductive health policy."
@@ -155,7 +157,7 @@ records:
     year: 2021
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The article addresses apology policy through malpractice insurance and liability incentives."
@@ -168,7 +170,7 @@ records:
     year: 2021
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "drug-policy"
         confidence: "high"
         rationale: "The article directly analyzes industry relationships and legal policy in the opioid crisis."
@@ -181,7 +183,7 @@ records:
     year: 2020
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "Occupational licensing is the article's express regulatory subject."
@@ -198,7 +200,7 @@ records:
     year: 2020
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "Health-professional licensing is one of the article's two express legal subjects."
@@ -215,7 +217,7 @@ records:
     year: 2019
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The article empirically examines apology laws and medical-malpractice liability risk."
@@ -228,7 +230,7 @@ records:
     year: 2019
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The article directly examines punitive-damages awards and tort reform."
@@ -241,7 +243,7 @@ records:
     year: 2018
     disciplinary_section: "Law Reviews"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The article empirically evaluates apology laws and medical-malpractice outcomes."
@@ -254,7 +256,7 @@ records:
     year: 2026
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "organ-allocation"
         confidence: "high"
         rationale: "The study directly evaluates geographic boundaries in organ allocation."
@@ -267,7 +269,7 @@ records:
     year: 2025
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly estimates an outcome of nurse-practitioner scope-of-practice laws."
@@ -280,7 +282,7 @@ records:
     year: 2025
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly examines how scope-of-practice laws shape NP and PA practice patterns."
@@ -293,7 +295,7 @@ records:
     year: 2023
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly estimates mortality effects of scope-of-practice laws."
@@ -306,7 +308,7 @@ records:
     year: 2020
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The study directly examines behavioral responses to liability immunity involving medical devices."
@@ -319,7 +321,7 @@ records:
     year: 2020
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "drug-policy"
         confidence: "high"
         rationale: "The study directly evaluates cannabis access laws and opioid prescribing."
@@ -332,7 +334,7 @@ records:
     year: 2019
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly analyzes scope-of-practice licensing laws."
@@ -349,7 +351,7 @@ records:
     year: 2018
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly examines licensing restrictions affecting NPs and PAs."
@@ -366,7 +368,7 @@ records:
     year: 2017
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly analyzes political determinants of health-professional licensing laws."
@@ -379,7 +381,7 @@ records:
     year: 2017
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The study directly evaluates state punitive-damages reforms."
@@ -392,7 +394,7 @@ records:
     year: 2014
     disciplinary_section: "Peer-Reviewed Economics & Empirical Legal Studies"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The study directly evaluates reforms affecting punitive-damages awards."
@@ -405,7 +407,7 @@ records:
     year: 2026
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly evaluates health outcomes associated with NP scope-of-practice laws."
@@ -418,7 +420,7 @@ records:
     year: 2026
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly estimates pediatric hospitalization outcomes under NP scope-of-practice laws."
@@ -431,7 +433,7 @@ records:
     year: 2025
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "drug-policy"
         confidence: "high"
         rationale: "The study directly evaluates fentanyl test strips as harm-reduction policy."
@@ -444,20 +446,20 @@ records:
     year: 2024
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "payments"
         confidence: "high"
         rationale: "The abstract expressly recommends a nursing-inclusive federal billing system and nurse-informed compensation models."
         evidence_source: "Publisher abstract; https://www.sciencedirect.com/science/article/pii/S0029655423001215"
     needs_editorial_review: false
-    notes: ["No licensing membership is proposed because the verified description does not center occupational licensing or scope-of-practice law."]
+    notes: ["No licensing membership is assigned because the verified description does not center occupational licensing or scope-of-practice law."]
 
   - id: "mh-uniform-classification-np-scope-laws"
     title: "Toward a Uniform Classification of Nurse Practitioner Scope of Practice Laws"
     year: 2023
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The article directly develops a classification of NP scope-of-practice laws."
@@ -470,7 +472,7 @@ records:
     year: 2022
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "reproductive-health"
         confidence: "high"
         rationale: "The study directly examines medication use during pregnancy, an identified Reproductive Health program subject."
@@ -483,7 +485,7 @@ records:
     year: 2021
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly evaluates NP scope-of-practice laws."
@@ -505,7 +507,7 @@ records:
         confidence: "high"
         rationale: "Preserves the approved Payments membership for Open Payments and industry-compensation research without reassessment."
         evidence_source: "docs/publications/reviewed_inventory.yml; https://doi.org/10.5435/JAAOS-D-19-00637"
-    proposed_additional_topics: []
+    approved_milestone_2e_topics: []
     needs_editorial_review: false
     notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged."]
 
@@ -519,7 +521,7 @@ records:
         confidence: "high"
         rationale: "Preserves the approved Payments membership for Open Payments and industry-compensation research without reassessment."
         evidence_source: "docs/publications/reviewed_inventory.yml; https://doi.org/10.1016/j.jsurg.2020.05.010"
-    proposed_additional_topics: []
+    approved_milestone_2e_topics: []
     needs_editorial_review: false
     notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged."]
 
@@ -528,7 +530,7 @@ records:
     year: 2019
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly evaluates emergency-department use under NP scope-of-practice laws."
@@ -541,7 +543,7 @@ records:
     year: 2019
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "organ-allocation"
         confidence: "high"
         rationale: "The study directly examines public attitudes toward liver-allocation policy."
@@ -554,7 +556,7 @@ records:
     year: 2018
     disciplinary_section: "Peer-Reviewed Medical & Health Policy"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The study directly evaluates NP scope-of-practice laws."
@@ -571,7 +573,7 @@ records:
     year: 2022
     disciplinary_section: "Book Chapters"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The chapter expressly covers negligence, intentional torts, professional liability, and medical malpractice."
@@ -584,50 +586,50 @@ records:
     year: 2022
     disciplinary_section: "Book Chapters"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "payments"
-        confidence: "medium"
-        rationale: "The official chapter overview focuses on organization and financing of U.S. health care, but its breadth makes program placement an editorial judgment."
+        confidence: "high"
+        rationale: "The chapter's substantive treatment of health-care organization, financing, insurance, Medicare and Medicaid, spending, and payment reform fits Health Care Payments & Financial Accountability."
         evidence_source: "Official publisher chapter overview; https://springer-ip6-d10.mpstechnologies.com/content/book/978-0-8261-6016-4/part/part01/chapter/ch01"
-    needs_editorial_review: true
-    notes: ["The reviewed inventory retains an unresolved chapter page range; that bibliographic issue does not affect this topic proposal."]
+    needs_editorial_review: false
+    notes: ["Final editorial decision: approve payments. The reviewed inventory's unresolved chapter page range does not affect topic membership."]
 
   - id: "sw-np-entrepreneurs-primary-care-lifeline"
     title: "Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline"
     year: 2026
     disciplinary_section: "Short Academic Works"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
-        confidence: "low"
-        rationale: "Independent NP practice plausibly implicates professional boundaries, but the official public description only identifies barriers and private-sector solutions without clearly centering scope-of-practice law."
+        confidence: "high"
+        rationale: "The work addresses professional-practice rules, collaboration and supervision mandates, and full-practice-authority law affecting independent NP practices."
         evidence_source: "Official article description; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2843822"
-    needs_editorial_review: true
-    notes: ["No payments membership is proposed because the verified public description does not establish payment policy as a central subject."]
+      - topic_id: "payments"
+        confidence: "high"
+        rationale: "The work addresses payer credentialing, Medicare and Medicaid reimbursement, payment parity, and reimbursement barriers facing NP-owned practices."
+        evidence_source: "Official article description; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2843822"
+    needs_editorial_review: false
+    notes: ["Final editorial decision: approve both licensing and payments."]
 
   - id: "sw-safe-harbors-malpractice-wasteful-spending"
     title: "Developing Safe Harbors to Address Malpractice Liability and Wasteful Health Care Spending"
     year: 2023
     disciplinary_section: "Short Academic Works"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
-        rationale: "The article directly proposes malpractice-liability safe harbors."
+        rationale: "The principal legal intervention is malpractice-liability safe harbors and standards of care."
         evidence_source: "Official article description; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2812104"
-      - topic_id: "payments"
-        confidence: "medium"
-        rationale: "The proposal targets wasteful health care spending, but it is less directly about payment or billing rules than the previously approved Payments corpus."
-        evidence_source: "Official article description; https://jamanetwork.com/journals/jama-health-forum/fullarticle/2812104"
-    needs_editorial_review: true
-    notes: ["Torts-liability membership is high confidence; only the additional Payments membership requires editorial judgment."]
+    needs_editorial_review: false
+    notes: ["Final editorial decision: approve torts-liability and reject payments. Wasteful spending is a consequence and motivation, not a basis for Payments membership."]
 
   - id: "sw-constraints-medical-liability-safe-harbors"
     title: "Constraints on Medical Liability Through Malpractice Safe Harbors"
     year: 2020
     disciplinary_section: "Short Academic Works"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The article directly addresses constraints on medical liability through malpractice safe harbors."
@@ -640,7 +642,7 @@ records:
     year: 2020
     disciplinary_section: "Short Academic Works"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The article directly examines state medical-liability immunity."
@@ -653,7 +655,7 @@ records:
     year: 2019
     disciplinary_section: "Short Academic Works"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "licensing"
         confidence: "high"
         rationale: "The commentary examines legally defined practice authority and professional boundaries for PAs and NPs."
@@ -671,16 +673,16 @@ records:
         confidence: "high"
         rationale: "Preserves the approved Payments membership for Medicare payment and incident-to billing policy without reassessment."
         evidence_source: "docs/publications/reviewed_inventory.yml; https://doi.org/10.1377/hblog20180103.135358"
-    proposed_additional_topics: []
+    approved_milestone_2e_topics: []
     needs_editorial_review: false
-    notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged; no additional licensing membership is proposed."]
+    notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged; no additional licensing membership is assigned."]
 
   - id: "sw-worried-about-malpractice"
     title: "Worried About Malpractice?"
     year: 2016
     disciplinary_section: "Short Academic Works"
     current_approved_topics: []
-    proposed_additional_topics:
+    approved_milestone_2e_topics:
       - topic_id: "torts-liability"
         confidence: "high"
         rationale: "The work directly addresses medical-malpractice risk."

@@ -1,12 +1,14 @@
 # Publication Topic Coding Report
 
-Status: **editorial review only; no new topic membership is approved or in production**
+Status: **editorially approved input for the next production milestone; not yet promoted into `data/publications.yml`**
 
-This report summarizes the record-by-record proposals in `TOPIC_CODING_REVIEW.yml`. The five existing `payments` memberships are carried forward unchanged as `previously_approved`; every other membership below remains a proposal. Topic membership does not itself imply Selected Scholarship placement.
+This report summarizes the final decisions recorded in `TOPIC_CODING_REVIEW.yml`. The five existing `payments` memberships remain `previously_approved`; all other memberships are Milestone 2E approvals. `lr-socially-distant-healthcare` is the single approved no-current-topic record.
 
-## Summary
+The governing editorial rule is substantive relevance: every publication that belongs to a Research program remains associated with that program, regardless of age, overlap, or resulting list length. Topic membership is many-to-many and remains distinct from homepage selection.
 
-| Research program | Reviewed membership count | Previously approved | New proposals |
+## Final totals
+
+| Research program | Approved membership count | Previously approved | Approved in Milestone 2E |
 |---|---:|---:|---:|
 | Professional Licensing & Scope of Practice (`licensing`) | 17 | 0 | 17 |
 | Organ Allocation & Transplant Policy (`organ-allocation`) | 4 | 0 | 4 |
@@ -15,28 +17,26 @@ This report summarizes the record-by-record proposals in `TOPIC_CODING_REVIEW.ym
 | Reproductive Health & Family Formation (`reproductive-health`) | 4 | 0 | 4 |
 | Health Care Payments & Financial Accountability (`payments`) | 8 | 5 | 3 |
 
-Additional review totals:
-
-- 49 publication records reviewed exactly once.
-- 56 total topic assignments: 53 high confidence, 2 medium confidence, and 1 low confidence.
-- 8 records have proposed membership in two programs; no record has more than two memberships.
-- 1 record has no proposed topic membership.
-- 4 records are marked `needs_editorial_review`, comprising the no-topic decision and all medium- or low-confidence proposals.
+- 49 publication records appear exactly once in the review data.
+- 56 topic assignments are approved, all at high confidence.
+- 8 publications have membership in two programs; none has more than two memberships.
+- 1 publication has an approved no-current-topic decision.
+- 0 topic decisions remain pending editorial review.
 
 ## Professional Licensing & Scope of Practice
 
-All 17 entries are new proposals.
+All 17 memberships were approved in Milestone 2E.
 
 | ID | Publication | Year | Disciplinary section | Confidence | Rationale |
 |---|---|---:|---|---|---|
 | `mh-ambulatory-sensitive-conditions-scope-laws` | The Relationship Between Ambulatory Sensitive Conditions and Nurse Practitioner Scope-of-Practice Laws | 2026 | Peer-Reviewed Medical & Health Policy | High | Directly evaluates outcomes associated with NP scope-of-practice laws. |
 | `mh-np-scope-preventable-pediatric-hospitalizations` | Nurse Practitioner Scope-of-Practice Laws and Preventable Pediatric Hospitalizations | 2026 | Peer-Reviewed Medical & Health Policy | High | Directly evaluates pediatric hospitalization outcomes under NP scope rules. |
-| `sw-np-entrepreneurs-primary-care-lifeline` | Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline | 2026 | Short Academic Works | **Low—review** | Independent NP practice plausibly implicates professional boundaries, but the official description does not clearly center scope-of-practice law. |
+| `sw-np-entrepreneurs-primary-care-lifeline` | Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline | 2026 | Short Academic Works | High | Addresses professional-practice rules, supervision mandates, and full-practice-authority law affecting independent NP practices. |
 | `el-np-scope-preventable-hospitalizations` | The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable Hospitalizations | 2025 | Peer-Reviewed Economics & Empirical Legal Studies | High | Directly estimates an outcome of NP scope-of-practice laws. |
 | `el-scope-practice-patterns-nps-pas` | Scope-of-Practice Laws and the Practice Patterns of Nurse Practitioners and Physician Assistants | 2025 | Peer-Reviewed Economics & Empirical Legal Studies | High | Directly examines how scope rules shape NP and PA practice patterns. |
 | `el-supply-side-health-policy-mortality` | Supply-Side Health Policy: The Impact of Scope-of-Practice Laws on Mortality | 2023 | Peer-Reviewed Economics & Empirical Legal Studies | High | Directly estimates mortality effects of scope-of-practice laws. |
 | `mh-uniform-classification-np-scope-laws` | Toward a Uniform Classification of Nurse Practitioner Scope of Practice Laws | 2023 | Peer-Reviewed Medical & Health Policy | High | Directly develops a classification of NP scope-of-practice laws. |
-| `lr-access-to-care-epidemic` | The Access-to-Care Epidemic | 2021 | Law Reviews | High | The official abstract directly evaluates NP scope-of-practice reform as access policy. |
+| `lr-access-to-care-epidemic` | The Access-to-Care Epidemic | 2021 | Law Reviews | High | Directly evaluates NP scope-of-practice reform as access policy. |
 | `mh-np-scope-opioid-prescribing` | Nurse Practitioner Scope-of-Practice Laws and Opioid Prescribing | 2021 | Peer-Reviewed Medical & Health Policy | High | Directly evaluates NP scope-of-practice laws. |
 | `lr-occupational-licensing-opioid-crisis` | Occupational Licensing and the Opioid Crisis | 2020 | Law Reviews | High | Occupational licensing is the article's express regulatory subject. |
 | `lr-healthcare-licensing-liability` | Healthcare Licensing and Liability | 2020 | Law Reviews | High | Health-professional licensing is one of the article's two express subjects. |
@@ -49,7 +49,7 @@ All 17 entries are new proposals.
 
 ## Organ Allocation & Transplant Policy
 
-All 4 entries are new, high-confidence proposals.
+All 4 memberships were approved in Milestone 2E.
 
 | ID | Publication | Year | Disciplinary section | Confidence | Rationale |
 |---|---|---:|---|---|---|
@@ -60,11 +60,11 @@ All 4 entries are new, high-confidence proposals.
 
 ## Tort Law & Medical Liability
 
-All 17 entries are new, high-confidence proposals.
+All 17 memberships were approved in Milestone 2E.
 
 | ID | Publication | Year | Disciplinary section | Confidence | Rationale |
 |---|---|---:|---|---|---|
-| `sw-safe-harbors-malpractice-wasteful-spending` | Developing Safe Harbors to Address Malpractice Liability and Wasteful Health Care Spending | 2023 | Short Academic Works | High | Directly proposes malpractice-liability safe harbors. |
+| `sw-safe-harbors-malpractice-wasteful-spending` | Developing Safe Harbors to Address Malpractice Liability and Wasteful Health Care Spending | 2023 | Short Academic Works | High | The principal legal intervention is malpractice-liability safe harbors and standards of care. |
 | `lr-predictability-chaos-punitive-damages` | Bringing Predictability to the Chaos of Punitive Damages | 2022 | Law Reviews | High | Punitive-damages doctrine and reform fall squarely within tort law. |
 | `bc-negligence-intentional-torts-professional-liability-malpractice` | Negligence, Intentional Torts, Professional Liability, and Medical Malpractice | 2022 | Book Chapters | High | Expressly covers the central doctrines of the program. |
 | `lr-insuring-apologies` | Insuring Apologies | 2021 | Law Reviews | High | Addresses apology policy through malpractice insurance and liability incentives. |
@@ -84,7 +84,7 @@ All 17 entries are new, high-confidence proposals.
 
 ## Opioids, Drug Policy & Harm Reduction
 
-All 6 entries are new, high-confidence proposals.
+All 6 memberships were approved in Milestone 2E.
 
 | ID | Publication | Year | Disciplinary section | Confidence | Rationale |
 |---|---|---:|---|---|---|
@@ -97,7 +97,7 @@ All 6 entries are new, high-confidence proposals.
 
 ## Reproductive Health & Family Formation
 
-All 4 entries are new, high-confidence proposals.
+All 4 memberships were approved in Milestone 2E.
 
 | ID | Publication | Year | Disciplinary section | Confidence | Rationale |
 |---|---|---:|---|---|---|
@@ -108,24 +108,24 @@ All 4 entries are new, high-confidence proposals.
 
 ## Health Care Payments & Financial Accountability
 
-The first five entries are existing approvals, preserved exactly. The final three are new proposals.
+The first five memberships predate Milestone 2E and remain unchanged. The final three were approved in Milestone 2E.
 
-| ID | Publication | Year | Disciplinary section | Status | Confidence | Rationale |
+| ID | Publication | Year | Disciplinary section | Approval status | Confidence | Rationale |
 |---|---|---:|---|---|---|---|
-| `lr-constitutional-accounting-false-claims-act` | A Constitutional Accounting of the False Claims Act | 2026 | Law Reviews | **Previously approved** | High | Preserves the approved False Claims Act financial-accountability membership. |
-| `lr-constitutional-false-claims-act` | A Constitutional False Claims Act | 2025 | Law Reviews | **Previously approved** | High | Preserves the approved False Claims Act financial-accountability membership; no tort assignment is inferred. |
-| `mh-state-legislation-industry-compensation-orthopaedic-residents` | Association of State Legislation and Industry Compensation to Orthopaedic Residents: A 3-Year Review of the Centers for Medicare and Medicaid Services Open Payments Database | 2020 | Peer-Reviewed Medical & Health Policy | **Previously approved** | High | Preserves the approved Open Payments and industry-compensation membership. |
-| `mh-open-payments-orthopedic-residents` | Open Payments Reporting of Industry Compensation for Orthopedic Residents | 2020 | Peer-Reviewed Medical & Health Policy | **Previously approved** | High | Preserves the approved Open Payments and industry-compensation membership. |
-| `sw-macra-incident-to-billing` | The Integrity of MACRA May Be Undermined By “Incident To Billing” Coding | 2018 | Short Academic Works | **Previously approved** | High | Preserves the approved Medicare payment and incident-to billing membership. |
-| `mh-maximizing-nursing-workforce` | Maximizing the Potential Value of the Nursing Workforce | 2024 | Peer-Reviewed Medical & Health Policy | Proposed | High | The abstract expressly recommends a federal billing system and compensation models for nursing. |
-| `bc-economic-context-nursing-practice-united-states` | The Economic Context of Nursing Practice in the United States | 2022 | Book Chapters | Proposed | **Medium—review** | The chapter focuses on U.S. health-care organization and financing, but its breadth makes placement an editorial judgment. |
-| `sw-safe-harbors-malpractice-wasteful-spending` | Developing Safe Harbors to Address Malpractice Liability and Wasteful Health Care Spending | 2023 | Short Academic Works | Proposed | **Medium—review** | The proposal addresses wasteful spending, but payment and billing rules are less central than malpractice liability. |
+| `lr-constitutional-accounting-false-claims-act` | A Constitutional Accounting of the False Claims Act | 2026 | Law Reviews | Previously approved | High | Retains the approved False Claims Act financial-accountability membership. |
+| `lr-constitutional-false-claims-act` | A Constitutional False Claims Act | 2025 | Law Reviews | Previously approved | High | Retains the approved False Claims Act financial-accountability membership; no tort assignment is inferred. |
+| `mh-state-legislation-industry-compensation-orthopaedic-residents` | Association of State Legislation and Industry Compensation to Orthopaedic Residents: A 3-Year Review of the Centers for Medicare and Medicaid Services Open Payments Database | 2020 | Peer-Reviewed Medical & Health Policy | Previously approved | High | Retains the approved Open Payments and industry-compensation membership. |
+| `mh-open-payments-orthopedic-residents` | Open Payments Reporting of Industry Compensation for Orthopedic Residents | 2020 | Peer-Reviewed Medical & Health Policy | Previously approved | High | Retains the approved Open Payments and industry-compensation membership. |
+| `sw-macra-incident-to-billing` | The Integrity of MACRA May Be Undermined By “Incident To Billing” Coding | 2018 | Short Academic Works | Previously approved | High | Retains the approved Medicare payment and incident-to billing membership. |
+| `mh-maximizing-nursing-workforce` | Maximizing the Potential Value of the Nursing Workforce | 2024 | Peer-Reviewed Medical & Health Policy | Milestone 2E | High | Expressly addresses a federal billing system and compensation models for nursing. |
+| `bc-economic-context-nursing-practice-united-states` | The Economic Context of Nursing Practice in the United States | 2022 | Book Chapters | Milestone 2E | High | Substantively addresses health-care organization, financing, insurance, public programs, spending, and payment reform. |
+| `sw-np-entrepreneurs-primary-care-lifeline` | Nurse Practitioner Entrepreneurs—An Untapped Primary Care Lifeline | 2026 | Short Academic Works | Milestone 2E | High | Addresses payer credentialing, Medicare and Medicaid reimbursement, payment parity, and reimbursement barriers. |
 
-## Multi-topic records
+`sw-safe-harbors-malpractice-wasteful-spending` is approved for `torts-liability`, not `payments`. Wasteful spending is an important consequence and motivation, but the principal legal intervention is malpractice-liability safe harbors and standards of care.
 
-Eight overlaps are supported by the verified subject matter rather than title keywords alone:
+## Eight approved multi-topic publications
 
-| ID | Proposed memberships |
+| ID | Approved memberships |
 |---|---|
 | `lr-access-to-care-epidemic` | `licensing`, `drug-policy` |
 | `lr-occupational-licensing-opioid-crisis` | `licensing`, `drug-policy` |
@@ -134,23 +134,14 @@ Eight overlaps are supported by the verified subject matter rather than title ke
 | `el-beyond-physicians` | `licensing`, `torts-liability` |
 | `mh-np-scope-opioid-prescribing` | `licensing`, `drug-policy` |
 | `mh-extra-regulatory-np-scope-physician-malpractice` | `licensing`, `torts-liability` |
-| `sw-safe-harbors-malpractice-wasteful-spending` | `torts-liability`, `payments` |
+| `sw-np-entrepreneurs-primary-care-lifeline` | `licensing`, `payments` |
 
-## No-topic record
+## Approved no-current-topic publication
 
-| ID | Publication | Decision | Reason |
+| ID | Publication | Final decision | Reason |
 |---|---|---|---|
-| `lr-socially-distant-healthcare` | Socially Distant Healthcare | **No topic proposed—review** | The official abstract centers telehealth and access-to-care barriers; neither subject cleanly maps to one of the six approved programs. |
+| `lr-socially-distant-healthcare` | Socially Distant Healthcare | No current topic | The article centers telehealth and access barriers, which do not cleanly fit the current six-program taxonomy. |
 
-## Cases requiring editorial review
+## Forward implementation rule
 
-| ID | Question for review |
-|---|---|
-| `lr-socially-distant-healthcare` | Confirm that telehealth/access work should remain outside the six-topic structure. |
-| `bc-economic-context-nursing-practice-united-states` | Decide whether a broad health-care financing chapter belongs in `payments`. |
-| `sw-np-entrepreneurs-primary-care-lifeline` | Decide whether independent NP practice is sufficiently centered on professional boundaries for `licensing`. |
-| `sw-safe-harbors-malpractice-wasteful-spending` | Confirm `torts-liability` membership and decide whether the wasteful-spending component also warrants `payments`. |
-
-## Evidence standard
-
-High-confidence decisions generally follow an exact subject match in the verified title or record. For less self-evident cases, the review consulted the canonical publisher, repository, or full-text description recorded in `TOPIC_CODING_REVIEW.yml`. No abstract, manuscript, or finding was inferred where a public description did not establish the connection.
+When these decisions are promoted into production, each Research-program page should render every publication assigned to its topic from `data/publications.yml`. Papers must not be removed from a topic because they are older, overlap another paper, make a page longer, or cover related ground already represented elsewhere. The two False Claims Act articles remain Payments-only under the current taxonomy and do not receive a Torts assignment.
