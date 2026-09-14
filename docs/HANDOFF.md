@@ -212,4 +212,4 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Review the Milestone 2C verified inventory and architecture. Next proposed implementation: add the sixth Research entry and payments landing page and build the shared-source Publications architecture from approved records. Await separate authorization before public implementation.
+Review the Milestone 2C verified inventory and architecture. Next proposed implementation: build the shared-source Publications page and add the sixth Payments Research entry and landing page. Broader topic coding and public filtering remain deferred because only the five approved `payments` assignments are currently authorized. Await separate authorization before public implementation.
