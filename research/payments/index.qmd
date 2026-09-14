@@ -9,7 +9,7 @@ publication-render-mode: curated-program
 publication-render-program: payments
 ---
 
-<article class="research-program-page">
+<article class="research-program-page payments-program-page">
 <p class="program-return-wrap"><a class="program-return" href="../"><span aria-hidden="true">←</span> All research programs</a></p>
 
 <header class="research-program-header">

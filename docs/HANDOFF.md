@@ -143,6 +143,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - Rendered exactly the five approved Payments Selected Scholarship records from the shared production source in their approved order while retaining them in the Publications bibliography.
 - Kept the other five Research-program Selected Scholarship sections unpopulated and added no public topic controls or filtering JavaScript.
 - Preserved narrow unresolved bibliographic fields as omissions rather than guesses, including the disputed page range and unsettled full author order identified during Milestone 2C.
+- Completed a page-scoped visual refinement that reduces the Publications introduction and Payments title/overview scale without changing publication data, ordering, links, substantive copy, or the approved bibliography treatment.
 
 ## Milestone 2D files added or modified
 

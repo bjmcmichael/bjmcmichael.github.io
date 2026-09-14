@@ -8,9 +8,11 @@ filters:
 publication-render-mode: bibliography
 ---
 
+:::: {.publications-shell}
 ::: {.page-intro}
 My publications span legal scholarship, economics and empirical legal studies, and medical and health-policy research. The selected publications below are organized by disciplinary venue; titles link to verified journal, publisher, repository, or SSRN records where available.
 :::
 
 ::: {.publication-render}
 :::
+::::

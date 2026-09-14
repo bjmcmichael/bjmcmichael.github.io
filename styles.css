@@ -613,6 +613,32 @@ a.program-return {
   max-width: 46rem;
 }
 
+.payments-program-page {
+  max-width: 68rem;
+}
+
+.payments-program-page .research-program-header {
+  padding-bottom: 2.5rem;
+}
+
+.payments-program-page h1 {
+  font-size: clamp(2.65rem, 4.6vw, 3.9rem);
+  line-height: 1.04;
+  max-width: 64rem;
+}
+
+.payments-program-page .program-overview {
+  gap: 1.75rem;
+  margin-top: 2.1rem;
+  padding-top: 1.6rem;
+}
+
+.payments-program-page .program-overview p {
+  font-size: clamp(1.15rem, 1.55vw, 1.28rem);
+  line-height: 1.5;
+  max-width: 48rem;
+}
+
 .research-program-sections {
   border-bottom: 1px solid var(--rule-strong);
 }
@@ -683,6 +709,14 @@ a.program-return {
 .ledger-row p {
   color: var(--muted);
   margin: 0.2rem 0 0;
+}
+
+.publications-shell .page-intro {
+  font-size: clamp(1.2rem, 1.45vw, 1.4rem);
+  line-height: 1.5;
+  margin-bottom: 3.25rem;
+  max-width: 64rem;
+  width: min(64rem, calc(100vw - 9rem));
 }
 
 .publication-bibliography {
@@ -1020,6 +1054,10 @@ a.contact-email {
 
   .page-intro {
     margin-bottom: 3.25rem;
+  }
+
+  .publications-shell .page-intro {
+    width: auto;
   }
 
   .section-heading {
