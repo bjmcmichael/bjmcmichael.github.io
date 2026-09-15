@@ -2,16 +2,20 @@
 
 ## Current status
 
-**Stage: Milestone 2G — Publications research-topic filtering complete on `build/publications-topic-filter`, awaiting review**
+**Stage: Milestone 2G — Publications research-topic filtering approved and incorporated into `main`**
 
-Milestone 2G adds progressive, client-side research-topic filtering to the
+Milestone 2G has passed review and is incorporated into `main`. It adds
+progressive, client-side research-topic filtering to the
 Publications page while retaining the five disciplinary sections as its primary
 organization. The default All state shows all 49 records; the six approved
 topic filters show 17 / 4 / 17 / 6 / 4 / 8 records without duplicating or
 reordering entries. The no-topic record appears only under All, multi-topic
 records appear under each applicable selection, and no Research-program
-membership, homepage selection, citation, or canonical link changed. This work
-has not been merged into `main`.
+membership, publication metadata, homepage selection, or Research-page content
+changed. Filtering remains a local vanilla-JavaScript progressive enhancement:
+native buttons retain keyboard focus and `aria-pressed` state, a polite live
+region reports the result count, and the full bibliography remains available
+without JavaScript. The feature branch remains retained locally and on origin.
 
 Milestone 2F has passed final source, visual, metadata, and link review and
 promotes all 56 approved topic assignments into
@@ -242,8 +246,9 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
-## Milestone 2G implementation completed on feature branch
+## Milestone 2G approved and incorporated into main
 
+- Approved and incorporated Milestone 2G into `main` through a fast-forward merge that preserved the feature commit.
 - Added seven native Publications filter buttons under the page introduction: All publications and the six approved short Research-area labels.
 - Kept the existing five disciplinary sections as the primary bibliography structure and filtered entries in place without duplication or reordering.
 - Added `data-topics` only to bibliography-mode entries; the six Research-program pages retain byte-identical rendered HTML and continue to use `research_topics` independently.
@@ -356,4 +361,4 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Next task: review and, if approved, merge Milestone 2G. Await separate authorization before merging or beginning any subsequent implementation milestone. Deployment, GitHub Pages, and domain configuration remain deferred.
+Next task: await separate authorization before beginning any subsequent implementation milestone. Shareable filter URL state, deployment, GitHub Pages, and domain configuration remain deferred.
