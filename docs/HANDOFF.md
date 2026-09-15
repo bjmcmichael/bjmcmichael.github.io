@@ -210,6 +210,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - Kept the homepage and Publications presentation unchanged and added no topic-filter UI or JavaScript.
 - Verified a 14-page production render, exact topic and rendered-entry counts, canonical publication links, and internal links. The six program pages and homepage were checked at 1440 and 390 pixels without horizontal overflow; no additional spacing or style adjustment was needed.
 - Completed a final page-scoped typography refinement that modestly reduces Research-program titles and overview prose while preserving publication-entry typography, the two-column section architecture, and the approved two-line Payments title.
+- Corrected the MACRA incident-to-billing record to the current official Health Affairs Forefront URL and DOI in reviewed and production metadata, and documented a three-class external-link validation policy that distinguishes genuine failures from automated-access restrictions.
 
 ## Milestone 2F files modified
 

@@ -1312,9 +1312,9 @@ publications:
     volume: null
     issue: null
     pages_or_article_number: null
-    canonical_url: "https://doi.org/10.1377/hblog20180103.135358"
+    canonical_url: "https://www.healthaffairs.org/content/forefront/integrity-macra-may-undermined-incident-billing-coding"
     identifiers:
-      doi: "10.1377/hblog20180103.135358"
+      doi: "10.1377/forefront.20180103.135358"
       pmid: null
     research_topics:
       - "payments"

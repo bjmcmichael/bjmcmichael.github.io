@@ -168,6 +168,25 @@ To add or correct a publication:
 Do not copy citation text into individual `.qmd` files. Optional unresolved
 fields should remain omitted until verified rather than being guessed.
 
+### External-link validation
+
+Classify automated checks of canonical publication links as follows:
+
+- HTTP `200`–`399`: automated resolution succeeds.
+- HTTP `404` or `410`, DNS failure, malformed URL, or a browser-visible
+  not-found page: genuine failure requiring investigation.
+- HTTP `401`, `403`, `429`, or an equivalent anti-bot/access-control response:
+  automated access restricted and indeterminate, not evidence of a broken link
+  by itself.
+
+An access-restricted URL may pass validation when it exactly matches the
+verified canonical URL in production metadata and there is no contradictory
+evidence that the page is gone or malformed. Report automated successes,
+genuine failures, and access-restricted results separately. The merge gate
+requires zero genuine failures, not zero access-restricted responses; do not
+rewrite a valid publisher URL merely to make an automated checker return
+HTTP `200`.
+
 ### Fonts and theme
 
 The HTML output uses Quarto's bundled `cosmo` theme as a structural base and applies the project identity through `styles.css`. The small `theme.scss` override disables Cosmo's default Google Fonts import and keeps Bootstrap's base sans-serif family aligned with the local `Segoe UI`/system stack.

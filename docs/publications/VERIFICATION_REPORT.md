@@ -66,7 +66,7 @@ was approved.
 |---|---|---|
 | `mh-state-legislation-industry-compensation-orthopaedic-residents` | Full eight-author order, publisher title, issue, e-pages, DOI, and PMID checked | Published, 2020; [PubMed](https://pubmed.ncbi.nlm.nih.gov/32441903/) |
 | `mh-open-payments-orthopedic-residents` | Full eight-author order, issue, pages, DOI, and PMID checked | Published, 2020; [PubMed](https://pubmed.ncbi.nlm.nih.gov/32546385/) |
-| `sw-macra-incident-to-billing` | Full seven-author order, date, venue, and DOI checked | Published, 2018; [DOI](https://doi.org/10.1377/hblog20180103.135358) |
+| `sw-macra-incident-to-billing` | Full seven-author order, date, venue, and DOI checked against the current official page | Published, 2018; [Health Affairs Forefront](https://www.healthaffairs.org/content/forefront/integrity-macra-may-undermined-incident-billing-coding); DOI `10.1377/forefront.20180103.135358` |
 | `lr-constitutional-false-claims-act` | Three-author order, volume, issue, pages, and journal page checked | Published, 2025; [Washington University Law Review](https://wustllawreview.org/2025/02/25/a-constitutional-false-claims-act/) |
 | `lr-constitutional-accounting-false-claims-act` | Three-author order, current forthcoming status, SSRN DOI, and Vanderbilt research-paper number checked | Vanderbilt Law Review, forthcoming; [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6271820) |
 
@@ -74,6 +74,11 @@ The two False Claims Act articles are distinct publications and remain separate.
 The published Washington University Law Review article and the separately
 forthcoming Vanderbilt Law Review article have different titles, author order,
 status, and records.
+
+The DOI originally recorded for `sw-macra-incident-to-billing`,
+`10.1377/hblog20180103.135358`, later proved stale. It was corrected to
+`10.1377/forefront.20180103.135358`, the DOI displayed by the current official
+Health Affairs Forefront page.
 
 ## Material citation updates from the CV snapshot
 

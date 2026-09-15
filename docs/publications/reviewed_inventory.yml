@@ -922,14 +922,16 @@ records:
     volume: null
     issue: null
     pages_or_article_number: null
-    identifiers: {doi: "10.1377/hblog20180103.135358", pmid: null}
+    identifiers:
+      doi: "10.1377/forefront.20180103.135358"
+      pmid: null
     links:
-      canonical: "https://doi.org/10.1377/hblog20180103.135358"
+      canonical: "https://www.healthaffairs.org/content/forefront/integrity-macra-may-undermined-incident-billing-coding"
       supplementary: []
     research_topics: [payments]
     curated_placements:
       - {surface: research_program, program_id: payments, section: selected_scholarship}
-    verification: {status: verified, sources: ["https://doi.org/10.1377/hblog20180103.135358"], unresolved_fields: [], notes: []}
+    verification: {status: verified, sources: ["https://www.healthaffairs.org/content/forefront/integrity-macra-may-undermined-incident-billing-coding"], unresolved_fields: [], notes: []}
 
   - id: sw-worried-about-malpractice
     title: "Worried About Malpractice?"

@@ -672,7 +672,7 @@ records:
         status: "previously_approved"
         confidence: "high"
         rationale: "Preserves the approved Payments membership for Medicare payment and incident-to billing policy without reassessment."
-        evidence_source: "docs/publications/reviewed_inventory.yml; https://doi.org/10.1377/hblog20180103.135358"
+        evidence_source: "docs/publications/reviewed_inventory.yml; https://www.healthaffairs.org/content/forefront/integrity-macra-may-undermined-incident-billing-coding"
     approved_milestone_2e_topics: []
     needs_editorial_review: false
     notes: ["Existing Payments Selected Scholarship placement also remains approved and unchanged; no additional licensing membership is assigned."]
