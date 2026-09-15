@@ -107,6 +107,17 @@ local function has_topic(record, program_id)
   return false
 end
 
+local function topic_attribute(record)
+  local topics = {}
+  for _, topic in ipairs(record.research_topics or {}) do
+    local topic_id = string_value(topic)
+    if topic_id ~= nil then
+      table.insert(topics, topic_id)
+    end
+  end
+  return table.concat(topics, " ")
+end
+
 local function citation_inlines(record)
   local citation = pandoc.Inlines({})
   local venue = string_value(record.venue)
@@ -141,7 +152,7 @@ local function citation_inlines(record)
   return citation
 end
 
-local function publication_entry(record)
+local function publication_entry(record, include_topics)
   local title = text_inlines(string_value(record.title) or "Untitled publication")
   local canonical_url = string_value(record.canonical_url)
   local title_content
@@ -169,13 +180,16 @@ local function publication_entry(record)
   end
   blocks:insert(pandoc.Para(citation))
 
+  local attributes = {
+    {"data-publication-id", string_value(record.id) or ""}
+  }
+  if include_topics then
+    table.insert(attributes, {"data-topics", topic_attribute(record)})
+  end
+
   return pandoc.Div(
     blocks,
-    pandoc.Attr(
-      "",
-      {"publication-entry"},
-      {{"data-publication-id", string_value(record.id) or ""}}
-    )
+    pandoc.Attr("", {"publication-entry"}, attributes)
   )
 end
 
@@ -206,7 +220,7 @@ local function render_full_bibliography(meta)
     ))
     local entries = pandoc.Blocks({})
     for _, record in ipairs(records) do
-      entries:insert(publication_entry(record))
+      entries:insert(publication_entry(record, true))
     end
     blocks:insert(pandoc.Div(entries, pandoc.Attr("", {"publication-section-entries"})))
   end
@@ -225,7 +239,7 @@ local function render_topic_program(meta, program_id)
 
   local blocks = pandoc.Blocks({})
   for _, record in ipairs(records) do
-    blocks:insert(publication_entry(record))
+    blocks:insert(publication_entry(record, false))
   end
   return pandoc.Div(blocks, pandoc.Attr("", {"publication-program-entries"}))
 end

@@ -62,6 +62,8 @@ Current site layout:
 ├── assets/
 │   ├── files/
 │   │   └── McMichael_CV.pdf
+│   ├── js/
+│   │   └── publications-filter.js
 │   └── fonts/
 │       ├── GUST-FONT-LICENSE.txt
 │       └── texgyreschola-regular.otf
@@ -153,8 +155,10 @@ settings. Each program page supplies its stable ID through
 work first, then published work in reverse chronological order, with
 `source_order` and stable ID providing deterministic ties. Historical Payments
 `curated_placements` remain in the source for provenance but do not control any
-Research-program list. Quarto remains the only site runtime; there is no Node,
-Python, database, CMS, client-side filter, or external rendering dependency.
+Research-program list. Quarto remains the only build runtime; there is no Node,
+Python, database, CMS, framework, or external rendering dependency. The
+Publications page uses one small local vanilla JavaScript file as an optional
+browser-side progressive enhancement.
 
 To add or correct a publication:
 
@@ -167,6 +171,35 @@ To add or correct a publication:
 
 Do not copy citation text into individual `.qmd` files. Optional unresolved
 fields should remain omitted until verified rather than being guessed.
+
+### Publications topic filtering
+
+The Publications page remains a server-rendered five-section bibliography. In
+bibliography mode only, `filters/publications.lua` adds a space-separated
+`data-topics` attribute to each existing publication entry while retaining its
+stable `data-publication-id`. Research-program output does not receive this
+attribute and remains unchanged.
+
+`publications.qmd` contains a semantic, initially hidden group of seven native
+buttons: All publications plus the six approved short topic labels. The
+page-local `assets/js/publications-filter.js` script initializes only when both
+the controls and bibliography are present, reveals the controls, and filters by
+toggling the native `hidden` state on existing entries and empty disciplinary
+sections. It does not duplicate, reorder, reconstruct, or modify citation
+content. Counts are computed from the rendered DOM, the active button exposes
+`aria-pressed`, and a polite live region reports the current result count.
+
+If JavaScript is unavailable or initialization fails, the controls remain
+hidden and all 49 publications, all five disciplinary headings, and all title
+links remain available. No network request, external library, package install,
+Node build step, analytics, or tracking is involved. Query-string, hash,
+history-state, and shareable-filter URL support remain deferred.
+
+When changing the filter implementation, verify the All / Licensing / Organ
+Allocation / Torts / Drug Policy / Reproductive Health / Payments counts remain
+`49 / 17 / 4 / 17 / 6 / 4 / 8`, confirm empty sections use `hidden`, test
+keyboard operation and the live status, and repeat the no-JavaScript fallback
+check.
 
 ### External-link validation
 

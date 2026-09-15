@@ -2,7 +2,16 @@
 
 ## Current status
 
-**Stage: Milestone 2F — topic-driven Research-program scholarship implementation approved and incorporated into `main`**
+**Stage: Milestone 2G — Publications research-topic filtering complete on `build/publications-topic-filter`, awaiting review**
+
+Milestone 2G adds progressive, client-side research-topic filtering to the
+Publications page while retaining the five disciplinary sections as its primary
+organization. The default All state shows all 49 records; the six approved
+topic filters show 17 / 4 / 17 / 6 / 4 / 8 records without duplicating or
+reordering entries. The no-topic record appears only under All, multi-topic
+records appear under each applicable selection, and no Research-program
+membership, homepage selection, citation, or canonical link changed. This work
+has not been merged into `main`.
 
 Milestone 2F has passed final source, visual, metadata, and link review and
 promotes all 56 approved topic assignments into
@@ -233,6 +242,28 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
+## Milestone 2G implementation completed on feature branch
+
+- Added seven native Publications filter buttons under the page introduction: All publications and the six approved short Research-area labels.
+- Kept the existing five disciplinary sections as the primary bibliography structure and filtered entries in place without duplication or reordering.
+- Added `data-topics` only to bibliography-mode entries; the six Research-program pages retain byte-identical rendered HTML and continue to use `research_topics` independently.
+- Added a small page-local vanilla JavaScript enhancement that toggles native `hidden` state, hides empty sections, updates one active `aria-pressed` state, and reports the DOM-derived count in a polite live region.
+- Preserved the complete no-JavaScript bibliography: all 49 linked entries and all five headings remain visible while the nonfunctional controls remain hidden.
+- Verified All / Licensing / Organ Allocation / Torts / Drug Policy / Reproductive Health / Payments counts of 49 / 17 / 4 / 17 / 6 / 4 / 8, including all eight multi-topic records and the sole no-topic record.
+- Added restrained, page-scoped control styling using the existing ink, muted, crimson, rule, and sans-serif variables without changing bibliography typography.
+- Checked the Publications page at 1600, 1440, 1024, 768, and 390 pixels, including representative desktop and mobile filter states, with natural control wrapping and no horizontal overflow.
+- Kept query-string, hash, history-state, and shareable-filter URL support deferred, along with deployment and domain configuration.
+
+## Milestone 2G files added or modified
+
+- `assets/js/publications-filter.js`
+- `filters/publications.lua`
+- `publications.qmd`
+- `styles.css`
+- `WEBSITE_SPEC.md`
+- `docs/DEVELOPMENT.md`
+- `docs/HANDOFF.md`
+
 ## Milestone 1 files created
 
 - `.gitignore`
@@ -299,7 +330,7 @@ Do not invent or add these items without approved source materials:
 - headshot or other imagery;
 - external profile and contact details;
 - public teaching materials and casebook information;
-- public topic controls, publication filtering, and any new homepage selection;
+- shareable topic-filter URL state and any new homepage selection;
 - real research figures or interactive components;
 - final custom domain.
 
@@ -317,10 +348,12 @@ Do not invent or add these items without approved source materials:
 
 ## Future Publications requirement
 
-Preserve disciplinary groupings while adding a separate topic-based discovery mechanism so visitors can identify related scholarship across disciplines without reviewing the entire publication list. A publication may ultimately belong to multiple topics, with concise public filter labels mapped to the six approved Research programs as documented in `WEBSITE_SPEC.md`.
+Milestone 2G implements the separate topic-based discovery mechanism while
+preserving disciplinary groupings and many-to-many topic membership. Future
+work may consider shareable filter URLs only with separate authorization.
 
 Milestone 2C created an immutable CV-derived inventory plus a separate externally checked reviewed inventory. Milestone 2D promoted the approved public fields into `data/publications.yml` and implemented the shared renderer, sixth Research entry, and Payments landing page. Milestone 2E finalized the complete many-to-many topic corpus and superseded compact Selected Scholarship curation. Milestone 2F promotes those decisions into production metadata and generates each complete program corpus while retaining “Selected Scholarship” as the approved public heading.
 
 ## Next recommended task
 
-Next task: await separate authorization before beginning Publications-page topic filtering or any subsequent implementation milestone. Deployment, GitHub Pages, and domain configuration remain deferred.
+Next task: review and, if approved, merge Milestone 2G. Await separate authorization before merging or beginning any subsequent implementation milestone. Deployment, GitHub Pages, and domain configuration remain deferred.

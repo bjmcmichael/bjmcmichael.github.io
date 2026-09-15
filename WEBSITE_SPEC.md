@@ -259,11 +259,11 @@ project details, preliminary findings, private materials, datasets, or manuscrip
 
 ### 6.2 Publications and research-topic architecture
 
-Publications preserve visible disciplinary groupings. Research topics exist as a separate metadata dimension, and a publication may belong to multiple research topics. Future topic filters may allow visitors to find related scholarship across disciplines without replacing the disciplinary organization of the Publications page.
+Publications preserve visible disciplinary groupings. Research topics exist as a separate metadata dimension, and a publication may belong to multiple research topics. Milestone 2G adds topic filters that allow visitors to find related scholarship across disciplines without replacing the disciplinary organization of the Publications page.
 
-Public-facing filter labels may be shorter than the full Research-program names. The tentative mapping is:
+Public-facing filter labels are shorter than the full Research-program names. The approved mapping is:
 
-| Research program | Future public filter label |
+| Research program | Public filter label |
 |---|---|
 | Professional Licensing & Scope of Practice | Licensing & Scope of Practice |
 | Organ Allocation & Transplant Policy | Organ Allocation |
@@ -296,8 +296,18 @@ page under the public heading **Selected Scholarship**. That heading is an
 editorial label, not a capped subset. Research-program membership remains
 separate from homepage selection, and the homepage selection is unchanged.
 
-The Publications page continues to preserve its five disciplinary sections.
-Public topic filtering remains deferred and requires separate authorization.
+The Publications page continues to preserve its five disciplinary sections as
+the primary visible organization. Its default “All publications” state shows
+all 49 records, including the sole no-current-topic publication. Six client-side
+filters use the approved short labels and show topic members within their
+existing disciplinary sections and ordering; empty sections are hidden, while
+multi-topic publications may appear under multiple filter selections without
+duplication in any single view.
+
+Filtering is progressive enhancement implemented with a small local vanilla
+JavaScript file. Without JavaScript, all publications and disciplinary sections
+remain visible and the nonfunctional controls remain hidden. Query-string,
+hash, history-state, and shareable-filter URL support remain deferred.
 
 ## 7. Interactive research philosophy
 

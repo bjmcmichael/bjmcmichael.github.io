@@ -13,6 +13,26 @@ publication-render-mode: bibliography
 My publications span legal scholarship, economics and empirical legal studies, and medical and health-policy research. The selected publications below are organized by disciplinary venue; titles link to verified journal, publisher, repository, or SSRN records where available.
 :::
 
+```{=html}
+<div class="publications-filter" data-publications-filter hidden>
+  <div class="publications-filter-group" role="group" aria-label="Filter publications by research area">
+    <p class="publications-filter-label">Filter by research area</p>
+    <div class="publications-filter-controls">
+      <button type="button" class="publications-filter-button" data-topic="all" aria-pressed="true">All publications</button>
+      <button type="button" class="publications-filter-button" data-topic="licensing" aria-pressed="false">Licensing &amp; Scope of Practice</button>
+      <button type="button" class="publications-filter-button" data-topic="organ-allocation" aria-pressed="false">Organ Allocation</button>
+      <button type="button" class="publications-filter-button" data-topic="torts-liability" aria-pressed="false">Torts &amp; Liability</button>
+      <button type="button" class="publications-filter-button" data-topic="drug-policy" aria-pressed="false">Drug Policy</button>
+      <button type="button" class="publications-filter-button" data-topic="reproductive-health" aria-pressed="false">Reproductive Health</button>
+      <button type="button" class="publications-filter-button" data-topic="payments" aria-pressed="false">Payments &amp; Accountability</button>
+    </div>
+  </div>
+  <p class="publications-filter-status" data-publications-filter-status role="status" aria-live="polite" aria-atomic="true"></p>
+</div>
+```
+
 ::: {.publication-render}
 :::
 ::::
+
+<script src="assets/js/publications-filter.js"></script>
