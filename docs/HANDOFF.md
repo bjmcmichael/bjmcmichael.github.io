@@ -2,9 +2,10 @@
 
 ## Current status
 
-**Stage: Milestone 2F — topic-driven Research-program scholarship implementation complete on `build/research-topic-scholarship`, awaiting review**
+**Stage: Milestone 2F — topic-driven Research-program scholarship implementation approved and incorporated into `main`**
 
-Milestone 2F promotes all 56 approved topic assignments into
+Milestone 2F has passed final source, visual, metadata, and link review and
+promotes all 56 approved topic assignments into
 `data/publications.yml` and populates all six Research-program pages from that
 shared production metadata. The public heading remains “Selected Scholarship”
 on every program page, but the lists are complete topic corpora rather than
@@ -12,8 +13,8 @@ capped selections: Licensing 17, Organ Allocation 4, Torts & Liability 17,
 Drug Policy 6, Reproductive Health 4, and Payments & Accountability 8. Eight
 publications appear in two programs, and `lr-socially-distant-healthcare`
 remains the sole no-current-topic record. The homepage selection is unchanged,
-and public filtering remains deferred. This work has not been merged into
-`main`.
+and public filtering remains deferred. This work is incorporated into `main`;
+the feature branch remains retained locally and on origin.
 
 Milestone 2E has passed editorial and source review and is incorporated into
 `main`. All 49 publications completed editorial topic review, yielding 56
@@ -23,10 +24,10 @@ approved no-current-topic publication. Substantive relevance controls program
 membership, and the compact 4–6-item Selected Scholarship architecture has been
 superseded. Milestone 2F later retained “Selected Scholarship” as the public
 heading while implementing the complete set assigned to each topic. Homepage selection
-remains a separate editorial decision. The approved topic assignments have not
-yet been promoted into `main`; they are implemented on the Milestone 2F feature
-branch. Public filtering remains unimplemented. Deployment and domain
-configuration remain deferred.
+remains a separate editorial decision. Milestone 2F has now promoted the
+approved topic assignments into production metadata and `main`. Public
+filtering remains unimplemented. Deployment and domain configuration remain
+deferred.
 
 Milestone 2D has passed source, content, and visual review and is incorporated
 into `main`. The Publications page now renders all 49
@@ -201,16 +202,20 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/publications/SELECTED_SCHOLARSHIP_REVIEW.md`
 - `docs/HANDOFF.md`
 
-## Milestone 2F implementation completed on feature branch
+## Milestone 2F approved and incorporated into main
 
+- Passed final source, visual, metadata, and link review and was incorporated into `main` through a fast-forward merge that preserved all three Milestone 2F commits.
 - Promoted the 56 approved topic assignments into `data/publications.yml` without changing bibliographic metadata, canonical links, authorship, disciplinary sections, status, year, or source order.
 - Added topic-driven Research-program rendering to `filters/publications.lua` while preserving the Publications page's full-bibliography behavior.
 - Populated all six Research-program “Selected Scholarship” sections from `research_topics`, with deterministic status/year/source-order/ID ordering and no hand-maintained citations.
 - Preserved the historical five Payments curated placements for provenance; no public Research page depends on them.
+- Retained “Selected Scholarship” as an editorial public heading for each complete topic corpus, not as a label for a capped subset.
+- Kept Research-program topic membership distinct from homepage selection; `lr-socially-distant-healthcare` remains the sole no-current-topic publication.
 - Kept the homepage and Publications presentation unchanged and added no topic-filter UI or JavaScript.
 - Verified a 14-page production render, exact topic and rendered-entry counts, canonical publication links, and internal links. The six program pages and homepage were checked at 1440 and 390 pixels without horizontal overflow; no additional spacing or style adjustment was needed.
 - Completed a final page-scoped typography refinement that modestly reduces Research-program titles and overview prose while preserving publication-entry typography, the two-column section architecture, and the approved two-line Payments title.
 - Corrected the MACRA incident-to-billing record to the current official Health Affairs Forefront URL and DOI in reviewed and production metadata, and documented a three-class external-link validation policy that distinguishes genuine failures from automated-access restrictions.
+- Kept Publications-page topic filtering, deployment, GitHub Pages, and custom-domain configuration deferred pending separate authorization.
 
 ## Milestone 2F files modified
 
@@ -304,7 +309,7 @@ Do not invent or add these items without approved source materials:
 - Data & Code remains intentionally unpopulated because no approved public datasets, replication repositories, code links, or interactive components have been supplied.
 - No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
 - Six externally checked records retain narrow citation cautions documented in `docs/publications/reviewed_inventory.yml`: final forthcoming details, one published-version author-order conflict, one page-range discrepancy, and two optional pagination fields.
-- Milestone 2E topic assignments are implemented in `data/publications.yml` on the Milestone 2F feature branch. The five historical Payments curated placements remain for provenance, and no new homepage publication selection is approved.
+- Milestone 2F topic assignments are incorporated into `data/publications.yml` on `main`. The five historical Payments curated placements remain for provenance, and no new homepage publication selection is approved.
 - Unfinished AMA RUC / RVU project details, preliminary findings, private materials, datasets, and manuscripts remain outside the approved public scope.
 - The CV labels its bibliography “Selected Publications” and contains no Working Papers or Books / Book Projects section, so completeness and any additional authorized categories remain unresolved.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
@@ -318,4 +323,4 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Next task: review and, if approved, merge Milestone 2F. Await separate authorization before merging or beginning public filtering or any subsequent implementation milestone. Deployment, GitHub Pages, and domain configuration remain deferred.
+Next task: await separate authorization before beginning Publications-page topic filtering or any subsequent implementation milestone. Deployment, GitHub Pages, and domain configuration remain deferred.
