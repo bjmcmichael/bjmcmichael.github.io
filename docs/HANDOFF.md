@@ -269,6 +269,23 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
+## Milestone 2H pre-deployment audit complete
+
+- Completed a documentation-only launch-readiness audit on `audit/predeployment-readiness`; no public page, style, script, metadata source, Quarto configuration, or deployment setting changed.
+- A fresh Quarto production render succeeds for all 14 public pages without file-locking or database warnings.
+- Verified all local routes and assets, the CV PDF, the six Research Explore and return links, and the shared navigation. External publication-link validation found zero genuine failures; access-control responses remain a separate indeterminate class rather than broken links.
+- Revalidated the 49-record Publications corpus, 56 topic assignments, six exact Research-program corpora, eight multi-topic records, the sole no-topic record, filter counts, disciplinary-section counts, and the complete no-JavaScript bibliography.
+- Checked all public page families at 1600, 1440, 1024, 768, and 390 pixels as applicable, including filter states and the shared mobile navigation. No horizontal overflow, clipping, overlap, or narrow-column failure was found.
+- Confirmed that public output contains no credentials, machine-specific paths, private correspondence, restricted data, or workflow commentary. The only public email is the approved institutional address, and the public CV contains institutional rather than private contact information.
+- Classified the site as **READY AFTER MINOR FIXES**. Before deployment, correct the mobile navigation toggle's invalid explicit `role="menu"`, select the production hostname, set Quarto's `site-url`, and verify canonical URLs and sitemap output.
+- Recommended GitHub Pages deployment through a custom GitHub Actions workflow from `main`, uploading `_site` as a Pages artifact while keeping generated output untracked. Deployment, Pages settings, HTTPS, and any custom-domain work remain separately authorized.
+- Recorded complete evidence and deployment guidance in `docs/PREDEPLOYMENT_AUDIT.md`.
+
+## Milestone 2H files added or modified
+
+- `docs/PREDEPLOYMENT_AUDIT.md`
+- `docs/HANDOFF.md`
+
 ## Milestone 1 files created
 
 - `.gitignore`
@@ -325,6 +342,7 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - All 49 publication-title links match the reviewed canonical sources, all rendered internal links resolve, the CV PDF remains available, and no empty title link is emitted.
 - The Publications page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels; the Research index at 1440, 768, and 390 pixels; the Payments page at 1440 and 390 pixels; and the homepage at 1440 and 390 pixels. No horizontal overflow was detected, and the homepage composition remains unchanged.
 - The final Milestone 2D render completed all fourteen pages without a Dropbox, OneDrive, Quarto locking, or database warning. Planning documents, production YAML, filter source, and generated Quarto state are not emitted as public pages or tracked as generated output.
+- The Milestone 2H audit completed a fresh 14-page render, a 60-state responsive browser matrix, 33 shared-navigation checks, exact publication/filter/program data validation, a rendered local-link crawl, an external canonical-link check, accessibility basics, privacy scanning, asset inspection, and a visual review of the public CV. The audit found no rendering regression, horizontal overflow, genuine broken external link, private-data leak, or cloud-sync/Quarto warning.
 
 ## Content intentionally deferred
 
@@ -349,7 +367,9 @@ Do not invent or add these items without approved source materials:
 - Unfinished AMA RUC / RVU project details, preliminary findings, private materials, datasets, and manuscripts remain outside the approved public scope.
 - The CV labels its bibliography “Selected Publications” and contains no Working Papers or Books / Book Projects section, so completeness and any additional authorized categories remain unresolved.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
-- Deployment architecture and domain settings have not been selected or enabled.
+- The shared mobile navigation toggle is a native button but Quarto's rendered markup assigns `role="menu"`; remove that explicit role before deployment so assistive technology receives button semantics without changing its visual behavior.
+- The production hostname remains unselected and `_quarto.yml` has no `site-url`, so canonical URLs and sitemap output are not yet generated. Set the exact HTTPS origin and verify launch metadata once the hostname is authorized.
+- Deployment is not enabled. The approved audit recommendation is a GitHub Pages custom workflow that renders from `main` and deploys the untracked `_site` artifact; Pages, HTTPS, and any custom-domain settings remain separately authorized.
 
 ## Future Publications requirement
 
@@ -361,4 +381,4 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Next task: await separate authorization before beginning any subsequent implementation milestone. Shareable filter URL state, deployment, GitHub Pages, and domain configuration remain deferred.
+Next proposed task: review and separately authorize the two minor pre-deployment fixes documented in `docs/PREDEPLOYMENT_AUDIT.md`—mobile-toggle semantics and production `site-url`/launch metadata—before authorizing the GitHub Pages deployment milestone. Shareable filter URL state, deployment, GitHub Pages, HTTPS, and custom-domain configuration remain deferred.
