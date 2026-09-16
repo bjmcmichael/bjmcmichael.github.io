@@ -347,10 +347,11 @@ Initial preferred architecture:
 - browser-side interactivity only at first
 
 `main` is the production source branch, while generated `_site` output remains
-untracked. GitHub Pages and the custom domain remain disabled pending final
-launch approval. Cloudflare is authoritative for the domain, but DNS cutover is
-separate from site-content deployment and ordinary site updates require no
-Cloudflare changes.
+untracked. GitHub Pages serves the site through the approved GitHub Actions
+workflow, the repository custom domain is `benjaminmcmichael.com`, and GitHub
+Pages Enforce HTTPS is enabled. Cloudflare is authoritative for the domain, but
+DNS remains separate from site-content deployment and ordinary site updates
+require no Cloudflare changes.
 
 The architecture should make it straightforward for Codex on one machine to hand the project to Codex on another machine through GitHub alone.
 
@@ -409,7 +410,7 @@ Version 1 should not be delayed merely because interactive tools are unfinished.
 
 Do not make these decisions without explicit approval or adequate source materials:
 
-- GitHub Pages enablement, repository custom-domain attachment, and Cloudflare DNS cutover;
+- changes to the production GitHub Pages, custom-domain, HTTPS, or Cloudflare DNS configuration;
 - final homepage prose;
 - headshot/photo choice;
 - final publication metadata;

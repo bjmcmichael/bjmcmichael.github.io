@@ -2,19 +2,32 @@
 
 ## Current status
 
-**Stage: Milestone 2I — Final launch-readiness implementation complete on `fix/launch-readiness-2i`; awaiting review**
+**Stage: Milestone 2K — Production launch closeout complete**
 
-Milestone 2I resolves the two launch blockers identified by the Milestone 2H
-audit and prepares the approved production workflow without publishing the
-site. The production origin is now `https://benjaminmcmichael.com`; Quarto
-generates canonical links and a 14-page sitemap; a narrowly scoped post-render
-script removes Quarto 1.10.18's erroneous `role="menu"` from the native mobile
-navbar button; and `.github/workflows/deploy-pages.yml` defines the future
-`main` → Quarto render → `_site` artifact → GitHub Pages path. Data & Code now
-shows the approved minimal Coming Soon state. GitHub Pages remains disabled,
-the repository has no attached custom domain, no workflow has run, and no
-Cloudflare or DNS setting changed. The feature branch requires review and must
-not be merged or used to enable Pages without separate authorization.
+The production site is live at `https://benjaminmcmichael.com`. GitHub Pages
+hosts the site through the source-controlled GitHub Actions workflow at
+`.github/workflows/deploy-pages.yml`: `main` is the production source branch,
+GitHub Actions installs Quarto 1.10.18, renders the site, validates the artifact
+boundary, and uploads only generated `_site`. Generated output remains ignored
+and untracked. A successful push to `main` automatically deploys after the build
+and validation steps pass.
+
+The GitHub Pages custom domain is `benjaminmcmichael.com`, and Enforce HTTPS is
+enabled. `www.benjaminmcmichael.com` redirects to the HTTPS apex, and the legacy
+`bjmcmichael.github.io` hostname redirects to the HTTPS custom domain.
+Cloudflare remains authoritative with four apex `A` records, four apex `AAAA`
+records, a DNS-only `www` CNAME to `bjmcmichael.github.io`, and the retained
+GitHub domain-verification TXT record. All web-hosting records are DNS-only,
+DNSSEC is disabled, and the site uses no Cloudflare proxy, Worker, redirect,
+custom routing rule, or Cloudflare Pages deployment.
+
+Final launch validation passed for all 14 intended pages, custom-domain HTTPS,
+the apex/`www`/legacy-host redirects, all canonical URLs, the 14-entry sitemap,
+responsive layouts, native mobile-navigation semantics, Publications filters,
+Research scholarship counts, the CV PDF and local assets, and the required
+internal-document exclusions. No mixed-content or browser-console errors were
+found, and both `/docs/PREDEPLOYMENT_AUDIT.html` and `/docs/HANDOFF.html`
+return `404` in production.
 
 Milestone 2H has passed review and is incorporated into `main`. The
 documentation-only audit classifies the site as **READY AFTER MINOR FIXES**,
@@ -79,11 +92,6 @@ Milestone 2C Publications planning and metadata verification have passed review 
 Milestone 2B has passed review and is incorporated into `main`. Its feature branch, `content/research-programs`, remains retained.
 
 A subsequent routing and homepage-layout regression was repaired on `fix/research-routing-layout` and incorporated into `main`. The corrective branch remains retained.
-
-The site is not deployed. The GitHub Actions deployment workflow is now
-source-controlled but has not run; GitHub Pages enablement, repository
-custom-domain attachment, HTTPS verification, and Cloudflare DNS cutover remain
-separately authorized launch steps.
 
 Milestone 2A has passed review and is incorporated into `main`. Its feature branch remains retained.
 
@@ -331,7 +339,9 @@ After Milestone 2B was merged, visual review identified a routing collision betw
   `.github/workflows/deploy-pages.yml`. Future pushes to `main` and manual
   dispatches build with Quarto 1.10.18, validate the artifact boundary, upload
   only `_site`, and deploy through the `github-pages` environment. Pages is
-  disabled, so this workflow was not run during the milestone.
+  disabled during Milestone 2I, so the workflow was not run during that
+  milestone; the separately authorized Milestone 2J launch later enabled and
+  validated this production path.
 - Documented that `main` is production source, generated `_site` remains
   untracked, Cloudflare DNS is separate from ordinary content deployment, and
   launch settings require separate authorization.
@@ -345,6 +355,32 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `WEBSITE_SPEC.md`
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
+
+## Milestone 2J production launch complete
+
+- Enabled GitHub Pages with **GitHub Actions** as the build source and deployed
+  the approved Quarto site from `main`.
+- Attached `benjaminmcmichael.com` as the repository custom domain, completed
+  certificate provisioning, and enabled GitHub Pages Enforce HTTPS.
+- Established the DNS-only GitHub Pages records in authoritative Cloudflare DNS
+  while retaining the GitHub domain-verification TXT record and leaving DNSSEC
+  disabled.
+- Verified the HTTPS apex, `www` redirect, legacy `bjmcmichael.github.io`
+  redirect, all 14 public pages, canonical URLs, sitemap, responsive behavior,
+  mobile navigation, Publications filters, Research scholarship counts, CV and
+  local assets, and internal-document `404` behavior.
+- Confirmed the production site uses no Cloudflare proxying, Worker, redirect,
+  custom routing rule, or Cloudflare Pages product.
+
+## Milestone 2K production launch closeout
+
+- Updated the durable project documentation to reflect the live production
+  architecture and completed launch state without changing public source,
+  build configuration, workflow configuration, or external settings.
+- Documented the ordinary branch → preview/render → review → merge-to-`main` →
+  automatic-deployment workflow. Ordinary content changes require no
+  Cloudflare action.
+- Preserved `docs/PREDEPLOYMENT_AUDIT.md` unchanged as the historical audit.
 
 ## Milestone 1 files created
 
@@ -423,8 +459,6 @@ Do not invent or add these items without approved source materials:
 - public teaching materials and casebook information;
 - shareable topic-filter URL state and any new homepage selection;
 - real research figures or interactive components;
-- final Pages enablement, repository custom-domain attachment, HTTPS
-  enforcement, and Cloudflare web-DNS cutover.
 
 ## Unresolved issues
 
@@ -438,10 +472,6 @@ Do not invent or add these items without approved source materials:
 - Unfinished AMA RUC / RVU project details, preliminary findings, private materials, datasets, and manuscripts remain outside the approved public scope.
 - The CV labels its bibliography “Selected Publications” and contains no Working Papers or Books / Book Projects section, so completeness and any additional authorized categories remain unresolved.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
-- Deployment is not enabled. The approved GitHub Pages workflow now exists on
-  the Milestone 2I feature branch, but Pages, repository custom-domain
-  attachment, HTTPS, and Cloudflare web-DNS records remain separately
-  authorized launch actions.
 
 ## Future Publications requirement
 
@@ -453,14 +483,9 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Next proposed task: review Milestone 2I and separately authorize a coordinated
-launch. Do not merge `fix/launch-readiness-2i` by itself: because the workflow
-automatically runs on pushes to `main`, the launch authorization should first
-enable GitHub Pages with GitHub Actions as the source, attach
-`benjaminmcmichael.com` as the repository custom domain, and add the approved
-apex and `www` GitHub Pages records in Cloudflare without disturbing the
-retained GitHub-verification TXT record or unrelated records. Then merge and
-push the feature branch to `main` to trigger the first production render,
-allow certificate provisioning, enforce HTTPS, and verify canonical routing,
-`www` behavior, sitemap, filters, and internal-document exclusion. Shareable
-filter URL state remains deferred.
+No subsequent implementation milestone is authorized. Continue ordinary site
+work only through a focused feature branch, local preview/render verification,
+review, and merge to `main`; the existing GitHub Actions workflow then deploys
+automatically. Cloudflare changes are not part of ordinary content maintenance.
+Shareable filter URL state and all other deferred content or research features
+remain subject to separate authorization.

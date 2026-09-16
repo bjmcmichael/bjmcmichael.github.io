@@ -250,8 +250,8 @@ Display headings and selected editorial text use [TeX Gyre Schola](https://ctan.
 
 The regular OpenType face is self-hosted at `assets/fonts/texgyreschola-regular.otf`, loaded through a local `@font-face` declaration, and distributed under the GUST Font License included at `assets/fonts/GUST-FONT-LICENSE.txt`. No font installation, package install, CDN, or external font request is required at build time or in the browser. If the local asset cannot load, the CSS falls back to Georgia, `Times New Roman`, Times, and the generic serif family.
 
-Deployment configuration is documented below and remains disabled pending final
-launch approval.
+Production deployment is documented below and is active through GitHub Pages
+and the source-controlled GitHub Actions workflow.
 
 ### Curriculum vitae asset
 
@@ -259,7 +259,7 @@ The authoritative public CV PDF is stored at `assets/files/McMichael_CV.pdf` and
 
 ## 7. GitHub Pages
 
-Target hosting is GitHub Pages at `https://benjaminmcmichael.com`.
+Production hosting is GitHub Pages at `https://benjaminmcmichael.com`.
 
 The source-controlled workflow at `.github/workflows/deploy-pages.yml` defines
 the approved production path:
@@ -276,21 +276,54 @@ the approved production path:
 The workflow uses the documented Pages artifact architecture rather than a
 `gh-pages` branch, `quarto publish`, or repository-root deployment. Generated
 `_site` remains ignored and untracked. The workflow requires no Cloudflare
-token or repository secret. GitHub Pages is currently unpublished and its
-publishing source remains disabled, so the workflow must not be enabled or run
-until the separately authorized launch sequence.
+token or repository secret. GitHub Pages uses **GitHub Actions** as its build
+source, `main` is the production source branch, and every push to `main`
+automatically renders and deploys the site after the workflow's build and
+artifact checks succeed. GitHub Pages Enforce HTTPS is enabled.
+
+### Ordinary website-change workflow
+
+1. Create a focused feature branch from current `main`.
+2. Edit the approved source files.
+3. Use `quarto preview` during development and run `quarto render` before review.
+4. Review the rendered result and required checks.
+5. Merge the approved branch into `main` and push `main`.
+6. Confirm the automatically triggered GitHub Actions deployment succeeds.
+
+Ordinary content and design changes do not require Cloudflare changes.
 
 ## 8. Custom domain
 
-The approved production hostname is `https://benjaminmcmichael.com`. Cloudflare
-is authoritative for the zone, and GitHub account-level domain verification is
-in place, but the repository custom domain is not attached and web-hosting DNS
-cutover has not occurred.
+The canonical production hostname is `https://benjaminmcmichael.com`, and the
+secondary hostname is `www.benjaminmcmichael.com`. The repository custom domain
+is attached in GitHub Pages, GitHub's certificate is active, Enforce HTTPS is
+enabled, `www` redirects to the HTTPS apex, and the legacy
+`bjmcmichael.github.io` hostname redirects to the HTTPS custom domain.
 
-At final launch, configure the GitHub Pages custom domain and then add the
-approved apex and `www` records in Cloudflare, verify routing and certificates,
-and enable HTTPS. Cloudflare DNS is separate from site-content deployment;
-ordinary source updates and workflow runs require no Cloudflare changes.
+Cloudflare is authoritative for `benjaminmcmichael.com`. The non-secret public
+web-DNS architecture is:
+
+- four GitHub Pages apex `A` records;
+- four GitHub Pages apex `AAAA` records;
+- `www` `CNAME` → `bjmcmichael.github.io`;
+- the retained GitHub Pages domain-verification `TXT` record;
+- all web-hosting records set to DNS-only;
+- DNSSEC currently disabled;
+- no Cloudflare proxy, Worker, redirect, custom routing rule, or Cloudflare
+  Pages product used for this website.
+
+Cloudflare DNS is separate from site-content deployment. Ordinary source
+updates and workflow runs require no Cloudflare changes.
+
+### Production launch baseline
+
+Final launch validation passed for all 14 intended pages, custom-domain HTTPS,
+the apex/`www`/legacy-host redirects, canonical URLs, the 14-entry sitemap,
+responsive layouts, mobile navigation semantics, Publications filters,
+Research scholarship counts, the CV PDF and local assets, and exclusion of
+internal documentation. The live site produced no mixed-content findings or
+browser-console errors during the launch check. The internal paths
+`/docs/PREDEPLOYMENT_AUDIT.html` and `/docs/HANDOFF.html` return `404`.
 
 Never commit registrar credentials or API tokens.
 
