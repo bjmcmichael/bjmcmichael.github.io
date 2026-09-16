@@ -341,9 +341,16 @@ Initial preferred architecture:
 - Quarto website
 - GitHub repository: `bjmcmichael/bjmcmichael.github.io`
 - GitHub Pages hosting
-- custom domain added after initial site validation
+- production hostname: `https://benjaminmcmichael.com`
+- GitHub Actions renders the Quarto source on `main` and uploads only the generated `_site` directory as the Pages artifact
 - public static assets stored in the repository
 - browser-side interactivity only at first
+
+`main` is the production source branch, while generated `_site` output remains
+untracked. GitHub Pages and the custom domain remain disabled pending final
+launch approval. Cloudflare is authoritative for the domain, but DNS cutover is
+separate from site-content deployment and ordinary site updates require no
+Cloudflare changes.
 
 The architecture should make it straightforward for Codex on one machine to hand the project to Codex on another machine through GitHub alone.
 
@@ -372,6 +379,9 @@ When implementation begins, include a professional baseline for:
 - sitemap/robots handling consistent with Quarto/GitHub Pages;
 - semantic headings.
 
+Milestone 2I establishes the production `site-url`, canonical links, and sitemap
+generation for `https://benjaminmcmichael.com` without deploying the site.
+
 Do not optimize for marketing-style SEO. Optimize for accurate discovery of the scholar and scholarship.
 
 ## 11. Version 1 scope
@@ -399,7 +409,7 @@ Version 1 should not be delayed merely because interactive tools are unfinished.
 
 Do not make these decisions without explicit approval or adequate source materials:
 
-- final custom domain;
+- GitHub Pages enablement, repository custom-domain attachment, and Cloudflare DNS cutover;
 - final homepage prose;
 - headshot/photo choice;
 - final publication metadata;

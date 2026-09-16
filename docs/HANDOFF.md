@@ -2,7 +2,19 @@
 
 ## Current status
 
-**Stage: Milestone 2H — Pre-deployment audit approved and incorporated into `main`**
+**Stage: Milestone 2I — Final launch-readiness implementation complete on `fix/launch-readiness-2i`; awaiting review**
+
+Milestone 2I resolves the two launch blockers identified by the Milestone 2H
+audit and prepares the approved production workflow without publishing the
+site. The production origin is now `https://benjaminmcmichael.com`; Quarto
+generates canonical links and a 14-page sitemap; a narrowly scoped post-render
+script removes Quarto 1.10.18's erroneous `role="menu"` from the native mobile
+navbar button; and `.github/workflows/deploy-pages.yml` defines the future
+`main` → Quarto render → `_site` artifact → GitHub Pages path. Data & Code now
+shows the approved minimal Coming Soon state. GitHub Pages remains disabled,
+the repository has no attached custom domain, no workflow has run, and no
+Cloudflare or DNS setting changed. The feature branch requires review and must
+not be merged or used to enable Pages without separate authorization.
 
 Milestone 2H has passed review and is incorporated into `main`. The
 documentation-only audit classifies the site as **READY AFTER MINOR FIXES**,
@@ -68,7 +80,10 @@ Milestone 2B has passed review and is incorporated into `main`. Its feature bran
 
 A subsequent routing and homepage-layout regression was repaired on `fix/research-routing-layout` and incorporated into `main`. The corrective branch remains retained.
 
-The site is not deployed. GitHub Pages, GitHub Actions, and custom-domain configuration remain intentionally deferred.
+The site is not deployed. The GitHub Actions deployment workflow is now
+source-controlled but has not run; GitHub Pages enablement, repository
+custom-domain attachment, HTTPS verification, and Cloudflare DNS cutover remain
+separately authorized launch steps.
 
 Milestone 2A has passed review and is incorporated into `main`. Its feature branch remains retained.
 
@@ -295,6 +310,38 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/PREDEPLOYMENT_AUDIT.md`
 - `docs/HANDOFF.md`
 
+## Milestone 2I launch-readiness implementation
+
+- Replaced the Data & Code placeholder modules with the approved one-paragraph
+  Coming Soon state while retaining the page title, description, navigation,
+  and established page-intro treatment.
+- Confirmed that Quarto 1.10.18 generates `role="menu"` in its shared
+  `navtoggle.ejs` template after Pandoc filtering, then added a dependency-free
+  project post-render script that removes only that explicit role from the one
+  native `.navbar-toggler` button on each rendered HTML page and fails closed
+  if the expected markup changes.
+- Set `website.site-url` to `https://benjaminmcmichael.com` and enabled Quarto's
+  supported HTML canonical-link generation. The render emits 14 canonical
+  links and a 14-page `_site/sitemap.xml` without internal documentation.
+- Added the reviewed production workflow at
+  `.github/workflows/deploy-pages.yml`. Future pushes to `main` and manual
+  dispatches build with Quarto 1.10.18, validate the artifact boundary, upload
+  only `_site`, and deploy through the `github-pages` environment. Pages is
+  disabled, so this workflow was not run during the milestone.
+- Documented that `main` is production source, generated `_site` remains
+  untracked, Cloudflare DNS is separate from ordinary content deployment, and
+  launch settings require separate authorization.
+
+## Milestone 2I files added or modified
+
+- `.github/workflows/deploy-pages.yml`
+- `_quarto.yml`
+- `data-code.qmd`
+- `scripts/fix-navbar-toggle-role.ts`
+- `WEBSITE_SPEC.md`
+- `docs/DEVELOPMENT.md`
+- `docs/HANDOFF.md`
+
 ## Milestone 1 files created
 
 - `.gitignore`
@@ -352,6 +399,14 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - The Publications page was checked at approximately 1600, 1440, 1024, 768, and 390 pixels; the Research index at 1440, 768, and 390 pixels; the Payments page at 1440 and 390 pixels; and the homepage at 1440 and 390 pixels. No horizontal overflow was detected, and the homepage composition remains unchanged.
 - The final Milestone 2D render completed all fourteen pages without a Dropbox, OneDrive, Quarto locking, or database warning. Planning documents, production YAML, filter source, and generated Quarto state are not emitted as public pages or tracked as generated output.
 - The Milestone 2H audit completed a fresh 14-page render, a 60-state responsive browser matrix, 33 shared-navigation checks, exact publication/filter/program data validation, a rendered local-link crawl, an external canonical-link check, accessibility basics, privacy scanning, asset inspection, and a visual review of the public CV. The audit found no rendering regression, horizontal overflow, genuine broken external link, private-data leak, or cloud-sync/Quarto warning.
+- Milestone 2I renders all 14 pages with Quarto 1.10.18 and checks every page at
+  1600, 1440, 1024, 768, and 390 pixels without horizontal overflow. The
+  native navbar toggle has no explicit role, retains its accessible name,
+  `aria-controls`, and live `aria-expanded` state, and opens and closes by
+  keyboard at 768 and 390 pixels. Publications still exposes 49 records with
+  filter counts 49 / 17 / 4 / 17 / 6 / 4 / 8, disciplinary-section counts
+  5 / 4 / 3 / 5 / 3 / 2 / 4, eight multi-topic records, and the full no-script
+  bibliography. All 29 unique local routes and assets resolve.
 
 ## Content intentionally deferred
 
@@ -364,21 +419,25 @@ Do not invent or add these items without approved source materials:
 - public teaching materials and casebook information;
 - shareable topic-filter URL state and any new homepage selection;
 - real research figures or interactive components;
-- final custom domain.
+- final Pages enablement, repository custom-domain attachment, HTTPS
+  enforcement, and Cloudflare web-DNS cutover.
 
 ## Unresolved issues
 
 - Research-program publication lists are populated, but findings, datasets, replication repositories, code links, figures, and interactive tools remain pending approved materials and later architecture work.
-- Data & Code remains intentionally unpopulated because no approved public datasets, replication repositories, code links, or interactive components have been supplied.
+- Data & Code intentionally shows only the approved Coming Soon statement
+  because no public datasets, replication repositories, code links, or
+  interactive components have been supplied.
 - No verified external profile links, public research-resource links, headshot, or public teaching materials have been supplied.
 - Six externally checked records retain narrow citation cautions documented in `docs/publications/reviewed_inventory.yml`: final forthcoming details, one published-version author-order conflict, one page-range discrepancy, and two optional pagination fields.
 - Milestone 2F topic assignments are incorporated into `data/publications.yml` on `main`. The five historical Payments curated placements remain for provenance, and no new homepage publication selection is approved.
 - Unfinished AMA RUC / RVU project details, preliminary findings, private materials, datasets, and manuscripts remain outside the approved public scope.
 - The CV labels its bibliography “Selected Publications” and contains no Working Papers or Books / Book Projects section, so completeness and any additional authorized categories remain unresolved.
 - The abstract homepage research field is an approved temporary placeholder. Do not redesign it further; replace or remove it only when approved research material is available.
-- The shared mobile navigation toggle is a native button but Quarto's rendered markup assigns `role="menu"`; remove that explicit role before deployment so assistive technology receives button semantics without changing its visual behavior.
-- The production hostname remains unselected and `_quarto.yml` has no `site-url`, so canonical URLs and sitemap output are not yet generated. Set the exact HTTPS origin and verify launch metadata once the hostname is authorized.
-- Deployment is not enabled. The approved audit recommendation is a GitHub Pages custom workflow that renders from `main` and deploys the untracked `_site` artifact; Pages, HTTPS, and any custom-domain settings remain separately authorized.
+- Deployment is not enabled. The approved GitHub Pages workflow now exists on
+  the Milestone 2I feature branch, but Pages, repository custom-domain
+  attachment, HTTPS, and Cloudflare web-DNS records remain separately
+  authorized launch actions.
 
 ## Future Publications requirement
 
@@ -390,4 +449,14 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-Next proposed task: review and separately authorize the two minor pre-deployment fixes documented in `docs/PREDEPLOYMENT_AUDIT.md`—mobile-toggle semantics and production `site-url`/launch metadata—before authorizing the GitHub Pages deployment milestone. Shareable filter URL state, deployment, GitHub Pages, HTTPS, and custom-domain configuration remain deferred.
+Next proposed task: review Milestone 2I and separately authorize a coordinated
+launch. Do not merge `fix/launch-readiness-2i` by itself: because the workflow
+automatically runs on pushes to `main`, the launch authorization should first
+enable GitHub Pages with GitHub Actions as the source, attach
+`benjaminmcmichael.com` as the repository custom domain, and add the approved
+apex and `www` GitHub Pages records in Cloudflare without disturbing the
+retained GitHub-verification TXT record or unrelated records. Then merge and
+push the feature branch to `main` to trigger the first production render,
+allow certificate provisioning, enforce HTTPS, and verify canonical routing,
+`www` behavior, sitemap, filters, and internal-document exclusion. Shareable
+filter URL state remains deferred.

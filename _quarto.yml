@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  post-render:
+    - scripts/fix-navbar-toggle-role.ts
   render:
     - "*.qmd"
     - "research/**/*.qmd"
@@ -10,6 +12,7 @@ project:
 website:
   title: "Benjamin J. McMichael"
   description: "Empirical research on health care regulation, professional licensing, medical markets, and health policy."
+  site-url: "https://benjaminmcmichael.com"
   search: false
   navbar:
     title: "Benjamin J. McMichael"
@@ -32,6 +35,7 @@ website:
 
 format:
   html:
+    canonical-url: true
     theme:
       - cosmo
       - theme.scss

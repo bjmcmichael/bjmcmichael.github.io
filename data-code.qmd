@@ -4,31 +4,5 @@ description: "Public data, replication materials, code, and interactive research
 ---
 
 ::: {.page-intro}
-This page will collect public datasets, replication materials, code, and interactive research resources associated with the scholarship.
-:::
-
-::: {.resource-grid}
-::: {.resource-module}
-<p class="module-index" aria-hidden="true">01</p>
-
-## Public Data
-
-Approved datasets and documentation will be indexed by research project.
-:::
-
-::: {.resource-module}
-<p class="module-index" aria-hidden="true">02</p>
-
-## Replication & Code
-
-Public repositories and reproducibility materials will be linked after verification.
-:::
-
-::: {.resource-module}
-<p class="module-index" aria-hidden="true">03</p>
-
-## Interactive Research
-
-Browser-based research tools will be added only where they clarify specific scholarship.
-:::
+**Coming soon.** Public datasets, replication materials, code, and interactive research resources will be added here as they become available.
 :::

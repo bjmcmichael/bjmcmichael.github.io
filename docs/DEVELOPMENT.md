@@ -27,6 +27,9 @@ Current site layout:
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml
 ├── .gitignore
 ├── _quarto.yml
 ├── AGENTS.md
@@ -52,6 +55,8 @@ Current site layout:
 │   └── publications.yml
 ├── filters/
 │   └── publications.lua
+├── scripts/
+│   └── fix-navbar-toggle-role.ts
 ├── data-code.qmd
 ├── teaching.qmd
 ├── cv.qmd
@@ -71,6 +76,7 @@ Current site layout:
     ├── DESIGN_SYSTEM.md
     ├── DEVELOPMENT.md
     ├── HANDOFF.md
+    ├── PREDEPLOYMENT_AUDIT.md
     ├── PUBLICATIONS_PLAN.md
     └── publications/
         ├── inventory.yml
@@ -120,11 +126,24 @@ Create a production render with:
 quarto render
 ```
 
+The project-level post-render script `scripts/fix-navbar-toggle-role.ts` uses
+Quarto's bundled Deno runtime to remove Quarto 1.10.18's erroneous explicit
+`role="menu"` from the generated native navbar toggle button. It is a narrowly
+scoped build-time correction: the script requires exactly one affected toggle
+per rendered HTML page and fails rather than silently changing unrelated
+markup. It adds no browser-time mutation or external dependency.
+
 The rendered site is written to `_site/`. The current render processes seven root-level `.qmd` pages, the Research landing page at `research/index.qmd`, and six nested Research-program pages, for fourteen pages total. It creates `_site/index.html` and the durable directory route `_site/research/index.html`.
 
 The `project.render` list in `_quarto.yml` includes both `*.qmd` and `research/**/*.qmd`. The first pattern renders only root-level site pages; the second renders the Research landing page and six nested program pages. Governing Markdown files under `docs/` remain excluded from the public site.
 
 The Research landing page intentionally lives at `research/index.qmd`, not beside the `research/` directory as a root-level `research.qmd`. This avoids a static-host routing collision between `research.html` and `/research/`. Navigation, homepage actions, Explore links, and program-page return links should continue to target the directory-based `/research/` route.
+
+The production website origin is `https://benjaminmcmichael.com`. Quarto's
+`website.site-url` and HTML `canonical-url` settings generate canonical links,
+and the site render generates `_site/sitemap.xml`. Governing Markdown under
+`docs/` is outside the render list and must not appear in the sitemap or Pages
+artifact.
 
 ### Fresh-machine setup
 
@@ -228,7 +247,8 @@ Display headings and selected editorial text use [TeX Gyre Schola](https://ctan.
 
 The regular OpenType face is self-hosted at `assets/fonts/texgyreschola-regular.otf`, loaded through a local `@font-face` declaration, and distributed under the GUST Font License included at `assets/fonts/GUST-FONT-LICENSE.txt`. No font installation, package install, CDN, or external font request is required at build time or in the browser. If the local asset cannot load, the CSS falls back to Georgia, `Times New Roman`, Times, and the generic serif family.
 
-The actual deployment configuration must be documented after it is implemented.
+Deployment configuration is documented below and remains disabled pending final
+launch approval.
 
 ### Curriculum vitae asset
 
@@ -236,27 +256,38 @@ The authoritative public CV PDF is stored at `assets/files/McMichael_CV.pdf` and
 
 ## 7. GitHub Pages
 
-Target hosting: GitHub Pages.
+Target hosting is GitHub Pages at `https://benjaminmcmichael.com`.
 
-Initial preference is to use a deployment approach that:
-- is transparent;
-- is reproducible from GitHub;
-- does not depend on one computer;
-- supports custom-domain deployment;
-- allows build failures to be diagnosed from GitHub Actions.
+The source-controlled workflow at `.github/workflows/deploy-pages.yml` defines
+the approved production path:
 
-The implementation agent should choose the simplest robust Quarto-to-GitHub-Pages workflow and document it before enabling deployment.
+1. a push to `main` (or a manual dispatch) starts the workflow;
+2. GitHub Actions checks out the repository and installs Quarto 1.10.18;
+3. `quarto render` builds the site;
+4. a validation step requires `_site/index.html` and rejects rendered copies of
+   `docs/PREDEPLOYMENT_AUDIT.html` or `docs/HANDOFF.html`;
+5. only `_site` is uploaded as the GitHub Pages artifact;
+6. a dependent deploy job publishes that artifact to the `github-pages`
+   environment.
+
+The workflow uses the documented Pages artifact architecture rather than a
+`gh-pages` branch, `quarto publish`, or repository-root deployment. Generated
+`_site` remains ignored and untracked. The workflow requires no Cloudflare
+token or repository secret. GitHub Pages is currently unpublished and its
+publishing source remains disabled, so the workflow must not be enabled or run
+until the separately authorized launch sequence.
 
 ## 8. Custom domain
 
-The custom domain is intentionally deferred until the first working site exists.
+The approved production hostname is `https://benjaminmcmichael.com`. Cloudflare
+is authoritative for the zone, and GitHub account-level domain verification is
+in place, but the repository custom domain is not attached and web-hosting DNS
+cutover has not occurred.
 
-When the domain is known and the site is ready:
-- verify domain ownership where appropriate;
-- configure DNS deliberately;
-- configure both apex and `www` behavior;
-- enable HTTPS;
-- document the DNS records and GitHub Pages settings in this file without recording any private registrar credentials.
+At final launch, configure the GitHub Pages custom domain and then add the
+approved apex and `www` records in Cloudflare, verify routing and certificates,
+and enable HTTPS. Cloudflare DNS is separate from site-content deployment;
+ordinary source updates and workflow runs require no Cloudflare changes.
 
 Never commit registrar credentials or API tokens.
 
