@@ -129,9 +129,12 @@ quarto render
 The project-level post-render script `scripts/fix-navbar-toggle-role.ts` uses
 Quarto's bundled Deno runtime to remove Quarto 1.10.18's erroneous explicit
 `role="menu"` from the generated native navbar toggle button. It is a narrowly
-scoped build-time correction: the script requires exactly one affected toggle
-per rendered HTML page and fails rather than silently changing unrelated
-markup. It adds no browser-time mutation or external dependency.
+scoped build-time correction: when Quarto supplies
+`QUARTO_PROJECT_OUTPUT_FILES`, the script strictly checks only HTML files from
+the current render pass and requires exactly one affected toggle per page. Its
+fallback directory scan is idempotent so already-corrected output is accepted,
+while duplicated or otherwise unexpected toggle markup still fails. It adds no
+browser-time mutation or external dependency.
 
 The rendered site is written to `_site/`. The current render processes seven root-level `.qmd` pages, the Research landing page at `research/index.qmd`, and six nested Research-program pages, for fourteen pages total. It creates `_site/index.html` and the durable directory route `_site/research/index.html`.
 

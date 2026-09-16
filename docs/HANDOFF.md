@@ -317,9 +317,13 @@ After Milestone 2B was merged, visual review identified a routing collision betw
   and established page-intro treatment.
 - Confirmed that Quarto 1.10.18 generates `role="menu"` in its shared
   `navtoggle.ejs` template after Pandoc filtering, then added a dependency-free
-  project post-render script that removes only that explicit role from the one
-  native `.navbar-toggler` button on each rendered HTML page and fails closed
-  if the expected markup changes.
+  project post-render script that uses `QUARTO_PROJECT_OUTPUT_FILES` to remove
+  only that explicit role from the one native `.navbar-toggler` button on each
+  newly rendered HTML page and fails closed if the new markup changes. An
+  idempotent fallback safely accepts previously corrected output when Quarto
+  does not supply the current-output list. The refinement passes clean and
+  repeated full renders, a targeted root-page render, and an incremental
+  `quarto preview` watch rebuild.
 - Set `website.site-url` to `https://benjaminmcmichael.com` and enabled Quarto's
   supported HTML canonical-link generation. The render emits 14 canonical
   links and a 14-page `_site/sitemap.xml` without internal documentation.
