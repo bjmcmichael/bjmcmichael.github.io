@@ -2,7 +2,16 @@
 
 ## Current status
 
-**Stage: Milestone 2G — Publications research-topic filtering approved and incorporated into `main`**
+**Stage: Milestone 2H — Pre-deployment audit approved and incorporated into `main`**
+
+Milestone 2H has passed review and is incorporated into `main`. The
+documentation-only audit classifies the site as **READY AFTER MINOR FIXES**,
+records the verified 14-page launch-readiness baseline, and identifies the
+mobile-navigation role correction plus production `site-url`/launch metadata
+as the two changes requiring separate authorization before deployment. The
+audit branch remains retained locally and on origin. No audit fix, GitHub Pages
+configuration, Cloudflare change, custom-domain configuration, or deployment
+was performed during closeout.
 
 Milestone 2G has passed review and is incorporated into `main`. It adds
 progressive, client-side research-topic filtering to the
@@ -269,9 +278,9 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - `docs/DEVELOPMENT.md`
 - `docs/HANDOFF.md`
 
-## Milestone 2H pre-deployment audit complete
+## Milestone 2H approved and incorporated into main
 
-- Completed a documentation-only launch-readiness audit on `audit/predeployment-readiness`; no public page, style, script, metadata source, Quarto configuration, or deployment setting changed.
+- Approved and incorporated the documentation-only launch-readiness audit into `main` through a fast-forward merge that preserved the audit commit; no public page, style, script, metadata source, Quarto configuration, or deployment setting changed.
 - A fresh Quarto production render succeeds for all 14 public pages without file-locking or database warnings.
 - Verified all local routes and assets, the CV PDF, the six Research Explore and return links, and the shared navigation. External publication-link validation found zero genuine failures; access-control responses remain a separate indeterminate class rather than broken links.
 - Revalidated the 49-record Publications corpus, 56 topic assignments, six exact Research-program corpora, eight multi-topic records, the sole no-topic record, filter counts, disciplinary-section counts, and the complete no-JavaScript bibliography.
