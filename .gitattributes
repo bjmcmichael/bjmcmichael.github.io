@@ -1,3 +1,3 @@
 # Preserve reviewed research source assets byte-for-byte across platforms.
-assets/research-observatory/*.svg -text -diff
+assets/research-observatory/figures/*.svg -text -diff
 assets/research-observatory/data/*.csv -text -diff

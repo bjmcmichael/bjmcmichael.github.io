@@ -33,12 +33,20 @@ publication-render-mode: homepage
 
 ```{=html}
 <div class="research-carousel" data-carousel-viewport role="region" aria-roledescription="carousel" aria-label="Research figures and tables" tabindex="0">
-  <figure class="research-carousel-slide" data-carousel-slide role="group" aria-roledescription="slide" aria-label="1 of 7">
-    <a class="carousel-image-button" href="assets/research-observatory/01_hospitalizations.svg">
-      <img src="assets/research-observatory/01_hospitalizations.svg" alt="Full practice authority for nurse practitioners. All original outcomes are retained; the acute-composite estimate is not statistically significant.">
-      <span class="visually-hidden">Open full-size figure</span>
-    </a>
-  </figure>
+  <article class="research-carousel-slide research-carousel-slide--figure" data-carousel-slide role="group" aria-roledescription="slide" aria-label="1 of 7">
+    <header class="carousel-slide-header">
+      <h3>Fewer preventable hospitalizations</h3>
+      <p>Full practice authority for nurse practitioners</p>
+    </header>
+    <div class="carousel-figure-frame">
+      <img src="assets/research-observatory/figures/01_hospitalizations.svg" alt="Complete three-panel Figure 3 showing changes in diabetes, chronic, acute, and overall preventable hospitalization outcomes under full practice authority for nurse practitioners. Each outcome retains its original point estimate and 90 and 95 percent confidence intervals.">
+    </div>
+    <p class="carousel-slide-context">All published outcomes are retained; the acute-composite estimate is not statistically significant.</p>
+    <footer class="carousel-slide-footer">
+      <p class="carousel-slide-source">The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable Hospitalizations, Figure 3, PDF p. 10.</p>
+      <a class="carousel-enlarge-button" href="assets/research-observatory/figures/01_hospitalizations.svg">Open full-resolution figure</a>
+    </footer>
+  </article>
 </div>
 
 <div class="research-carousel-controls" data-carousel-controls hidden aria-label="Research carousel controls">
@@ -53,8 +61,16 @@ publication-render-mode: homepage
       <h2 id="research-carousel-dialog-title" data-carousel-dialog-title></h2>
       <button type="button" class="carousel-dialog-close" data-carousel-dialog-close>Close</button>
     </div>
-    <div class="research-carousel-dialog-figure">
-      <img data-carousel-dialog-image alt="">
+    <div class="research-carousel-dialog-figure" data-carousel-dialog-figure>
+      <div class="carousel-zoom-toolbar" aria-label="Figure zoom controls">
+        <button type="button" data-carousel-zoom-out>Zoom out</button>
+        <output data-carousel-zoom-status aria-live="polite">100%</output>
+        <button type="button" data-carousel-zoom-in>Zoom in</button>
+        <button type="button" data-carousel-zoom-reset>Fit overview</button>
+      </div>
+      <div class="carousel-zoom-viewport" data-carousel-zoom-viewport tabindex="0" aria-label="Zoomed figure. Scroll or swipe to pan after zooming.">
+        <img data-carousel-dialog-image alt="">
+      </div>
     </div>
     <div class="research-carousel-dialog-meta">
       <p data-carousel-dialog-source></p>

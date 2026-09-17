@@ -2,16 +2,16 @@
 
 ## Current status
 
-**Stage: Milestone 2L — Final visual review complete; awaiting merge approval**
+**Stage: Milestone 2L — Readability revision complete; awaiting review and merge approval**
 
-Milestone 2L is implemented and has completed final visual review on
-`codex/homepage-research-carousel`. The branch replaces the homepage
-placeholder with the approved seven-item research carousel, renders the three
-approved Selected Research papers from shared publication metadata, and adds
-scoped About-page spacing. The review found one narrow-screen presentation
-defect in the semantic adapted-table view; the table columns now fit the mobile
-dialog without horizontal scrolling. The branch has not been merged into
-`main`, so the production site remains unchanged.
+Milestone 2L and its focused readability revision are implemented on
+`codex/homepage-research-carousel`. The revision began at `4eadb31`, replaces
+the image-based table slides with responsive semantic tables at their actual
+homepage size, gives the four figure-only crops more usable space, and adds a
+visible Enlarge path with 100–400% figure zoom and scroll/touch panning. The
+approved Selected Research entries and scoped About-page spacing remain
+unchanged. The branch has not been merged into `main`, so the production site
+remains unchanged.
 
 The production site is live at `https://benjaminmcmichael.com`. GitHub Pages
 hosts the site through the source-controlled GitHub Actions workflow at
@@ -48,9 +48,17 @@ return `404` in production.
   previous/next and pause/resume controls, pointer and keyboard interaction
   pauses, persistent explicit pause state, and reduced-motion handling that
   disables automatic rotation.
-- Added keyboard-accessible enlarged views in a native dialog. The adapted
-  table slides expose reviewed CSV content as semantic HTML tables with source
-  and interpretation notes; all assets use containment rather than cropping.
+- Rendered all three adapted tables as responsive semantic HTML in both the
+  ordinary carousel and enlarged dialog, using the existing reviewed CSV data.
+  Supported desktop and mobile views retain approximately 14–16 CSS-pixel table
+  text, estimates, uncertainty information, units, and interpretation notes.
+- Replaced the fixed composite image canvases with the four supplied
+  figure-only crops plus ordinary HTML titles, context, and source text. Figure
+  slides use containment and retain every original panel, axis, outcome,
+  legend, and uncertainty interval.
+- Added a visible, keyboard-accessible Enlarge control to every slide. Figure
+  dialogs open with a complete overview and provide 100–400% zoom plus
+  scroll/touch panning; table dialogs retain their semantic tables.
 - Retained a no-JavaScript first-slide fallback that links directly to the
   full-size source asset.
 - Selected exactly three homepage publications in the approved order through
@@ -62,9 +70,11 @@ return `404` in production.
   Publications page.
 - Added a scoped 2rem margin above the About page's Education heading without
   changing biography copy or unrelated heading spacing.
-- Copied only the seven carousel SVGs and three accessible-table CSV files;
-  package source PDFs, evidence extracts, duplicate PNGs, preview files, and
-  internal handoff materials remain outside the repository.
+- Retained only the four verified figure crops and three accessible-table CSV
+  files required by the revised public component. The superseded composite
+  slide SVGs were removed; package source PDFs, evidence extracts, duplicate
+  PNGs, preview files, and internal handoff materials remain outside the
+  repository.
 
 ## Milestone 2L files added or modified
 
@@ -78,7 +88,7 @@ return `404` in production.
 - `filters/publications.lua`
 - `assets/js/research-carousel.js`
 - `assets/research-observatory/carousel.json`
-- `assets/research-observatory/*.svg`
+- `assets/research-observatory/figures/*.svg`
 - `assets/research-observatory/data/*.csv`
 - `WEBSITE_SPEC.md`
 - `docs/DEVELOPMENT.md`
@@ -86,23 +96,25 @@ return `404` in production.
 
 ## Milestone 2L verification
 
-- Verified all 50 package checksums before integration and confirmed the ten
-  copied SVG/CSV source assets remain byte-for-byte identical to the package.
+- Reused the completed source verification. The four revised figure paths use
+  the supplied figure-only SVG crops unchanged, while all three semantic tables
+  continue to load the already verified CSV extracts.
 - Completed a clean 14-page Quarto production render; the post-render navbar
   correction passed on all 14 pages, the sitemap still contains 14 URLs, and
   internal governing documents remain outside `_site/`.
-- Crawled 314 generated local `href` and `src` references with zero missing
-  targets. All seven carousel SVGs, the manifest, three CSV files, the local
-  JavaScript, and the existing CV PDF are present in the rendered artifact.
-- Checked the homepage at approximately 1440 × 900 and 390 × 844. All seven
-  slides retain their 1600 × 1000 aspect ratio with `object-fit: contain`, no
-  slide or page has horizontal overflow, and the narrow layout provides an
-  enlarged reading path for dense source labels.
-- Verified previous/next navigation, Arrow-key navigation, approximately
-  ten-second cycling, explicit pause persistence, focus-based pause/resume,
-  dialog focus, Escape close, and all three semantic adapted tables. A separate
-  reduced-motion browser run held the carousel at slide 01 and exposed the
-  disabled “Auto-advance off” control after twelve seconds.
+- Checked all seven revised slides at 1440 × 900 and 390 × 844. No slide or page
+  has horizontal overflow; all Enlarge controls are visible native buttons;
+  desktop table text measures 15.64 CSS pixels and mobile table text 14.875
+  CSS pixels.
+- Reconfirmed the normal-motion ten-second default: a no-interaction run moved
+  from slide 01 to 02 after approximately 9.8 seconds following initialization
+  and showed “Pause.” Explicit pause held slide 01 and showed “Resume”; a
+  separate reduced-motion run held slide 01 and exposed the disabled
+  “Auto-advance off” control.
+- The earlier packet's screenshots all showed “AUTO-ADVANCE OFF” because that
+  capture session deliberately emulated `prefers-reduced-motion: reduce`; it
+  did not represent the normal-motion default. The updated packet uses the
+  normal-motion preference and therefore shows “PAUSE.”
 - Compared the three homepage citations with their Publications counterparts;
   rendered titles, authors, status, venue/citation text, and canonical URLs are
   exact matches. The full Publications page still contains 49 entries with
@@ -113,20 +125,24 @@ return `404` in production.
 - Browser QA produced no console warnings or errors. JavaScript syntax and
   `git diff --check` pass, and no package PDFs, evidence files, duplicate PNGs,
   private paths, credentials, or restricted material were added.
-- Completed a final visual-review packet at controlled 1440 × 900 and 390 ×
-  844 viewports. It contains the full desktop and mobile homepages, all seven
-  carousel states at their rendered desktop size, mobile enlarged figure and
-  semantic-table views, and desktop/mobile About transitions. Review artifacts
-  are stored outside the repository and are not part of the public build.
-- After the mobile table refinement, all three adapted semantic tables measure
-  338 CSS pixels for both their available and rendered widths at the 390-pixel
-  viewport, with no horizontal overflow. Estimates, standard errors or
-  p-values, and units remain visible.
+- Produced a compact updated review packet at controlled 1440 × 900 and 390 ×
+  844 viewports. It includes an all-seven desktop contact sheet, actual desktop
+  figure and table views, actual mobile figure and table views, a 250% mobile
+  figure view, the enlarged mobile semantic table, and machine-readable QA
+  results. Review artifacts are stored outside the repository and are not part
+  of the public build.
+- All three ordinary mobile tables fit their 291 CSS-pixel rendered width with
+  no horizontal overflow. The enlarged table fits its 338 CSS-pixel width at
+  15.3 CSS-pixel text. DOM rows match all three verified CSV extracts exactly.
 - Compared the hospitalization slide directly with the supplied published
   Figure 3 source page. The embedded figure payload is byte-for-byte identical
   to the package's complete original three-panel crop; all axes, outcome labels,
   90% and 95% uncertainty intervals, and the acute and overall composites are
   retained.
+- At 250% on the 390-pixel mobile viewport, the hospitalization figure expands
+  to approximately 841 CSS pixels inside a 336 CSS-pixel viewport, making
+  individual labels readable and providing genuine horizontal panning after
+  the complete initial overview.
 - Reconfirmed the public artifact boundary after review: the only PDF in
   `_site` is the approved public CV. Package source PDFs, manuscript drafts,
   evidence extracts, preview/reference materials, and the review packet are not
@@ -511,8 +527,10 @@ After Milestone 2B was merged, visual review identified a routing collision betw
 - The homepage uses an editorial two-column research-observatory composition on wide screens and a single-column reading order on smaller screens.
 - The homepage Research Observatory uses seven approved local assets in a
   restrained, data-driven carousel. Four items preserve original figure crops;
-  three are explicitly adapted tables with verified CSV-backed semantic views.
-  The component contains no reconstructed or fabricated findings.
+  three are explicitly adapted, verified CSV-backed semantic tables at both
+  ordinary and enlarged sizes. Figures pair tighter crops with HTML context and
+  expose full-resolution zoom/pan. The component contains no reconstructed or
+  fabricated findings.
 - The hero display type and vertical rhythm were reduced so the name retains its deliberate two-line composition without dominating the page and Selected Research enters the desktop viewport sooner.
 - Motion is minimal, visible focus treatment is provided, and reduced-motion preferences are respected.
 - The CV PDF has a stable public path at `assets/files/McMichael_CV.pdf`; the PDF, rather than the landing page, remains the authoritative curriculum vitae.
@@ -577,9 +595,10 @@ Do not invent or add these items without approved source materials:
 - Milestone 2F topic assignments are incorporated into `data/publications.yml` on `main`. The five historical Payments curated placements remain for provenance, and no new homepage publication selection is approved.
 - Unfinished AMA RUC / RVU project details, preliminary findings, private materials, datasets, and manuscripts remain outside the approved public scope.
 - The CV labels its bibliography “Selected Publications” and contains no Working Papers or Books / Book Projects section, so completeness and any additional authorized categories remain unresolved.
-- The approved carousel source assets remain image-based. Dense labels depend
-  on the enlarged view at narrow widths; preserve that enlargement path when
-  replacing or reordering slides.
+- The four approved figure crops remain image-based. Dense labels depend on the
+  100–400% zoom/pan path at narrow widths; preserve that enlargement behavior
+  when replacing or reordering figure slides. Adapted tables must remain
+  semantic HTML in both ordinary and enlarged views.
 
 ## Future Publications requirement
 
@@ -592,8 +611,9 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 ## Next recommended task
 
 No subsequent implementation milestone is authorized beyond review and a
-separately approved merge of the Milestone 2L feature branch. Continue ordinary site
-work only through a focused feature branch, local preview/render verification,
+separately approved merge of the revised Milestone 2L feature branch. Do not
+merge or deploy until that approval is explicit. Continue ordinary site work
+only through a focused feature branch, local preview/render verification,
 review, and merge to `main`; the existing GitHub Actions workflow then deploys
 automatically. Cloudflare changes are not part of ordinary content maintenance.
 Shareable filter URL state and all other deferred content or research features

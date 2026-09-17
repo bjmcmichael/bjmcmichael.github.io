@@ -73,13 +73,11 @@ Current site layout:
 │   │   └── research-carousel.js
 │   ├── research-observatory/
 │   │   ├── carousel.json
-│   │   ├── 01_hospitalizations.svg
-│   │   ├── 02_fca.svg
-│   │   ├── 03_sharing.svg
-│   │   ├── 04_mortality.svg
-│   │   ├── 05_stealing.svg
-│   │   ├── 06_liability.svg
-│   │   ├── 07_opioids.svg
+│   │   ├── figures/
+│   │   │   ├── 01_hospitalizations.svg
+│   │   │   ├── 02_fca.svg
+│   │   │   ├── 05_stealing.svg
+│   │   │   └── 06_liability.svg
 │   │   └── data/
 │   │       ├── 03_sharing_display.csv
 │   │       ├── 04_mortality_display.csv
@@ -213,17 +211,20 @@ fields should remain omitted until verified rather than being guessed.
 
 `assets/research-observatory/carousel.json` is the public, data-driven manifest
 for the seven homepage slides. It controls order, the ten-second interval,
-asset paths, alt text, provenance, and accessible-table sources. The seven SVGs
-share a 1600 × 1000 canvas and are displayed with containment so the source
-content is never cropped. The three CSV files are the verified text source for
-semantic tables in the enlarged views; do not transcribe their estimates into
-JavaScript.
+asset paths, alt text, provenance, and accessible-table sources. Four verified
+figure-only SVG crops are displayed with containment so the original panels,
+axes, legends, outcomes, and uncertainty intervals are not cropped. The three
+CSV files are the verified source for responsive semantic HTML tables rendered
+directly in both the ordinary carousel and enlarged views; do not transcribe
+their estimates into JavaScript.
 
 `assets/js/research-carousel.js` progressively enhances the first-slide HTML
 fallback. It builds the seven-slide rotation, manual and pause controls,
-interaction pauses, reduced-motion behavior, and native-dialog enlargement.
-The script uses only browser APIs and local assets. If it cannot initialize,
-the first slide remains available as a direct full-size link.
+interaction pauses, reduced-motion behavior, responsive semantic tables, and
+native-dialog enlargement. Figure dialogs open with a complete overview and
+offer 100–400% zoom in 50-point steps plus scroll and touch panning. The script
+uses only browser APIs and local assets. If it cannot initialize, the first
+slide remains available as a direct full-size link.
 
 The homepage loads the same `data/publications.yml` metadata and
 `filters/publications.lua` renderer used by Publications and the six Research

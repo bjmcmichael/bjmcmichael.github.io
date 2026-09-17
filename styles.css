@@ -197,8 +197,8 @@ main.content {
 .hero-grid {
   align-items: stretch;
   display: grid;
-  gap: clamp(2.5rem, 6vw, 6.5rem);
-  grid-template-columns: minmax(0, 1.08fr) minmax(25rem, 0.92fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  grid-template-columns: minmax(0, 0.94fr) minmax(27rem, 1.06fr);
   min-height: min(48rem, calc(80vh - 4rem));
   padding: clamp(3.25rem, 7vh, 5.75rem) 0 clamp(1.75rem, 3.5vh, 3rem);
 }
@@ -332,17 +332,21 @@ a.site-button-secondary:hover {
 }
 
 .research-carousel {
-  aspect-ratio: 8 / 5;
   background: var(--surface);
   border: 1px solid var(--rule);
   margin: 1.25rem 0 0.9rem;
+  min-height: 31rem;
   overflow: hidden;
   position: relative;
 }
 
 .research-carousel-slide {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   margin: 0;
+  min-height: 31rem;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -350,28 +354,123 @@ a.site-button-secondary:hover {
   display: none;
 }
 
-.carousel-image-button {
-  appearance: none;
-  background: var(--surface);
-  border: 0;
-  color: inherit;
-  cursor: zoom-in;
-  display: block;
-  height: 100%;
-  padding: 0;
-  text-decoration: none;
-  width: 100%;
+.carousel-slide-header h3 {
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  line-height: 1.15;
+  margin: 0;
 }
 
-.carousel-image-button:hover {
-  color: inherit;
+.carousel-slide-header p {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+  margin: 0.2rem 0 0;
 }
 
-.carousel-image-button img {
+.carousel-figure-frame {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--rule);
+  display: flex;
+  justify-content: center;
+  min-height: 16rem;
+  overflow: hidden;
+  padding: 0.35rem;
+}
+
+.carousel-figure-frame img {
   display: block;
-  height: 100%;
+  height: auto;
+  max-height: 19rem;
   object-fit: contain;
   width: 100%;
+}
+
+.carousel-slide-context,
+.carousel-slide-source {
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.carousel-slide-context {
+  font-size: 0.8rem;
+}
+
+.carousel-slide-footer {
+  align-items: end;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.carousel-slide-source {
+  font-size: 0.7rem;
+  max-width: 70%;
+}
+
+.carousel-enlarge-button {
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--crimson);
+  color: var(--crimson);
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.075em;
+  min-height: 2.35rem;
+  padding: 0.55rem 0.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.carousel-enlarge-button:hover {
+  background: var(--crimson-pale);
+  color: var(--crimson-dark);
+}
+
+.carousel-table-block {
+  min-width: 0;
+}
+
+.carousel-data-table {
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.38;
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.carousel-data-table th,
+.carousel-data-table td {
+  border-bottom: 1px solid var(--rule);
+  overflow-wrap: anywhere;
+  padding: 0.65rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.carousel-data-table thead th {
+  background: #eef1f2;
+  color: var(--ink);
+  font-size: 0.82rem;
+}
+
+.carousel-data-table tbody th {
+  color: var(--ink-soft);
+  font-weight: 600;
+  width: 42%;
+}
+
+.carousel-table-block--slide .carousel-table-note {
+  font-size: 0.78rem;
 }
 
 .research-carousel-controls {
@@ -386,7 +485,8 @@ a.site-button-secondary:hover {
 }
 
 .research-carousel-controls button,
-.carousel-dialog-close {
+.carousel-dialog-close,
+.carousel-zoom-toolbar button {
   appearance: none;
   background: transparent;
   border: 0;
@@ -401,7 +501,8 @@ a.site-button-secondary:hover {
 }
 
 .research-carousel-controls button:hover,
-.carousel-dialog-close:hover {
+.carousel-dialog-close:hover,
+.carousel-zoom-toolbar button:hover {
   color: var(--crimson-dark);
 }
 
@@ -428,10 +529,10 @@ a.site-button-secondary:hover {
   border: 1px solid var(--rule-strong);
   color: var(--ink);
   max-height: 92vh;
-  max-width: 72rem;
+  max-width: 78rem;
   overflow: auto;
   padding: 0;
-  width: min(94vw, 72rem);
+  width: min(94vw, 78rem);
 }
 
 .research-carousel-dialog::backdrop {
@@ -467,10 +568,50 @@ a.site-button-secondary:hover {
   border: 1px solid var(--rule);
 }
 
-.research-carousel-dialog-figure img {
-  display: block;
+.research-carousel-dialog-figure[hidden] {
+  display: none;
+}
+
+.carousel-zoom-toolbar {
+  align-items: center;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.8rem;
+  padding: 0.45rem 0.65rem;
+}
+
+.carousel-zoom-toolbar output {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  min-width: 3.25rem;
+  text-align: center;
+}
+
+.carousel-zoom-toolbar button {
+  min-height: 2.25rem;
+}
+
+.carousel-zoom-toolbar button:disabled {
+  color: var(--muted);
+  cursor: default;
+  opacity: 0.65;
+}
+
+.carousel-zoom-viewport {
+  background: #fff;
   max-height: 66vh;
-  object-fit: contain;
+  min-height: min(52vh, 34rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-x pan-y;
+}
+
+.carousel-zoom-viewport img {
+  display: block;
+  height: auto;
+  max-width: none;
   width: 100%;
 }
 
@@ -494,41 +635,8 @@ a.site-button-secondary:hover {
   margin-top: 1.25rem;
 }
 
-.research-carousel-dialog-table h3 {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin: 0 0 0.75rem;
-}
-
-.carousel-table-scroll {
-  overflow-x: auto;
-}
-
-.research-carousel-dialog-table table {
-  border-collapse: collapse;
-  font-size: 0.9rem;
-  line-height: 1.45;
-  margin: 0;
-  min-width: 40rem;
-  width: 100%;
-}
-
-.research-carousel-dialog-table th,
-.research-carousel-dialog-table td {
-  border-bottom: 1px solid var(--rule);
-  padding: 0.7rem 0.8rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.research-carousel-dialog-table thead th {
-  background: #eef1f2;
-  color: var(--ink);
-}
-
-.research-carousel-dialog-table tbody th {
-  color: var(--ink-soft);
-  font-weight: 600;
+.carousel-table-block--dialog .carousel-data-table {
+  font-size: 1rem;
 }
 
 .carousel-table-note {
@@ -1225,8 +1333,8 @@ a.contact-email {
 
 @media (max-width: 68rem) {
   .hero-grid {
-    gap: 3.5rem;
-    grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.82fr);
+    gap: 3rem;
+    grid-template-columns: minmax(0, 0.9fr) minmax(25rem, 1.1fr);
   }
 
   .resource-grid {
@@ -1437,6 +1545,63 @@ a.contact-email {
     padding: 1rem;
   }
 
+  .research-carousel,
+  .research-carousel-slide {
+    min-height: 34rem;
+  }
+
+  .research-carousel-slide {
+    gap: 0.65rem;
+    padding: 0.8rem;
+  }
+
+  .carousel-slide-header h3 {
+    font-size: 1.15rem;
+  }
+
+  .carousel-slide-header p {
+    font-size: 0.76rem;
+  }
+
+  .carousel-figure-frame {
+    min-height: 0;
+    padding: 0.2rem;
+  }
+
+  .carousel-figure-frame img {
+    max-height: 15rem;
+  }
+
+  .carousel-slide-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .carousel-slide-source {
+    max-width: none;
+  }
+
+  .carousel-enlarge-button {
+    width: 100%;
+  }
+
+  .carousel-data-table {
+    font-size: 0.875rem;
+  }
+
+  .carousel-data-table th,
+  .carousel-data-table td {
+    padding: 0.55rem 0.35rem;
+  }
+
+  .carousel-data-table thead th {
+    font-size: 0.76rem;
+  }
+
+  .carousel-data-table tbody th {
+    width: 44%;
+  }
+
   .research-carousel-controls {
     gap: 0.35rem;
   }
@@ -1455,25 +1620,23 @@ a.contact-email {
     gap: 1rem;
   }
 
-  .research-carousel-dialog-figure img {
-    max-height: 52vh;
+  .carousel-zoom-toolbar {
+    gap: 0.2rem 0.55rem;
+    padding: 0.35rem 0.45rem;
   }
 
-  .research-carousel-dialog-table table {
-    font-size: 0.78rem;
-    min-width: 0;
-    table-layout: fixed;
+  .carousel-zoom-toolbar button {
+    font-size: 0.66rem;
+    letter-spacing: 0.055em;
   }
 
-  .research-carousel-dialog-table th,
-  .research-carousel-dialog-table td {
-    overflow-wrap: anywhere;
-    padding: 0.55rem 0.4rem;
+  .carousel-zoom-viewport {
+    max-height: 70vh;
+    min-height: 55vh;
   }
 
-  .research-carousel-dialog-table th:first-child,
-  .research-carousel-dialog-table td:first-child {
-    width: 44%;
+  .carousel-table-block--dialog .carousel-data-table {
+    font-size: 0.9rem;
   }
 
   .project-index-item {

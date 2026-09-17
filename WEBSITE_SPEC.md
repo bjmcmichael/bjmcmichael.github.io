@@ -100,11 +100,19 @@ The final short bio text will be supplied or approved separately. Do not invent 
 
 The homepage Research Observatory uses the approved seven-item rotation of four
 original research-figure crops and three clearly labeled adapted tables. The
-rotation advances at approximately ten-second intervals, provides previous,
+tables are rendered as responsive semantic HTML directly in the carousel from
+the reviewed CSV extracts, with approximately 14–16 CSS-pixel body text at the
+supported desktop and mobile review widths. The figure slides pair verified
+figure-only crops with ordinary HTML titles, interpretation, and source text so
+the research content receives the available display area rather than being
+shrunk inside a fixed image canvas.
+
+The rotation advances at approximately ten-second intervals, provides previous,
 next, and pause/resume controls, pauses during pointer or keyboard interaction,
-and disables automatic cycling for reduced-motion preferences. Each item offers
-a keyboard-accessible enlarged view; adapted tables also expose their contents
-as semantic HTML tables sourced from the reviewed CSV extracts.
+and disables automatic cycling for reduced-motion preferences. Every item has a
+visible, keyboard-accessible Enlarge control. Enlarged figures start with a full
+overview and provide genuine zoom plus scroll/touch panning; enlarged tables
+remain semantic HTML rather than reverting to an image.
 
 The component retains complete axes, intervals, labels, legends, units, and
 source context and uses containment rather than cropping. Slide order and
