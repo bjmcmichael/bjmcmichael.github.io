@@ -2,13 +2,16 @@
 
 ## Current status
 
-**Stage: Milestone 2L — Homepage Research Observatory implementation awaiting review**
+**Stage: Milestone 2L — Final visual review complete; awaiting merge approval**
 
-Milestone 2L is implemented on `codex/homepage-research-carousel` and awaits
-review. The branch replaces the homepage placeholder with the approved
-seven-item research carousel, renders the three approved Selected Research
-papers from shared publication metadata, and adds scoped About-page spacing.
-It has not been merged into `main`, so the production site remains unchanged.
+Milestone 2L is implemented and has completed final visual review on
+`codex/homepage-research-carousel`. The branch replaces the homepage
+placeholder with the approved seven-item research carousel, renders the three
+approved Selected Research papers from shared publication metadata, and adds
+scoped About-page spacing. The review found one narrow-screen presentation
+defect in the semantic adapted-table view; the table columns now fit the mobile
+dialog without horizontal scrolling. The branch has not been merged into
+`main`, so the production site remains unchanged.
 
 The production site is live at `https://benjaminmcmichael.com`. GitHub Pages
 hosts the site through the source-controlled GitHub Actions workflow at
@@ -110,6 +113,24 @@ return `404` in production.
 - Browser QA produced no console warnings or errors. JavaScript syntax and
   `git diff --check` pass, and no package PDFs, evidence files, duplicate PNGs,
   private paths, credentials, or restricted material were added.
+- Completed a final visual-review packet at controlled 1440 × 900 and 390 ×
+  844 viewports. It contains the full desktop and mobile homepages, all seven
+  carousel states at their rendered desktop size, mobile enlarged figure and
+  semantic-table views, and desktop/mobile About transitions. Review artifacts
+  are stored outside the repository and are not part of the public build.
+- After the mobile table refinement, all three adapted semantic tables measure
+  338 CSS pixels for both their available and rendered widths at the 390-pixel
+  viewport, with no horizontal overflow. Estimates, standard errors or
+  p-values, and units remain visible.
+- Compared the hospitalization slide directly with the supplied published
+  Figure 3 source page. The embedded figure payload is byte-for-byte identical
+  to the package's complete original three-panel crop; all axes, outcome labels,
+  90% and 95% uncertainty intervals, and the acute and overall composites are
+  retained.
+- Reconfirmed the public artifact boundary after review: the only PDF in
+  `_site` is the approved public CV. Package source PDFs, manuscript drafts,
+  evidence extracts, preview/reference materials, and the review packet are not
+  emitted.
 
 Milestone 2H has passed review and is incorporated into `main`. The
 documentation-only audit classifies the site as **READY AFTER MINOR FIXES**,
@@ -570,8 +591,8 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-No subsequent implementation milestone is authorized beyond review of the
-Milestone 2L feature branch. Continue ordinary site
+No subsequent implementation milestone is authorized beyond review and a
+separately approved merge of the Milestone 2L feature branch. Continue ordinary site
 work only through a focused feature branch, local preview/render verification,
 review, and merge to `main`; the existing GitHub Actions workflow then deploys
 automatically. Cloudflare changes are not part of ordinary content maintenance.

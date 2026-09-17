@@ -1459,6 +1459,23 @@ a.contact-email {
     max-height: 52vh;
   }
 
+  .research-carousel-dialog-table table {
+    font-size: 0.78rem;
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  .research-carousel-dialog-table th,
+  .research-carousel-dialog-table td {
+    overflow-wrap: anywhere;
+    padding: 0.55rem 0.4rem;
+  }
+
+  .research-carousel-dialog-table th:first-child,
+  .research-carousel-dialog-table td:first-child {
+    width: 44%;
+  }
+
   .project-index-item {
     gap: 0.6rem 0.85rem;
     grid-template-columns: 2.2rem minmax(0, 1fr);
