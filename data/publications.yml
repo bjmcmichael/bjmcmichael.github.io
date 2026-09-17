@@ -114,7 +114,8 @@ publications:
         section: "selected_scholarship"
         surface: "research_program"
         order: 4
-    homepage_selected: false
+    homepage_selected: true
+    homepage_order: 1
   - id: "lr-inequitable-organ-allocation"
     source_section: "Law Reviews"
     public_section: "law-reviews"
@@ -497,7 +498,8 @@ publications:
     research_topics:
       - "organ-allocation"
     curated_placements: []
-    homepage_selected: false
+    homepage_selected: true
+    homepage_order: 2
   - id: "el-np-scope-preventable-hospitalizations"
     source_section: "Peer-Reviewed Economic and Law Journals"
     public_section: "economics-empirical-legal-studies"
@@ -522,7 +524,8 @@ publications:
     research_topics:
       - "licensing"
     curated_placements: []
-    homepage_selected: false
+    homepage_selected: true
+    homepage_order: 3
   - id: "el-scope-practice-patterns-nps-pas"
     source_section: "Peer-Reviewed Economic and Law Journals"
     public_section: "economics-empirical-legal-studies"

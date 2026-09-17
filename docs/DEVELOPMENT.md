@@ -30,6 +30,7 @@ Current site layout:
 ├── .github/
 │   └── workflows/
 │       └── deploy-pages.yml
+├── .gitattributes
 ├── .gitignore
 ├── _quarto.yml
 ├── AGENTS.md
@@ -68,7 +69,21 @@ Current site layout:
 │   ├── files/
 │   │   └── McMichael_CV.pdf
 │   ├── js/
-│   │   └── publications-filter.js
+│   │   ├── publications-filter.js
+│   │   └── research-carousel.js
+│   ├── research-observatory/
+│   │   ├── carousel.json
+│   │   ├── 01_hospitalizations.svg
+│   │   ├── 02_fca.svg
+│   │   ├── 03_sharing.svg
+│   │   ├── 04_mortality.svg
+│   │   ├── 05_stealing.svg
+│   │   ├── 06_liability.svg
+│   │   ├── 07_opioids.svg
+│   │   └── data/
+│   │       ├── 03_sharing_display.csv
+│   │       ├── 04_mortality_display.csv
+│   │       └── 07_opioids_display.csv
 │   └── fonts/
 │       ├── GUST-FONT-LICENSE.txt
 │       └── texgyreschola-regular.otf
@@ -193,6 +208,31 @@ To add or correct a publication:
 
 Do not copy citation text into individual `.qmd` files. Optional unresolved
 fields should remain omitted until verified rather than being guessed.
+
+### Homepage Research Observatory and selected publications
+
+`assets/research-observatory/carousel.json` is the public, data-driven manifest
+for the seven homepage slides. It controls order, the ten-second interval,
+asset paths, alt text, provenance, and accessible-table sources. The seven SVGs
+share a 1600 × 1000 canvas and are displayed with containment so the source
+content is never cropped. The three CSV files are the verified text source for
+semantic tables in the enlarged views; do not transcribe their estimates into
+JavaScript.
+
+`assets/js/research-carousel.js` progressively enhances the first-slide HTML
+fallback. It builds the seven-slide rotation, manual and pause controls,
+interaction pauses, reduced-motion behavior, and native-dialog enlargement.
+The script uses only browser APIs and local assets. If it cannot initialize,
+the first slide remains available as a direct full-size link.
+
+The homepage loads the same `data/publications.yml` metadata and
+`filters/publications.lua` renderer used by Publications and the six Research
+programs. Records selected for the homepage use `homepage_selected: true` and a
+unique `homepage_order`; the `homepage` render mode emits the standard
+publication-entry markup without duplicating citation text in `index.qmd`.
+When changing the selection, update only the approved records and verify that
+the homepage title links, citation text, order, and canonical destinations
+match Publications exactly.
 
 ### Publications topic filtering
 

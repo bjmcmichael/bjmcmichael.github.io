@@ -118,6 +118,13 @@ local function topic_attribute(record)
   return table.concat(topics, " ")
 end
 
+local function is_true(value)
+  if value == true then
+    return true
+  end
+  return string_value(value) == "true"
+end
+
 local function citation_inlines(record)
   local citation = pandoc.Inlines({})
   local venue = string_value(record.venue)
@@ -244,6 +251,33 @@ local function render_topic_program(meta, program_id)
   return pandoc.Div(blocks, pandoc.Attr("", {"publication-program-entries"}))
 end
 
+local function render_homepage_selection(meta)
+  local records = {}
+  for _, record in ipairs(meta.publications or {}) do
+    if is_true(record.homepage_selected) then
+      table.insert(records, record)
+    end
+  end
+  table.sort(records, function(left, right)
+    local left_order = number_value(left.homepage_order) or math.huge
+    local right_order = number_value(right.homepage_order) or math.huge
+    if left_order ~= right_order then
+      return left_order < right_order
+    end
+    return (string_value(left.id) or "") < (string_value(right.id) or "")
+  end)
+
+  if #records == 0 then
+    error("Homepage publication selection is empty.")
+  end
+
+  local blocks = pandoc.Blocks({})
+  for _, record in ipairs(records) do
+    blocks:insert(publication_entry(record, false))
+  end
+  return pandoc.Div(blocks, pandoc.Attr("", {"publication-homepage-entries"}))
+end
+
 function Pandoc(document)
   local mode = string_value(document.meta["publication-render-mode"])
   local program_id = string_value(document.meta["publication-render-program"])
@@ -262,6 +296,9 @@ function Pandoc(document)
       end
       if mode == "topic-program" and program_id ~= nil then
         return render_topic_program(document.meta, program_id)
+      end
+      if mode == "homepage" then
+        return render_homepage_selection(document.meta)
       end
       error("Unknown publication rendering mode: " .. (mode or "missing"))
     end

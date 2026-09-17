@@ -15,7 +15,7 @@ Benjamin J. McMichael is the Jere L. Beasley Professor of Law and Director of In
 
 He holds a Ph.D. in Law & Economics from Vanderbilt University, a J.D. from Vanderbilt University Law School, and a B.S., *summa cum laude*, in Mathematical Economics from Wake Forest University. He clerked for Judge Carolyn D. King of the United States Court of Appeals for the Fifth Circuit. He also holds a voluntary appointment as Associate Professor of Nursing at the University of Alabama at Birmingham School of Nursing.
 
-## Education
+## Education {.about-education-heading}
 
 ::: {.credential-list}
 ::: {.credential-entry}

@@ -1,0 +1,83 @@
+{
+  "interval_ms": 10000,
+  "items": [
+    {
+      "id": "01_hospitalizations",
+      "type": "figure",
+      "title": "Fewer preventable hospitalizations",
+      "asset": "assets/research-observatory/01_hospitalizations.svg",
+      "alt_text": "Full practice authority for nurse practitioners. All original outcomes are retained; the acute-composite estimate is not statistically significant.",
+      "source": "The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable Hospitalizations, Figure 3, PDF p. 10.",
+      "treatment": "Original three-panel figure crop; original axes, outcomes, point estimates, and confidence intervals retained."
+    },
+    {
+      "id": "02_fca",
+      "type": "figure",
+      "title": "FCA sanctions rival malpractice liability",
+      "asset": "assets/research-observatory/02_fca.svg",
+      "alt_text": "Healthcare False Claims Act sanctions and medical malpractice damages over time. This is a descriptive comparison of liability, not a causal estimate.",
+      "source": "A Constitutional False Claims Act, Figure 1, PDF p. 21.",
+      "treatment": "Original figure crop; logarithmic scale and original units retained."
+    },
+    {
+      "id": "03_sharing",
+      "type": "adapted_table",
+      "title": "Mortality inside and outside the transplant system",
+      "asset": "assets/research-observatory/03_sharing.svg",
+      "alt_text": "Estimated effects of eliminating geographic allocation boundaries: waitlist mortality minus 2.53 deaths per 1,000 waitlisted patients per month; one-year post-transplant mortality minus 1.72 percentage points; transplant-amenable mortality plus 0.61 deaths per million residents per month. Standard errors appear in parentheses in the table.",
+      "source": "Adapted from Sharing Is Caring, Table 5, columns 2–3, PDF p. 44, and Table 7, column 1, PDF p. 45.",
+      "treatment": "Selected reported estimates reformatted into a compact table; no new estimation.",
+      "table": {
+        "csv": "assets/research-observatory/data/03_sharing_display.csv",
+        "caption": "Estimated effects of eliminating geographic allocation boundaries",
+        "note": "Standard errors are in parentheses; all displayed estimates have p < 0.01. The outcomes use different populations, denominators, and units and should not be added or subtracted."
+      }
+    },
+    {
+      "id": "04_mortality",
+      "type": "adapted_table",
+      "title": "Broader practice authority and lower mortality",
+      "asset": "assets/research-observatory/04_mortality.svg",
+      "alt_text": "Estimated changes in annual healthcare-amenable deaths per 100,000 residents. Nurse practitioner full practice authority: minus 12.177 for all counties and minus 15.620 for rural counties. Physician assistant remote practice authority: minus 9.927 for all counties and minus 26.431 for rural counties. Standard errors appear in parentheses in the table.",
+      "source": "Adapted from Supply-side Health Policy, Table 2, column 6, panels A–B, PDF p. 9.",
+      "treatment": "Selected reported estimates reformatted into a compact table; no new estimation.",
+      "table": {
+        "csv": "assets/research-observatory/data/04_mortality_display.csv",
+        "caption": "Estimated changes in annual healthcare-amenable deaths per 100,000 residents",
+        "note": "Standard errors are in parentheses. The nurse practitioner rural estimate has p < 0.05; the other displayed estimates have p < 0.01. The specification includes both practice-law variables and Medicaid expansion."
+      }
+    },
+    {
+      "id": "05_stealing",
+      "type": "figure",
+      "title": "Competition and organ-allocation priority",
+      "asset": "assets/research-observatory/05_stealing.svg",
+      "alt_text": "Before-and-after changes in the gap between allocation and laboratory MELD scores. Larger post-Share-35 gaps are consistent with strategic use of exception points.",
+      "source": "Stealing Organs?, Figure 8, PDF p. 46; journal p. 180.",
+      "treatment": "Original figure crop; baseline comparison and 95% confidence intervals retained."
+    },
+    {
+      "id": "06_liability",
+      "type": "figure",
+      "title": "Licensing and liability work together",
+      "asset": "assets/research-observatory/06_liability.svg",
+      "alt_text": "Midwife attendance and C-section use across malpractice-pressure quartiles. Differences between practice regimes narrow as malpractice pressure rises.",
+      "source": "Healthcare Licensing and Liability, Figure 5, PDF p. 48; journal p. 867.",
+      "treatment": "Both original panels and 90% confidence intervals retained."
+    },
+    {
+      "id": "07_opioids",
+      "type": "adapted_table",
+      "title": "NP independence and opioid prescribing",
+      "asset": "assets/research-observatory/07_opioids.svg",
+      "alt_text": "All-payer estimated changes in annual morphine milligram equivalents: nurse practitioners and physicians combined minus 4.688 percent; nurse practitioners plus 4.468 percent; physicians minus 6.352 percent. P-values appear in the table.",
+      "source": "Adapted from Nurse Practitioner Scope-of-Practice Laws and Opioid Prescribing, Table 2, PDF p. 14.",
+      "treatment": "Selected reported percentage changes and p-values reformatted into a compact table; no new estimation.",
+      "table": {
+        "csv": "assets/research-observatory/data/07_opioids_display.csv",
+        "caption": "All-payer estimated changes in annual morphine milligram equivalents",
+        "note": "The reported percentage changes are reproduced from the paper. The outcome is annual provider-level morphine milligram equivalents, not prescription counts."
+      }
+    }
+  ]
+}

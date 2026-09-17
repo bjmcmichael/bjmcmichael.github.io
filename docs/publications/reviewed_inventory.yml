@@ -51,10 +51,24 @@ approved_payments_selections:
     - sw-macra-incident-to-billing
     - lr-constitutional-false-claims-act
     - lr-constitutional-accounting-false-claims-act
-  homepage_selection: []
+  homepage_selection:
+    - lr-constitutional-false-claims-act
   note: >-
     These are five existing records, not additions to the 49-record inventory.
-    No other topic assignment or curated placement is approved here.
+    The later approved homepage placement for the False Claims Act record is
+    also listed in the separate ordered homepage selection below. No other
+    topic assignment or Research-program placement is approved here.
+
+approved_homepage_selection:
+  approved_at: "2026-09-17"
+  ordered_record_ids:
+    - lr-constitutional-false-claims-act
+    - el-sharing-is-caring-organ-allocation
+    - el-np-scope-preventable-hospitalizations
+  note: >-
+    This ordered editorial selection is separate from research-topic membership
+    and Research-program placement. Public rendering must inherit each record's
+    verified citation fields and canonical link rather than duplicate them.
 
 verification_summary:
   total_records: 49

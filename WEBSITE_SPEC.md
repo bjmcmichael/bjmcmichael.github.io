@@ -96,36 +96,33 @@ Primary actions:
 
 The final short bio text will be supplied or approved separately. Do not invent biographical claims merely to fill space. Use clearly marked placeholder text when final copy is unavailable.
 
-### Featured research visual
+### Research Observatory
 
-The hybrid mockup used a research panel containing a U.S. policy map and an empirical figure preview.
+The homepage Research Observatory uses the approved seven-item rotation of four
+original research-figure crops and three clearly labeled adapted tables. The
+rotation advances at approximately ten-second intervals, provides previous,
+next, and pause/resume controls, pauses during pointer or keyboard interaction,
+and disables automatic cycling for reduced-motion preferences. Each item offers
+a keyboard-accessible enlarged view; adapted tables also expose their contents
+as semantic HTML tables sourced from the reviewed CSV extracts.
 
-This is a design direction, not a requirement to invent a real interactive figure for version 1.
-
-Until approved public data/figures are supplied, use either:
-- a restrained placeholder module;
-- an approved static research figure;
-- or omit the visualization rather than fabricating research results.
-
-Never invent numerical empirical findings for decorative purposes.
+The component retains complete axes, intervals, labels, legends, units, and
+source context and uses containment rather than cropping. Slide order and
+supporting paths are maintained in a local JSON manifest. Do not substitute
+decorative or reconstructed findings for these verified assets.
 
 ### Selected Research
 
-The homepage should support three prominent project entries.
+The homepage displays three approved publication entries, in this order:
 
-Initial candidate projects:
+1. **A Constitutional False Claims Act**
+2. **Sharing Is Caring: Eliminating Geographic Boundaries in Organ Allocation**
+3. **The Impact of Nurse Practitioner Scope-of-Practice Laws on Preventable Hospitalizations**
 
-1. **The Law of Doctors**  
-   Professional boundaries and the regulation of health care labor
-
-2. **Scope of Practice and Severe Maternal Morbidity**  
-   Professional regulation and maternal health outcomes
-
-3. **Organ Allocation**  
-   Geographic allocation reform and patient outcomes
-
-The approved payments Research program does not itself authorize a fourth
-homepage project. Any later homepage selection requires separate approval.
+These entries render from `data/publications.yml` through the shared publication
+renderer so their titles, authors, status, venue, citation details, and
+canonical links remain identical to the Publications page. Any later homepage
+selection or change in order requires separate approval.
 
 Links on research cards may include, as applicable:
 - Paper
@@ -294,7 +291,7 @@ no-current-topic record. Milestone 2F promotes those approvals into
 `data/publications.yml` and renders every topic member on its Research-program
 page under the public heading **Selected Scholarship**. That heading is an
 editorial label, not a capped subset. Research-program membership remains
-separate from homepage selection, and the homepage selection is unchanged.
+separate from the approved homepage selection described above.
 
 The Publications page continues to preserve its five disciplinary sections as
 the primary visible organization. Its default “All publications” state shows
@@ -416,7 +413,7 @@ Do not make these decisions without explicit approval or adequate source materia
 - final publication metadata;
 - final project descriptions;
 - which papers/data/code are public;
-- which interactive figure launches first;
+- future carousel replacements or additional interactive figures;
 - analytics;
 - newsletter/contact forms;
 - server-side hosting;

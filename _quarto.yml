@@ -8,6 +8,7 @@ project:
     - "research/**/*.qmd"
   resources:
     - "assets/fonts/**"
+    - "assets/research-observatory/**"
 
 website:
   title: "Benjamin J. McMichael"

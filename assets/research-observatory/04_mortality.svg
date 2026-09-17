@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1000" viewBox="0 0 1600 1000">
+<rect width="1600" height="1000" fill="white"/>
+<text x="70" y="80" font-family="DejaVu Sans, sans-serif" font-size="40" fill="#172633" font-weight="bold">Broader practice authority and lower mortality</text>
+<text x="70" y="126" font-family="DejaVu Sans, sans-serif" font-size="25" fill="#4c5d6a" font-weight="normal">Estimated changes in annual healthcare-amenable deaths per 100,000 residents</text>
+<rect x="55" y="248" width="1490" height="75" fill="#edf2f5"/>
+<text x="70" y="295" font-family="DejaVu Sans, sans-serif" font-size="29" fill="#172633" font-weight="bold">Practice reform</text>
+<text x="890" y="295" font-family="DejaVu Sans, sans-serif" font-size="29" fill="#172633" font-weight="bold">All counties</text>
+<text x="1230" y="295" font-family="DejaVu Sans, sans-serif" font-size="29" fill="#172633" font-weight="bold">Rural counties</text>
+<line x1="55" y1="451" x2="1545" y2="451" stroke="#d2dbe0"/>
+<text x="70" y="399" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#172633" font-weight="normal">NP full practice authority</text>
+<text x="890" y="399" font-family="DejaVu Sans, sans-serif" font-size="27" fill="#172633" font-weight="bold">-12.177 (3.086)</text>
+<text x="1230" y="399" font-family="DejaVu Sans, sans-serif" font-size="27" fill="#172633" font-weight="normal">-15.620 (6.199)</text>
+<line x1="55" y1="583" x2="1545" y2="583" stroke="#d2dbe0"/>
+<text x="70" y="531" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#172633" font-weight="normal">PA remote practice authority</text>
+<text x="890" y="531" font-family="DejaVu Sans, sans-serif" font-size="27" fill="#172633" font-weight="bold">-9.927 (3.073)</text>
+<text x="1230" y="531" font-family="DejaVu Sans, sans-serif" font-size="27" fill="#172633" font-weight="normal">-26.431 (8.226)</text>
+<text x="70" y="884" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#4c5d6a" font-weight="normal">Adapted from Supply-side Health Policy, Table 2, col. 6, panels A-B, PDF p. 9.</text>
+<text x="70" y="915" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#4c5d6a" font-weight="normal">Standard errors in parentheses. NP rural: p &lt; 0.05; other displayed estimates: p &lt; 0.01.</text>
+<text x="70" y="946" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#4c5d6a" font-weight="normal">Specification includes both practice-law variables and Medicaid expansion.</text>
+</svg>
