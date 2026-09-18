@@ -2,16 +2,17 @@
 
 ## Current status
 
-**Stage: Milestone 2L — Readability revision complete; awaiting review and merge approval**
+**Stage: Milestone 2L — Approved, incorporated into `main`, and deployed**
 
-Milestone 2L and its focused readability revision are implemented on
-`codex/homepage-research-carousel`. The revision began at `4eadb31`, replaces
-the image-based table slides with responsive semantic tables at their actual
-homepage size, gives the four figure-only crops more usable space, and adds a
-visible Enlarge path with 100–400% figure zoom and scroll/touch panning. The
-approved Selected Research entries and scoped About-page spacing remain
-unchanged. The branch has not been merged into `main`, so the production site
-remains unchanged.
+Milestone 2L and its focused readability revision are approved, incorporated
+into `main`, and live at `https://benjaminmcmichael.com`. The release
+fast-forwarded the current production source from `e6dabca` through the exact
+reviewed commit `637a1d3`, preserving the intervening launch-readiness and
+production-closeout history. The revision replaces the image-based table
+slides with responsive semantic tables at their actual homepage size, gives
+the four figure-only crops more usable space, and adds a visible Enlarge path
+with 100–400% figure zoom and scroll/touch panning. The approved Selected
+Research entries and scoped About-page spacing remain unchanged.
 
 The production site is live at `https://benjaminmcmichael.com`. GitHub Pages
 hosts the site through the source-controlled GitHub Actions workflow at
@@ -38,7 +39,7 @@ internal-document exclusions. No mixed-content or browser-console errors were
 found, and both `/docs/PREDEPLOYMENT_AUDIT.html` and `/docs/HANDOFF.html`
 return `404` in production.
 
-## Milestone 2L implementation prepared
+## Milestone 2L approved and published
 
 - Replaced the abstract Research Observatory placeholder, “Evidence,
   institutions, place” slogan, and placeholder note with seven approved local
@@ -96,6 +97,15 @@ return `404` in production.
 
 ## Milestone 2L verification
 
+- Confirmed before integration that the working tree was clean, the remote
+  review branch ended exactly at reviewed commit `637a1d3`, and no later review
+  commits existed. Remote `main` at `e6dabca` was the review branch's direct
+  ancestor, so the established fast-forward workflow preserved all existing
+  production history without conflict, force-push, or unrelated overwrite.
+- GitHub Actions run `35303216028` rendered and deployed reviewed commit
+  `637a1d3` successfully through the existing GitHub Pages workflow. No hosting,
+  custom-domain, HTTPS, DNS, Cloudflare, or workflow configuration changed.
+
 - Reused the completed source verification. The four revised figure paths use
   the supplied figure-only SVG crops unchanged, while all three semantic tables
   continue to load the already verified CSV extracts.
@@ -147,6 +157,20 @@ return `404` in production.
   `_site` is the approved public CV. Package source PDFs, manuscript drafts,
   evidence extracts, preview/reference materials, and the review packet are not
   emitted.
+- Repeated the focused checks against the deployed custom domain rather than
+  relying on the local render. All seven live slides load without horizontal
+  overflow; table text measures 15.64 CSS pixels on desktop and 14.875 CSS
+  pixels at 390-pixel mobile width; every Enlarge control is focusable; 250%
+  figure zoom provides real horizontal panning; and the enlarged table remains
+  semantic and unclipped.
+- The deployed homepage exposes the three approved publication titles and
+  canonical links in the approved order. The Research landing page and all six
+  Explore routes return successfully. The About biography-to-Education gap is
+  34 CSS pixels at both checked widths with no horizontal overflow.
+- A fresh no-interaction production run advanced from slide 01 to 02 after
+  approximately 9.97 seconds and displayed “Pause.” A separate production run
+  with reduced motion held slide 01 for more than ten seconds and displayed
+  the disabled “Auto-advance off” control.
 
 Milestone 2H has passed review and is incorporated into `main`. The
 documentation-only audit classifies the site as **READY AFTER MINOR FIXES**,
@@ -610,11 +634,9 @@ Milestone 2C created an immutable CV-derived inventory plus a separate externall
 
 ## Next recommended task
 
-No subsequent implementation milestone is authorized beyond review and a
-separately approved merge of the revised Milestone 2L feature branch. Do not
-merge or deploy until that approval is explicit. Continue ordinary site work
-only through a focused feature branch, local preview/render verification,
-review, and merge to `main`; the existing GitHub Actions workflow then deploys
-automatically. Cloudflare changes are not part of ordinary content maintenance.
-Shareable filter URL state and all other deferred content or research features
-remain subject to separate authorization.
+No subsequent implementation milestone is authorized. Continue ordinary site
+work only through a focused feature branch, local preview/render verification,
+review, and an explicitly approved merge to `main`; the existing GitHub Actions
+workflow then deploys automatically. Cloudflare changes are not part of
+ordinary content maintenance. Shareable filter URL state and all other deferred
+content or research features remain subject to separate authorization.
